@@ -110,7 +110,9 @@ body::before {
 }
 
 .font-mono {
-  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-family: 'SF Pro Display', 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
 }
 
 /* Improved readability classes */

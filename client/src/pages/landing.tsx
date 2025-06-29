@@ -35,13 +35,8 @@ export default function Landing() {
 
   return (
     <div className="min-h-screen bg-dark-bg relative overflow-hidden">
-      {/* Solid Background with Subtle Pattern */}
-      <div className="absolute inset-0 bg-dark-bg">
-        <div className="absolute inset-0 bg-gradient-to-br from-dark-bg via-dark-surface to-dark-bg"></div>
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300ff7f' fill-opacity='0.05'%3E%3Ccircle cx='20' cy='20' r='0.5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-        }}></div>
-      </div>
+      {/* Completely Solid Background */}
+      <div className="absolute inset-0 bg-dark-bg"></div>
         
       {/* Subtle animated elements */}
       {[...Array(12)].map((_, i) => (

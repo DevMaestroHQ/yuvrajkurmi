@@ -58,9 +58,9 @@ export default function Navbar() {
                   }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ duration: 0.2, ease: "easeInOut" }}
-                  className={`relative px-3 py-2 rounded-md font-mono text-sm transition-all duration-300 cursor-pointer ${
+                  className={`relative px-4 py-2 rounded-md font-semibold text-sm transition-all duration-300 cursor-pointer ${
                     location === item.href 
-                      ? "text-neon-green bg-neon-green/10 border border-neon-green/30" 
+                      ? "text-neon-green bg-neon-green/10" 
                       : "text-slate-300 hover:text-neon-green hover:bg-cyber/10"
                   }`}
                 >
@@ -113,9 +113,9 @@ export default function Navbar() {
                 transition={{ delay: index * 0.1, duration: 0.3 }}
                 whileHover={{ scale: 1.05, x: 5 }}
                 whileTap={{ scale: 0.95 }}
-                className={`text-lg font-mono transition-all duration-300 cursor-pointer px-4 py-2 rounded-md ${
+                className={`text-lg font-semibold transition-all duration-300 cursor-pointer px-4 py-2 rounded-md ${
                   location === item.href 
-                    ? "text-neon-green bg-neon-green/10 border border-neon-green/30" 
+                    ? "text-neon-green bg-neon-green/10" 
                     : "text-slate-300 hover:text-neon-green hover:bg-cyber/10"
                 }`}
                 onClick={() => setIsOpen(false)}
