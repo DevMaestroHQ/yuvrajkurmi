@@ -21,6 +21,20 @@ export default function Projects() {
           githubUrl: "https://github.com/DevMaestroHQ",
           icon: Heart,
           gradient: "bg-gradient-to-br from-blue-600/20 to-green-600/20",
+        },
+        {
+          title: "Inventory Management System",
+          description: "Smart inventory tracking solution for retail businesses with barcode scanning, automated reorder alerts, and supplier management. Includes sales analytics, stock level monitoring, and multi-location support for growing businesses.",
+          technologies: [
+            { name: "JavaScript", color: "bg-yellow-500/20 text-yellow-300 border-yellow-500/30" },
+            { name: "Express.js", color: "bg-green-500/20 text-green-300 border-green-500/30" },
+            { name: "MySQL", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
+            { name: "Chart.js", color: "bg-purple-500/20 text-purple-300 border-purple-500/30" },
+          ],
+          demoUrl: "https://github.com/DevMaestroHQ",
+          githubUrl: "https://github.com/DevMaestroHQ",
+          icon: Activity,
+          gradient: "bg-gradient-to-br from-green-600/20 to-blue-600/20",
         }
       ]
     },
@@ -40,6 +54,20 @@ export default function Projects() {
           githubUrl: "https://github.com/DevMaestroHQ",
           icon: Activity,
           gradient: "bg-gradient-to-br from-purple-600/20 to-blue-600/20",
+        },
+        {
+          title: "Fitness Tracking App",
+          description: "Personal wellness application with workout logging, nutrition tracking, and progress monitoring. Features goal setting, exercise library, meal planning, and social sharing capabilities for motivation and accountability.",
+          technologies: [
+            { name: "React", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
+            { name: "Local Storage", color: "bg-orange-500/20 text-orange-300 border-orange-500/30" },
+            { name: "Chart.js", color: "bg-green-500/20 text-green-300 border-green-500/30" },
+            { name: "CSS3", color: "bg-purple-500/20 text-purple-300 border-purple-500/30" },
+          ],
+          demoUrl: "https://github.com/DevMaestroHQ",
+          githubUrl: "https://github.com/DevMaestroHQ",
+          icon: Heart,
+          gradient: "bg-gradient-to-br from-red-600/20 to-pink-600/20",
         }
       ]
     },
@@ -59,6 +87,20 @@ export default function Projects() {
           githubUrl: "https://github.com/DevMaestroHQ",
           icon: BookOpen,
           gradient: "bg-gradient-to-br from-green-600/20 to-yellow-600/20",
+        },
+        {
+          title: "Quiz Builder Platform",
+          description: "Interactive quiz creation tool for educators with multiple question types, automatic grading, and performance analytics. Includes timed assessments, randomized questions, and detailed student reports for comprehensive evaluation.",
+          technologies: [
+            { name: "JavaScript", color: "bg-yellow-500/20 text-yellow-300 border-yellow-500/30" },
+            { name: "HTML5", color: "bg-orange-500/20 text-orange-300 border-orange-500/30" },
+            { name: "CSS3", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
+            { name: "JSON", color: "bg-green-500/20 text-green-300 border-green-500/30" },
+          ],
+          demoUrl: "https://github.com/DevMaestroHQ",
+          githubUrl: "https://github.com/DevMaestroHQ",
+          icon: Activity,
+          gradient: "bg-gradient-to-br from-purple-600/20 to-indigo-600/20",
         }
       ]
     },
@@ -78,6 +120,20 @@ export default function Projects() {
           githubUrl: "https://github.com/DevMaestroHQ",
           icon: Leaf,
           gradient: "bg-gradient-to-br from-green-600/20 to-emerald-600/20",
+        },
+        {
+          title: "Expense Management Tool",
+          description: "Personal and business expense tracking application with receipt scanning, category management, and tax reporting. Features budget planning, recurring expense tracking, and detailed financial insights for better money management.",
+          technologies: [
+            { name: "React", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
+            { name: "Local Storage", color: "bg-purple-500/20 text-purple-300 border-purple-500/30" },
+            { name: "Chart.js", color: "bg-green-500/20 text-green-300 border-green-500/30" },
+            { name: "File API", color: "bg-orange-500/20 text-orange-300 border-orange-500/30" },
+          ],
+          demoUrl: "https://github.com/DevMaestroHQ",
+          githubUrl: "https://github.com/DevMaestroHQ",
+          icon: Heart,
+          gradient: "bg-gradient-to-br from-blue-600/20 to-cyan-600/20",
         }
       ]
     },
