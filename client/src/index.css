@@ -127,9 +127,7 @@ body {
   position: relative;
   border: 1px solid var(--neon-green);
   background: rgba(0, 255, 127, 0.05);
-  box-shadow: 
-    inset 0 0 20px rgba(0, 255, 127, 0.1),
-    0 0 20px rgba(0, 255, 127, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 255, 127, 0.1);
 }
 
 .cyber-border::before {
@@ -147,7 +145,7 @@ body {
 }
 
 .cyber-border:hover::before {
-  opacity: 0.7;
+  opacity: 0.3;
 }
 
 /* Glass morphism effect */
@@ -237,19 +235,19 @@ body {
   background: linear-gradient(var(--neon-green-bright), var(--neon-blue-bright));
 }
 
-/* Loading animations */
+/* Professional loading animations */
 .pulse-glow {
-  animation: pulseGlow 2s ease-in-out infinite;
+  animation: professionalPulse 2s ease-in-out infinite;
 }
 
-@keyframes pulseGlow {
+@keyframes professionalPulse {
   0%, 100% { 
-    box-shadow: 0 0 20px rgba(0, 255, 127, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 255, 127, 0.1);
     transform: scale(1);
   }
   50% { 
-    box-shadow: 0 0 40px rgba(0, 255, 127, 0.6);
-    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 255, 127, 0.2);
+    transform: scale(1.01);
   }
 }
 
@@ -265,11 +263,11 @@ body {
   opacity: 0.1;
 }
 
-/* Improved focus states */
+/* Professional focus states */
 input:focus, textarea:focus, button:focus {
   outline: 2px solid var(--neon-green);
   outline-offset: 2px;
-  box-shadow: 0 0 20px rgba(0, 255, 127, 0.3);
+  box-shadow: 0 0 0 3px rgba(0, 255, 127, 0.1);
 }
 
 /* Enhanced button styles */
@@ -282,8 +280,8 @@ input:focus, textarea:focus, button:focus {
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(0, 255, 127, 0.4);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 255, 127, 0.15);
 }
 
 .btn-secondary {
@@ -296,7 +294,7 @@ input:focus, textarea:focus, button:focus {
 .btn-secondary:hover {
   background: var(--neon-green);
   color: var(--dark-bg);
-  box-shadow: 0 0 30px rgba(0, 255, 127, 0.5);
+  box-shadow: 0 2px 8px rgba(0, 255, 127, 0.15);
 }
 
 .dark {

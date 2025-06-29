@@ -27,7 +27,7 @@ export default function AchievementBadge({ title, description, icon, color, dela
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
-      whileHover={{ scale: 1.05 }}
+      whileHover={{ scale: 1.02 }}
       className={`bg-dark-card/50 backdrop-blur-sm p-4 rounded-lg border border-cyber hover:border-${color} transition-all duration-300 group`}
     >
       <div className="flex items-center space-x-3 mb-3">

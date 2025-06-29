@@ -22,7 +22,7 @@ export default function SkillsRadar({ skills }: SkillsRadarProps) {
   return (
     <div className="glass-card p-8 relative overflow-hidden">
       <div className="text-center mb-8">
-        <h3 className="font-orbitron text-2xl text-neon-green glow-text mb-2">
+        <h3 className="font-orbitron text-2xl text-white mb-2">
           Technical Proficiency Matrix
         </h3>
         <p className="text-readable">Interactive skill assessment based on real project experience</p>
@@ -71,21 +71,19 @@ export default function SkillsRadar({ skills }: SkillsRadarProps) {
               const y = 150 + Math.sin((angle * Math.PI) / 180) * radius;
               
               return (
-                <motion.g key={skill.name}>
-                  <motion.circle
+                <g key={skill.name}>
+                  <circle
                     cx={x}
                     cy={y}
                     r={hoveredSkill === skill.name ? 8 : 6}
                     fill={skill.color}
                     stroke={skill.color}
                     strokeWidth="2"
-                    className="cursor-pointer"
-                    whileHover={{ scale: 1.2 }}
+                    className="cursor-pointer transition-all duration-300"
                     onMouseEnter={() => setHoveredSkill(skill.name)}
                     onMouseLeave={() => setHoveredSkill(null)}
                   />
                   
-                  {/* Skill labels */}
                   <text
                     x={150 + Math.cos((angle * Math.PI) / 180) * 140}
                     y={150 + Math.sin((angle * Math.PI) / 180) * 140}
@@ -93,11 +91,11 @@ export default function SkillsRadar({ skills }: SkillsRadarProps) {
                     fontSize="12"
                     textAnchor="middle"
                     dominantBaseline="middle"
-                    className="font-mono transform rotate-90"
+                    className="font-mono"
                   >
                     {skill.name}
                   </text>
-                </motion.g>
+                </g>
               );
             })}
 
