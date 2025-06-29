@@ -9,6 +9,7 @@ import { useLocation } from "wouter";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import Preloader from "@/components/ui/preloader";
+import Landing from "@/pages/landing";
 import Home from "@/pages/home";
 import About from "@/pages/about";
 import Projects from "@/pages/projects";
@@ -30,6 +31,7 @@ function Router() {
         transition={{ duration: 0.3 }}
       >
         <Switch>
+          <Route path="/landing" component={Landing} />
           <Route path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/projects" component={Projects} />

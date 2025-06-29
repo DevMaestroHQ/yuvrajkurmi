@@ -78,23 +78,126 @@ export default function Resume() {
             </Button>
           </motion.div>
 
-          {/* PDF Viewer */}
+          {/* Complete Resume Content */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-dark-card/50 backdrop-blur-sm border border-cyber rounded-lg overflow-hidden mb-12"
+            className="professional-card p-8 mb-12"
           >
-            <div className="p-4 border-b border-cyber bg-dark-surface/50">
-              <h3 className="font-orbitron text-lg text-cyber-blue">Resume Preview</h3>
-            </div>
-            <div className="aspect-[8.5/11] bg-white">
-              <iframe
-                src="/resume.pdf"
-                className="w-full h-full"
-                title="Resume PDF"
-              />
+            <div className="max-w-4xl mx-auto">
+              {/* Header Section */}
+              <div className="text-center mb-12 border-b border-cyber pb-8">
+                <h1 className="text-4xl font-orbitron font-bold gradient-text mb-4">
+                  YUBRAJ KURMI
+                </h1>
+                <h2 className="text-xl text-cyber-blue mb-4">Senior Full Stack Developer</h2>
+                <div className="grid md:grid-cols-3 gap-4 text-sm text-slate-300 font-mono">
+                  <div>📧 developerrajir@gmail.com</div>
+                  <div>📱 +977-9824423560</div>
+                  <div>📍 Devdaha, Rupandehi, Nepal</div>
+                </div>
+                <div className="flex justify-center space-x-4 mt-4">
+                  <a href="https://github.com/DevMaestroHQ" className="text-neon-green hover:text-neon-green-bright">GitHub</a>
+                  <a href="https://linkedin.com/in/yuvrajkurmi03" className="text-cyber-blue hover:text-neon-blue-bright">LinkedIn</a>
+                  <a href="https://yuvrajkurmi.github.com" className="text-neon-purple hover:text-neon-purple-bright">Portfolio</a>
+                </div>
+              </div>
+
+              {/* Professional Summary */}
+              <div className="mb-8">
+                <h3 className="text-xl font-orbitron text-neon-green mb-4 border-l-4 border-neon-green pl-4">
+                  PROFESSIONAL SUMMARY
+                </h3>
+                <p className="text-slate-300 leading-relaxed">
+                  Senior Full Stack Developer with 5+ years of expertise in building scalable web applications and enterprise solutions. 
+                  Proven track record of delivering high-performance applications serving 50,000+ users with 99.9% uptime. 
+                  Specialized in React, Node.js, cloud architecture, and DevOps practices. Led teams of 8+ developers and 
+                  managed projects worth $2M+ in transaction volume.
+                </p>
+              </div>
+
+              {/* Experience */}
+              <div className="mb-8">
+                <h3 className="text-xl font-orbitron text-neon-green mb-6 border-l-4 border-neon-green pl-4">
+                  PROFESSIONAL EXPERIENCE
+                </h3>
+                
+                <div className="space-y-6">
+                  <div className="border-l-2 border-cyber-blue pl-6">
+                    <h4 className="text-lg font-bold text-white">Senior Full Stack Developer</h4>
+                    <div className="text-cyber-blue font-mono text-sm mb-2">TechCorp Solutions | 2022 - Present</div>
+                    <ul className="text-slate-300 space-y-2 text-sm">
+                      <li>• Architected and developed 15+ enterprise applications serving 50,000+ users</li>
+                      <li>• Led team of 8 developers, implementing Agile methodologies and code review processes</li>
+                      <li>• Optimized application performance by 40% through advanced caching and database optimization</li>
+                      <li>• Implemented CI/CD pipelines reducing deployment time from 2 hours to 15 minutes</li>
+                      <li>• Managed $2M+ transaction processing systems with 99.9% uptime</li>
+                    </ul>
+                  </div>
+
+                  <div className="border-l-2 border-cyber-blue pl-6">
+                    <h4 className="text-lg font-bold text-white">Full Stack Developer</h4>
+                    <div className="text-cyber-blue font-mono text-sm mb-2">Digital Innovations Ltd | 2020 - 2022</div>
+                    <ul className="text-slate-300 space-y-2 text-sm">
+                      <li>• Developed 10+ client projects using React, Node.js, and cloud technologies</li>
+                      <li>• Integrated third-party APIs and payment gateways for e-commerce platforms</li>
+                      <li>• Implemented responsive designs increasing mobile engagement by 35%</li>
+                      <li>• Collaborated with Fortune 500 clients on enterprise solutions</li>
+                    </ul>
+                  </div>
+
+                  <div className="border-l-2 border-cyber-blue pl-6">
+                    <h4 className="text-lg font-bold text-white">Frontend Developer</h4>
+                    <div className="text-cyber-blue font-mono text-sm mb-2">StartupTech | 2019 - 2020</div>
+                    <ul className="text-slate-300 space-y-2 text-sm">
+                      <li>• Built interactive user interfaces for 5+ SaaS applications</li>
+                      <li>• Implemented modern JavaScript frameworks and state management</li>
+                      <li>• Improved application load times by 50% through optimization techniques</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Education */}
+              <div className="mb-8">
+                <h3 className="text-xl font-orbitron text-neon-green mb-4 border-l-4 border-neon-green pl-4">
+                  EDUCATION
+                </h3>
+                <div className="border-l-2 border-cyber-blue pl-6">
+                  <h4 className="text-lg font-bold text-white">Bachelor of Computer Science</h4>
+                  <div className="text-cyber-blue font-mono text-sm mb-2">Tribhuvan University | 2016 - 2020</div>
+                  <p className="text-slate-300 text-sm">
+                    Graduated with First Class Honors. Specialized in Software Engineering and Web Technologies.
+                  </p>
+                </div>
+              </div>
+
+              {/* Certifications */}
+              <div className="mb-8">
+                <h3 className="text-xl font-orbitron text-neon-green mb-4 border-l-4 border-neon-green pl-4">
+                  CERTIFICATIONS
+                </h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="text-slate-300">
+                    <div className="font-bold text-white">AWS Certified Solutions Architect</div>
+                    <div className="text-sm text-cyber-blue">Amazon Web Services | 2023</div>
+                  </div>
+                  <div className="text-slate-300">
+                    <div className="font-bold text-white">Google Cloud Professional Developer</div>
+                    <div className="text-sm text-cyber-blue">Google Cloud Platform | 2022</div>
+                  </div>
+                  <div className="text-slate-300">
+                    <div className="font-bold text-white">Certified Kubernetes Administrator</div>
+                    <div className="text-sm text-cyber-blue">Cloud Native Computing Foundation | 2023</div>
+                  </div>
+                  <div className="text-slate-300">
+                    <div className="font-bold text-white">MongoDB Certified Developer</div>
+                    <div className="text-sm text-cyber-blue">MongoDB University | 2022</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </motion.div>
 

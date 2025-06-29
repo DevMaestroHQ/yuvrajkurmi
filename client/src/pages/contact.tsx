@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Github, Linkedin, Globe, Download, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Globe, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Card, CardContent } from "@/components/ui/card";
+
 import { useToast } from "@/hooks/use-toast";
 import { fadeInUp, slideInLeft, slideInRight, staggerChildren } from "@/lib/animations";
 import PricingCalculator from "@/components/ui/pricing-calculator";
@@ -14,7 +14,10 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    subject: "",
+    message: "",
+    projectType: "",
+    budget: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
@@ -37,7 +40,7 @@ export default function Contact() {
           title: "Message sent successfully!",
           description: "Thank you for reaching out. I'll get back to you soon.",
         });
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", subject: "", message: "", projectType: "", budget: "" });
       } else {
         throw new Error("Failed to send message");
       }
@@ -52,7 +55,7 @@ export default function Contact() {
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value
@@ -109,138 +112,177 @@ export default function Contact() {
       <section className="py-20 bg-dark-bg pt-32">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={staggerChildren}
-            className="text-center mb-16"
-          >
-            <motion.h2
-              variants={fadeInUp}
-              className="font-orbitron text-4xl font-bold text-white mb-4"
-            >
-              ./contact
-            </motion.h2>
-            <motion.div
-              variants={fadeInUp}
-              className="w-24 h-1 bg-gradient-to-r from-neon-green to-cyber-blue mx-auto"
-            />
-          </motion.div>
-          
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
             <motion.div
               initial="initial"
               whileInView="animate"
               viewport={{ once: true }}
-              variants={slideInLeft}
+              variants={staggerChildren}
+              className="text-center mb-16"
             >
-              <Card className="bg-dark-card/50 backdrop-blur-sm border-cyber">
-                <CardContent className="p-8">
-                  <h3 className="font-orbitron text-xl text-cyber-blue mb-6">Send Message</h3>
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="space-y-2">
-                      <label className="block text-sm font-mono text-slate-300">Name</label>
-                      <Input
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="bg-dark-surface/50 border-cyber focus:border-neon-green"
-                        placeholder="Enter your name"
-                        required
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <label className="block text-sm font-mono text-slate-300">Email</label>
-                      <Input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="bg-dark-surface/50 border-cyber focus:border-neon-green"
-                        placeholder="Enter your email"
-                        required
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <label className="block text-sm font-mono text-slate-300">Message</label>
-                      <Textarea
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        rows={5}
-                        className="bg-dark-surface/50 border-cyber focus:border-neon-green resize-none"
-                        placeholder="Your message here..."
-                        required
-                      />
-                    </div>
-                    <Button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="w-full cyber-border bg-gradient-to-r from-green-500/10 to-blue-500/10 hover-glow font-mono text-neon-green"
-                    >
-                      {isSubmitting ? (
-                        <motion.div
-                          animate={{ rotate: 360 }}
-                          transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                          className="w-5 h-5 border-2 border-neon-green border-t-transparent rounded-full"
-                        />
-                      ) : (
-                        <>
-                          <Send className="w-4 h-4 mr-2" />
-                          ./send_message
-                        </>
-                      )}
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
+              <motion.h2
+                variants={fadeInUp}
+                className="font-orbitron text-4xl font-bold text-white mb-4"
+              >
+                ./contact
+              </motion.h2>
+              <motion.div
+                variants={fadeInUp}
+                className="w-24 h-1 bg-gradient-to-r from-neon-green to-cyber-blue mx-auto"
+              />
             </motion.div>
             
-            {/* Contact Info */}
-            <motion.div
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              variants={slideInRight}
-              className="space-y-6"
-            >
-              <Card className="bg-dark-card/50 backdrop-blur-sm border-cyber">
-                <CardContent className="p-6">
-                  <h3 className="font-orbitron text-xl text-cyber-blue mb-4">Get In Touch</h3>
-                  <p className="text-readable-lg leading-relaxed mb-6">
-                    I'm always interested in hearing about new opportunities and exciting projects. Let's connect and build something amazing together!
-                  </p>
-                  
+            <div className="grid lg:grid-cols-2 gap-12">
+              {/* Contact Form */}
+              <motion.div
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={slideInLeft}
+              >
+                <div className="professional-card p-8">
+                  <div className="terminal-window">
+                    <div className="terminal-header">
+                      <div className="terminal-dots">
+                        <span className="dot bg-red-500"></span>
+                        <span className="dot bg-yellow-500"></span>
+                        <span className="dot bg-green-500"></span>
+                      </div>
+                      <div className="terminal-title">contact@yubraj-dev:~</div>
+                    </div>
+                    <div className="terminal-content">
+                      <div className="font-mono text-neon-green mb-4">
+                        <span className="text-cyan-400">$</span> ./send-message --interactive
+                      </div>
+                      <form onSubmit={handleSubmit} className="space-y-6">
+                        <div className="grid md:grid-cols-2 gap-4">
+                          <div className="space-y-2">
+                            <label className="block text-sm font-mono text-neon-green">--name</label>
+                            <Input
+                              type="text"
+                              name="name"
+                              value={formData.name}
+                              onChange={handleChange}
+                              placeholder="Enter your full name"
+                              className="terminal-input bg-dark-surface/50 border-cyber focus:border-neon-green"
+                              required
+                            />
+                          </div>
+                          <div className="space-y-2">
+                            <label className="block text-sm font-mono text-neon-green">--email</label>
+                            <Input
+                              type="email"
+                              name="email"
+                              value={formData.email}
+                              onChange={handleChange}
+                              placeholder="your.email@domain.com"
+                              className="terminal-input bg-dark-surface/50 border-cyber focus:border-neon-green"
+                              required
+                            />
+                          </div>
+                        </div>
+                        
+                        <div className="grid md:grid-cols-2 gap-4">
+                          <div className="space-y-2">
+                            <label className="block text-sm font-mono text-neon-green">--subject</label>
+                            <Input
+                              type="text"
+                              name="subject"
+                              value={formData.subject}
+                              onChange={handleChange}
+                              placeholder="Project inquiry"
+                              className="terminal-input bg-dark-surface/50 border-cyber focus:border-neon-green"
+                              required
+                            />
+                          </div>
+                          <div className="space-y-2">
+                            <label className="block text-sm font-mono text-neon-green">--project-type</label>
+                            <select
+                              name="projectType"
+                              value={formData.projectType}
+                              onChange={handleChange}
+                              className="terminal-input bg-dark-surface/50 border-cyber focus:border-neon-green w-full p-3 rounded text-white"
+                              required
+                            >
+                              <option value="">Select project type</option>
+                              <option value="web-development">Web Development</option>
+                              <option value="mobile-app">Mobile App</option>
+                              <option value="api-development">API Development</option>
+                              <option value="consulting">Technical Consulting</option>
+                              <option value="other">Other</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div className="space-y-2">
+                          <label className="block text-sm font-mono text-neon-green">--message</label>
+                          <Textarea
+                            name="message"
+                            value={formData.message}
+                            onChange={handleChange}
+                            rows={5}
+                            className="terminal-input bg-dark-surface/50 border-cyber focus:border-neon-green resize-none"
+                            placeholder="Tell me about your project..."
+                            required
+                          />
+                        </div>
+                        
+                        <Button
+                          type="submit"
+                          disabled={isSubmitting}
+                          className="w-full cyber-border bg-gradient-to-r from-green-500/10 to-blue-500/10 hover-glow font-mono text-neon-green"
+                        >
+                          {isSubmitting ? (
+                            <motion.div
+                              animate={{ rotate: 360 }}
+                              transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                              className="w-5 h-5 border-2 border-neon-green border-t-transparent rounded-full"
+                            />
+                          ) : (
+                            <>
+                              <Send className="w-4 h-4 mr-2" />
+                              ./send_message --execute
+                            </>
+                          )}
+                        </Button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+              
+              {/* Contact Info & Social Links */}
+              <motion.div
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={slideInRight}
+                className="space-y-8"
+              >
+                {/* Contact Info */}
+                <div className="professional-card p-8">
+                  <h3 className="font-orbitron text-xl text-cyber-blue mb-6">Get in Touch</h3>
                   <div className="space-y-4">
                     {contactInfo.map((info, index) => (
                       <motion.div
-                        key={info.label}
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: index * 0.1 }}
-                        className="flex items-center space-x-4"
+                        key={index}
+                        variants={fadeInUp}
+                        className="flex items-center space-x-4 p-4 rounded-lg cyber-border"
                       >
-                        <div className={`w-12 h-12 ${info.bgColor} rounded-lg flex items-center justify-center`}>
-                          <info.icon className={`w-6 h-6 ${info.color}`} />
+                        <div className={`p-3 rounded-full ${info.bgColor}`}>
+                          <info.icon className={`w-5 h-5 ${info.color}`} />
                         </div>
                         <div>
-                          <div className="font-mono text-sm text-slate-400">{info.label}</div>
-                          <div className="text-slate-200">{info.value}</div>
+                          <div className="text-sm text-slate-400">{info.label}</div>
+                          <div className="text-white font-mono">{info.value}</div>
                         </div>
                       </motion.div>
                     ))}
                   </div>
-                </CardContent>
-              </Card>
-              
-              {/* Social Links */}
-              <Card className="bg-dark-card/50 backdrop-blur-sm border-cyber">
-                <CardContent className="p-6">
-                  <h3 className="font-orbitron text-xl text-cyber-blue mb-4">Connect Online</h3>
+                </div>
+
+                {/* Social Links */}
+                <div className="professional-card p-8">
+                  <h3 className="font-orbitron text-xl text-cyber-blue mb-6">Connect</h3>
                   <div className="flex space-x-4">
                     {socialLinks.map((social, index) => (
                       <motion.a
@@ -248,52 +290,25 @@ export default function Contact() {
                         href={social.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className={`w-12 h-12 bg-dark-surface rounded-lg flex items-center justify-center border border-cyber ${social.color} ${social.borderColor} transition-all`}
+                        variants={fadeInUp}
+                        className={`p-4 rounded-lg cyber-border transition-all duration-300 ${social.color} ${social.borderColor}`}
                       >
                         <social.icon className="w-6 h-6" />
                       </motion.a>
                     ))}
                   </div>
-                </CardContent>
-              </Card>
-              
-              {/* Resume Download */}
-              <Card className="bg-dark-card/50 backdrop-blur-sm border-cyber">
-                <CardContent className="p-6">
-                  <h3 className="font-orbitron text-xl text-cyber-blue mb-4">Resume</h3>
-                  <p className="text-slate-300 text-sm mb-4">
-                    Download my complete resume for detailed information about my skills and experience.
-                  </p>
-                  <Button
-                    asChild
-                    className="cyber-border bg-gradient-to-r from-green-500/10 to-blue-500/10 hover-glow font-mono text-neon-green"
-                  >
-                    <a href="/resume.pdf" target="_blank">
-                      <Download className="w-4 h-4 mr-2" />
-                      ./download_resume
-                    </a>
-                  </Button>
-                </CardContent>
-              </Card>
-            </motion.div>
-          </div>
+                </div>
 
-          {/* Availability Indicator */}
-          <div className="mt-16">
-            <AvailabilityIndicator />
+                {/* Availability */}
+                <AvailabilityIndicator />
+              </motion.div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    {/* Pricing Calculator Section */}
-      <section className="py-20 bg-gradient-to-b from-dark-surface to-dark-bg">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <PricingCalculator />
-          </div>
+        {/* Pricing Calculator Section */}
+        <div className="container mx-auto px-4 mt-20">
+          <PricingCalculator />
         </div>
       </section>
     </>
