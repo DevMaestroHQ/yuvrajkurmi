@@ -34,29 +34,30 @@ export default function Landing() {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-950 relative overflow-hidden">
-      {/* Solid Background Pattern */}
-      <div className="absolute inset-0 bg-slate-950">
+    <div className="min-h-screen bg-dark-bg relative overflow-hidden">
+      {/* Solid Background with Subtle Pattern */}
+      <div className="absolute inset-0 bg-dark-bg">
+        <div className="absolute inset-0 bg-gradient-to-br from-dark-bg via-dark-surface to-dark-bg"></div>
         <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300ff7f' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300ff7f' fill-opacity='0.05'%3E%3Ccircle cx='20' cy='20' r='0.5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
         }}></div>
       </div>
         
-      {/* Animated particles */}
-      {[...Array(20)].map((_, i) => (
+      {/* Subtle animated elements */}
+      {[...Array(12)].map((_, i) => (
         <motion.div
           key={i}
-          className="absolute w-1 h-1 bg-neon-green rounded-full"
+          className="absolute w-2 h-2 bg-neon-green rounded-full"
           animate={{
-            x: [0, Math.random() * 800],
-            y: [0, Math.random() * 600],
-            opacity: [0, 1, 0],
+            x: [0, Math.random() * 400 - 200],
+            y: [0, Math.random() * 400 - 200],
+            scale: [0.5, 1, 0.5],
           }}
           transition={{
-            duration: Math.random() * 10 + 5,
+            duration: Math.random() * 8 + 6,
             repeat: Infinity,
-            ease: "linear",
-            delay: Math.random() * 5,
+            ease: "easeInOut",
+            delay: Math.random() * 3,
           }}
           style={{
             left: Math.random() * 100 + "%",
@@ -86,9 +87,9 @@ export default function Landing() {
                 cx="60"
                 cy="60"
                 r="50"
-                fill="url(#landingGradient)"
-                stroke="none"
-                opacity="0.2"
+                fill="#0f172a"
+                stroke="url(#landingGradient)"
+                strokeWidth="2"
               />
               <polygon
                 points="60,25 85,40 85,80 60,95 35,80 35,40"
@@ -167,20 +168,25 @@ export default function Landing() {
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button
-                    onClick={() => setLocation("/")}
-                    className="cyber-border bg-gradient-to-r from-green-500/20 to-blue-500/20 hover-glow font-mono text-neon-green text-lg px-8 py-3"
-                  >
-                    Enter Portfolio
-                    <ChevronRight className="w-5 h-5 ml-2" />
-                  </Button>
+                  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                    <Button
+                      onClick={() => setLocation("/")}
+                      className="bg-neon-green text-dark-bg hover:bg-neon-green/90 font-mono text-lg px-8 py-3 border-2 border-neon-green transition-all duration-300"
+                    >
+                      Enter Portfolio
+                      <ChevronRight className="w-5 h-5 ml-2" />
+                    </Button>
+                  </motion.div>
                   
-                  <Button
-                    onClick={() => setLocation("/contact")}
-                    className="border border-cyber hover:border-neon-green hover:text-neon-green font-mono text-lg px-8 py-3 transition-all duration-300"
-                  >
-                    Start Project
-                  </Button>
+                  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                    <Button
+                      onClick={() => setLocation("/contact")}
+                      variant="outline"
+                      className="border-2 border-cyber hover:border-neon-green hover:text-neon-green bg-dark-bg text-slate-300 font-mono text-lg px-8 py-3 transition-all duration-300"
+                    >
+                      Start Project
+                    </Button>
+                  </motion.div>
                 </div>
 
                 <div className="text-sm text-slate-500 mt-8">
