@@ -451,7 +451,7 @@ railway deploy
 - **Email**: developerrajir@gmail.com
 - **LinkedIn**: [yuvrajkurmi03](https://linkedin.com/in/yuvrajkurmi03)
 - **GitHub**: [DevMaestroHQ](https://github.com/DevMaestroHQ)
-- **Phone**: +977-9824423560
+- **Phone**: +977-98XXXXXXXX
 
 **Professional Services:**
 - Portfolio customization and branding

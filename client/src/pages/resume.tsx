@@ -101,7 +101,7 @@ export default function Resume() {
                 <h2 className="text-xl text-cyber-blue mb-4">Full Stack Developer</h2>
                 <div className="grid md:grid-cols-3 gap-4 text-sm text-slate-300 font-mono">
                   <div>📧 developerrajir@gmail.com</div>
-                  <div>📱 +977-9824423560</div>
+                  <div>📱 +977-98XXXXXXXX</div>
                   <div>📍 Devdaha, Rupandehi, Nepal</div>
                 </div>
                 <div className="flex justify-center space-x-4 mt-4">

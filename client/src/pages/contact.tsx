@@ -73,7 +73,7 @@ export default function Contact() {
     {
       icon: Phone,
       label: "Phone",
-      value: "+977-9824423560",
+      value: "+977-98XXXXXXXX",
       color: "text-cyber-blue",
       bgColor: "bg-blue-500/20"
     },
@@ -144,116 +144,141 @@ export default function Contact() {
                 whileInView="animate"
                 viewport={{ once: true }}
                 variants={slideInLeft}
+                className="space-y-8"
               >
-                <div className="professional-card p-8">
-                  <div className="terminal-window">
-                    <div className="terminal-header">
-                      <div className="terminal-dots">
-                        <span className="dot bg-red-500"></span>
-                        <span className="dot bg-yellow-500"></span>
-                        <span className="dot bg-green-500"></span>
-                      </div>
-                      <div className="terminal-title">contact@yubraj-dev:~</div>
-                    </div>
-                    <div className="terminal-content">
-                      <div className="font-mono text-neon-green mb-4">
-                        <span className="text-cyan-400">$</span> ./send-message --interactive
-                      </div>
-                      <form onSubmit={handleSubmit} className="space-y-6">
-                        <div className="grid md:grid-cols-2 gap-4">
-                          <div className="space-y-2">
-                            <label className="block text-sm font-mono text-neon-green">--name</label>
-                            <Input
-                              type="text"
-                              name="name"
-                              value={formData.name}
-                              onChange={handleChange}
-                              placeholder="Enter your full name"
-                              className="terminal-input bg-dark-surface/50 border-cyber focus:border-neon-green"
-                              required
-                            />
-                          </div>
-                          <div className="space-y-2">
-                            <label className="block text-sm font-mono text-neon-green">--email</label>
-                            <Input
-                              type="email"
-                              name="email"
-                              value={formData.email}
-                              onChange={handleChange}
-                              placeholder="your.email@domain.com"
-                              className="terminal-input bg-dark-surface/50 border-cyber focus:border-neon-green"
-                              required
-                            />
-                          </div>
-                        </div>
-                        
-                        <div className="grid md:grid-cols-2 gap-4">
-                          <div className="space-y-2">
-                            <label className="block text-sm font-mono text-neon-green">--subject</label>
-                            <Input
-                              type="text"
-                              name="subject"
-                              value={formData.subject}
-                              onChange={handleChange}
-                              placeholder="Project inquiry"
-                              className="terminal-input bg-dark-surface/50 border-cyber focus:border-neon-green"
-                              required
-                            />
-                          </div>
-                          <div className="space-y-2">
-                            <label className="block text-sm font-mono text-neon-green">--project-type</label>
-                            <select
-                              name="projectType"
-                              value={formData.projectType}
-                              onChange={handleChange}
-                              className="terminal-input bg-dark-surface/50 border-cyber focus:border-neon-green w-full p-3 rounded text-white"
-                              required
-                            >
-                              <option value="">Select project type</option>
-                              <option value="web-development">Web Development</option>
-                              <option value="mobile-app">Mobile App</option>
-                              <option value="api-development">API Development</option>
-                              <option value="consulting">Technical Consulting</option>
-                              <option value="other">Other</option>
-                            </select>
-                          </div>
-                        </div>
+                {/* Simple Header */}
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold text-white mb-2">Send Message</h3>
+                  <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
+                </div>
 
-                        <div className="space-y-2">
-                          <label className="block text-sm font-mono text-neon-green">--message</label>
-                          <Textarea
-                            name="message"
-                            value={formData.message}
-                            onChange={handleChange}
-                            rows={5}
-                            className="terminal-input bg-dark-surface/50 border-cyber focus:border-neon-green resize-none"
-                            placeholder="Tell me about your project..."
-                            required
-                          />
-                        </div>
-                        
-                        <Button
-                          type="submit"
-                          disabled={isSubmitting}
-                          className="w-full cyber-border bg-gradient-to-r from-green-500/10 to-blue-500/10 hover-glow font-mono text-neon-green"
-                        >
-                          {isSubmitting ? (
+                {/* Clean Form Card */}
+                <motion.div 
+                  className="bg-slate-900/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 hover:border-blue-500/30 transition-all duration-300"
+                  whileHover={{ y: -2, boxShadow: "0 10px 40px rgba(59, 130, 246, 0.1)" }}
+                >
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <motion.div 
+                        className="space-y-2"
+                        whileHover={{ scale: 1.02 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        <label className="block text-sm font-medium text-slate-300">Full Name</label>
+                        <Input
+                          type="text"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          placeholder="John Doe"
+                          className="bg-slate-800/50 border-slate-600 focus:border-blue-500 text-white placeholder:text-slate-400 rounded-lg h-12 px-4 transition-all duration-200 hover:bg-slate-800/70"
+                          required
+                        />
+                      </motion.div>
+                      
+                      <motion.div 
+                        className="space-y-2"
+                        whileHover={{ scale: 1.02 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        <label className="block text-sm font-medium text-slate-300">Email Address</label>
+                        <Input
+                          type="email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          placeholder="john@example.com"
+                          className="bg-slate-800/50 border-slate-600 focus:border-blue-500 text-white placeholder:text-slate-400 rounded-lg h-12 px-4 transition-all duration-200 hover:bg-slate-800/70"
+                          required
+                        />
+                      </motion.div>
+                    </div>
+                    
+                    <motion.div 
+                      className="space-y-2"
+                      whileHover={{ scale: 1.01 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <label className="block text-sm font-medium text-slate-300">Subject</label>
+                      <Input
+                        type="text"
+                        name="subject"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        placeholder="Project Discussion"
+                        className="bg-slate-800/50 border-slate-600 focus:border-blue-500 text-white placeholder:text-slate-400 rounded-lg h-12 px-4 transition-all duration-200 hover:bg-slate-800/70"
+                        required
+                      />
+                    </motion.div>
+
+                    <motion.div 
+                      className="space-y-2"
+                      whileHover={{ scale: 1.01 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <label className="block text-sm font-medium text-slate-300">Project Type</label>
+                      <select
+                        name="projectType"
+                        value={formData.projectType}
+                        onChange={handleChange}
+                        className="w-full bg-slate-800/50 border border-slate-600 focus:border-blue-500 text-white rounded-lg h-12 px-4 transition-all duration-200 hover:bg-slate-800/70 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
+                        required
+                      >
+                        <option value="" className="bg-slate-800">Choose project type</option>
+                        <option value="web-development" className="bg-slate-800">Web Development</option>
+                        <option value="mobile-app" className="bg-slate-800">Mobile Application</option>
+                        <option value="api-development" className="bg-slate-800">API Development</option>
+                        <option value="consulting" className="bg-slate-800">Technical Consulting</option>
+                        <option value="other" className="bg-slate-800">Other</option>
+                      </select>
+                    </motion.div>
+
+                    <motion.div 
+                      className="space-y-2"
+                      whileHover={{ scale: 1.01 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <label className="block text-sm font-medium text-slate-300">Message</label>
+                      <Textarea
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        rows={5}
+                        className="bg-slate-800/50 border-slate-600 focus:border-blue-500 text-white placeholder:text-slate-400 rounded-lg p-4 resize-none transition-all duration-200 hover:bg-slate-800/70"
+                        placeholder="Tell me about your project requirements..."
+                        required
+                      />
+                    </motion.div>
+                    
+                    <motion.div
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      transition={{ duration: 0.1 }}
+                    >
+                      <Button
+                        type="submit"
+                        disabled={isSubmitting}
+                        className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 border-0 shadow-lg hover:shadow-blue-500/25 disabled:opacity-50 disabled:cursor-not-allowed h-12"
+                      >
+                        {isSubmitting ? (
+                          <motion.div className="flex items-center justify-center">
                             <motion.div
                               animate={{ rotate: 360 }}
                               transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                              className="w-5 h-5 border-2 border-neon-green border-t-transparent rounded-full"
+                              className="w-5 h-5 border-2 border-white border-t-transparent rounded-full mr-2"
                             />
-                          ) : (
-                            <>
-                              <Send className="w-4 h-4 mr-2" />
-                              ./send_message --execute
-                            </>
-                          )}
-                        </Button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
+                            <span>Sending Message...</span>
+                          </motion.div>
+                        ) : (
+                          <div className="flex items-center justify-center">
+                            <Send className="w-5 h-5 mr-2" />
+                            <span>Send Message</span>
+                          </div>
+                        )}
+                      </Button>
+                    </motion.div>
+                  </form>
+                </motion.div>
               </motion.div>
               
               {/* Contact Info & Social Links */}
