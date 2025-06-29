@@ -43,7 +43,7 @@ export default function Testimonials() {
           >
             <motion.h2
               variants={fadeInUp}
-              className="font-orbitron text-4xl font-bold text-neon-green glow-text mb-4"
+              className="font-orbitron text-4xl font-bold text-white mb-4"
             >
               ./client_testimonials
             </motion.h2>

@@ -9,7 +9,7 @@ interface SEOHeadProps {
 }
 
 export default function SEOHead({
-  title = "Yubraj Kurmi - Full Stack Developer | React, Next.js, Python Expert",
+  title = "Yubraj Kurmi - Full Stack Developer Portfolio",
   description = "Experienced Full Stack Developer with 2+ years building responsive web & mobile applications. Specializing in React, Next.js, Python, React Native. Available for hire - immediate start possible.",
   keywords = "full stack developer, react developer, next.js developer, python developer, mobile app developer, react native, web development, freelance developer, nepal developer, remote developer, hire developer",
   ogImage = "/og-image.jpg",

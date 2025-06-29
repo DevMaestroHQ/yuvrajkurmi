@@ -10,7 +10,7 @@ import { useTypewriter } from "@/hooks/use-typewriter";
 import { fadeInUp, staggerChildren } from "@/lib/animations";
 
 export default function Home() {
-  const { displayText, isComplete } = useTypewriter("Initializing Portfolio... Hello, I'm Yubraj Kurmi", 80);
+  const { displayText, isComplete } = useTypewriter("Initializing Portfolio... Hello, I'm Yubraj Kurmi", 30);
 
   return (
     <>

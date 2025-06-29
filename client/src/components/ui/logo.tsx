@@ -24,10 +24,10 @@ export default function Logo({ size = "md", showText = true, className = "" }: L
       whileHover={{ scale: 1.05 }}
       className={`flex items-center space-x-3 ${className}`}
     >
-      {/* Logo SVG */}
+      {/* Modern Logo SVG */}
       <motion.div
-        whileHover={{ rotate: 360 }}
-        transition={{ duration: 0.8 }}
+        whileHover={{ rotate: 180 }}
+        transition={{ duration: 0.6 }}
         className={`${sizeClasses[size]} relative`}
       >
         <svg
@@ -36,100 +36,44 @@ export default function Logo({ size = "md", showText = true, className = "" }: L
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          {/* Outer ring with gradient */}
+          {/* Clean circular border */}
           <circle
             cx="50"
             cy="50"
-            r="45"
-            stroke="url(#gradient1)"
+            r="40"
+            stroke="#00ff7f"
             strokeWidth="3"
             fill="none"
-            className="animate-pulse-glow"
           />
           
-          {/* Inner hexagon */}
-          <polygon
-            points="50,15 75,30 75,60 50,75 25,60 25,30"
-            stroke="url(#gradient2)"
-            strokeWidth="2"
-            fill="url(#gradient3)"
-            opacity="0.8"
-          />
-          
-          {/* Central Y */}
+          {/* Y letter - clean design */}
           <path
-            d="M35 35 L50 50 L65 35 M50 50 L50 65"
-            stroke="#06d6a0"
-            strokeWidth="4"
+            d="M30 25 L50 45 L70 25 M50 45 L50 75"
+            stroke="#00ff7f"
+            strokeWidth="5"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="drop-shadow-[0_0_10px_rgba(6,214,160,0.8)]"
           />
           
-          {/* Central K */}
-          <path
-            d="M70 35 L70 65 M70 50 L85 35 M70 50 L85 65"
-            stroke="#3b82f6"
-            strokeWidth="3"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="drop-shadow-[0_0_10px_rgba(59,130,246,0.8)]"
-          />
-          
-          {/* Gradient definitions */}
-          <defs>
-            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#06d6a0" />
-              <stop offset="50%" stopColor="#3b82f6" />
-              <stop offset="100%" stopColor="#8b5cf6" />
-            </linearGradient>
-            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#06d6a0" />
-              <stop offset="100%" stopColor="#3b82f6" />
-            </linearGradient>
-            <radialGradient id="gradient3" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor="rgba(6,214,160,0.1)" />
-              <stop offset="100%" stopColor="rgba(59,130,246,0.1)" />
-            </radialGradient>
-          </defs>
-          
-          {/* Rotating dots */}
-          <motion.circle
-            cx="50"
-            cy="10"
-            r="2"
-            fill="#06d6a0"
-            animate={{ rotate: 360 }}
-            style={{ transformOrigin: "50px 50px" }}
-            transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
-          />
-          <motion.circle
-            cx="90"
-            cy="50"
-            r="1.5"
-            fill="#3b82f6"
-            animate={{ rotate: -360 }}
-            style={{ transformOrigin: "50px 50px" }}
-            transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
+          {/* Clean accent dot */}
+          <circle
+            cx="75"
+            cy="25"
+            r="3"
+            fill="#00bcd4"
           />
         </svg>
       </motion.div>
 
-      {/* Logo Text */}
+      {/* Clear Logo Text */}
       {showText && (
         <div className="font-orbitron font-bold">
-          <motion.span
-            className={`${textSizeClasses[size]} text-neon-green glow-text`}
-            whileHover={{ textShadow: "0 0 20px currentColor" }}
-          >
-            YK
-          </motion.span>
-          <motion.span
-            className={`${textSizeClasses[size]} text-cyber-blue`}
-            whileHover={{ textShadow: "0 0 20px currentColor" }}
-          >
-            _DEV
-          </motion.span>
+          <span className={`${textSizeClasses[size]} text-white`}>
+            YUBRAJ KURMI
+          </span>
+          <div className="text-sm text-gray-300 font-mono font-normal">
+            Full Stack Developer
+          </div>
         </div>
       )}
     </motion.div>
