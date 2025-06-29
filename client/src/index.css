@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap');
+/* Removed external Google Fonts dependency - using system fonts */
 
 @tailwind base;
 @tailwind components;
@@ -74,7 +74,7 @@
 
 /* Base styling improvements */
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
   background: var(--dark-bg);
   color: hsl(0, 0%, 95%);
   line-height: 1.6;
@@ -130,15 +130,15 @@ body {
   }
 }
 
-/* Enhanced typography */
+/* Enhanced typography with system fonts */
 .font-orbitron {
-  font-family: 'Orbitron', monospace;
+  font-family: 'Courier New', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
   font-weight: 700;
   letter-spacing: 0.05em;
 }
 
 .font-mono {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
 }
 
 /* Improved readability classes */
