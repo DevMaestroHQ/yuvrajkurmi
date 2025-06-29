@@ -29,7 +29,7 @@ export default function ProjectCard({
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       whileHover={{ y: -5 }}
-      className="bg-dark-card/50 backdrop-blur-sm rounded-lg border border-cyber overflow-hidden hover-glow transition-all duration-300 group"
+      className="professional-card overflow-hidden group"
     >
       <div className="p-6">
         <div className="flex items-center justify-between mb-4">

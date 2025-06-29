@@ -13,7 +13,7 @@ export default function CallToAction() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-dark-card/50 backdrop-blur-sm p-8 md:p-12 rounded-lg border border-cyber text-center"
+            className="professional-card p-8 md:p-12 text-center"
           >
             <h2 className="font-orbitron text-3xl md:text-4xl font-bold text-neon-green glow-text mb-4">
               Let's Build Your Next Enterprise Solution
@@ -26,7 +26,7 @@ export default function CallToAction() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link href="/contact">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button className="cyber-border bg-gradient-to-r from-green-500/10 to-blue-500/10 hover-glow font-mono text-neon-green px-8 py-3">
+                  <Button className="btn-primary font-mono px-8 py-3">
                     <MessageSquare className="w-5 h-5 mr-2" />
                     ./start_conversation
                   </Button>

@@ -32,8 +32,8 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 w-full z-40 transition-all duration-300 ${
-        scrolled ? "bg-dark-bg/95 backdrop-blur-md" : "bg-dark-bg/80 backdrop-blur-sm"
-      } border-b border-cyber`}
+        scrolled ? "glass-card" : "bg-dark-bg/60 backdrop-blur-sm"
+      } border-b border-white/10`}
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">

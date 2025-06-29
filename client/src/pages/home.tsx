@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <SEOHead />
-      <section className="min-h-screen flex items-center justify-center relative particle-bg pt-20">
+      <section className="min-h-screen flex items-center justify-center relative particle-bg pt-20 section-spacing">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             variants={staggerChildren}
@@ -23,31 +23,36 @@ export default function Home() {
             animate="animate"
             className="max-w-4xl mx-auto"
           >
-            <TerminalWindow>
-              <div className="text-neon-green mb-2">$ cat introduction.txt</div>
-              <div className="text-readable mb-4">
-                <div className="typing-animation min-h-[1.5rem]">
+            <div className="professional-card p-8 mb-8">
+              <div className="text-neon-green mb-3 font-mono text-sm">$ cat introduction.txt</div>
+              <div className="text-readable-xl mb-6">
+                <div className="typing-animation min-h-[2rem]">
                   <span className={isComplete ? "terminal-cursor" : ""}>
                     {displayText}
                   </span>
                 </div>
               </div>
-              <div className="text-cyber-blue mb-2">$ echo $PROFESSION</div>
-              <div className="text-readable mb-4 text-lg font-medium">Senior Full Stack Developer | 5+ Years Experience | React Expert</div>
-              <div className="text-neon-green mb-2">$ ls skills/</div>
-              <div className="text-readable mb-4 text-base">
-                <span className="text-blue-400">react/</span>&nbsp;&nbsp;
-                <span className="text-green-400">next.js/</span>&nbsp;&nbsp;
-                <span className="text-yellow-400">typescript/</span>&nbsp;&nbsp;
-                <span className="text-purple-400">node.js/</span>&nbsp;&nbsp;
-                <span className="text-pink-400">aws/</span>&nbsp;&nbsp;
-                <span className="text-cyan-400">docker/</span>
+              <div className="text-cyber-blue mb-3 font-mono text-sm">$ echo $PROFESSION</div>
+              <div className="text-readable-xl mb-6 font-bold gradient-text">Senior Full Stack Developer | 5+ Years Experience | React Expert</div>
+              <div className="text-neon-green mb-3 font-mono text-sm">$ ls skills/</div>
+              <div className="text-readable mb-6 text-base flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full border border-blue-500/30">react</span>
+                <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full border border-green-500/30">next.js</span>
+                <span className="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full border border-yellow-500/30">typescript</span>
+                <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30">node.js</span>
+                <span className="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full border border-pink-500/30">aws</span>
+                <span className="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full border border-cyan-500/30">docker</span>
               </div>
-              <div className="text-neon-green mb-2">$ echo $STATUS</div>
-              <div className="text-readable text-base font-medium">
-                <span className="text-green-400">AVAILABLE_FOR_HIRE</span> | <span className="text-blue-400">REMOTE_READY</span> | <span className="text-purple-400">IMMEDIATE_START</span>
+              <div className="text-neon-green mb-3 font-mono text-sm">$ echo $STATUS</div>
+              <div className="text-readable-lg font-semibold flex flex-wrap gap-4">
+                <span className="text-green-400 flex items-center">
+                  <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
+                  AVAILABLE_FOR_HIRE
+                </span>
+                <span className="text-blue-400">REMOTE_READY</span>
+                <span className="text-purple-400">IMMEDIATE_START</span>
               </div>
-            </TerminalWindow>
+            </div>
             
             <motion.div
               variants={fadeInUp}

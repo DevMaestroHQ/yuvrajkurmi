@@ -26,7 +26,7 @@ export default function TestimonialCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay }}
-      className="bg-dark-card/50 backdrop-blur-sm p-6 rounded-lg border border-cyber hover:border-neon-green/50 transition-all duration-300"
+      className="professional-card p-6 group"
     >
       <div className="flex items-start justify-between mb-4">
         <Quote className="w-8 h-8 text-neon-green opacity-50" />
