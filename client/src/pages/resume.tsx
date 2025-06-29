@@ -7,24 +7,24 @@ import { fadeInUp, staggerChildren } from "@/lib/animations";
 export default function Resume() {
   const skills = {
     technical: [
-      "HTML5, CSS3, JavaScript",
-      "React, Next.js",
-      "Python (Tkinter, Streamlit)",
-      "Tailwind CSS",
-      "MongoDB",
-      "Git, GitHub",
-      "Visual Studio Code",
-      "Figma"
+      "React, TypeScript, JavaScript",
+      "Node.js, Express.js",
+      "AWS, Docker, Kubernetes",
+      "PostgreSQL, MongoDB, Redis",
+      "GraphQL, REST APIs",
+      "CI/CD, DevOps, Git",
+      "Next.js, Tailwind CSS",
+      "Performance Optimization"
     ],
     soft: [
-      "Problem Solving",
-      "Team Collaboration",
-      "Communication",
-      "Adaptability",
-      "Time Management",
-      "Creative Thinking",
-      "Attention to Detail",
-      "Continuous Learning"
+      "Technical Leadership",
+      "System Architecture",
+      "Code Review & Mentoring",
+      "Agile/Scrum Methodologies",
+      "Cross-functional Collaboration",
+      "Problem Solving & Analysis",
+      "Project Management",
+      "Client Communication"
     ]
   };
 

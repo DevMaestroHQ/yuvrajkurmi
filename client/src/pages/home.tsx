@@ -33,14 +33,15 @@ export default function Home() {
                 </div>
               </div>
               <div className="text-cyber-blue mb-2">$ echo $PROFESSION</div>
-              <div className="text-readable mb-4 text-lg font-medium">Full Stack Developer | React | Python | Firebase</div>
+              <div className="text-readable mb-4 text-lg font-medium">Senior Full Stack Developer | 5+ Years Experience | React Expert</div>
               <div className="text-neon-green mb-2">$ ls skills/</div>
               <div className="text-readable mb-4 text-base">
                 <span className="text-blue-400">react/</span>&nbsp;&nbsp;
                 <span className="text-green-400">next.js/</span>&nbsp;&nbsp;
-                <span className="text-yellow-400">python/</span>&nbsp;&nbsp;
-                <span className="text-purple-400">javascript/</span>&nbsp;&nbsp;
-                <span className="text-pink-400">mobile-dev/</span>
+                <span className="text-yellow-400">typescript/</span>&nbsp;&nbsp;
+                <span className="text-purple-400">node.js/</span>&nbsp;&nbsp;
+                <span className="text-pink-400">aws/</span>&nbsp;&nbsp;
+                <span className="text-cyan-400">docker/</span>
               </div>
               <div className="text-neon-green mb-2">$ echo $STATUS</div>
               <div className="text-readable text-base font-medium">

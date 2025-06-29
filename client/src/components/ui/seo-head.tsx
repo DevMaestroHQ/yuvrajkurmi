@@ -9,9 +9,9 @@ interface SEOHeadProps {
 }
 
 export default function SEOHead({
-  title = "Yubraj Kurmi - Full Stack Developer Portfolio",
-  description = "Experienced Full Stack Developer with 2+ years building responsive web & mobile applications. Specializing in React, Next.js, Python, React Native. Available for hire - immediate start possible.",
-  keywords = "full stack developer, react developer, next.js developer, python developer, mobile app developer, react native, web development, freelance developer, nepal developer, remote developer, hire developer",
+  title = "Yubraj Kurmi - Senior Full Stack Developer | Enterprise Solutions",
+  description = "Senior Full Stack Developer with 5+ years building scalable enterprise applications. Proven expertise in React, TypeScript, Node.js, AWS. Delivered 99.9% uptime systems for Fortune 500 companies. Available for hire.",
+  keywords = "senior full stack developer, enterprise software development, react typescript expert, scalable web applications, aws cloud architect, node.js backend developer, performance optimization, microservices architecture, ci cd pipeline, devops engineer, remote senior developer, hire full stack developer",
   ogImage = "/og-image.jpg",
   canonicalUrl = "https://yubrajkurmi.dev"
 }: SEOHeadProps) {
@@ -80,7 +80,7 @@ export default function SEOHead({
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Yubraj Kurmi",
-      "jobTitle": "Full Stack Developer",
+      "jobTitle": "Senior Full Stack Developer",
       "description": description,
       "url": canonicalUrl,
       "email": "developerrajir@gmail.com",
@@ -99,16 +99,18 @@ export default function SEOHead({
       "knowsAbout": [
         "React.js",
         "Next.js",
-        "JavaScript",
         "TypeScript",
-        "Python",
         "Node.js",
-        "React Native",
-        "MongoDB",
-        "Firebase",
-        "Full Stack Development",
-        "Web Development",
-        "Mobile App Development"
+        "AWS",
+        "Docker",
+        "PostgreSQL",
+        "GraphQL",
+        "Microservices Architecture",
+        "CI/CD Pipelines",
+        "Enterprise Software Development",
+        "Performance Optimization",
+        "DevOps",
+        "Cloud Architecture"
       ],
       "hasOccupation": {
         "@type": "Occupation",

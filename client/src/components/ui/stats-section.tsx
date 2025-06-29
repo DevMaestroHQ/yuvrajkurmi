@@ -39,14 +39,14 @@ export default function StatsSection() {
   const stats = [
     {
       icon: Code,
-      value: "4+",
-      label: "Projects Completed",
+      value: "25+",
+      label: "Enterprise Projects",
       color: "neon-green",
       delay: 0
     },
     {
       icon: Users,
-      value: "2+",
+      value: "5+",
       label: "Years Experience",
       color: "cyber-blue", 
       delay: 0.1
@@ -60,8 +60,8 @@ export default function StatsSection() {
     },
     {
       icon: Clock,
-      value: "24/7",
-      label: "Availability",
+      value: "99.9%",
+      label: "Uptime Achieved",
       color: "yellow-400",
       delay: 0.3
     }

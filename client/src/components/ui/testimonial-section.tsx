@@ -15,28 +15,28 @@ interface Testimonial {
 export default function TestimonialSection() {
   const testimonials: Testimonial[] = [
     {
-      name: "Sarah Johnson",
-      role: "Product Manager",
-      company: "TechFlow Solutions",
-      testimonial: "Yubraj delivered exceptional work on our health platform. His attention to detail and technical expertise in React and Node.js helped us launch on time with zero critical bugs. Highly recommended!",
+      name: "David Martinez",
+      role: "Engineering Director",
+      company: "Healthcare Innovations Inc",
+      testimonial: "Yubraj architected our patient management system handling 50,000+ users. His expertise in React, TypeScript, and AWS reduced our deployment time by 70%. Exceptional technical leadership and delivery.",
       rating: 5,
-      projectType: "Full-Stack Web Application"
+      projectType: "Enterprise Healthcare Platform"
     },
     {
-      name: "Michael Chen",
-      role: "Startup Founder",
-      company: "EduTech Innovations",
-      testimonial: "Working with Yubraj was a game-changer for our educational platform. He understood our vision immediately and delivered a scalable solution using Next.js and MongoDB. Professional and reliable.",
+      name: "Jennifer Liu",
+      role: "VP of Technology",
+      company: "FinTech Solutions",
+      testimonial: "Yubraj built our trading dashboard processing $2M+ daily transactions with zero downtime. His full-stack expertise and security-first approach exceeded all expectations. Would hire again immediately.",
       rating: 5,
-      projectType: "Educational Platform"
+      projectType: "Financial Trading Platform"
     },
     {
-      name: "Priya Sharma",
+      name: "Alex Thompson",
       role: "CTO",
-      company: "AgriConnect",
-      testimonial: "Yubraj's React Native skills helped us build a cross-platform mobile app that farmers love using. His code quality and communication throughout the project were outstanding.",
+      company: "E-Commerce Global",
+      testimonial: "Yubraj transformed our legacy system into a modern React/Node.js platform, increasing conversion rates by 45%. His code quality, testing practices, and scalability solutions are world-class.",
       rating: 5,
-      projectType: "Mobile Application"
+      projectType: "E-Commerce Modernization"
     }
   ];
 

@@ -58,11 +58,25 @@ export default function About() {
       description: "NoSQL database design, aggregation pipelines, and optimization"
     },
     { 
-      name: "Firebase", 
-      level: 82, 
+      name: "AWS", 
+      level: 80, 
       category: "Cloud", 
-      color: "#FFCA28",
-      description: "Authentication, Firestore, Cloud Functions, and hosting"
+      color: "#FF9900",
+      description: "EC2, S3, Lambda, RDS, and serverless architecture"
+    },
+    { 
+      name: "Docker", 
+      level: 78, 
+      category: "DevOps", 
+      color: "#2496ED",
+      description: "Containerization, multi-stage builds, and orchestration"
+    },
+    { 
+      name: "GraphQL", 
+      level: 75, 
+      category: "API", 
+      color: "#E10098",
+      description: "Schema design, resolvers, and efficient data fetching"
     }
   ];
 
