@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Logo from "@/components/ui/logo";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +15,7 @@ export default function Navbar() {
     { href: "/projects", label: "~/projects" },
     { href: "/experience", label: "~/experience" },
     { href: "/contact", label: "~/contact" },
+    { href: "/resume", label: "~/resume" },
   ];
 
   useEffect(() => {
@@ -36,12 +38,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link href="/">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="font-orbitron text-xl font-bold text-neon-green glow-text cursor-pointer"
-            >
-              YK<span className="text-cyber-blue">_</span>DEV
-            </motion.div>
+            <Logo size="md" showText={true} className="cursor-pointer" />
           </Link>
 
           {/* Desktop Navigation */}

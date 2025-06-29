@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Logo from "@/components/ui/logo";
 
 export default function Footer() {
   return (
@@ -10,9 +11,7 @@ export default function Footer() {
     >
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="font-orbitron text-neon-green glow-text mb-4 md:mb-0">
-            YK<span className="text-cyber-blue">_</span>DEV
-          </div>
+          <Logo size="sm" showText={true} className="mb-4 md:mb-0" />
           <div className="font-mono text-sm text-slate-400 text-center md:text-right">
             <div>Built with React, Tailwind CSS & Framer Motion</div>
             <div className="mt-1">© 2024 Yubraj Kurmi. All rights reserved.</div>

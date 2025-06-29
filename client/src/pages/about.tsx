@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Code, GitBranch, Figma } from "lucide-react";
 import { fadeInUp, slideInLeft, slideInRight, staggerChildren } from "@/lib/animations";
+import AchievementBadge from "@/components/ui/achievement-badge";
 
 export default function About() {
   const techSkills = [
@@ -53,11 +54,14 @@ export default function About() {
               <div className="bg-dark-card/50 backdrop-blur-sm p-6 rounded-lg border border-cyber">
                 <h3 className="font-orbitron text-xl text-cyber-blue mb-4">System.out.println("About Me");</h3>
                 <p className="text-slate-300 leading-relaxed mb-4">
-                  A motivated junior developer skilled in React, Next.js, and React Native, Python, JavaScript actively building
-                  responsive web and mobile applications, including air ticketing platforms and farming solutions.
+                  Experienced full-stack developer with 2+ years of hands-on experience building responsive web and mobile applications. 
+                  Specializing in React, Next.js, Python, and React Native with a track record of delivering high-quality solutions 
+                  for health platforms, educational tools, and agricultural applications.
                 </p>
                 <p className="text-slate-300 leading-relaxed">
-                  Eager to grow and deliver user-focused, high-quality code in collaborative environments. Currently pursuing BSc. Computer Science and Information Technology at Bhairahawa Multiple Campus.
+                  Passionate about clean code, user experience, and collaborative development. Currently pursuing BSc. Computer Science 
+                  and Information Technology while actively contributing to real-world projects. Available for full-time opportunities 
+                  and exciting freelance projects.
                 </p>
               </div>
               
@@ -141,6 +145,61 @@ export default function About() {
               </div>
             </motion.div>
           </div>
+          
+          {/* Key Achievements Section */}
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="mt-12"
+          >
+            <h3 className="font-orbitron text-2xl text-cyber-blue mb-8 text-center">Key Achievements</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <AchievementBadge
+                title="Full Stack Projects"
+                description="Successfully delivered 4+ complete web applications including health platforms and educational tools"
+                icon="code"
+                color="neon-green"
+                delay={0}
+              />
+              <AchievementBadge
+                title="Mobile Development"
+                description="Contributed to React Native mobile app for agricultural solutions with team collaboration"
+                icon="users"
+                color="cyber-blue"
+                delay={0.1}
+              />
+              <AchievementBadge
+                title="Modern Tech Stack"
+                description="Proficient in React, Next.js, Python, MongoDB with focus on latest development practices"
+                icon="star"
+                color="neon-purple"
+                delay={0.2}
+              />
+              <AchievementBadge
+                title="Problem Solving"
+                description="Automated web scraping solutions for educational content integration and data processing"
+                icon="target"
+                color="yellow-400"
+                delay={0.3}
+              />
+              <AchievementBadge
+                title="Quality Focus"
+                description="Emphasis on code quality, user experience, and collaborative development workflows"
+                icon="award"
+                color="pink-400"
+                delay={0.4}
+              />
+              <AchievementBadge
+                title="Continuous Learning"
+                description="Currently pursuing BSc. Computer Science while actively developing real-world applications"
+                icon="trophy"
+                color="green-400"
+                delay={0.5}
+              />
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
