@@ -16,27 +16,27 @@ export default function TestimonialSection() {
   const testimonials: Testimonial[] = [
     {
       name: "Sarah Chen",
-      role: "Creative Director",
-      company: "Design Studio Pro",
-      testimonial: "Yubraj brought our wildest design concepts to life with stunning animations and flawless user experiences. His creative problem-solving and attention to detail transformed our entire digital presence.",
+      role: "VP of Engineering",
+      company: "TechCorp Solutions",
+      testimonial: "Yubraj architected and delivered a complex microservices platform that handles 100K+ daily transactions. His expertise in React, Node.js, and AWS helped us scale from startup to enterprise. Outstanding technical leadership and code quality.",
       rating: 5,
-      projectType: "Creative Web Experience"
+      projectType: "Enterprise Platform Development"
     },
     {
       name: "Marcus Rodriguez",
-      role: "Startup Founder",
-      company: "InnovateNow",
-      testimonial: "Working with Yubraj was a game-changer for our startup. He understood our vision perfectly and delivered a platform that not only looks amazing but performs beautifully. Pure magic!",
+      role: "CTO",
+      company: "FinanceFlow Inc",
+      testimonial: "Yubraj built our trading platform handling $2M+ daily volume with 99.99% uptime. His deep understanding of TypeScript, PostgreSQL, and real-time systems was crucial. Delivered on time and exceeded performance requirements.",
       rating: 5,
-      projectType: "Startup MVP Development"
+      projectType: "High-Performance Trading System"
     },
     {
       name: "Lisa Park",
-      role: "Product Manager",
-      company: "TechForward",
-      testimonial: "Yubraj has this incredible ability to turn complex ideas into elegant, user-friendly solutions. His passion for innovation and collaborative spirit made our project an absolute joy to work on.",
+      role: "Director of Engineering",
+      company: "DataAnalytics Pro",
+      testimonial: "Yubraj led the development of our analytics dashboard serving 25K+ enterprise users. His expertise in React, Python, and data visualization delivered a 40% improvement in user engagement. Exceptional problem-solving and team collaboration.",
       rating: 5,
-      projectType: "Product Innovation Platform"
+      projectType: "Enterprise Analytics Platform"
     }
   ];
 
@@ -55,13 +55,13 @@ export default function TestimonialSection() {
               variants={fadeInUp}
               className="font-orbitron text-4xl font-bold text-white mb-4"
             >
-              ./success_stories
+              Client Success Stories
             </motion.h2>
             <motion.p
               variants={fadeInUp}
-              className="text-readable-lg max-w-2xl mx-auto"
+              className="text-readable-lg max-w-2xl mx-auto mb-8"
             >
-              Transforming visions into digital reality, one collaboration at a time
+              Proven track record of delivering enterprise-grade solutions that drive business results
             </motion.p>
             <motion.div
               variants={fadeInUp}

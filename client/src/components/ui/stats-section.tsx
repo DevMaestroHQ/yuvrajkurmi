@@ -18,11 +18,11 @@ function StatItem({ icon: Icon, value, label, color, delay }: StatItemProps) {
       transition={{ duration: 0.6, delay }}
       className="text-center group"
     >
-      <div className={`w-16 h-16 mx-auto mb-4 bg-${color}/20 rounded-full flex items-center justify-center border border-${color}/30 group-hover:border-${color} transition-all duration-300`}>
-        <Icon className={`w-8 h-8 text-${color}`} />
+      <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-green-500/20 to-blue-500/20 rounded-full flex items-center justify-center border border-white/30 group-hover:border-white/50 transition-all duration-300">
+        <Icon className="w-8 h-8 text-white" />
       </div>
       <motion.div
-        className={`text-3xl font-orbitron font-bold text-${color} mb-2`}
+        className="text-3xl font-orbitron font-bold text-white mb-2"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -30,7 +30,7 @@ function StatItem({ icon: Icon, value, label, color, delay }: StatItemProps) {
       >
         {value}
       </motion.div>
-      <div className="text-muted-readable font-mono text-base">{label}</div>
+      <div className="text-readable font-mono text-base">{label}</div>
     </motion.div>
   );
 }
@@ -39,29 +39,29 @@ export default function StatsSection() {
   const stats = [
     {
       icon: Code,
-      value: "50+",
-      label: "Digital Solutions",
+      value: "25+",
+      label: "Enterprise Projects",
       color: "neon-green",
       delay: 0
     },
     {
       icon: Users,
-      value: "∞",
-      label: "Creative Ideas",
+      value: "50K+",
+      label: "Users Served",
       color: "cyber-blue", 
       delay: 0.1
     },
     {
       icon: Award,
-      value: "100%",
-      label: "Passion Driven",
+      value: "99.9%",
+      label: "Uptime Achieved",
       color: "neon-purple",
       delay: 0.2
     },
     {
       icon: Clock,
-      value: "24/7",
-      label: "Innovation Mode",
+      value: "5+",
+      label: "Years Experience",
       color: "yellow-400",
       delay: 0.3
     }
@@ -76,7 +76,7 @@ export default function StatsSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h3 className="font-orbitron text-2xl text-cyber-blue mb-4">./impact_metrics</h3>
+          <h3 className="font-orbitron text-2xl text-white mb-4">Professional Metrics</h3>
           <div className="w-16 h-1 bg-gradient-to-r from-neon-green to-cyber-blue mx-auto"></div>
         </motion.div>
         

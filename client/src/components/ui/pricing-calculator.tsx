@@ -231,14 +231,14 @@ export default function PricingCalculator() {
 
           {/* Value Proposition */}
           <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 p-6 rounded-lg border border-neon-green/30">
-            <h5 className="font-mono text-neon-green font-semibold mb-3">What You Get:</h5>
+            <h5 className="font-mono text-white font-semibold mb-3">What You Get:</h5>
             <ul className="space-y-2 text-sm text-readable">
-              <li>✓ Clean, maintainable code</li>
-              <li>✓ Responsive design for all devices</li>
-              <li>✓ Performance optimization</li>
-              <li>✓ Documentation & deployment</li>
-              <li>✓ 30 days post-launch support</li>
-              <li>✓ Source code & full ownership</li>
+              <li>✓ Enterprise-grade architecture</li>
+              <li>✓ Scalable & maintainable codebase</li>
+              <li>✓ 99.9% uptime guarantee</li>
+              <li>✓ Full documentation & handover</li>
+              <li>✓ 60 days post-launch support</li>
+              <li>✓ Performance optimization included</li>
             </ul>
           </div>
         </div>

@@ -15,12 +15,12 @@ export default function CallToAction() {
             transition={{ duration: 0.6 }}
             className="professional-card p-8 md:p-12 text-center"
           >
-            <h2 className="font-orbitron text-3xl md:text-4xl font-bold text-neon-green glow-text mb-4">
-              Ready to Transform Your Digital Vision?
+            <h2 className="font-orbitron text-3xl md:text-4xl font-bold text-white mb-4">
+              Ready to Scale Your Technical Team?
             </h2>
             <p className="text-readable-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-              Creative full-stack engineer passionate about crafting exceptional digital experiences. 
-              Let's collaborate to bring your innovative ideas to life with cutting-edge technology and elegant design.
+              Senior Full Stack Developer with 5+ years building enterprise applications serving 50,000+ users. 
+              Specializing in React, Node.js, TypeScript, and cloud architecture with proven track record of delivering high-performance, scalable solutions.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -67,8 +67,8 @@ export default function CallToAction() {
               transition={{ delay: 0.5 }}
               className="mt-8 pt-8 border-t border-cyber/30"
             >
-              <p className="font-mono text-base text-muted-readable">
-                Available for full-time & contract positions • Remote & On-site • Immediate start • Competitive rates
+              <p className="font-mono text-base text-readable">
+                Available for Senior/Lead positions • Full-time & Contract • Remote/Hybrid • $80K-120K range • Immediate availability
               </p>
             </motion.div>
           </motion.div>

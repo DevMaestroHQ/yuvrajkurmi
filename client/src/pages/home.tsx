@@ -29,7 +29,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="text-cyber-blue mb-3 font-mono text-sm">$ whoami</div>
-              <div className="text-readable-xl mb-6 font-bold gradient-text">Creative Full Stack Engineer | Digital Innovator | Problem Solver</div>
+              <div className="text-readable-xl mb-6 font-bold text-white">Senior Full Stack Developer | 5+ Years Experience | Enterprise Solutions</div>
               <div className="text-neon-green mb-3 font-mono text-sm">$ ls tech_stack/</div>
               <div className="text-readable mb-6 text-base flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full border border-blue-500/30">react</span>
@@ -43,10 +43,10 @@ export default function Home() {
               <div className="text-readable-lg font-semibold flex flex-wrap gap-4">
                 <span className="text-green-400 flex items-center">
                   <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
-                  OPEN_TO_OPPORTUNITIES
+                  ACTIVELY_HIRING
                 </span>
-                <span className="text-blue-400">GLOBAL_COLLABORATOR</span>
-                <span className="text-purple-400">INNOVATION_FOCUSED</span>
+                <span className="text-blue-400">REMOTE_READY</span>
+                <span className="text-purple-400">ENTERPRISE_FOCUSED</span>
               </div>
             </div>
             

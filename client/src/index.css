@@ -117,25 +117,32 @@ body::before {
 
 /* Improved readability classes */
 .text-readable {
-  color: hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 100%);
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.7;
-  font-weight: 400;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .text-readable-lg {
-  color: hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 100%);
   font-size: 1.125rem;
   line-height: 1.8;
   font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .text-readable-xl {
-  color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 100%);
   font-size: 1.25rem;
   line-height: 1.8;
   font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.text-muted-readable {
+  color: hsl(0, 0%, 85%);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 /* Professional card styles */
@@ -177,6 +184,27 @@ body::before {
   border-color: rgba(0, 255, 127, 0.6);
   background: rgba(0, 255, 127, 0.1);
   box-shadow: 0 0 20px rgba(0, 255, 127, 0.2);
+}
+
+/* Glass card styles for better text visibility */
+.glass-card {
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.08) 0%, 
+    rgba(255, 255, 255, 0.04) 100%);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 2px 16px rgba(0, 255, 127, 0.1);
+}
+
+.glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.1) 0%, 
+    rgba(255, 255, 255, 0.06) 100%);
 }
 
 /* Gradient text effect */

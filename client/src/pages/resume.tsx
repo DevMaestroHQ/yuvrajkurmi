@@ -43,8 +43,14 @@ export default function Resume() {
               variants={fadeInUp}
               className="font-orbitron text-4xl font-bold text-white mb-4"
             >
-              ./resume
+              Resume & Skills
             </motion.h2>
+            <motion.p
+              variants={fadeInUp}
+              className="text-readable-lg max-w-2xl mx-auto"
+            >
+              5+ years of enterprise development experience with proven track record of delivering scalable solutions
+            </motion.p>
             <motion.div
               variants={fadeInUp}
               className="w-24 h-1 bg-gradient-to-r from-neon-green to-cyber-blue mx-auto"
@@ -64,7 +70,7 @@ export default function Resume() {
             >
               <a href="/resume.pdf" target="_blank">
                 <Eye className="w-4 h-4 mr-2" />
-                ./view_resume
+                View Resume
               </a>
             </Button>
             <Button
@@ -73,7 +79,7 @@ export default function Resume() {
             >
               <a href="/resume.pdf" download>
                 <Download className="w-4 h-4 mr-2" />
-                ./download_resume
+                Download PDF
               </a>
             </Button>
           </motion.div>

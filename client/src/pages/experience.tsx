@@ -57,7 +57,7 @@ export default function Experience() {
               variants={fadeInUp}
               className="font-orbitron text-4xl font-bold text-white mb-4"
             >
-              ./experience
+              Professional Experience
             </motion.h2>
             <motion.div
               variants={fadeInUp}

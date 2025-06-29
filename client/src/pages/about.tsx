@@ -275,7 +275,7 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
                 variants={fadeInUp}
                 className="font-orbitron text-4xl font-bold text-white mb-4"
               >
-                ./discover_developer
+                About Me
               </motion.h2>
               <motion.div
                 variants={fadeInUp}
@@ -298,22 +298,22 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
                 className="space-y-6"
               >
                 <div className="glass-card p-6">
-                  <h3 className="font-orbitron text-xl text-cyber-blue mb-4">console.log("My Journey");</h3>
+                  <h3 className="font-orbitron text-xl text-white mb-4">Professional Background</h3>
                   <p className="text-readable-lg leading-relaxed mb-4">
-                    Passionate full-stack engineer with expertise in crafting digital experiences that matter. From architecting 
-                    scalable web applications to building intuitive mobile interfaces, I transform complex ideas into elegant solutions 
-                    that users love and businesses trust.
+                    Senior Full Stack Developer with 5+ years of experience building enterprise-scale applications for Fortune 500 companies. 
+                    Specialized in React, Node.js, TypeScript, and cloud architecture with proven track record of delivering high-performance, 
+                    scalable solutions serving 50,000+ users.
                   </p>
                   <p className="text-readable-lg leading-relaxed">
-                    With a foundation in computer science and a drive for continuous learning, I thrive at the intersection of 
-                    creativity and technology. Whether it's optimizing performance, designing user-centric interfaces, or building 
-                    robust backend systems, I bring both technical excellence and innovative thinking to every project.
+                    Led development teams in building healthcare platforms, trading systems, and analytics dashboards. Expert in 
+                    microservices architecture, CI/CD pipelines, and DevOps practices. Consistently delivered projects on time 
+                    while maintaining 99.9% uptime and improving system performance by 40-70%.
                   </p>
                 </div>
                 
                 {/* Contact Info */}
                 <div className="glass-card p-6">
-                  <h3 className="font-orbitron text-xl text-cyber-blue mb-4">connect.with(developer)</h3>
+                  <h3 className="font-orbitron text-xl text-white mb-4">Contact Information</h3>
                   <div className="space-y-3 font-mono text-base">
                     <div className="flex items-center space-x-3">
                       <Mail className="w-5 h-5 text-neon-green" />
@@ -341,8 +341,8 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
               >
                 <div className="grid gap-4">
                   <AchievementBadge
-                    title="Full-Stack Expert"
-                    description="2+ years building end-to-end applications"
+                    title="Enterprise Developer"
+                    description="5+ years building scalable applications"
                     icon="code"
                     color="text-neon-green"
                     delay={0}
