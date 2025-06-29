@@ -84,6 +84,52 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Enhanced Responsive Design */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .glass-card {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .font-orbitron {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+  }
+  
+  .text-readable {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 /* Enhanced typography */
 .font-orbitron {
   font-family: 'Orbitron', monospace;

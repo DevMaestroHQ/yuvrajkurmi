@@ -36,31 +36,41 @@ export default function Logo({ size = "md", showText = true, className = "" }: L
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          {/* Clean circular border */}
+          {/* Black circular border */}
           <circle
             cx="50"
             cy="50"
             r="40"
-            stroke="#00ff7f"
-            strokeWidth="3"
-            fill="none"
+            stroke="#000000"
+            strokeWidth="4"
+            fill="#ffffff"
           />
           
-          {/* Y letter - clean design */}
+          {/* Y letter - black design */}
           <path
             d="M30 25 L50 45 L70 25 M50 45 L50 75"
-            stroke="#00ff7f"
-            strokeWidth="5"
+            stroke="#000000"
+            strokeWidth="6"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           
-          {/* Clean accent dot */}
-          <circle
-            cx="75"
-            cy="25"
-            r="3"
-            fill="#00bcd4"
+          {/* K letter design */}
+          <path
+            d="M20 20 L20 80 M20 50 L35 35 M20 50 L35 65"
+            stroke="#000000"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          
+          {/* Professional accent */}
+          <rect
+            x="75"
+            y="75"
+            width="8"
+            height="8"
+            fill="#000000"
           />
         </svg>
       </motion.div>
@@ -68,10 +78,10 @@ export default function Logo({ size = "md", showText = true, className = "" }: L
       {/* Clear Logo Text */}
       {showText && (
         <div className="font-orbitron font-bold">
-          <span className={`${textSizeClasses[size]} text-white`}>
+          <span className={`${textSizeClasses[size]} text-black font-bold`}>
             YUBRAJ KURMI
           </span>
-          <div className="text-sm text-gray-300 font-mono font-normal">
+          <div className="text-sm text-gray-700 font-mono font-medium">
             Full Stack Developer
           </div>
         </div>

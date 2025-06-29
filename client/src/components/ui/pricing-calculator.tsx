@@ -23,7 +23,7 @@ export default function PricingCalculator() {
       id: "webapp",
       name: "Web Application",
       description: "Full-stack web app with modern UI",
-      baseRate: 2500,
+      baseRate: 332500, // NPR equivalent of $2500
       complexity: 1,
       icon: DollarSign
     },
@@ -31,7 +31,7 @@ export default function PricingCalculator() {
       id: "mobile",
       name: "Mobile App",
       description: "React Native mobile application",
-      baseRate: 3500,
+      baseRate: 465500, // NPR equivalent of $3500
       complexity: 1.3,
       icon: Users
     },
@@ -39,7 +39,7 @@ export default function PricingCalculator() {
       id: "ecommerce",
       name: "E-commerce Platform",
       description: "Complete online store solution",
-      baseRate: 4500,
+      baseRate: 598500, // NPR equivalent of $4500
       complexity: 1.5,
       icon: Zap
     },
@@ -47,7 +47,7 @@ export default function PricingCalculator() {
       id: "api",
       name: "API Development",
       description: "Backend API with documentation",
-      baseRate: 2000,
+      baseRate: 266000, // NPR equivalent of $2000
       complexity: 0.8,
       icon: Clock
     }
@@ -116,7 +116,7 @@ export default function PricingCalculator() {
                     <Icon className="w-6 h-6 text-neon-green mb-2" />
                     <h5 className="font-mono text-sm font-semibold mb-1">{type.name}</h5>
                     <p className="text-xs text-readable">{type.description}</p>
-                    <p className="text-xs text-neon-green mt-2">From ${type.baseRate.toLocaleString()}</p>
+                    <p className="text-xs text-neon-green mt-2">From NPR {type.baseRate.toLocaleString()}</p>
                   </motion.div>
                 );
               })}
@@ -181,13 +181,13 @@ export default function PricingCalculator() {
               <div className="space-y-3 mb-6">
                 <div className="flex justify-between">
                   <span className="text-readable">Base Project</span>
-                  <span className="text-neon-green">${basePrice.toLocaleString()}</span>
+                  <span className="text-neon-green">NPR {basePrice.toLocaleString()}</span>
                 </div>
                 
                 {features.length > 0 && (
                   <div className="flex justify-between">
                     <span className="text-readable">Additional Features</span>
-                    <span className="text-neon-green">+${featuresCost.toLocaleString()}</span>
+                    <span className="text-neon-green">+NPR {featuresCost.toLocaleString()}</span>
                   </div>
                 )}
                 
@@ -204,7 +204,7 @@ export default function PricingCalculator() {
                   <div className="flex justify-between items-center">
                     <span className="font-mono text-lg text-cyber-blue">Total Estimate</span>
                     <span className="font-orbitron text-2xl text-neon-green glow-text">
-                      ${totalPrice.toLocaleString()}
+                      NPR {totalPrice.toLocaleString()}
                     </span>
                   </div>
                 </div>
@@ -215,7 +215,7 @@ export default function PricingCalculator() {
                 onClick={() => {
                   const subject = encodeURIComponent(`Project Inquiry - ${selectedProject?.name}`);
                   const body = encodeURIComponent(
-                    `Hi Yubraj,\n\nI'm interested in discussing a ${selectedProject?.name} project.\n\nProject Details:\n- Timeline: ${timeline} weeks\n- Features: ${features.map(f => additionalFeatures.find(af => af.id === f)?.name).join(', ')}\n- Estimated Budget: $${totalPrice.toLocaleString()}\n\nLet's discuss the details!\n\nBest regards`
+                    `Hi Yubraj,\n\nI'm interested in discussing a ${selectedProject?.name} project.\n\nProject Details:\n- Timeline: ${timeline} weeks\n- Features: ${features.map(f => additionalFeatures.find(af => af.id === f)?.name).join(', ')}\n- Estimated Budget: NPR ${totalPrice.toLocaleString()}\n\nLet's discuss the details!\n\nBest regards`
                   );
                   window.location.href = `mailto:developerrajir@gmail.com?subject=${subject}&body=${body}`;
                 }}
