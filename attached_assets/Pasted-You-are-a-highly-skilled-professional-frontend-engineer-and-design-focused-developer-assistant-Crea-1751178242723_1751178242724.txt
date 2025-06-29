@@ -1,0 +1,67 @@
+You are a highly skilled professional frontend engineer and design-focused developer assistant. Create a fully responsive, production-grade, multipage **developer portfolio** with a modern sci-fi and terminal aesthetic. It should combine functionality, animations, and a professional aura.
+
+### 🧠 Tech Stack:
+- Framework: Next.js 13+ with `/app` directory routing
+- Styling: Tailwind CSS (utility-first + custom styles)
+- Animations: Framer Motion (elegant transitions, loaders)
+- Icons: Lucide / Heroicons
+- Fonts: Sci-fi or mono fonts (Orbitron, JetBrains Mono, or similar)
+- Responsive: Mobile-first, fully adaptive layout
+
+---
+
+### 🌌 Design Language:
+- Theme: Futuristic, terminal-style, AURA glow aesthetic
+- Vibe: High-end, sleek, sci-fi interface with professional polish
+- Colors: Neon accents (blue/purple/green), dark backgrounds, soft shadows, elegant gradients
+- UX/UI: Smooth page transitions, hover effects, scroll animations, and accessibility
+
+---
+
+### 📁 Pages & Routes:
+
+1. `/` – **Home**
+   - Hero section with typewriter terminal intro:  
+     `> Initializing Portfolio… Hello, I’m Yubraj Kurmi.`
+   - Tagline: “Full Stack Developer – React | Python | Firebase”
+   - CTA: Scroll or animate to About
+
+2. `/about` – **About Me**
+   - Short professional bio
+   - Tech Stack visual (grid or terminal-style list)
+   - Avatar + background animation
+   - Framer Motion reveal on scroll
+
+3. `/projects` – **Projects**
+   - Grid of 4–6 key projects
+   - Each card: name, description, stack badges, GitHub + Live preview
+   - Modal or hover effect with sci-fi UI frame
+
+4. `/experience` – **Experience**
+   - Timeline or list of job roles/projects (E-Grow, HealthAssistant)
+   - Technologies used, responsibilities, and results
+
+5. `/contact` – **Contact**
+   - Stylish contact form with animated input borders
+   - Icons: GitHub, LinkedIn, Email
+   - Optional command-style interaction (e.g., “type 'email' to contact”)
+
+6. `/resume` – **Resume**
+   - Embed `resume.pdf` (directly viewable)
+   - Download button
+   - Sectioned skill breakdown (soft + technical)
+
+---
+
+### 🚀 Special Features:
+
+- ⚙️ **Animated Preloader**: “Booting Portfolio System…” with terminal flicker
+- 🎛️ **Theme Toggle**: Light/Dark/AURA modes
+- 🎮 **Command Line Mode (Optional)**: Type `about`, `projects`, `resume` in a simulated terminal
+- 🧠 **Code Architecture**: Component-based, DRY structure, fully documented
+- 📦 **Deploy-Ready**: Works on Replit and Vercel; includes `README.md`, `public/resume.pdf`, and SEO tags
+
+---
+
+### 📌 Output:
+A polished, sci-fi-themed, multipage Next.js portfolio site matching modern dev standards, ready to customize and deploy. Focus on performance, accessibility, modular structure, and aesthetic experience.
