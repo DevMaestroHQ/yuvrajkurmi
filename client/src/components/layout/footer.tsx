@@ -13,8 +13,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <Logo size="sm" showText={true} className="mb-4 md:mb-0" />
           <div className="font-mono text-sm text-slate-400 text-center md:text-right">
-            <div>Built with React, Tailwind CSS & Framer Motion</div>
-            <div className="mt-1">© 2024 Yubraj Kurmi. All rights reserved.</div>
+            <div>Crafted with passion using React & modern web technologies</div>
+            <div className="mt-1">© 2025 Yubraj Kurmi. Building the future, one line at a time.</div>
           </div>
         </div>
       </div>

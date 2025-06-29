@@ -123,7 +123,7 @@ export default function Contact() {
                 variants={fadeInUp}
                 className="font-orbitron text-4xl font-bold text-white mb-4"
               >
-                ./contact
+                ./start_conversation
               </motion.h2>
               <motion.div
                 variants={fadeInUp}

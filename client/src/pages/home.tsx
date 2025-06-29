@@ -22,31 +22,31 @@ export default function Home() {
             className="max-w-4xl mx-auto"
           >
             <div className="professional-card p-8 mb-8">
-              <div className="text-neon-green mb-3 font-mono text-sm">$ cat introduction.txt</div>
+              <div className="text-neon-green mb-3 font-mono text-sm">$ cat profile.md</div>
               <div className="text-readable-xl mb-6">
                 <div className="min-h-[2rem]">
-                  <span>Initializing Portfolio... Hello, I'm Yubraj Kurmi</span>
+                  <span>Welcome to my digital workspace. I'm Yubraj Kurmi</span>
                 </div>
               </div>
-              <div className="text-cyber-blue mb-3 font-mono text-sm">$ echo $PROFESSION</div>
-              <div className="text-readable-xl mb-6 font-bold gradient-text">Senior Full Stack Developer | 5+ Years Experience | React Expert</div>
-              <div className="text-neon-green mb-3 font-mono text-sm">$ ls skills/</div>
+              <div className="text-cyber-blue mb-3 font-mono text-sm">$ whoami</div>
+              <div className="text-readable-xl mb-6 font-bold gradient-text">Creative Full Stack Engineer | Digital Innovator | Problem Solver</div>
+              <div className="text-neon-green mb-3 font-mono text-sm">$ ls tech_stack/</div>
               <div className="text-readable mb-6 text-base flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full border border-blue-500/30">react</span>
-                <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full border border-green-500/30">next.js</span>
+                <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full border border-green-500/30">vue.js</span>
                 <span className="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full border border-yellow-500/30">typescript</span>
-                <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30">node.js</span>
-                <span className="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full border border-pink-500/30">aws</span>
-                <span className="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full border border-cyan-500/30">docker</span>
+                <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30">python</span>
+                <span className="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full border border-pink-500/30">go</span>
+                <span className="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full border border-cyan-500/30">kubernetes</span>
               </div>
-              <div className="text-neon-green mb-3 font-mono text-sm">$ echo $STATUS</div>
+              <div className="text-neon-green mb-3 font-mono text-sm">$ cat status.json</div>
               <div className="text-readable-lg font-semibold flex flex-wrap gap-4">
                 <span className="text-green-400 flex items-center">
                   <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
-                  AVAILABLE_FOR_HIRE
+                  OPEN_TO_OPPORTUNITIES
                 </span>
-                <span className="text-blue-400">REMOTE_READY</span>
-                <span className="text-purple-400">IMMEDIATE_START</span>
+                <span className="text-blue-400">GLOBAL_COLLABORATOR</span>
+                <span className="text-purple-400">INNOVATION_FOCUSED</span>
               </div>
             </div>
             
@@ -60,7 +60,7 @@ export default function Home() {
                   whileTap={{ scale: 0.95 }}
                   className="cyber-border px-8 py-3 rounded-lg font-mono hover-glow transition-all duration-300 bg-gradient-to-r from-green-500/10 to-blue-500/10 cursor-pointer"
                 >
-                  <span className="text-neon-green">./explore_portfolio</span>
+                  <span className="text-neon-green">./discover_work</span>
                 </motion.div>
               </Link>
               <Link href="/contact">
@@ -69,7 +69,7 @@ export default function Home() {
                   whileTap={{ scale: 0.95 }}
                   className="border border-cyber px-8 py-3 rounded-lg font-mono hover:border-neon-green hover:text-neon-green transition-all duration-300 cursor-pointer"
                 >
-                  <span>./get_in_touch</span>
+                  <span>./lets_collaborate</span>
                 </motion.div>
               </Link>
             </motion.div>

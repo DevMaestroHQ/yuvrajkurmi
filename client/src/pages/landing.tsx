@@ -18,18 +18,18 @@ export default function Landing() {
   const features = [
     {
       icon: Code,
-      title: "Full Stack Mastery",
-      description: "Expert in modern web technologies and cloud architecture"
+      title: "Technical Excellence",
+      description: "Crafting beautiful, scalable solutions with cutting-edge technologies"
     },
     {
       icon: Zap,
-      title: "High Performance",
-      description: "Building scalable applications with 99.9% uptime"
+      title: "Lightning Fast",
+      description: "Optimized applications that deliver exceptional user experiences"
     },
     {
       icon: Globe,
-      title: "Enterprise Ready",
-      description: "Delivering solutions for Fortune 500 companies"
+      title: "Global Impact",
+      description: "Building digital products that reach millions of users worldwide"
     }
   ];
 
@@ -119,7 +119,7 @@ export default function Landing() {
               YUBRAJ KURMI
             </h1>
             <div className="text-xl md:text-2xl text-cyber-blue font-mono mb-6">
-              Welcome to the future of development...
+              Transforming ideas into digital reality...
             </div>
           </motion.div>
 
@@ -163,7 +163,7 @@ export default function Landing() {
                 className="space-y-6"
               >
                 <div className="text-xl text-slate-300 mb-8">
-                  Ready to build something extraordinary?
+                  Let's create something amazing together
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -185,9 +185,9 @@ export default function Landing() {
 
                 <div className="text-sm text-slate-500 mt-8">
                   <div className="flex justify-center space-x-8">
-                    <div>🚀 25+ Projects Delivered</div>
-                    <div>⭐ 99.9% Uptime</div>
-                    <div>🏆 5+ Years Experience</div>
+                    <div>🎯 50+ Projects Launched</div>
+                    <div>⚡ Performance Optimized</div>
+                    <div>🌟 Award-Winning Developer</div>
                   </div>
                 </div>
               </motion.div>

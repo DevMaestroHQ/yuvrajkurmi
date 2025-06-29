@@ -275,7 +275,7 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
                 variants={fadeInUp}
                 className="font-orbitron text-4xl font-bold text-white mb-4"
               >
-                ./about_me
+                ./discover_developer
               </motion.h2>
               <motion.div
                 variants={fadeInUp}
@@ -298,22 +298,22 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
                 className="space-y-6"
               >
                 <div className="glass-card p-6">
-                  <h3 className="font-orbitron text-xl text-cyber-blue mb-4">System.out.println("About Me");</h3>
+                  <h3 className="font-orbitron text-xl text-cyber-blue mb-4">console.log("My Journey");</h3>
                   <p className="text-readable-lg leading-relaxed mb-4">
-                    Experienced full-stack developer with 2+ years of hands-on experience building responsive web and mobile applications. 
-                    Specializing in React, Next.js, Python, and React Native with a track record of delivering high-quality solutions 
-                    for health platforms, educational tools, and agricultural applications.
+                    Passionate full-stack engineer with expertise in crafting digital experiences that matter. From architecting 
+                    scalable web applications to building intuitive mobile interfaces, I transform complex ideas into elegant solutions 
+                    that users love and businesses trust.
                   </p>
                   <p className="text-readable-lg leading-relaxed">
-                    Passionate about clean code, user experience, and collaborative development. Currently pursuing BSc. Computer Science 
-                    and Information Technology while actively contributing to real-world projects. Available for full-time opportunities 
-                    and exciting freelance projects.
+                    With a foundation in computer science and a drive for continuous learning, I thrive at the intersection of 
+                    creativity and technology. Whether it's optimizing performance, designing user-centric interfaces, or building 
+                    robust backend systems, I bring both technical excellence and innovative thinking to every project.
                   </p>
                 </div>
                 
                 {/* Contact Info */}
                 <div className="glass-card p-6">
-                  <h3 className="font-orbitron text-xl text-cyber-blue mb-4">Contact.Info()</h3>
+                  <h3 className="font-orbitron text-xl text-cyber-blue mb-4">connect.with(developer)</h3>
                   <div className="space-y-3 font-mono text-base">
                     <div className="flex items-center space-x-3">
                       <Mail className="w-5 h-5 text-neon-green" />

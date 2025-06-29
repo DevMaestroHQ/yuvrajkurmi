@@ -15,28 +15,28 @@ interface Testimonial {
 export default function TestimonialSection() {
   const testimonials: Testimonial[] = [
     {
-      name: "David Martinez",
-      role: "Engineering Director",
-      company: "Healthcare Innovations Inc",
-      testimonial: "Yubraj architected our patient management system handling 50,000+ users. His expertise in React, TypeScript, and AWS reduced our deployment time by 70%. Exceptional technical leadership and delivery.",
+      name: "Sarah Chen",
+      role: "Creative Director",
+      company: "Design Studio Pro",
+      testimonial: "Yubraj brought our wildest design concepts to life with stunning animations and flawless user experiences. His creative problem-solving and attention to detail transformed our entire digital presence.",
       rating: 5,
-      projectType: "Enterprise Healthcare Platform"
+      projectType: "Creative Web Experience"
     },
     {
-      name: "Jennifer Liu",
-      role: "VP of Technology",
-      company: "FinTech Solutions",
-      testimonial: "Yubraj built our trading dashboard processing $2M+ daily transactions with zero downtime. His full-stack expertise and security-first approach exceeded all expectations. Would hire again immediately.",
+      name: "Marcus Rodriguez",
+      role: "Startup Founder",
+      company: "InnovateNow",
+      testimonial: "Working with Yubraj was a game-changer for our startup. He understood our vision perfectly and delivered a platform that not only looks amazing but performs beautifully. Pure magic!",
       rating: 5,
-      projectType: "Financial Trading Platform"
+      projectType: "Startup MVP Development"
     },
     {
-      name: "Alex Thompson",
-      role: "CTO",
-      company: "E-Commerce Global",
-      testimonial: "Yubraj transformed our legacy system into a modern React/Node.js platform, increasing conversion rates by 45%. His code quality, testing practices, and scalability solutions are world-class.",
+      name: "Lisa Park",
+      role: "Product Manager",
+      company: "TechForward",
+      testimonial: "Yubraj has this incredible ability to turn complex ideas into elegant, user-friendly solutions. His passion for innovation and collaborative spirit made our project an absolute joy to work on.",
       rating: 5,
-      projectType: "E-Commerce Modernization"
+      projectType: "Product Innovation Platform"
     }
   ];
 
@@ -55,13 +55,13 @@ export default function TestimonialSection() {
               variants={fadeInUp}
               className="font-orbitron text-4xl font-bold text-white mb-4"
             >
-              Client Testimonials
+              ./success_stories
             </motion.h2>
             <motion.p
               variants={fadeInUp}
               className="text-readable-lg max-w-2xl mx-auto"
             >
-              What clients say about working with me
+              Transforming visions into digital reality, one collaboration at a time
             </motion.p>
             <motion.div
               variants={fadeInUp}

@@ -39,29 +39,29 @@ export default function StatsSection() {
   const stats = [
     {
       icon: Code,
-      value: "25+",
-      label: "Enterprise Projects",
+      value: "50+",
+      label: "Digital Solutions",
       color: "neon-green",
       delay: 0
     },
     {
       icon: Users,
-      value: "5+",
-      label: "Years Experience",
+      value: "∞",
+      label: "Creative Ideas",
       color: "cyber-blue", 
       delay: 0.1
     },
     {
       icon: Award,
       value: "100%",
-      label: "Client Satisfaction",
+      label: "Passion Driven",
       color: "neon-purple",
       delay: 0.2
     },
     {
       icon: Clock,
-      value: "99.9%",
-      label: "Uptime Achieved",
+      value: "24/7",
+      label: "Innovation Mode",
       color: "yellow-400",
       delay: 0.3
     }
@@ -76,7 +76,7 @@ export default function StatsSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h3 className="font-orbitron text-2xl text-cyber-blue mb-4">./portfolio_stats</h3>
+          <h3 className="font-orbitron text-2xl text-cyber-blue mb-4">./impact_metrics</h3>
           <div className="w-16 h-1 bg-gradient-to-r from-neon-green to-cyber-blue mx-auto"></div>
         </motion.div>
         

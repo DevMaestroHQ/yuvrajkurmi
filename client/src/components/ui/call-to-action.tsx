@@ -16,11 +16,11 @@ export default function CallToAction() {
             className="professional-card p-8 md:p-12 text-center"
           >
             <h2 className="font-orbitron text-3xl md:text-4xl font-bold text-neon-green glow-text mb-4">
-              Let's Build Your Next Enterprise Solution
+              Ready to Transform Your Digital Vision?
             </h2>
             <p className="text-readable-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-              Senior Full-Stack Developer with 5+ years building scalable applications for Fortune 500 companies. 
-              Proven track record of delivering 99.9% uptime systems and reducing deployment times by 70%.
+              Creative full-stack engineer passionate about crafting exceptional digital experiences. 
+              Let's collaborate to bring your innovative ideas to life with cutting-edge technology and elegant design.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

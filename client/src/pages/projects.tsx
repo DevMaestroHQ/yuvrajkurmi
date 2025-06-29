@@ -6,8 +6,8 @@ import { fadeInUp, staggerChildren } from "@/lib/animations";
 export default function Projects() {
   const projects = [
     {
-      title: "HealthAssistant Pro",
-      description: "Enterprise-grade healthcare management platform serving 10,000+ users with real-time patient monitoring, automated scheduling, and HIPAA-compliant data handling.",
+      title: "MediFlow Pro",
+      description: "Revolutionary healthcare platform transforming patient care with AI-powered diagnostics, seamless appointment management, and real-time health monitoring for modern medical practices.",
       technologies: [
         { name: "React", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
         { name: "Node.js", color: "bg-green-500/20 text-green-300 border-green-500/30" },
@@ -20,8 +20,8 @@ export default function Projects() {
       gradient: "bg-gradient-to-br from-blue-600/20 to-green-600/20",
     },
     {
-      title: "CodePulse Analytics",
-      description: "SaaS platform for enterprise code quality management. Reduced deployment issues by 60% across 50+ development teams with automated testing insights and CI/CD integration.",
+      title: "DevInsight Analytics",
+      description: "Next-generation development intelligence platform that empowers teams with actionable insights, automated code reviews, and performance optimization recommendations that drive engineering excellence.",
       technologies: [
         { name: "Next.js", color: "bg-gray-500/20 text-gray-300 border-gray-500/30" },
         { name: "TypeScript", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
@@ -34,12 +34,12 @@ export default function Projects() {
       gradient: "bg-gradient-to-br from-purple-600/20 to-blue-600/20",
     },
     {
-      title: "Edubridge",
-      description: "Built an educational platform with automated web scraping to integrate syllabus materials and examination resources for students.",
+      title: "LearnSphere",
+      description: "Intelligent learning ecosystem that personalizes education through adaptive algorithms, interactive content delivery, and comprehensive progress tracking for students worldwide.",
       technologies: [
         { name: "React", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
         { name: "Python", color: "bg-yellow-500/20 text-yellow-300 border-yellow-500/30" },
-        { name: "Web Scraping", color: "bg-red-500/20 text-red-300 border-red-500/30" },
+        { name: "AI/ML", color: "bg-red-500/20 text-red-300 border-red-500/30" },
       ],
       demoUrl: "https://edubridge.com",
       githubUrl: "#",
@@ -76,7 +76,7 @@ export default function Projects() {
               variants={fadeInUp}
               className="font-orbitron text-4xl font-bold text-white mb-4"
             >
-              ./projects
+              ./digital_creations
             </motion.h2>
             <motion.div
               variants={fadeInUp}
