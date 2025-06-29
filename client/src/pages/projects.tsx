@@ -6,11 +6,11 @@ import { fadeInUp, staggerChildren } from "@/lib/animations";
 export default function Projects() {
   const projectCategories = [
     {
-      category: "E-Commerce & Retail",
+      category: "Amazon-Style E-Commerce",
       projects: [
         {
-          title: "Online Store Platform",
-          description: "Complete e-commerce solution with product catalog, shopping cart, secure payment integration, and admin dashboard. Features inventory management, order tracking, customer reviews, and responsive design for all devices.",
+          title: "Multi-Vendor Marketplace",
+          description: "Amazon-inspired marketplace with seller registration, product listings, advanced search filters, and customer reviews. Features wishlist functionality, price comparison, recommendation engine, and secure payment processing with order tracking.",
           technologies: [
             { name: "React", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
             { name: "Node.js", color: "bg-green-500/20 text-green-300 border-green-500/30" },
@@ -23,13 +23,13 @@ export default function Projects() {
           gradient: "bg-gradient-to-br from-blue-600/20 to-green-600/20",
         },
         {
-          title: "Inventory Management System",
-          description: "Smart inventory tracking solution for retail businesses with barcode scanning, automated reorder alerts, and supplier management. Includes sales analytics, stock level monitoring, and multi-location support for growing businesses.",
+          title: "Flipkart-Style Shopping App",
+          description: "Mobile-first e-commerce platform inspired by Flipkart with flash sales, category browsing, price alerts, and social sharing. Includes cash-on-delivery options, return management, and loyalty rewards program for enhanced customer experience.",
           technologies: [
-            { name: "JavaScript", color: "bg-yellow-500/20 text-yellow-300 border-yellow-500/30" },
+            { name: "React", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
             { name: "Express.js", color: "bg-green-500/20 text-green-300 border-green-500/30" },
-            { name: "MySQL", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
-            { name: "Chart.js", color: "bg-purple-500/20 text-purple-300 border-purple-500/30" },
+            { name: "MySQL", color: "bg-yellow-500/20 text-yellow-300 border-yellow-500/30" },
+            { name: "Redis", color: "bg-red-500/20 text-red-300 border-red-500/30" },
           ],
           demoUrl: "https://github.com/DevMaestroHQ",
           githubUrl: "https://github.com/DevMaestroHQ",
@@ -39,16 +39,16 @@ export default function Projects() {
       ]
     },
     {
-      category: "Healthcare & Wellness",
+      category: "Netflix-Style Streaming",
       projects: [
         {
-          title: "Patient Management System",
-          description: "Digital healthcare platform for appointment scheduling, patient records management, and telemedicine consultations. Includes secure data storage, prescription tracking, and integration with existing hospital systems.",
+          title: "Video Streaming Platform",
+          description: "Netflix-inspired streaming service with content categorization, user profiles, watchlist management, and personalized recommendations. Features video player controls, subtitle support, offline downloads, and content rating system.",
           technologies: [
             { name: "React", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
-            { name: "Express.js", color: "bg-green-500/20 text-green-300 border-green-500/30" },
-            { name: "PostgreSQL", color: "bg-teal-500/20 text-teal-300 border-teal-500/30" },
-            { name: "JWT Auth", color: "bg-red-500/20 text-red-300 border-red-500/30" },
+            { name: "Video.js", color: "bg-purple-500/20 text-purple-300 border-purple-500/30" },
+            { name: "Node.js", color: "bg-green-500/20 text-green-300 border-green-500/30" },
+            { name: "MongoDB", color: "bg-orange-500/20 text-orange-300 border-orange-500/30" },
           ],
           demoUrl: "https://github.com/DevMaestroHQ",
           githubUrl: "https://github.com/DevMaestroHQ",
@@ -56,13 +56,13 @@ export default function Projects() {
           gradient: "bg-gradient-to-br from-purple-600/20 to-blue-600/20",
         },
         {
-          title: "Fitness Tracking App",
-          description: "Personal wellness application with workout logging, nutrition tracking, and progress monitoring. Features goal setting, exercise library, meal planning, and social sharing capabilities for motivation and accountability.",
+          title: "YouTube-Style Creator Platform",
+          description: "Content creator platform with video upload, channel management, subscriber system, and monetization features. Includes video analytics, comment moderation, live streaming capabilities, and creator dashboard for content management.",
           technologies: [
             { name: "React", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
-            { name: "Local Storage", color: "bg-orange-500/20 text-orange-300 border-orange-500/30" },
-            { name: "Chart.js", color: "bg-green-500/20 text-green-300 border-green-500/30" },
-            { name: "CSS3", color: "bg-purple-500/20 text-purple-300 border-purple-500/30" },
+            { name: "FFmpeg", color: "bg-red-500/20 text-red-300 border-red-500/30" },
+            { name: "Socket.io", color: "bg-green-500/20 text-green-300 border-green-500/30" },
+            { name: "AWS S3", color: "bg-orange-500/20 text-orange-300 border-orange-500/30" },
           ],
           demoUrl: "https://github.com/DevMaestroHQ",
           githubUrl: "https://github.com/DevMaestroHQ",
@@ -72,15 +72,15 @@ export default function Projects() {
       ]
     },
     {
-      category: "Education & Learning",
+      category: "Uber-Style Services",
       projects: [
         {
-          title: "Learning Management System",
-          description: "Comprehensive educational platform with course creation, student enrollment, progress tracking, and interactive assessments. Features video streaming, discussion forums, and certification management for modern online learning.",
+          title: "Ride Booking Application",
+          description: "Uber-inspired ride-hailing service with real-time GPS tracking, driver matching algorithm, fare calculation, and payment integration. Features ride history, driver ratings, multiple vehicle options, and emergency assistance.",
           technologies: [
             { name: "React", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
-            { name: "Video.js", color: "bg-purple-500/20 text-purple-300 border-purple-500/30" },
-            { name: "Socket.io", color: "bg-green-500/20 text-green-300 border-green-500/30" },
+            { name: "Google Maps API", color: "bg-green-500/20 text-green-300 border-green-500/30" },
+            { name: "Socket.io", color: "bg-purple-500/20 text-purple-300 border-purple-500/30" },
             { name: "MongoDB", color: "bg-orange-500/20 text-orange-300 border-orange-500/30" },
           ],
           demoUrl: "https://github.com/DevMaestroHQ",
@@ -89,13 +89,13 @@ export default function Projects() {
           gradient: "bg-gradient-to-br from-green-600/20 to-yellow-600/20",
         },
         {
-          title: "Quiz Builder Platform",
-          description: "Interactive quiz creation tool for educators with multiple question types, automatic grading, and performance analytics. Includes timed assessments, randomized questions, and detailed student reports for comprehensive evaluation.",
+          title: "Food Delivery Platform",
+          description: "Swiggy/Zomato-style food delivery app with restaurant listings, menu browsing, order tracking, and delivery management. Includes real-time order updates, multiple payment options, restaurant ratings, and promotional offers.",
           technologies: [
-            { name: "JavaScript", color: "bg-yellow-500/20 text-yellow-300 border-yellow-500/30" },
-            { name: "HTML5", color: "bg-orange-500/20 text-orange-300 border-orange-500/30" },
-            { name: "CSS3", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
-            { name: "JSON", color: "bg-green-500/20 text-green-300 border-green-500/30" },
+            { name: "React", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
+            { name: "Node.js", color: "bg-green-500/20 text-green-300 border-green-500/30" },
+            { name: "PostgreSQL", color: "bg-teal-500/20 text-teal-300 border-teal-500/30" },
+            { name: "Razorpay", color: "bg-purple-500/20 text-purple-300 border-purple-500/30" },
           ],
           demoUrl: "https://github.com/DevMaestroHQ",
           githubUrl: "https://github.com/DevMaestroHQ",
@@ -105,16 +105,16 @@ export default function Projects() {
       ]
     },
     {
-      category: "Finance & Business",
+      category: "WhatsApp-Style Communication",
       projects: [
         {
-          title: "Business Analytics Dashboard",
-          description: "Real-time business intelligence platform with sales tracking, financial reporting, and predictive analytics. Includes customizable charts, automated reporting, and integration with popular accounting software for data-driven decision making.",
+          title: "Real-Time Messaging App",
+          description: "WhatsApp-inspired messaging platform with end-to-end encryption, group chats, media sharing, and voice messages. Features message status indicators, contact management, backup/restore functionality, and cross-platform synchronization.",
           technologies: [
             { name: "React", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
-            { name: "D3.js", color: "bg-cyan-500/20 text-cyan-300 border-cyan-500/30" },
-            { name: "Node.js", color: "bg-green-500/20 text-green-300 border-green-500/30" },
-            { name: "REST API", color: "bg-red-500/20 text-red-300 border-red-500/30" },
+            { name: "Socket.io", color: "bg-green-500/20 text-green-300 border-green-500/30" },
+            { name: "Node.js", color: "bg-yellow-500/20 text-yellow-300 border-yellow-500/30" },
+            { name: "MongoDB", color: "bg-purple-500/20 text-purple-300 border-purple-500/30" },
           ],
           demoUrl: "https://github.com/DevMaestroHQ",
           githubUrl: "https://github.com/DevMaestroHQ",
@@ -122,13 +122,13 @@ export default function Projects() {
           gradient: "bg-gradient-to-br from-green-600/20 to-emerald-600/20",
         },
         {
-          title: "Expense Management Tool",
-          description: "Personal and business expense tracking application with receipt scanning, category management, and tax reporting. Features budget planning, recurring expense tracking, and detailed financial insights for better money management.",
+          title: "Slack-Style Team Collaboration",
+          description: "Professional team communication platform with channels, direct messaging, file sharing, and integration capabilities. Features thread conversations, notification management, workspace organization, and productivity tools integration.",
           technologies: [
             { name: "React", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
-            { name: "Local Storage", color: "bg-purple-500/20 text-purple-300 border-purple-500/30" },
-            { name: "Chart.js", color: "bg-green-500/20 text-green-300 border-green-500/30" },
-            { name: "File API", color: "bg-orange-500/20 text-orange-300 border-orange-500/30" },
+            { name: "WebRTC", color: "bg-red-500/20 text-red-300 border-red-500/30" },
+            { name: "Express.js", color: "bg-green-500/20 text-green-300 border-green-500/30" },
+            { name: "PostgreSQL", color: "bg-cyan-500/20 text-cyan-300 border-cyan-500/30" },
           ],
           demoUrl: "https://github.com/DevMaestroHQ",
           githubUrl: "https://github.com/DevMaestroHQ",
@@ -162,7 +162,7 @@ export default function Projects() {
               variants={fadeInUp}
               className="text-readable-lg max-w-3xl mx-auto mb-8"
             >
-              Industry-focused solutions demonstrating expertise across different business sectors
+              Clone applications inspired by popular platforms showcasing modern development skills
             </motion.p>
             <motion.div
               variants={fadeInUp}
