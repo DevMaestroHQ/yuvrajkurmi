@@ -29,24 +29,24 @@ export default function Home() {
                 </div>
               </div>
               <div className="text-cyber-blue mb-3 font-mono text-sm">$ whoami</div>
-              <div className="text-readable-xl mb-6 font-bold text-white">Senior Full Stack Developer | 5+ Years Experience | Enterprise Solutions</div>
-              <div className="text-neon-green mb-3 font-mono text-sm">$ ls tech_stack/</div>
+              <div className="text-readable-xl mb-6 font-bold text-white">Full Stack Developer | React & Node.js Specialist | Modern Web Applications</div>
+              <div className="text-neon-green mb-3 font-mono text-sm">$ cat skills.json</div>
               <div className="text-readable mb-6 text-base flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full border border-blue-500/30">react</span>
-                <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full border border-green-500/30">vue.js</span>
-                <span className="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full border border-yellow-500/30">typescript</span>
-                <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30">python</span>
-                <span className="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full border border-pink-500/30">go</span>
-                <span className="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full border border-cyan-500/30">kubernetes</span>
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full border border-blue-500/30">React</span>
+                <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full border border-green-500/30">Node.js</span>
+                <span className="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full border border-yellow-500/30">JavaScript</span>
+                <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30">TypeScript</span>
+                <span className="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full border border-pink-500/30">MongoDB</span>
+                <span className="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full border border-cyan-500/30">Express.js</span>
               </div>
               <div className="text-neon-green mb-3 font-mono text-sm">$ cat status.json</div>
               <div className="text-readable-lg font-semibold flex flex-wrap gap-4">
                 <span className="text-green-400 flex items-center">
                   <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
-                  ACTIVELY_HIRING
+                  AVAILABLE_FOR_WORK
                 </span>
-                <span className="text-blue-400">REMOTE_READY</span>
-                <span className="text-purple-400">ENTERPRISE_FOCUSED</span>
+                <span className="text-blue-400">REMOTE_FRIENDLY</span>
+                <span className="text-purple-400">FULL_STACK</span>
               </div>
             </div>
             

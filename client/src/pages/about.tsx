@@ -300,14 +300,14 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
                 <div className="glass-card p-6">
                   <h3 className="font-orbitron text-xl text-white mb-4">Professional Background</h3>
                   <p className="text-readable-lg leading-relaxed mb-4">
-                    Senior Full Stack Developer with 5+ years of experience building enterprise-scale applications for Fortune 500 companies. 
-                    Specialized in React, Node.js, TypeScript, and cloud architecture with proven track record of delivering high-performance, 
-                    scalable solutions serving 50,000+ users.
+                    Full Stack Developer with 2+ years of experience building modern web applications using React, Node.js, and JavaScript. 
+                    Currently pursuing Computer Science degree while working on real-world projects. Passionate about creating 
+                    user-friendly applications with clean, maintainable code.
                   </p>
                   <p className="text-readable-lg leading-relaxed">
-                    Led development teams in building healthcare platforms, trading systems, and analytics dashboards. Expert in 
-                    microservices architecture, CI/CD pipelines, and DevOps practices. Consistently delivered projects on time 
-                    while maintaining 99.9% uptime and improving system performance by 40-70%.
+                    Experienced in MERN stack development, responsive design, and modern development practices. Successfully 
+                    completed multiple client projects including e-commerce platforms, portfolio websites, and business applications. 
+                    Strong foundation in both frontend and backend technologies with focus on performance optimization.
                   </p>
                 </div>
                 
@@ -341,8 +341,8 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
               >
                 <div className="grid gap-4">
                   <AchievementBadge
-                    title="Enterprise Developer"
-                    description="5+ years building scalable applications"
+                    title="Full Stack Developer"
+                    description="2+ years building web applications"
                     icon="code"
                     color="text-neon-green"
                     delay={0}

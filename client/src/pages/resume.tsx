@@ -49,7 +49,7 @@ export default function Resume() {
               variants={fadeInUp}
               className="text-readable-lg max-w-2xl mx-auto"
             >
-              5+ years of enterprise development experience with proven track record of delivering scalable solutions
+              2+ years of web development experience with focus on modern JavaScript technologies
             </motion.p>
             <motion.div
               variants={fadeInUp}
@@ -98,7 +98,7 @@ export default function Resume() {
                 <h1 className="text-4xl font-orbitron font-bold gradient-text mb-4">
                   YUBRAJ KURMI
                 </h1>
-                <h2 className="text-xl text-cyber-blue mb-4">Senior Full Stack Developer</h2>
+                <h2 className="text-xl text-cyber-blue mb-4">Full Stack Developer</h2>
                 <div className="grid md:grid-cols-3 gap-4 text-sm text-slate-300 font-mono">
                   <div>📧 developerrajir@gmail.com</div>
                   <div>📱 +977-9824423560</div>

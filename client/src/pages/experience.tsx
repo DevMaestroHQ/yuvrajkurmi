@@ -5,39 +5,39 @@ import { fadeInUp, staggerChildren } from "@/lib/animations";
 export default function Experience() {
   const experiences = [
     {
-      title: "Senior Full Stack Developer",
-      period: "2022 - Present",
-      color: "bg-neon-green",
-      technologies: ["React", "TypeScript", "Node.js", "AWS", "PostgreSQL"],
-      bullets: [
-        "Led development of enterprise healthcare platform serving 50,000+ users with 99.9% uptime",
-        "Architected scalable microservices reducing API response times by 65%",
-        "Mentored 3 junior developers and established CI/CD pipelines reducing deployment time by 70%",
-        "Built real-time trading dashboard processing $2M+ daily transactions with zero downtime"
-      ]
-    },
-    {
       title: "Full Stack Developer",
-      period: "2020 - 2022",
-      color: "bg-cyber-blue",
-      technologies: ["React", "Next.js", "Python", "MongoDB", "Docker"],
+      period: "2023 - Present",
+      color: "bg-neon-green",
+      technologies: ["React", "Node.js", "MongoDB", "Express.js", "JavaScript"],
       bullets: [
-        "Developed e-commerce platform handling $500K+ monthly transactions with 45% conversion rate increase",
-        "Implemented advanced search and recommendation algorithms improving user engagement by 40%",
-        "Optimized database queries reducing page load times from 3s to 800ms",
-        "Built automated testing suite achieving 95% code coverage"
+        "Developed and maintained multiple client projects using MERN stack",
+        "Built responsive e-commerce website with payment integration using Stripe API",
+        "Created portfolio websites for local businesses improving their online presence",
+        "Implemented user authentication and authorization systems for web applications"
       ]
     },
     {
-      title: "Frontend Developer",
-      period: "2019 - 2020",
-      color: "bg-neon-purple",
-      technologies: ["React", "JavaScript", "Redux", "Jest", "Webpack"],
+      title: "Frontend Developer (Freelance)",
+      period: "2022 - 2023",
+      color: "bg-cyber-blue",
+      technologies: ["React", "JavaScript", "CSS3", "HTML5", "Bootstrap"],
       bullets: [
-        "Built responsive web applications for fintech startup serving 10,000+ active users",
-        "Implemented complex data visualizations using D3.js and Chart.js",
-        "Collaborated with UX team to improve user satisfaction scores by 35%",
-        "Maintained high code quality with comprehensive unit and integration testing"
+        "Developed responsive frontend applications for various clients",
+        "Converted design mockups into functional React components",
+        "Optimized web performance achieving 90+ Google PageSpeed scores",
+        "Collaborated with designers to ensure pixel-perfect implementations"
+      ]
+    },
+    {
+      title: "Computer Science Student",
+      period: "2021 - Present",
+      color: "bg-neon-purple",
+      technologies: ["Java", "Python", "Data Structures", "Algorithms", "Database Design"],
+      bullets: [
+        "Pursuing Bachelor's degree in Computer Science",
+        "Completed coursework in Data Structures, Algorithms, and Database Systems",
+        "Built academic projects including library management system and student portal",
+        "Maintained strong academic performance while working on practical projects"
       ]
     }
   ];

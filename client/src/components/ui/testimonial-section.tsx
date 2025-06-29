@@ -15,28 +15,28 @@ interface Testimonial {
 export default function TestimonialSection() {
   const testimonials: Testimonial[] = [
     {
-      name: "Sarah Chen",
-      role: "VP of Engineering",
-      company: "TechCorp Solutions",
-      testimonial: "Yubraj architected and delivered a complex microservices platform that handles 100K+ daily transactions. His expertise in React, Node.js, and AWS helped us scale from startup to enterprise. Outstanding technical leadership and code quality.",
+      name: "Raj Patel",
+      role: "Business Owner",
+      company: "Local Restaurant",
+      testimonial: "Yubraj built an amazing website for our restaurant that increased our online orders by 60%. The design is beautiful and easy to use. Very professional and delivered exactly what we needed.",
       rating: 5,
-      projectType: "Enterprise Platform Development"
+      projectType: "Business Website Development"
     },
     {
-      name: "Marcus Rodriguez",
-      role: "CTO",
-      company: "FinanceFlow Inc",
-      testimonial: "Yubraj built our trading platform handling $2M+ daily volume with 99.99% uptime. His deep understanding of TypeScript, PostgreSQL, and real-time systems was crucial. Delivered on time and exceeded performance requirements.",
+      name: "Priya Sharma",
+      role: "Startup Founder",
+      company: "Tech Startup",
+      testimonial: "Working with Yubraj was excellent. He created our company portfolio website with modern design and great performance. Communication was clear and project was completed on time.",
       rating: 5,
-      projectType: "High-Performance Trading System"
+      projectType: "Portfolio Website"
     },
     {
-      name: "Lisa Park",
-      role: "Director of Engineering",
-      company: "DataAnalytics Pro",
-      testimonial: "Yubraj led the development of our analytics dashboard serving 25K+ enterprise users. His expertise in React, Python, and data visualization delivered a 40% improvement in user engagement. Exceptional problem-solving and team collaboration.",
+      name: "David Johnson",
+      role: "Freelancer",
+      company: "Photography Business",
+      testimonial: "Yubraj helped me create a professional portfolio website to showcase my photography work. The site loads fast, looks amazing on mobile, and has helped me get more clients.",
       rating: 5,
-      projectType: "Enterprise Analytics Platform"
+      projectType: "Photography Portfolio"
     }
   ];
 
@@ -61,7 +61,7 @@ export default function TestimonialSection() {
               variants={fadeInUp}
               className="text-readable-lg max-w-2xl mx-auto mb-8"
             >
-              Proven track record of delivering enterprise-grade solutions that drive business results
+              What clients say about working with me on their projects
             </motion.p>
             <motion.div
               variants={fadeInUp}

@@ -19,8 +19,8 @@ export default function CallToAction() {
               Ready to Scale Your Technical Team?
             </h2>
             <p className="text-readable-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-              Senior Full Stack Developer with 5+ years building enterprise applications serving 50,000+ users. 
-              Specializing in React, Node.js, TypeScript, and cloud architecture with proven track record of delivering high-performance, scalable solutions.
+              Full Stack Developer specializing in React, Node.js, and modern web technologies. 
+              Ready to help bring your ideas to life with clean, efficient code and user-friendly designs.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -68,7 +68,7 @@ export default function CallToAction() {
               className="mt-8 pt-8 border-t border-cyber/30"
             >
               <p className="font-mono text-base text-readable">
-                Available for Senior/Lead positions • Full-time & Contract • Remote/Hybrid • $80K-120K range • Immediate availability
+                Available for freelance projects • Web development • Remote work • Competitive rates • Quick turnaround
               </p>
             </motion.div>
           </motion.div>
