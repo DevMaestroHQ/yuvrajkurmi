@@ -53,12 +53,12 @@ export default function About() {
             >
               <div className="bg-dark-card/50 backdrop-blur-sm p-6 rounded-lg border border-cyber">
                 <h3 className="font-orbitron text-xl text-cyber-blue mb-4">System.out.println("About Me");</h3>
-                <p className="text-slate-300 leading-relaxed mb-4">
+                <p className="text-readable-lg leading-relaxed mb-4">
                   Experienced full-stack developer with 2+ years of hands-on experience building responsive web and mobile applications. 
                   Specializing in React, Next.js, Python, and React Native with a track record of delivering high-quality solutions 
                   for health platforms, educational tools, and agricultural applications.
                 </p>
-                <p className="text-slate-300 leading-relaxed">
+                <p className="text-readable-lg leading-relaxed">
                   Passionate about clean code, user experience, and collaborative development. Currently pursuing BSc. Computer Science 
                   and Information Technology while actively contributing to real-world projects. Available for full-time opportunities 
                   and exciting freelance projects.
@@ -68,18 +68,18 @@ export default function About() {
               {/* Contact Info */}
               <div className="bg-dark-card/50 backdrop-blur-sm p-6 rounded-lg border border-cyber">
                 <h3 className="font-orbitron text-xl text-cyber-blue mb-4">Contact.Info()</h3>
-                <div className="space-y-2 font-mono text-sm">
+                <div className="space-y-3 font-mono text-base">
                   <div className="flex items-center space-x-3">
-                    <Mail className="w-4 h-4 text-neon-green" />
-                    <span>developerrajir@gmail.com</span>
+                    <Mail className="w-5 h-5 text-neon-green" />
+                    <span className="text-readable">developerrajir@gmail.com</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Phone className="w-4 h-4 text-neon-green" />
-                    <span>+977-9824423560</span>
+                    <Phone className="w-5 h-5 text-neon-green" />
+                    <span className="text-readable">+977-9824423560</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <MapPin className="w-4 h-4 text-neon-green" />
-                    <span>Devdaha, Rupandehi</span>
+                    <MapPin className="w-5 h-5 text-neon-green" />
+                    <span className="text-readable">Devdaha, Rupandehi</span>
                   </div>
                 </div>
               </div>
@@ -106,8 +106,8 @@ export default function About() {
                       className="space-y-2"
                     >
                       <div className="flex justify-between items-center">
-                        <span className="text-sm font-mono">{skill.name}</span>
-                        <span className="text-xs text-slate-400">{skill.level}%</span>
+                        <span className="text-base font-mono text-readable">{skill.name}</span>
+                        <span className="text-sm text-muted-readable">{skill.level}%</span>
                       </div>
                       <div className="w-full h-2 bg-dark-surface rounded-full overflow-hidden">
                         <motion.div
@@ -138,7 +138,7 @@ export default function About() {
                       className="text-center p-3 bg-dark-surface/50 rounded-lg border border-cyber/50 hover:border-neon-green transition-all"
                     >
                       <tool.icon className={`w-8 h-8 mx-auto mb-2 ${tool.color}`} />
-                      <div className="text-xs font-mono">{tool.name}</div>
+                      <div className="text-sm font-mono text-readable">{tool.name}</div>
                     </motion.div>
                   ))}
                 </div>

@@ -81,7 +81,7 @@ export default function Experience() {
                     {experience.bullets.map((bullet, bulletIndex) => (
                       <li key={bulletIndex} className="flex items-start space-x-2">
                         <span className="text-neon-green mt-1">•</span>
-                        <span>{bullet}</span>
+                        <span className="text-readable">{bullet}</span>
                       </li>
                     ))}
                   </ul>

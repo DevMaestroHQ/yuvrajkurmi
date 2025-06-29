@@ -66,7 +66,7 @@ export default function ProjectCard({
           <Icon className="w-16 h-16 text-neon-green opacity-50 group-hover:opacity-75 transition-opacity" />
         </div>
         
-        <p className="text-slate-300 text-sm mb-4 leading-relaxed">
+        <p className="text-readable text-base mb-4 leading-relaxed">
           {description}
         </p>
         
@@ -74,7 +74,7 @@ export default function ProjectCard({
           {technologies.map((tech) => (
             <span
               key={tech.name}
-              className={`px-3 py-1 ${tech.color} rounded-full text-xs font-mono border`}
+              className={`px-3 py-1 ${tech.color} rounded-full text-sm font-mono border`}
             >
               {tech.name}
             </span>

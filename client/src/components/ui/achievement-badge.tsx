@@ -30,13 +30,13 @@ export default function AchievementBadge({ title, description, icon, color, dela
       whileHover={{ scale: 1.05 }}
       className={`bg-dark-card/50 backdrop-blur-sm p-4 rounded-lg border border-cyber hover:border-${color} transition-all duration-300 group`}
     >
-      <div className="flex items-center space-x-3 mb-2">
-        <div className={`w-8 h-8 bg-${color}/20 rounded-lg flex items-center justify-center group-hover:bg-${color}/30 transition-colors`}>
-          <Icon className={`w-4 h-4 text-${color}`} />
+      <div className="flex items-center space-x-3 mb-3">
+        <div className={`w-10 h-10 bg-${color}/20 rounded-lg flex items-center justify-center group-hover:bg-${color}/30 transition-colors`}>
+          <Icon className={`w-5 h-5 text-${color}`} />
         </div>
-        <h4 className="font-mono text-sm text-slate-200 font-semibold">{title}</h4>
+        <h4 className="font-mono text-base text-readable font-semibold">{title}</h4>
       </div>
-      <p className="text-xs text-slate-400 leading-relaxed">{description}</p>
+      <p className="text-sm text-muted-readable leading-relaxed">{description}</p>
     </motion.div>
   );
 }

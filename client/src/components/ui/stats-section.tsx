@@ -30,7 +30,7 @@ function StatItem({ icon: Icon, value, label, color, delay }: StatItemProps) {
       >
         {value}
       </motion.div>
-      <div className="text-slate-400 font-mono text-sm">{label}</div>
+      <div className="text-muted-readable font-mono text-base">{label}</div>
     </motion.div>
   );
 }

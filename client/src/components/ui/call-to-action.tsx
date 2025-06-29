@@ -18,7 +18,7 @@ export default function CallToAction() {
             <h2 className="font-orbitron text-3xl md:text-4xl font-bold text-neon-green glow-text mb-4">
               Ready to Build Something Amazing?
             </h2>
-            <p className="text-slate-300 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+            <p className="text-readable-lg leading-relaxed mb-8 max-w-2xl mx-auto">
               I'm actively seeking new opportunities to contribute to innovative projects. 
               Let's discuss how my skills in React, Python, and full-stack development can help bring your ideas to life.
             </p>
@@ -67,7 +67,7 @@ export default function CallToAction() {
               transition={{ delay: 0.5 }}
               className="mt-8 pt-8 border-t border-cyber/30"
             >
-              <p className="font-mono text-sm text-slate-400">
+              <p className="font-mono text-base text-muted-readable">
                 Available for full-time positions • Remote & On-site • Immediate start
               </p>
             </motion.div>

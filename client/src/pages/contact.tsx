@@ -207,7 +207,7 @@ export default function Contact() {
               <Card className="bg-dark-card/50 backdrop-blur-sm border-cyber">
                 <CardContent className="p-6">
                   <h3 className="font-orbitron text-xl text-cyber-blue mb-4">Get In Touch</h3>
-                  <p className="text-slate-300 leading-relaxed mb-6">
+                  <p className="text-readable-lg leading-relaxed mb-6">
                     I'm always interested in hearing about new opportunities and exciting projects. Let's connect and build something amazing together!
                   </p>
                   

@@ -22,7 +22,7 @@ export default function Home() {
           >
             <TerminalWindow>
               <div className="text-neon-green mb-2">$ cat introduction.txt</div>
-              <div className="text-slate-300 mb-4">
+              <div className="text-readable mb-4">
                 <div className="typing-animation min-h-[1.5rem]">
                   <span className={isComplete ? "terminal-cursor" : ""}>
                     {displayText}
@@ -30,9 +30,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="text-cyber-blue mb-2">$ echo $PROFESSION</div>
-              <div className="text-slate-300 mb-4">Full Stack Developer | React | Python | Firebase</div>
+              <div className="text-readable mb-4 text-lg font-medium">Full Stack Developer | React | Python | Firebase</div>
               <div className="text-neon-green mb-2">$ ls skills/</div>
-              <div className="text-slate-300 mb-4">
+              <div className="text-readable mb-4 text-base">
                 <span className="text-blue-400">react/</span>&nbsp;&nbsp;
                 <span className="text-green-400">next.js/</span>&nbsp;&nbsp;
                 <span className="text-yellow-400">python/</span>&nbsp;&nbsp;
@@ -40,7 +40,7 @@ export default function Home() {
                 <span className="text-pink-400">mobile-dev/</span>
               </div>
               <div className="text-neon-green mb-2">$ echo $STATUS</div>
-              <div className="text-slate-300">
+              <div className="text-readable text-base font-medium">
                 <span className="text-green-400">AVAILABLE_FOR_HIRE</span> | <span className="text-blue-400">REMOTE_READY</span> | <span className="text-purple-400">IMMEDIATE_START</span>
               </div>
             </TerminalWindow>
