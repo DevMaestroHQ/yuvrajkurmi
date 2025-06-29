@@ -3,12 +3,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight, Code, Zap, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLocation } from "wouter";
-import { useTypewriter } from "@/hooks/use-typewriter";
 
 export default function Landing() {
   const [, setLocation] = useLocation();
   const [showContent, setShowContent] = useState(false);
-  const { displayText, isComplete } = useTypewriter("Welcome to the future of development...", 80);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -36,38 +34,36 @@ export default function Landing() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-dark-bg via-dark-surface to-dark-card relative overflow-hidden">
-      {/* Background Animation */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300ff7f' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-          }}></div>
-        </div>
-        
-        {/* Animated particles */}
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-1 bg-neon-green rounded-full"
-            animate={{
-              x: [0, Math.random() * 800],
-              y: [0, Math.random() * 600],
-              opacity: [0, 1, 0],
-            }}
-            transition={{
-              duration: Math.random() * 10 + 5,
-              repeat: Infinity,
-              ease: "linear",
-              delay: Math.random() * 5,
-            }}
-            style={{
-              left: Math.random() * 100 + "%",
-              top: Math.random() * 100 + "%",
-            }}
-          />
-        ))}
+    <div className="min-h-screen bg-slate-950 relative overflow-hidden">
+      {/* Solid Background Pattern */}
+      <div className="absolute inset-0 bg-slate-950">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300ff7f' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+        }}></div>
       </div>
+        
+      {/* Animated particles */}
+      {[...Array(20)].map((_, i) => (
+        <motion.div
+          key={i}
+          className="absolute w-1 h-1 bg-neon-green rounded-full"
+          animate={{
+            x: [0, Math.random() * 800],
+            y: [0, Math.random() * 600],
+            opacity: [0, 1, 0],
+          }}
+          transition={{
+            duration: Math.random() * 10 + 5,
+            repeat: Infinity,
+            ease: "linear",
+            delay: Math.random() * 5,
+          }}
+          style={{
+            left: Math.random() * 100 + "%",
+            top: Math.random() * 100 + "%",
+          }}
+        />
+      ))}
 
       <div className="relative z-10 flex items-center justify-center min-h-screen">
         <div className="text-center max-w-4xl mx-auto px-6">
@@ -112,7 +108,7 @@ export default function Landing() {
             </svg>
           </motion.div>
 
-          {/* Typewriter Title */}
+          {/* Static Title (removed typewriter) */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -123,14 +119,7 @@ export default function Landing() {
               YUBRAJ KURMI
             </h1>
             <div className="text-xl md:text-2xl text-cyber-blue font-mono mb-6">
-              {displayText}
-              <motion.span
-                animate={{ opacity: [1, 0] }}
-                transition={{ duration: 0.8, repeat: Infinity }}
-                className="text-neon-green"
-              >
-                |
-              </motion.span>
+              Welcome to the future of development...
             </div>
           </motion.div>
 
@@ -166,7 +155,7 @@ export default function Landing() {
 
           {/* Call to Action */}
           <AnimatePresence>
-            {showContent && isComplete && (
+            {showContent && (
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}

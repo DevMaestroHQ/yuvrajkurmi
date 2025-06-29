@@ -6,11 +6,9 @@ import CallToAction from "@/components/ui/call-to-action";
 import StatsSection from "@/components/ui/stats-section";
 import TestimonialSection from "@/components/ui/testimonial-section";
 import SEOHead from "@/components/ui/seo-head";
-import { useTypewriter } from "@/hooks/use-typewriter";
 import { fadeInUp, staggerChildren } from "@/lib/animations";
 
 export default function Home() {
-  const { displayText, isComplete } = useTypewriter("Initializing Portfolio... Hello, I'm Yubraj Kurmi", 150);
 
   return (
     <>
@@ -26,10 +24,8 @@ export default function Home() {
             <div className="professional-card p-8 mb-8">
               <div className="text-neon-green mb-3 font-mono text-sm">$ cat introduction.txt</div>
               <div className="text-readable-xl mb-6">
-                <div className="typing-animation min-h-[2rem]">
-                  <span className={isComplete ? "terminal-cursor" : ""}>
-                    {displayText}
-                  </span>
+                <div className="min-h-[2rem]">
+                  <span>Initializing Portfolio... Hello, I'm Yubraj Kurmi</span>
                 </div>
               </div>
               <div className="text-cyber-blue mb-3 font-mono text-sm">$ echo $PROFESSION</div>
