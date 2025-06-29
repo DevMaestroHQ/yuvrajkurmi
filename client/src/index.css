@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,16 +26,284 @@
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
 
-  /* Sci-fi color scheme */
-  --dark-bg: hsl(240, 45%, 7%);
-  --dark-surface: hsl(240, 30%, 12%);
-  --dark-card: hsl(240, 25%, 16%);
+  /* Enhanced Sci-fi color scheme */
+  --dark-bg: hsl(240, 45%, 6%);
+  --dark-surface: hsl(240, 35%, 10%);
+  --dark-card: hsl(240, 30%, 14%);
+  --dark-accent: hsl(240, 25%, 18%);
   --neon-green: hsl(160, 95%, 45%);
+  --neon-green-bright: hsl(160, 100%, 55%);
   --neon-blue: hsl(217, 91%, 60%);
+  --neon-blue-bright: hsl(217, 100%, 70%);
   --neon-purple: hsl(253, 100%, 70%);
+  --neon-purple-bright: hsl(253, 100%, 80%);
   --neon-pink: hsl(330, 95%, 55%);
+  --neon-orange: hsl(25, 95%, 55%);
   --cyber-blue: hsl(196, 91%, 44%);
   --cyber-cyan: hsl(188, 94%, 43%);
+  --matrix-green: hsl(120, 100%, 50%);
+  --hologram-blue: hsl(210, 100%, 65%);
+  
+  /* Glass morphism variables */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.dark {
+  --background: var(--dark-bg);
+  --foreground: hsl(0, 0%, 95%);
+  --card: var(--dark-card);
+  --card-foreground: hsl(0, 0%, 95%);
+  --popover: var(--dark-surface);
+  --popover-foreground: hsl(0, 0%, 95%);
+  --primary: var(--neon-green);
+  --primary-foreground: hsl(0, 0%, 9%);
+  --secondary: var(--dark-accent);
+  --secondary-foreground: hsl(0, 0%, 95%);
+  --muted: var(--dark-surface);
+  --muted-foreground: hsl(0, 0%, 63.9%);
+  --accent: var(--dark-accent);
+  --accent-foreground: hsl(0, 0%, 95%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 95%);
+  --border: var(--glass-border);
+  --input: var(--dark-surface);
+  --ring: var(--neon-green);
+}
+
+/* Base styling improvements */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--dark-bg);
+  color: hsl(0, 0%, 95%);
+  line-height: 1.6;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Enhanced typography */
+.font-orbitron {
+  font-family: 'Orbitron', monospace;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Improved readability classes */
+.text-readable {
+  color: hsl(0, 0%, 85%);
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.text-readable-lg {
+  color: hsl(0, 0%, 90%);
+  font-size: 1.125rem;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.text-readable-xl {
+  color: hsl(0, 0%, 92%);
+  font-size: 1.25rem;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+/* Enhanced cyber effects */
+.glow-text {
+  text-shadow: 
+    0 0 5px currentColor,
+    0 0 10px currentColor,
+    0 0 15px currentColor,
+    0 0 20px currentColor;
+}
+
+.cyber-border {
+  position: relative;
+  border: 1px solid var(--neon-green);
+  background: rgba(0, 255, 127, 0.05);
+  box-shadow: 
+    inset 0 0 20px rgba(0, 255, 127, 0.1),
+    0 0 20px rgba(0, 255, 127, 0.2);
+}
+
+.cyber-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--neon-green), var(--cyber-blue), var(--neon-purple), var(--neon-green));
+  z-index: -1;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cyber-border:hover::before {
+  opacity: 0.7;
+}
+
+/* Glass morphism effect */
+.glass-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: var(--glass-shadow);
+  border-radius: 16px;
+}
+
+/* Enhanced hover effects */
+.hover-glow {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-glow:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 10px 40px rgba(0, 255, 127, 0.3),
+    0 0 30px rgba(0, 255, 127, 0.2),
+    inset 0 0 20px rgba(0, 255, 127, 0.1);
+}
+
+.nav-glow:hover {
+  color: var(--neon-green);
+  text-shadow: 0 0 10px var(--neon-green);
+  background: rgba(0, 255, 127, 0.1);
+}
+
+/* Particle background */
+.particle-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(0, 255, 127, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(168, 85, 247, 0.3) 0%, transparent 50%);
+  animation: particleFloat 20s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes particleFloat {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  33% { transform: translate(30px, -30px) rotate(120deg); }
+  66% { transform: translate(-20px, 20px) rotate(240deg); }
+}
+
+/* Terminal styling */
+.terminal-cursor::after {
+  content: '█';
+  color: var(--neon-green);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.typing-animation {
+  border-right: 2px solid var(--neon-green);
+  animation: typing 2s steps(40) infinite;
+}
+
+@keyframes typing {
+  from { border-color: var(--neon-green); }
+  to { border-color: transparent; }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--neon-green), var(--cyber-blue));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(var(--neon-green-bright), var(--neon-blue-bright));
+}
+
+/* Loading animations */
+.pulse-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(0, 255, 127, 0.3);
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: 0 0 40px rgba(0, 255, 127, 0.6);
+    transform: scale(1.02);
+  }
+}
+
+/* Matrix rain effect */
+.matrix-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+/* Improved focus states */
+input:focus, textarea:focus, button:focus {
+  outline: 2px solid var(--neon-green);
+  outline-offset: 2px;
+  box-shadow: 0 0 20px rgba(0, 255, 127, 0.3);
+}
+
+/* Enhanced button styles */
+.btn-primary {
+  background: linear-gradient(135deg, var(--neon-green), var(--cyber-blue));
+  border: none;
+  color: var(--dark-bg);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 255, 127, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--neon-green);
+  color: var(--neon-green);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--neon-green);
+  color: var(--dark-bg);
+  box-shadow: 0 0 30px rgba(0, 255, 127, 0.5);
 }
 
 .dark {

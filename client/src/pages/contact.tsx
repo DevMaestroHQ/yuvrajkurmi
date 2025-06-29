@@ -7,6 +7,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { fadeInUp, slideInLeft, slideInRight, staggerChildren } from "@/lib/animations";
+import PricingCalculator from "@/components/ui/pricing-calculator";
+import AvailabilityIndicator from "@/components/ui/availability-indicator";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -103,9 +105,10 @@ export default function Contact() {
   ];
 
   return (
-    <section className="py-20 bg-dark-bg pt-32">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+    <>
+      <section className="py-20 bg-dark-bg pt-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
           <motion.div
             initial="initial"
             whileInView="animate"
@@ -276,8 +279,23 @@ export default function Contact() {
               </Card>
             </motion.div>
           </div>
+
+          {/* Availability Indicator */}
+          <div className="mt-16">
+            <AvailabilityIndicator />
+          </div>
         </div>
       </div>
     </section>
+
+    {/* Pricing Calculator Section */}
+      <section className="py-20 bg-gradient-to-b from-dark-surface to-dark-bg">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <PricingCalculator />
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

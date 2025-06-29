@@ -4,6 +4,8 @@ import { ArrowDown } from "lucide-react";
 import TerminalWindow from "@/components/ui/terminal-window";
 import CallToAction from "@/components/ui/call-to-action";
 import StatsSection from "@/components/ui/stats-section";
+import TestimonialSection from "@/components/ui/testimonial-section";
+import SEOHead from "@/components/ui/seo-head";
 import { useTypewriter } from "@/hooks/use-typewriter";
 import { fadeInUp, staggerChildren } from "@/lib/animations";
 
@@ -12,6 +14,7 @@ export default function Home() {
 
   return (
     <>
+      <SEOHead />
       <section className="min-h-screen flex items-center justify-center relative particle-bg pt-20">
         <div className="container mx-auto px-4 text-center">
           <motion.div
@@ -88,6 +91,9 @@ export default function Home() {
       
       {/* Stats Section */}
       <StatsSection />
+      
+      {/* Testimonials Section */}
+      <TestimonialSection />
       
       {/* Call to Action Section */}
       <CallToAction />

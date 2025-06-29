@@ -1,41 +1,90 @@
-import type { Express } from "express";
+import express, { type Express, Request, Response } from "express";
 import { createServer, type Server } from "http";
+import { body, validationResult } from "express-validator";
+import compression from "compression";
+import morgan from "morgan";
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  // Contact form endpoint
-  app.post("/api/contact", async (req, res) => {
+  // Add compression middleware
+  app.use(compression());
+  
+  // Add logging middleware
+  app.use(morgan('combined'));
+
+  // Input validation middleware for contact form
+  const contactValidation = [
+    body('name')
+      .trim()
+      .isLength({ min: 2, max: 100 })
+      .withMessage('Name must be between 2 and 100 characters')
+      .matches(/^[a-zA-Z\s'-]+$/)
+      .withMessage('Name can only contain letters, spaces, hyphens, and apostrophes'),
+    body('email')
+      .trim()
+      .isEmail()
+      .normalizeEmail()
+      .withMessage('Please provide a valid email address')
+      .isLength({ max: 254 })
+      .withMessage('Email address is too long'),
+    body('message')
+      .trim()
+      .isLength({ min: 10, max: 2000 })
+      .withMessage('Message must be between 10 and 2000 characters')
+      .escape() // Prevent XSS attacks
+  ];
+
+  // Contact form endpoint with enhanced validation and security
+  app.post("/api/contact", contactValidation, async (req: Request, res: Response) => {
     try {
+      // Check for validation errors
+      const errors = validationResult(req);
+      if (!errors.isEmpty()) {
+        return res.status(400).json({
+          message: "Validation failed",
+          errors: errors.array()
+        });
+      }
+
       const { name, email, message } = req.body;
       
-      // Validate required fields
-      if (!name || !email || !message) {
-        return res.status(400).json({ 
-          message: "Missing required fields: name, email, and message are required" 
-        });
-      }
-
-      // Email validation
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(email)) {
-        return res.status(400).json({ 
-          message: "Invalid email format" 
-        });
-      }
-
-      // In a real application, you would:
-      // 1. Send email using a service like SendGrid, Nodemailer, etc.
-      // 2. Store the message in a database
-      // 3. Send confirmation email to the user
+      // Additional security: Check for spam patterns
+      const spamPatterns = [
+        /https?:\/\/[^\s]+/gi, // URLs
+        /\b(?:click here|buy now|free money|lottery|winner)\b/gi, // Spam keywords
+        /(.)\1{10,}/gi // Repeated characters (potential spam)
+      ];
       
-      console.log("Contact form submission:", {
+      const messageContent = `${name} ${email} ${message}`.toLowerCase();
+      const isSpam = spamPatterns.some(pattern => pattern.test(messageContent));
+      
+      if (isSpam) {
+        return res.status(400).json({
+          message: "Message appears to be spam and was rejected"
+        });
+      }
+
+      // Log submission with IP for security monitoring
+      const submissionData = {
         name,
         email,
         message,
-        timestamp: new Date().toISOString()
-      });
+        timestamp: new Date().toISOString(),
+        ip: req.ip || req.connection.remoteAddress,
+        userAgent: req.get('User-Agent')
+      };
+      
+      console.log("Contact form submission:", submissionData);
+
+      // In production, implement:
+      // 1. Email service integration (SendGrid, Nodemailer, etc.)
+      // 2. Database storage with proper encryption
+      // 3. Email confirmation to user
+      // 4. Admin notification system
+      // 5. Follow-up tracking system
 
       res.json({ 
-        message: "Message sent successfully! Thank you for reaching out." 
+        message: "Message sent successfully! Thank you for reaching out. I'll respond within 24 hours.",
+        timestamp: new Date().toISOString()
       });
 
     } catch (error) {
@@ -44,6 +93,27 @@ export async function registerRoutes(app: Express): Promise<Server> {
         message: "Internal server error. Please try again later." 
       });
     }
+  });
+
+  // Health check endpoint
+  app.get("/api/health", (req, res) => {
+    res.json({
+      status: "healthy",
+      timestamp: new Date().toISOString(),
+      uptime: process.uptime()
+    });
+  });
+
+  // Portfolio stats endpoint (for dynamic stats)
+  app.get("/api/stats", (req, res) => {
+    res.json({
+      projects: 15,
+      yearsExperience: 2,
+      technologies: 12,
+      availableForHire: true,
+      responseTime: "< 24h",
+      lastUpdated: new Date().toISOString()
+    });
   });
 
   const httpServer = createServer(app);
