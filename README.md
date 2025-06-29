@@ -1,6 +1,10 @@
-# 🚀 Yubraj Kurmi - Senior Full Stack Developer Portfolio
+<div align="center">
+  <img src="public/logo-banner.svg" alt="YK Portfolio - Yubraj Kurmi Full Stack Developer" width="100%">
+</div>
 
-A cutting-edge, professional portfolio website showcasing advanced full-stack development expertise. Built with modern React, TypeScript, and Express.js featuring a futuristic sci-fi design, comprehensive contact system, complete resume preview, and dynamic project showcase.
+# YK Portfolio - Yubraj Kurmi
+
+A modern, professional portfolio website showcasing full-stack development expertise. Built with React, TypeScript, and Express.js featuring clean design, responsive interface, and comprehensive project showcase.
 
 ## 🌟 Live Features
 
