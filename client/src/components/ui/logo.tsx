@@ -8,46 +8,50 @@ interface LogoProps {
 
 export default function Logo({ size = "md", showText = true, className = "" }: LogoProps) {
   const sizeClasses = {
-    sm: "w-10 h-10",
-    md: "w-16 h-16", 
-    lg: "w-20 h-20"
+    sm: "w-8 h-8",
+    md: "w-12 h-12", 
+    lg: "w-16 h-16"
   };
 
   const textSizeClasses = {
-    sm: "text-lg",
-    md: "text-xl",
-    lg: "text-2xl"
+    sm: "text-sm",
+    md: "text-lg",
+    lg: "text-xl"
   };
 
   return (
     <motion.div
-      whileHover={{ scale: 1.02 }}
-      className={`${className}`}
+      whileHover={{ scale: 1.05 }}
+      className={`flex items-center gap-3 ${className}`}
     >
-      {/* Illustrated Logo SVG */}
+      {/* Modern Minimalist Logo */}
       <motion.div
-        whileHover={{ y: -2 }}
+        whileHover={{ rotate: 5 }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
-        className={`${sizeClasses[size]} relative`}
+        className={`${sizeClasses[size]} relative flex-shrink-0`}
       >
         <svg
-          viewBox="0 0 80 80"
+          viewBox="0 0 48 48"
           className="w-full h-full"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <defs>
-            <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#1E40AF" />
-              <stop offset="50%" stopColor="#374151" />
-              <stop offset="100%" stopColor="#0F172A" />
-            </linearGradient>
-            <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            {/* Modern Gradient */}
+            <linearGradient id="modernGradient" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#3B82F6" />
-              <stop offset="100%" stopColor="#1D4ED8" />
+              <stop offset="50%" stopColor="#8B5CF6" />
+              <stop offset="100%" stopColor="#06B6D4" />
             </linearGradient>
-            <filter id="glow">
-              <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+            
+            {/* Shadow Filter */}
+            <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+              <feDropShadow dx="0" dy="2" stdDeviation="2" floodColor="rgba(59, 130, 246, 0.3)"/>
+            </filter>
+            
+            {/* Subtle Glow */}
+            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
               <feMerge> 
                 <feMergeNode in="coloredBlur"/>
                 <feMergeNode in="SourceGraphic"/>
@@ -55,116 +59,107 @@ export default function Logo({ size = "md", showText = true, className = "" }: L
             </filter>
           </defs>
           
-          {/* Background Circle with Tech Pattern */}
+          {/* Background Circle */}
           <circle
-            cx="40"
-            cy="40"
-            r="38"
-            fill="url(#mainGradient)"
-            opacity="0.08"
+            cx="24"
+            cy="24"
+            r="22"
+            fill="url(#modernGradient)"
+            opacity="0.1"
+            filter="url(#shadow)"
           />
           
-          {/* Tech Grid Pattern */}
-          <defs>
-            <pattern id="techGrid" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
-              <path d="M 8 0 L 0 0 0 8" fill="none" stroke="#374151" strokeWidth="0.5" opacity="0.15"/>
-            </pattern>
-          </defs>
-          <circle cx="40" cy="40" r="35" fill="url(#techGrid)" opacity="0.3"/>
+          {/* Main Circle Border */}
+          <circle
+            cx="24"
+            cy="24"
+            r="20"
+            fill="none"
+            stroke="url(#modernGradient)"
+            strokeWidth="2"
+            filter="url(#glow)"
+          />
           
-          {/* Central Illustrated YK */}
-          <g transform="translate(40, 40)">
-            {/* Decorative Code Brackets */}
-            <path
-              d="M-25 -15 L-30 -10 L-30 10 L-25 15"
-              stroke="url(#accentGradient)"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              fill="none"
-              filter="url(#glow)"
-            />
-            <path
-              d="M25 -15 L30 -10 L30 10 L25 15"
-              stroke="url(#accentGradient)"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              fill="none"
-              filter="url(#glow)"
-            />
-            
-            {/* Y Letter - Artistic Design */}
+          {/* YK Monogram */}
+          <g transform="translate(24, 24)" filter="url(#glow)">
+            {/* Y Letter - Modern Geometric */}
             <g transform="translate(-8, 0)">
               <path
-                d="M-8 -12 L0 0 L8 -12 M0 0 L0 12"
-                stroke="url(#mainGradient)"
-                strokeWidth="4"
+                d="M-6 -8 L0 -2 L6 -8 M0 -2 L0 8"
+                stroke="url(#modernGradient)"
+                strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 fill="none"
-                filter="url(#glow)"
               />
-              {/* Y decoration dots */}
-              <circle cx="-6" cy="-8" r="1.5" fill="#1D4ED8" opacity="0.7"/>
-              <circle cx="6" cy="-8" r="1.5" fill="#1D4ED8" opacity="0.7"/>
-              <circle cx="0" cy="8" r="1.5" fill="#1D4ED8" opacity="0.7"/>
+              {/* Y Accent Dot */}
+              <circle cx="0" cy="6" r="1.5" fill="url(#modernGradient)" opacity="0.8"/>
             </g>
             
-            {/* K Letter - Artistic Design */}
+            {/* K Letter - Modern Geometric */}
             <g transform="translate(8, 0)">
               <path
-                d="M-4 -12 L-4 12 M-4 0 L8 -12 M-4 0 L8 12"
-                stroke="url(#mainGradient)"
-                strokeWidth="4"
+                d="M-4 -8 L-4 8 M-4 -1 L4 -8 M-4 -1 L4 8"
+                stroke="url(#modernGradient)"
+                strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 fill="none"
-                filter="url(#glow)"
               />
-              {/* K decoration dots */}
-              <circle cx="-4" cy="-8" r="1.5" fill="#1D4ED8" opacity="0.7"/>
-              <circle cx="4" cy="-6" r="1.5" fill="#1D4ED8" opacity="0.7"/>
-              <circle cx="4" cy="6" r="1.5" fill="#1D4ED8" opacity="0.7"/>
-              <circle cx="-4" cy="8" r="1.5" fill="#1D4ED8" opacity="0.7"/>
+              {/* K Accent Dots */}
+              <circle cx="2" cy="-4" r="1" fill="url(#modernGradient)" opacity="0.6"/>
+              <circle cx="2" cy="4" r="1" fill="url(#modernGradient)" opacity="0.6"/>
             </g>
           </g>
           
-          {/* Orbital Elements */}
+          {/* Subtle Decorative Elements */}
+          <g opacity="0.4">
+            {/* Corner Tech Elements */}
+            <rect x="6" y="6" width="2" height="2" rx="1" fill="url(#modernGradient)"/>
+            <rect x="40" y="6" width="2" height="2" rx="1" fill="url(#modernGradient)"/>
+            <rect x="6" y="40" width="2" height="2" rx="1" fill="url(#modernGradient)"/>
+            <rect x="40" y="40" width="2" height="2" rx="1" fill="url(#modernGradient)"/>
+          </g>
+          
+          {/* Rotating Ring Animation */}
           <circle
-            cx="40"
-            cy="40"
-            r="32"
+            cx="24"
+            cy="24"
+            r="18"
             fill="none"
-            stroke="#374151"
-            strokeWidth="1"
-            strokeDasharray="4,4"
+            stroke="url(#modernGradient)"
+            strokeWidth="0.5"
+            strokeDasharray="2,6"
             opacity="0.3"
           >
             <animateTransform
               attributeName="transform"
               attributeType="XML"
               type="rotate"
-              from="0 40 40"
-              to="360 40 40"
+              from="0 24 24"
+              to="360 24 24"
               dur="20s"
               repeatCount="indefinite"
             />
           </circle>
-          
-          {/* Floating Tech Icons */}
-          <g opacity="0.4">
-            {/* Code symbol */}
-            <text x="15" y="20" fontSize="8" fill="#374151" fontFamily="monospace">&lt;/&gt;</text>
-            {/* Gear symbol */}
-            <circle cx="65" cy="25" r="3" fill="none" stroke="#374151" strokeWidth="1"/>
-            <circle cx="65" cy="25" r="1.5" fill="#1D4ED8"/>
-            {/* Database symbol */}
-            <rect x="12" y="55" width="8" height="6" rx="2" fill="none" stroke="#374151" strokeWidth="1"/>
-            <line x1="14" y1="57" x2="18" y2="57" stroke="#374151" strokeWidth="1"/>
-            {/* Lightning bolt */}
-            <path d="M60 60 L65 55 L62 55 L67 50 L62 55 L65 55 Z" fill="#1D4ED8" opacity="0.6"/>
-          </g>
         </svg>
       </motion.div>
+
+      {/* Logo Text */}
+      {showText && (
+        <motion.div 
+          initial={{ opacity: 0, x: -10 }}
+          animate={{ opacity: 1, x: 0 }}
+          className="flex flex-col"
+        >
+          <span className={`font-display font-bold text-contrast ${textSizeClasses[size]} leading-tight`}>
+            Yubraj Kurmi
+          </span>
+          <span className="text-xs text-readable-secondary font-medium">
+            Full Stack Developer
+          </span>
+        </motion.div>
+      )}
     </motion.div>
   );
 }
