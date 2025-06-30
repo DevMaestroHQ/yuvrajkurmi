@@ -1,104 +1,231 @@
 import { motion } from "framer-motion";
+import { ArrowRight, Code2, Briefcase, User, Mail, Github, Linkedin, Download, Star, CheckCircle } from "lucide-react";
 import { Link } from "wouter";
-import { ArrowDown } from "lucide-react";
-import TerminalWindow from "@/components/ui/terminal-window";
-import CallToAction from "@/components/ui/call-to-action";
-import StatsSection from "@/components/ui/stats-section";
-import TestimonialSection from "@/components/ui/testimonial-section";
-import SEOHead from "@/components/ui/seo-head";
 import { fadeInUp, staggerChildren } from "@/lib/animations";
+import SEOHead from "@/components/ui/seo-head";
 
 export default function Home() {
+  const skills = [
+    { name: "React/Next.js", level: "Expert", icon: "⚛️" },
+    { name: "Node.js/Express", level: "Advanced", icon: "🟢" },
+    { name: "TypeScript", level: "Advanced", icon: "🔷" },
+    { name: "MongoDB/PostgreSQL", level: "Advanced", icon: "🗄️" },
+    { name: "AWS/Cloud", level: "Intermediate", icon: "☁️" },
+    { name: "Docker/DevOps", level: "Intermediate", icon: "🐳" }
+  ];
+
+  const achievements = [
+    { metric: "25+", label: "Projects Completed", description: "Delivered successfully" },
+    { metric: "15+", label: "Happy Clients", description: "Across various industries" },
+    { metric: "2+", label: "Years Experience", description: "In full-stack development" },
+    { metric: "99%", label: "Success Rate", description: "Client satisfaction" }
+  ];
 
   return (
     <>
-      <SEOHead />
-      <section className="min-h-screen flex items-center justify-center relative particle-bg pt-20 section-spacing">
-        <div className="container mx-auto px-4 text-center">
-          <motion.div
-            variants={staggerChildren}
-            initial="initial"
-            animate="animate"
-            className="max-w-4xl mx-auto"
-          >
-            <div className="professional-card p-8 mb-8">
-              <div className="text-neon-green mb-3 font-mono text-sm">$ cat profile.md</div>
-              <div className="text-readable-xl mb-6">
-                <div className="min-h-[2rem]">
-                  <span>Welcome to my digital workspace. I'm Yubraj Kurmi</span>
+      <SEOHead 
+        title="Yubraj Kurmi - Senior Full Stack Developer | Modern Web Solutions"
+        description="Experienced full-stack developer specializing in React, Node.js, and modern web technologies. Building scalable applications for startups and enterprises."
+        keywords="full stack developer, React developer, Node.js, TypeScript, web development, software engineer"
+      />
+      
+      <div className="min-h-screen bg-background">
+        {/* Hero Section */}
+        <section className="section-container min-h-screen flex items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={staggerChildren}
+              className="space-y-8"
+            >
+              <motion.div variants={fadeInUp} className="space-y-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-2 h-2 bg-brand-accent rounded-full animate-pulse"></div>
+                  <span className="text-brand-primary font-medium">Available for new opportunities</span>
+                </div>
+                
+                <h1 className="heading-xl">
+                  Senior Full Stack
+                  <span className="block text-brand-primary">Developer</span>
+                </h1>
+                
+                <p className="text-xl text-muted leading-relaxed max-w-xl">
+                  I build exceptional digital experiences with modern technologies. 
+                  Specialized in React, Node.js, and cloud-native solutions that scale.
+                </p>
+
+                <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-2">
+                    <Star className="w-5 h-5 text-yellow-500 fill-current" />
+                    <span className="font-medium">4.9/5 Client Rating</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-brand-accent" />
+                    <span className="font-medium">Top Rated Developer</span>
+                  </div>
+                </div>
+              </motion.div>
+
+              <motion.div 
+                variants={fadeInUp}
+                className="flex flex-wrap gap-4"
+              >
+                <Link href="/projects">
+                  <button className="btn-professional btn-primary">
+                    <Code2 className="w-5 h-5" />
+                    View My Work
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                </Link>
+                
+                <Link href="/contact">
+                  <button className="btn-professional btn-secondary">
+                    <Mail className="w-5 h-5" />
+                    Let's Talk
+                  </button>
+                </Link>
+                
+                <a 
+                  href="/resume.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="btn-professional btn-outline"
+                >
+                  <Download className="w-5 h-5" />
+                  Resume
+                </a>
+              </motion.div>
+
+              <motion.div variants={fadeInUp} className="flex gap-4 pt-4">
+                <a 
+                  href="https://github.com/DevMaestroHQ" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
+                  aria-label="GitHub Profile"
+                >
+                  <Github className="w-6 h-6" />
+                </a>
+                <a 
+                  href="https://linkedin.com/in/yubraj-kurmi" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
+                  aria-label="LinkedIn Profile"
+                >
+                  <Linkedin className="w-6 h-6" />
+                </a>
+              </motion.div>
+            </motion.div>
+
+            {/* Skills Preview */}
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="space-y-8"
+            >
+              <div className="professional-card">
+                <div className="professional-card-header">
+                  <h3 className="heading-sm">Core Technologies</h3>
+                  <p className="text-muted">Technologies I work with daily</p>
+                </div>
+                <div className="professional-card-content">
+                  <div className="grid grid-cols-2 gap-4">
+                    {skills.map((skill, index) => (
+                      <motion.div
+                        key={skill.name}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.1 * index }}
+                        className="flex items-center gap-3 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
+                      >
+                        <span className="text-2xl">{skill.icon}</span>
+                        <div>
+                          <div className="font-medium text-sm">{skill.name}</div>
+                          <div className="text-xs text-muted">{skill.level}</div>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
                 </div>
               </div>
-              <div className="text-cyber-blue mb-3 font-mono text-sm">$ whoami</div>
-              <div className="text-readable-xl mb-6 font-bold text-white">Full Stack Developer | React & Node.js Specialist | Modern Web Applications</div>
-              <div className="text-neon-green mb-3 font-mono text-sm">$ cat skills.json</div>
-              <div className="text-readable mb-6 text-base flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full border border-blue-500/30">React</span>
-                <span className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full border border-green-500/30">Node.js</span>
-                <span className="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full border border-yellow-500/30">JavaScript</span>
-                <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30">TypeScript</span>
-                <span className="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full border border-pink-500/30">MongoDB</span>
-                <span className="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full border border-cyan-500/30">Express.js</span>
-              </div>
-              <div className="text-neon-green mb-3 font-mono text-sm">$ cat status.json</div>
-              <div className="text-readable-lg font-semibold flex flex-wrap gap-4">
-                <span className="text-green-400 flex items-center">
-                  <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
-                  AVAILABLE_FOR_WORK
-                </span>
-                <span className="text-blue-400">REMOTE_FRIENDLY</span>
-                <span className="text-purple-400">FULL_STACK</span>
-              </div>
-            </div>
-            
-            <motion.div
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Achievements Section */}
+        <section className="section-container bg-gray-50">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerChildren}
+            className="text-center space-y-12"
+          >
+            <motion.div variants={fadeInUp}>
+              <h2 className="heading-lg mb-4">Proven Track Record</h2>
+              <p className="text-xl text-muted max-w-2xl mx-auto">
+                Delivering exceptional results for clients across various industries
+              </p>
+            </motion.div>
+
+            <motion.div 
               variants={fadeInUp}
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8"
+              className="grid grid-cols-2 lg:grid-cols-4 gap-8"
             >
-              <Link href="/about">
+              {achievements.map((achievement, index) => (
                 <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="cyber-border px-8 py-3 rounded-lg font-mono hover-glow transition-all duration-300 bg-gradient-to-r from-green-500/10 to-blue-500/10 cursor-pointer"
+                  key={achievement.label}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.1 * index }}
+                  className="text-center space-y-2"
                 >
-                  <span className="text-neon-green">./discover_work</span>
+                  <div className="text-4xl font-bold text-brand-primary">
+                    {achievement.metric}
+                  </div>
+                  <div className="font-semibold">{achievement.label}</div>
+                  <div className="text-sm text-muted">{achievement.description}</div>
                 </motion.div>
-              </Link>
-              <Link href="/contact">
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="border border-cyber px-8 py-3 rounded-lg font-mono hover:border-neon-green hover:text-neon-green transition-all duration-300 cursor-pointer"
-                >
-                  <span>./lets_collaborate</span>
-                </motion.div>
-              </Link>
+              ))}
             </motion.div>
           </motion.div>
-        </div>
-        
-        {/* Floating Elements */}
-        <div className="absolute top-20 left-10 w-2 h-2 bg-neon-green rounded-full animate-ping opacity-75"></div>
-        <div className="absolute top-40 right-20 w-1 h-1 bg-cyber-blue rounded-full animate-pulse"></div>
-        <div className="absolute bottom-20 left-1/4 w-3 h-3 bg-neon-purple rounded-full animate-bounce"></div>
-        
-        {/* Scroll Indicator */}
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 2 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        >
-          <ArrowDown className="w-6 h-6 text-neon-green" />
-        </motion.div>
-      </section>
-      
-      {/* Stats Section */}
-      <StatsSection />
-      
-      {/* Testimonials Section */}
-      <TestimonialSection />
-      
-      {/* Call to Action Section */}
-      <CallToAction />
+        </section>
+
+        {/* CTA Section */}
+        <section className="section-container">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="text-center space-y-8 bg-gradient-to-br from-brand-primary to-brand-secondary rounded-2xl p-12 text-white"
+          >
+            <h2 className="heading-lg">Ready to Start Your Project?</h2>
+            <p className="text-xl opacity-90 max-w-2xl mx-auto">
+              Let's discuss how I can help bring your ideas to life with modern, 
+              scalable web solutions that drive results.
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Link href="/contact">
+                <button className="btn-professional bg-white text-brand-primary hover:bg-gray-100">
+                  <Mail className="w-5 h-5" />
+                  Start a Conversation
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+              </Link>
+              <Link href="/projects">
+                <button className="btn-professional border-white text-white hover:bg-white hover:text-brand-primary">
+                  <Code2 className="w-5 h-5" />
+                  Explore My Work
+                </button>
+              </Link>
+            </div>
+          </motion.div>
+        </section>
+      </div>
     </>
   );
 }
