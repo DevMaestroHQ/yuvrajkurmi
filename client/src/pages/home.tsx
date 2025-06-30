@@ -156,7 +156,7 @@ export default function Home() {
         </section>
 
         {/* Achievements Section */}
-        <section className="section-container bg-gray-50">
+        <section className="section-container bg-gray-50 dark:bg-gray-800">
           <motion.div
             initial="hidden"
             whileInView="visible"

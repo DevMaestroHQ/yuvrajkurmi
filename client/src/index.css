@@ -85,6 +85,23 @@
   --border: 217.2 32.6% 17.5%;
   --input: 217.2 32.6% 17.5%;
   --ring: 224.3 76.3% 94.0%;
+  
+  /* Professional brand colors for dark mode */
+  --brand-primary: 217.2 91.2% 59.8%;
+  --brand-secondary: 262.1 83.3% 57.8%;
+  --brand-accent: 142.1 76.2% 36.3%;
+  
+  /* Professional grays for dark mode */
+  --gray-50: 217.2 32.6% 17.5%;
+  --gray-100: 215.3 19.3% 26.5%;
+  --gray-200: 215.4 16.3% 36.9%;
+  --gray-300: 215.4 16.3% 46.9%;
+  --gray-400: 215.4 16.3% 56.9%;
+  --gray-500: 213 27.8% 64.1%;
+  --gray-600: 214.3 31.8% 71.4%;
+  --gray-700: 210 40% 86%;
+  --gray-800: 210 40% 96%;
+  --gray-900: 210 40% 98%;
 }
 
 * {
@@ -153,16 +170,29 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(var(--gray-100));
+  background: hsl(var(--muted));
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--gray-300));
+  background: hsl(var(--muted-foreground) / 0.3);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--gray-400));
+  background: hsl(var(--muted-foreground) / 0.5);
+}
+
+/* Dark mode scrollbar adjustments */
+.dark ::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
 }
 
 /* Professional animations */
@@ -233,6 +263,11 @@ body {
   background: hsl(var(--gray-50));
   border-top: 1px solid hsl(var(--border));
   border-radius: 0 0 calc(var(--radius) + 2px) calc(var(--radius) + 2px);
+}
+
+/* Dark mode specific card footer */
+.dark .professional-card-footer {
+  background: hsl(var(--gray-800));
 }
 
 /* Professional button styles */

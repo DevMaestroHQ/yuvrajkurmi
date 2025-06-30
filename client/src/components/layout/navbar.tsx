@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Logo from "@/components/ui/logo";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,7 +49,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href}>
                 <motion.div
@@ -75,22 +76,26 @@ export default function Navbar() {
                 </motion.div>
               </Link>
             ))}
+            <ThemeToggle />
           </div>
 
-          {/* Mobile Menu Button */}
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            className="md:hidden text-brand-primary p-2 rounded-md hover:bg-muted transition-colors"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <motion.div
-              animate={{ rotate: isOpen ? 180 : 0 }}
-              transition={{ duration: 0.3 }}
+          {/* Mobile Actions */}
+          <div className="md:hidden flex items-center space-x-2">
+            <ThemeToggle />
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="text-brand-primary p-2 rounded-md hover:bg-muted transition-colors"
+              onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-            </motion.div>
-          </motion.button>
+              <motion.div
+                animate={{ rotate: isOpen ? 180 : 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              </motion.div>
+            </motion.button>
+          </div>
         </div>
       </div>
 

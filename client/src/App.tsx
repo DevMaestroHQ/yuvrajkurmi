@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocation } from "wouter";
+import { ThemeProvider } from "@/hooks/use-theme";
 
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
@@ -47,17 +48,19 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <div className="min-h-screen bg-background text-foreground antialiased">
-          <Preloader />
-          <Navbar />
-          <main className="relative">
-            <Router />
-          </main>
-          <Footer />
-          <Toaster />
-        </div>
-      </TooltipProvider>
+      <ThemeProvider defaultTheme="light" storageKey="portfolio-theme">
+        <TooltipProvider>
+          <div className="min-h-screen bg-background text-foreground antialiased">
+            <Preloader />
+            <Navbar />
+            <main className="relative">
+              <Router />
+            </main>
+            <Footer />
+            <Toaster />
+          </div>
+        </TooltipProvider>
+      </ThemeProvider>
     </QueryClientProvider>
   );
 }

@@ -31,7 +31,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-50 border-t border-border">
+    <footer className="bg-gray-50 dark:bg-gray-900 border-t border-border">
       <div className="section-container py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand Section */}
@@ -86,7 +86,7 @@ export default function Footer() {
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.1, y: -2 }}
                       whileTap={{ scale: 0.95 }}
-                      className={`p-2 rounded-lg bg-background hover:bg-gray-100 transition-colors ${social.color}`}
+                      className={`p-2 rounded-lg bg-background hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors ${social.color}`}
                       aria-label={social.name}
                     >
                       <Icon className="w-5 h-5" />
