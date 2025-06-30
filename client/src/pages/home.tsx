@@ -42,15 +42,15 @@ export default function Home() {
               <motion.div variants={fadeInUp} className="space-y-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-2 h-2 bg-brand-accent rounded-full animate-pulse"></div>
-                  <span className="text-brand-primary font-medium">Available for new opportunities</span>
+                  <span className="text-adaptive-primary font-medium">Available for new opportunities</span>
                 </div>
                 
-                <h1 className="heading-xl">
+                <h1 className="heading-xl font-display heading-adaptive">
                   Senior Full Stack
                   <span className="block gradient-primary bg-clip-text text-transparent">Developer</span>
                 </h1>
                 
-                <p className="text-xl text-muted leading-relaxed max-w-xl">
+                <p className="text-xl text-adaptive-secondary font-body leading-relaxed max-w-xl">
                   I build exceptional digital experiences with modern technologies. 
                   Specialized in React, Node.js, and cloud-native solutions that scale.
                 </p>
@@ -58,11 +58,11 @@ export default function Home() {
                 <div className="flex items-center gap-4">
                   <div className="flex items-center gap-2">
                     <Star className="w-5 h-5 text-yellow-500 fill-current" />
-                    <span className="font-medium">4.9/5 Client Rating</span>
+                    <span className="font-medium text-adaptive">4.9/5 Client Rating</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-brand-accent" />
-                    <span className="font-medium">Top Rated Developer</span>
+                    <span className="font-medium text-adaptive">Top Rated Developer</span>
                   </div>
                 </div>
               </motion.div>

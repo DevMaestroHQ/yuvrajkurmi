@@ -59,10 +59,10 @@ export default function Navbar() {
                   }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ duration: 0.2, ease: "easeInOut" }}
-                  className={`relative px-4 py-2 rounded-md font-medium text-sm transition-all duration-300 cursor-pointer ${
+                  className={`relative px-4 py-2 rounded-md font-medium text-sm font-body transition-all duration-300 cursor-pointer ${
                     location === item.href 
-                      ? "text-brand-primary bg-brand-primary/10" 
-                      : "text-foreground/70 hover:text-foreground hover:bg-muted"
+                      ? "text-adaptive-primary bg-brand-primary/10" 
+                      : "text-adaptive-muted hover:text-adaptive hover:bg-muted"
                   }`}
                 >
                   {item.label}
@@ -118,10 +118,10 @@ export default function Navbar() {
                 transition={{ delay: index * 0.1, duration: 0.3 }}
                 whileHover={{ scale: 1.05, x: 5 }}
                 whileTap={{ scale: 0.95 }}
-                className={`text-lg font-medium transition-all duration-300 cursor-pointer px-4 py-2 rounded-md ${
+                className={`text-lg font-medium font-body transition-all duration-300 cursor-pointer px-4 py-2 rounded-md ${
                   location === item.href 
-                    ? "text-brand-primary bg-brand-primary/10" 
-                    : "text-foreground/70 hover:text-foreground hover:bg-muted"
+                    ? "text-adaptive-primary bg-brand-primary/10" 
+                    : "text-adaptive-muted hover:text-adaptive hover:bg-muted"
                 }`}
                 onClick={() => setIsOpen(false)}
               >

@@ -38,8 +38,8 @@ export default function Footer() {
           <div className="space-y-4">
             <Logo size="sm" showText={false} />
             <div>
-              <h3 className="font-semibold text-foreground mb-2">Yubraj Kurmi</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <h3 className="font-semibold font-display heading-adaptive mb-2">Yubraj Kurmi</h3>
+              <p className="text-adaptive-muted font-body text-sm leading-relaxed">
                 Senior Full Stack Developer crafting exceptional digital experiences 
                 with modern technologies and user-centered design.
               </p>
@@ -48,7 +48,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Quick Links</h3>
+            <h3 className="font-semibold font-display heading-adaptive">Quick Links</h3>
             <ul className="space-y-2">
               {[
                 { name: "About Me", href: "/about" },
