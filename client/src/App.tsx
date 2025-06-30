@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocation } from "wouter";
 import { ThemeProvider } from "@/hooks/use-theme";
+import { useState, useEffect } from "react";
 
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
@@ -46,17 +47,33 @@ function Router() {
 }
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate app initialization under 1 second
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 800);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider defaultTheme="light" storageKey="portfolio-theme">
         <TooltipProvider>
           <div className="min-h-screen bg-background text-foreground antialiased">
-            <Preloader />
-            <Navbar />
-            <main className="relative">
-              <Router />
-            </main>
-            <Footer />
+            {isLoading ? (
+              <Preloader />
+            ) : (
+              <>
+                <Navbar />
+                <main className="relative">
+                  <Router />
+                </main>
+                <Footer />
+              </>
+            )}
             <Toaster />
           </div>
         </TooltipProvider>

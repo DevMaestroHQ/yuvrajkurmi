@@ -275,6 +275,21 @@ body {
   background: hsl(var(--muted-foreground) / 0.5);
 }
 
+/* Form placeholder styling */
+input::placeholder,
+textarea::placeholder {
+  color: hsl(var(--muted-foreground) / 0.4) !important;
+  font-weight: 300;
+  opacity: 1;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: hsl(var(--muted-foreground) / 0.3) !important;
+  font-weight: 300;
+  opacity: 1;
+}
+
 /* Professional component styles */
 @layer components {
   .section-container {
