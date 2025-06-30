@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Calendar, MapPin, Users, Trophy, Code, TrendingUp, Award, CheckCircle } from "lucide-react";
 import { fadeInUp, staggerChildren } from "@/lib/animations";
+import SEOHead from "@/components/ui/seo-head";
 
 export default function Experience() {
   const experiences = [
@@ -111,7 +112,14 @@ export default function Experience() {
   ];
 
   return (
-    <section className="py-20 bg-background min-h-screen pt-24">
+    <>
+      <SEOHead 
+        title="Professional Experience - Yubraj Kurmi | Career Timeline & Achievements"
+        description="Explore Yubraj Kurmi's professional journey as a Full Stack Developer. Detailed career timeline, achievements, and experience across different companies and technologies."
+        keywords="yubraj kurmi experience, full stack developer career, professional timeline, work experience, achievements, career progression, software development jobs"
+        canonicalUrl="https://yuvrajkurmi.github.com/experience"
+      />
+      <section className="py-20 bg-background min-h-screen pt-24">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Header Section */}
         <motion.div
@@ -302,5 +310,6 @@ export default function Experience() {
         </motion.div>
       </div>
     </section>
+    </>
   );
 }

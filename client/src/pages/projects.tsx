@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github, Sparkles, Rocket, Globe, Zap, Shield, Heart } from "lucide-react";
 import { fadeInUp, staggerChildren } from "@/lib/animations";
+import SEOHead from "@/components/ui/seo-head";
 
 export default function Projects() {
   const featuredProjects = [
@@ -109,7 +110,14 @@ export default function Projects() {
   ];
 
   return (
-    <section className="py-20 bg-background min-h-screen pt-24">
+    <>
+      <SEOHead 
+        title="Projects Portfolio - Yubraj Kurmi | Full Stack Development Showcase"
+        description="Explore my comprehensive portfolio of full-stack web applications. Featuring e-commerce platforms, chat applications, project management tools, and more. Built with React, Node.js, and modern technologies."
+        keywords="yubraj kurmi projects, full stack portfolio, react projects, nodejs applications, web development showcase, ecommerce platform, chat application, project management"
+        canonicalUrl="https://yuvrajkurmi.github.com/projects"
+      />
+      <section className="py-20 bg-background min-h-screen pt-24">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header Section */}
         <motion.div
@@ -293,5 +301,6 @@ export default function Projects() {
         </motion.div>
       </div>
     </section>
+    </>
   );
 }

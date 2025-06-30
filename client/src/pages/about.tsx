@@ -5,6 +5,7 @@ import AchievementBadge from "@/components/ui/achievement-badge";
 import SkillsRadar from "@/components/ui/skills-radar";
 import AvailabilityIndicator from "@/components/ui/availability-indicator";
 import CodeShowcase from "@/components/ui/code-showcase";
+import SEOHead from "@/components/ui/seo-head";
 
 export default function About() {
   const achievements = [
@@ -309,6 +310,12 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
 
   return (
     <>
+      <SEOHead 
+        title="About Yubraj Kurmi - Full Stack Developer | Professional Background & Skills"
+        description="Learn about Yubraj Kurmi, a dedicated Full Stack Developer with 2+ years of experience in React, Node.js, and modern web technologies. Discover my journey, skills, and achievements."
+        keywords="about yubraj kurmi, full stack developer background, react developer profile, web developer skills, programming experience, software engineer bio"
+        canonicalUrl="https://yuvrajkurmi.github.com/about"
+      />
       {/* Hero Section */}
       <section className="relative py-24 pt-32 overflow-hidden bg-background">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-background to-brand-secondary/5" />

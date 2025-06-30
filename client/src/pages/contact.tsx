@@ -9,6 +9,7 @@ import { useToast } from "@/hooks/use-toast";
 import { fadeInUp, slideInLeft, slideInRight, staggerChildren } from "@/lib/animations";
 import PricingCalculator from "@/components/ui/pricing-calculator";
 import AvailabilityIndicator from "@/components/ui/availability-indicator";
+import SEOHead from "@/components/ui/seo-head";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -109,6 +110,12 @@ export default function Contact() {
 
   return (
     <>
+      <SEOHead 
+        title="Contact Yubraj Kurmi - Hire Full Stack Developer | Get Free Quote"
+        description="Get in touch with Yubraj Kurmi for your next web development project. Free consultation, project estimation, and quick response. Available for freelance and contract work."
+        keywords="contact yubraj kurmi, hire full stack developer, web development services, freelance developer, project consultation, get quote, development cost"
+        canonicalUrl="https://yuvrajkurmi.github.com/contact"
+      />
       <section className="py-20 bg-background pt-32">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
