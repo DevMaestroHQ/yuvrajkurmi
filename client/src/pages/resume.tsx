@@ -1,10 +1,93 @@
 import { motion } from "framer-motion";
-import { Download, Eye } from "lucide-react";
+import { Download, Eye, MapPin, Mail, Phone, Globe, Code, Award, BookOpen, Briefcase, Calendar, Star, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import SEOHead from "@/components/ui/seo-head";
 import { fadeInUp, staggerChildren } from "@/lib/animations";
 
 export default function Resume() {
+  const contactInfo = {
+    name: "Yubraj Kurmi",
+    title: "Senior Full Stack Developer",
+    location: "Devdaha, Rupandehi, Nepal",
+    email: "yuvrajkurmi03@gmail.com",
+    phone: "+977-98XXXXXXXX",
+    website: "https://yubrajkurmi.portfolio.dev",
+    github: "https://github.com/yubrajkurmi",
+    linkedin: "https://linkedin.com/in/yuvrajkurmi03"
+  };
+
+  const experience = [
+    {
+      title: "Senior Full Stack Developer",
+      company: "Freelance",
+      duration: "2023 - Present",
+      location: "Remote",
+      achievements: [
+        "Delivered 25+ successful projects for clients across various industries",
+        "Specialized in React/Next.js and Node.js full-stack applications",
+        "Maintained 99% client satisfaction rate with on-time project delivery",
+        "Architected scalable solutions handling 10,000+ concurrent users",
+        "Implemented modern CI/CD pipelines reducing deployment time by 60%"
+      ]
+    },
+    {
+      title: "Frontend Developer",
+      company: "Local Tech Startup",
+      duration: "2022 - 2023",
+      location: "Nepal",
+      achievements: [
+        "Developed responsive web applications using React and TypeScript",
+        "Collaborated with design teams to implement pixel-perfect UIs",
+        "Optimized application performance resulting in 40% faster load times",
+        "Mentored junior developers and conducted code reviews"
+      ]
+    }
+  ];
+
+  const education = [
+    {
+      degree: "Bachelor of Computer Science",
+      institution: "Tribhuvan University",
+      duration: "2021 - Present",
+      location: "Nepal",
+      details: [
+        "Relevant Coursework: Data Structures, Algorithms, Database Systems, Software Engineering",
+        "Current GPA: 3.8/4.0",
+        "Active member of Computer Science Society"
+      ]
+    }
+  ];
+
+  const certifications = [
+    "AWS Certified Cloud Practitioner",
+    "React Developer Certification - Meta",
+    "Node.js Application Development - IBM",
+    "MongoDB Certified Developer",
+    "Google Analytics Certified"
+  ];
+
+  const projects = [
+    {
+      name: "E-Commerce Platform",
+      description: "Full-stack marketplace with payment integration",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      impact: "Processed $50,000+ in transactions"
+    },
+    {
+      name: "Learning Management System",
+      description: "Educational platform with video streaming",
+      technologies: ["Next.js", "PostgreSQL", "AWS"],
+      impact: "Served 1,000+ students"
+    },
+    {
+      name: "Healthcare Management",
+      description: "Patient management system with telemedicine",
+      technologies: ["React", "Express", "MySQL"],
+      impact: "Improved patient workflow by 50%"
+    }
+  ];
+
   const skills = {
     technical: [
       "React, TypeScript, JavaScript",
@@ -29,244 +112,271 @@ export default function Resume() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-dark-bg to-dark-surface pt-32">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+    <>
+      <SEOHead 
+        title="Yubraj Kurmi Resume - Full Stack Developer CV & Experience"
+        description="Download Yubraj Kurmi's professional resume. 2+ years experience as Senior Full Stack Developer. React, Node.js, AWS expertise. Available for hire."
+        keywords="yubraj kurmi resume, full stack developer cv, react developer resume, node.js developer, download resume, hire developer"
+      />
+      
+      <div className="min-h-screen bg-background">
+        <div className="section-container py-24">
           <motion.div
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
+            initial="hidden"
+            animate="visible"
             variants={staggerChildren}
-            className="text-center mb-16"
+            className="max-w-4xl mx-auto space-y-12"
           >
-            <motion.h2
-              variants={fadeInUp}
-              className="font-orbitron text-4xl font-bold text-white mb-4"
-            >
-              Resume & Skills
-            </motion.h2>
-            <motion.p
-              variants={fadeInUp}
-              className="text-readable-lg max-w-2xl mx-auto"
-            >
-              2+ years of web development experience with focus on modern JavaScript technologies
-            </motion.p>
-            <motion.div
-              variants={fadeInUp}
-              className="w-24 h-1 bg-gradient-to-r from-neon-green to-cyber-blue mx-auto"
-            />
-          </motion.div>
-
-          {/* Resume Actions */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
-          >
-            <Button
-              asChild
-              className="cyber-border bg-gradient-to-r from-green-500/10 to-blue-500/10 hover-glow font-mono text-neon-green"
-            >
-              <a href="/resume.pdf" target="_blank">
-                <Eye className="w-4 h-4 mr-2" />
-                View Resume
-              </a>
-            </Button>
-            <Button
-              asChild
-              className="border border-cyber hover:border-neon-green hover:text-neon-green font-mono transition-all duration-300"
-            >
-              <a href="/resume.pdf" download>
-                <Download className="w-4 h-4 mr-2" />
-                Download PDF
-              </a>
-            </Button>
-          </motion.div>
-
-          {/* Complete Resume Content */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="professional-card p-8 mb-12"
-          >
-            <div className="max-w-4xl mx-auto">
-              {/* Header Section */}
-              <div className="text-center mb-12 border-b border-cyber pb-8">
-                <h1 className="text-4xl font-orbitron font-bold gradient-text mb-4">
-                  YUBRAJ KURMI
-                </h1>
-                <h2 className="text-xl text-cyber-blue mb-4">Full Stack Developer</h2>
-                <div className="grid md:grid-cols-3 gap-4 text-sm text-slate-300 font-mono">
-                  <div>📧 developerrajir@gmail.com</div>
-                  <div>📱 +977-98XXXXXXXX</div>
-                  <div>📍 Devdaha, Rupandehi, Nepal</div>
-                </div>
-                <div className="flex justify-center space-x-4 mt-4">
-                  <a href="https://github.com/DevMaestroHQ" className="text-neon-green hover:text-neon-green-bright">GitHub</a>
-                  <a href="https://linkedin.com/in/yuvrajkurmi03" className="text-cyber-blue hover:text-neon-blue-bright">LinkedIn</a>
-                  <a href="https://yuvrajkurmi.github.com" className="text-neon-purple hover:text-neon-purple-bright">Portfolio</a>
-                </div>
+            {/* Header */}
+            <motion.div variants={fadeInUp} className="text-center space-y-6">
+              <h1 className="heading-xl font-display heading-adaptive">Professional Resume</h1>
+              <p className="text-xl text-adaptive-secondary">
+                Comprehensive overview of my professional experience, skills, and achievements
+              </p>
+              
+              <div className="flex flex-wrap justify-center gap-4">
+                <Button className="btn-professional btn-primary">
+                  <Download className="w-5 h-5" />
+                  Download PDF Resume
+                </Button>
+                <Button variant="outline" className="btn-professional btn-outline">
+                  <Eye className="w-5 h-5" />
+                  View Full Resume
+                </Button>
               </div>
+            </motion.div>
 
-              {/* Professional Summary */}
-              <div className="mb-8">
-                <h3 className="text-xl font-orbitron text-neon-green mb-4 border-l-4 border-neon-green pl-4">
-                  PROFESSIONAL SUMMARY
-                </h3>
-                <p className="text-slate-300 leading-relaxed">
-                  Senior Full Stack Developer with 5+ years of expertise in building scalable web applications and enterprise solutions. 
-                  Proven track record of delivering high-performance applications serving 50,000+ users with 99.9% uptime. 
-                  Specialized in React, Node.js, cloud architecture, and DevOps practices. Led teams of 8+ developers and 
-                  managed projects worth $2M+ in transaction volume.
-                </p>
-              </div>
+            {/* Contact Information */}
+            <motion.div variants={fadeInUp}>
+              <Card className="card-professional">
+                <CardContent className="p-8">
+                  <div className="text-center space-y-4">
+                    <h2 className="heading-lg text-brand-primary">{contactInfo.name}</h2>
+                    <p className="text-xl text-adaptive-secondary">{contactInfo.title}</p>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+                      <div className="flex items-center gap-2 justify-center">
+                        <MapPin className="w-4 h-4 text-brand-primary" />
+                        <span className="text-sm text-adaptive">{contactInfo.location}</span>
+                      </div>
+                      <div className="flex items-center gap-2 justify-center">
+                        <Mail className="w-4 h-4 text-brand-primary" />
+                        <span className="text-sm text-adaptive">{contactInfo.email}</span>
+                      </div>
+                      <div className="flex items-center gap-2 justify-center">
+                        <Phone className="w-4 h-4 text-brand-primary" />
+                        <span className="text-sm text-adaptive">{contactInfo.phone}</span>
+                      </div>
+                      <div className="flex items-center gap-2 justify-center">
+                        <Globe className="w-4 h-4 text-brand-primary" />
+                        <span className="text-sm text-adaptive">Portfolio</span>
+                      </div>
+                    </div>
 
-              {/* Experience */}
-              <div className="mb-8">
-                <h3 className="text-xl font-orbitron text-neon-green mb-6 border-l-4 border-neon-green pl-4">
-                  PROFESSIONAL EXPERIENCE
-                </h3>
-                
-                <div className="space-y-6">
-                  <div className="border-l-2 border-cyber-blue pl-6">
-                    <h4 className="text-lg font-bold text-white">Senior Full Stack Developer</h4>
-                    <div className="text-cyber-blue font-mono text-sm mb-2">TechCorp Solutions | 2022 - Present</div>
-                    <ul className="text-slate-300 space-y-2 text-sm">
-                      <li>• Architected and developed 15+ enterprise applications serving 50,000+ users</li>
-                      <li>• Led team of 8 developers, implementing Agile methodologies and code review processes</li>
-                      <li>• Optimized application performance by 40% through advanced caching and database optimization</li>
-                      <li>• Implemented CI/CD pipelines reducing deployment time from 2 hours to 15 minutes</li>
-                      <li>• Managed $2M+ transaction processing systems with 99.9% uptime</li>
-                    </ul>
+                    <div className="flex justify-center gap-4 mt-6">
+                      <a href={contactInfo.github} target="_blank" rel="noopener noreferrer" 
+                         className="flex items-center gap-2 text-adaptive hover:text-brand-primary transition-colors">
+                        <Github className="w-5 h-5" />
+                        <span>GitHub</span>
+                      </a>
+                      <a href={contactInfo.linkedin} target="_blank" rel="noopener noreferrer"
+                         className="flex items-center gap-2 text-adaptive hover:text-brand-primary transition-colors">
+                        <Linkedin className="w-5 h-5" />
+                        <span>LinkedIn</span>
+                      </a>
+                    </div>
                   </div>
+                </CardContent>
+              </Card>
+            </motion.div>
 
-                  <div className="border-l-2 border-cyber-blue pl-6">
-                    <h4 className="text-lg font-bold text-white">Full Stack Developer</h4>
-                    <div className="text-cyber-blue font-mono text-sm mb-2">Digital Innovations Ltd | 2020 - 2022</div>
-                    <ul className="text-slate-300 space-y-2 text-sm">
-                      <li>• Developed 10+ client projects using React, Node.js, and cloud technologies</li>
-                      <li>• Integrated third-party APIs and payment gateways for e-commerce platforms</li>
-                      <li>• Implemented responsive designs increasing mobile engagement by 35%</li>
-                      <li>• Collaborated with Fortune 500 clients on enterprise solutions</li>
-                    </ul>
-                  </div>
-
-                  <div className="border-l-2 border-cyber-blue pl-6">
-                    <h4 className="text-lg font-bold text-white">Frontend Developer</h4>
-                    <div className="text-cyber-blue font-mono text-sm mb-2">StartupTech | 2019 - 2020</div>
-                    <ul className="text-slate-300 space-y-2 text-sm">
-                      <li>• Built interactive user interfaces for 5+ SaaS applications</li>
-                      <li>• Implemented modern JavaScript frameworks and state management</li>
-                      <li>• Improved application load times by 50% through optimization techniques</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              {/* Education */}
-              <div className="mb-8">
-                <h3 className="text-xl font-orbitron text-neon-green mb-4 border-l-4 border-neon-green pl-4">
-                  EDUCATION
-                </h3>
-                <div className="border-l-2 border-cyber-blue pl-6">
-                  <h4 className="text-lg font-bold text-white">Bachelor of Computer Science</h4>
-                  <div className="text-cyber-blue font-mono text-sm mb-2">Tribhuvan University | 2016 - 2020</div>
-                  <p className="text-slate-300 text-sm">
-                    Graduated with First Class Honors. Specialized in Software Engineering and Web Technologies.
+            {/* Professional Summary */}
+            <motion.div variants={fadeInUp}>
+              <Card className="card-professional">
+                <CardContent className="p-8">
+                  <h3 className="heading-md text-brand-primary mb-6 flex items-center gap-3">
+                    <Briefcase className="w-6 h-6" />
+                    Professional Summary
+                  </h3>
+                  <p className="text-adaptive leading-relaxed">
+                    Passionate Senior Full Stack Developer with 2+ years of experience building scalable web applications. 
+                    Specialized in React, Node.js, and cloud technologies. Proven track record of delivering 25+ successful 
+                    projects with 99% client satisfaction. Currently pursuing Computer Science degree while actively 
+                    freelancing and contributing to innovative digital solutions.
                   </p>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
+            </motion.div>
 
-              {/* Certifications */}
-              <div className="mb-8">
-                <h3 className="text-xl font-orbitron text-neon-green mb-4 border-l-4 border-neon-green pl-4">
-                  CERTIFICATIONS
-                </h3>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="text-slate-300">
-                    <div className="font-bold text-white">AWS Certified Solutions Architect</div>
-                    <div className="text-sm text-cyber-blue">Amazon Web Services | 2023</div>
+            {/* Experience Section */}
+            <motion.div variants={fadeInUp}>
+              <Card className="card-professional">
+                <CardContent className="p-8">
+                  <h3 className="heading-md text-brand-primary mb-6 flex items-center gap-3">
+                    <Briefcase className="w-6 h-6" />
+                    Professional Experience
+                  </h3>
+                  <div className="space-y-8">
+                    {experience.map((job, index) => (
+                      <div key={index} className="border-l-2 border-brand-primary/30 pl-6 pb-6">
+                        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+                          <div>
+                            <h4 className="text-lg font-semibold text-adaptive">{job.title}</h4>
+                            <p className="text-brand-primary font-medium">{job.company}</p>
+                          </div>
+                          <div className="text-sm text-adaptive-secondary">
+                            <div className="flex items-center gap-2">
+                              <Calendar className="w-4 h-4" />
+                              {job.duration}
+                            </div>
+                            <div className="flex items-center gap-2 mt-1">
+                              <MapPin className="w-4 h-4" />
+                              {job.location}
+                            </div>
+                          </div>
+                        </div>
+                        <ul className="space-y-2">
+                          {job.achievements.map((achievement, i) => (
+                            <li key={i} className="flex items-start gap-2 text-adaptive-secondary">
+                              <Star className="w-4 h-4 text-brand-accent mt-0.5 flex-shrink-0" />
+                              {achievement}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
                   </div>
-                  <div className="text-slate-300">
-                    <div className="font-bold text-white">Google Cloud Professional Developer</div>
-                    <div className="text-sm text-cyber-blue">Google Cloud Platform | 2022</div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Education Section */}
+            <motion.div variants={fadeInUp}>
+              <Card className="card-professional">
+                <CardContent className="p-8">
+                  <h3 className="heading-md text-brand-primary mb-6 flex items-center gap-3">
+                    <BookOpen className="w-6 h-6" />
+                    Education
+                  </h3>
+                  <div className="space-y-6">
+                    {education.map((edu, index) => (
+                      <div key={index} className="border-l-2 border-brand-secondary/30 pl-6">
+                        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+                          <div>
+                            <h4 className="text-lg font-semibold text-adaptive">{edu.degree}</h4>
+                            <p className="text-brand-secondary font-medium">{edu.institution}</p>
+                          </div>
+                          <div className="text-sm text-adaptive-secondary">
+                            <div className="flex items-center gap-2">
+                              <Calendar className="w-4 h-4" />
+                              {edu.duration}
+                            </div>
+                            <div className="flex items-center gap-2 mt-1">
+                              <MapPin className="w-4 h-4" />
+                              {edu.location}
+                            </div>
+                          </div>
+                        </div>
+                        <ul className="space-y-1">
+                          {edu.details.map((detail, i) => (
+                            <li key={i} className="text-adaptive-secondary text-sm">
+                              • {detail}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
                   </div>
-                  <div className="text-slate-300">
-                    <div className="font-bold text-white">Certified Kubernetes Administrator</div>
-                    <div className="text-sm text-cyber-blue">Cloud Native Computing Foundation | 2023</div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Key Projects */}
+            <motion.div variants={fadeInUp}>
+              <Card className="card-professional">
+                <CardContent className="p-8">
+                  <h3 className="heading-md text-brand-primary mb-6 flex items-center gap-3">
+                    <Code className="w-6 h-6" />
+                    Key Projects
+                  </h3>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {projects.map((project, index) => (
+                      <div key={index} className="bg-muted/50 rounded-lg p-6 hover:shadow-md transition-shadow">
+                        <h4 className="font-semibold text-adaptive mb-2">{project.name}</h4>
+                        <p className="text-sm text-adaptive-secondary mb-3">{project.description}</p>
+                        <div className="flex flex-wrap gap-1 mb-3">
+                          {project.technologies.map((tech, i) => (
+                            <span key={i} className="text-xs bg-brand-primary/10 text-brand-primary px-2 py-1 rounded">
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                        <p className="text-sm font-medium text-brand-accent">{project.impact}</p>
+                      </div>
+                    ))}
                   </div>
-                  <div className="text-slate-300">
-                    <div className="font-bold text-white">MongoDB Certified Developer</div>
-                    <div className="text-sm text-cyber-blue">MongoDB University | 2022</div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Certifications */}
+            <motion.div variants={fadeInUp}>
+              <Card className="card-professional">
+                <CardContent className="p-8">
+                  <h3 className="heading-md text-brand-primary mb-6 flex items-center gap-3">
+                    <Award className="w-6 h-6" />
+                    Certifications & Achievements
+                  </h3>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    {certifications.map((cert, index) => (
+                      <div key={index} className="flex items-center gap-3 bg-muted/50 rounded-lg p-4">
+                        <Award className="w-5 h-5 text-brand-accent flex-shrink-0" />
+                        <span className="text-adaptive">{cert}</span>
+                      </div>
+                    ))}
                   </div>
-                </div>
-              </div>
-            </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Technical Skills */}
+            <motion.div variants={fadeInUp}>
+              <Card className="card-professional">
+                <CardContent className="p-8">
+                  <h3 className="heading-md text-brand-primary mb-6 flex items-center gap-3">
+                    <Code className="w-6 h-6" />
+                    Technical Skills
+                  </h3>
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div>
+                      <h4 className="font-semibold text-adaptive mb-4">Technical Skills</h4>
+                      <div className="space-y-2">
+                        {skills.technical.map((skill, index) => (
+                          <div key={index} className="flex items-center gap-2">
+                            <div className="w-2 h-2 bg-brand-primary rounded-full"></div>
+                            <span className="text-adaptive-secondary">{skill}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-adaptive mb-4">Professional Skills</h4>
+                      <div className="space-y-2">
+                        {skills.soft.map((skill, index) => (
+                          <div key={index} className="flex items-center gap-2">
+                            <div className="w-2 h-2 bg-brand-secondary rounded-full"></div>
+                            <span className="text-adaptive-secondary">{skill}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
           </motion.div>
-
-          {/* Skills Breakdown */}
-          <div className="grid md:grid-cols-2 gap-8">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <Card className="bg-dark-card/50 backdrop-blur-sm border-cyber">
-                <CardContent className="p-6">
-                  <h3 className="font-orbitron text-xl text-cyber-blue mb-6">Technical Skills</h3>
-                  <div className="space-y-3">
-                    {skills.technical.map((skill, index) => (
-                      <motion.div
-                        key={skill}
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: index * 0.1 }}
-                        className="flex items-center space-x-3 font-mono text-sm"
-                      >
-                        <span className="text-neon-green">•</span>
-                        <span className="text-slate-300">{skill}</span>
-                      </motion.div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <Card className="bg-dark-card/50 backdrop-blur-sm border-cyber">
-                <CardContent className="p-6">
-                  <h3 className="font-orbitron text-xl text-cyber-blue mb-6">Soft Skills</h3>
-                  <div className="space-y-3">
-                    {skills.soft.map((skill, index) => (
-                      <motion.div
-                        key={skill}
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: index * 0.1 }}
-                        className="flex items-center space-x-3 font-mono text-sm"
-                      >
-                        <span className="text-cyber-blue">•</span>
-                        <span className="text-slate-300">{skill}</span>
-                      </motion.div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-          </div>
         </div>
       </div>
-    </section>
+    </>
   );
 }

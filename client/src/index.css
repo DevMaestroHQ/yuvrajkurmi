@@ -247,6 +247,72 @@ body {
   background: hsl(var(--muted-foreground) / 0.5);
 }
 
+/* Professional component styles */
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-professional {
+    @apply inline-flex items-center gap-3 px-6 py-3 rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply text-white professional-shadow-hover;
+    background-color: hsl(var(--brand-primary));
+  }
+  
+  .btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px hsl(var(--brand-primary) / 0.5);
+  }
+  
+  .btn-primary:hover {
+    background-color: hsl(var(--brand-primary) / 0.9);
+  }
+  
+  .btn-outline {
+    @apply border-2;
+    border-color: hsl(var(--brand-primary));
+    color: hsl(var(--brand-primary));
+  }
+  
+  .btn-outline:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px hsl(var(--brand-primary) / 0.5);
+  }
+  
+  .btn-outline:hover {
+    background-color: hsl(var(--brand-primary));
+    color: white;
+  }
+  
+  .card-professional {
+    @apply bg-card rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border;
+    border-color: hsl(var(--border) / 0.5);
+  }
+  
+  .heading-xl {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight;
+  }
+  
+  .heading-lg {
+    @apply text-3xl sm:text-4xl font-bold leading-tight;
+  }
+  
+  .heading-md {
+    @apply text-2xl sm:text-3xl font-bold leading-tight;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .glass-effect {
+    @apply backdrop-blur-sm border border-white/20 shadow-lg;
+  }
+}
+
 /* Professional animations */
 @keyframes slideUp {
   from {
