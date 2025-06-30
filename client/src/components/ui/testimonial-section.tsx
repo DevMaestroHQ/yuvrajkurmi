@@ -41,7 +41,7 @@ export default function TestimonialSection() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-dark-surface to-dark-bg">
+    <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -53,19 +53,19 @@ export default function TestimonialSection() {
           >
             <motion.h2
               variants={fadeInUp}
-              className="font-orbitron text-4xl font-bold text-white mb-4"
+              className="heading-lg text-contrast mb-4"
             >
               Client Success Stories
             </motion.h2>
             <motion.p
               variants={fadeInUp}
-              className="text-readable-lg max-w-2xl mx-auto mb-8"
+              className="text-readable max-w-2xl mx-auto mb-8"
             >
               What clients say about working with me on their projects
             </motion.p>
             <motion.div
               variants={fadeInUp}
-              className="w-24 h-1 bg-gradient-to-r from-neon-green to-cyber-blue mx-auto mt-4"
+              className="w-24 h-1 bg-gradient-to-r from-brand-primary to-brand-secondary mx-auto mt-4"
             />
           </motion.div>
 
@@ -78,15 +78,15 @@ export default function TestimonialSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 whileHover={{ y: -5 }}
-                className="glass-card p-6 relative overflow-hidden hover-glow"
+                className="card-professional p-6 relative overflow-hidden"
               >
                 {/* Quote Icon */}
-                <Quote className="absolute top-4 right-4 w-8 h-8 text-neon-green/20" />
+                <Quote className="absolute top-4 right-4 w-8 h-8 text-brand-primary/20" />
                 
                 {/* Rating */}
                 <div className="flex mb-4">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
-                    <Star key={i} className="w-4 h-4 text-neon-green fill-current" />
+                    <Star key={i} className="w-4 h-4 text-yellow-500 fill-current" />
                   ))}
                 </div>
 
@@ -97,17 +97,17 @@ export default function TestimonialSection() {
 
                 {/* Project Type */}
                 <div className="mb-4">
-                  <span className="text-xs px-2 py-1 bg-cyber-blue/20 text-cyber-blue rounded-full">
+                  <span className="text-xs px-2 py-1 bg-brand-primary/20 text-brand-primary rounded-full">
                     {testimonial.projectType}
                   </span>
                 </div>
 
                 {/* Client Info */}
-                <div className="border-t border-cyber/30 pt-4">
-                  <h4 className="font-mono text-neon-green font-semibold">
+                <div className="border-t border-border pt-4">
+                  <h4 className="text-contrast font-semibold">
                     {testimonial.name}
                   </h4>
-                  <p className="text-sm text-cyber-blue">
+                  <p className="text-sm text-readable">
                     {testimonial.role} at {testimonial.company}
                   </p>
                 </div>
@@ -123,8 +123,8 @@ export default function TestimonialSection() {
             transition={{ duration: 0.6, delay: 0.8 }}
             className="text-center mt-12"
           >
-            <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 p-8 rounded-lg border border-neon-green/30">
-              <h3 className="font-orbitron text-xl text-neon-green mb-2">
+            <div className="bg-gradient-to-r from-brand-primary/10 to-brand-secondary/10 p-8 rounded-lg border border-brand-primary/30">
+              <h3 className="text-xl text-contrast mb-2">
                 Ready to start your project?
               </h3>
               <p className="text-readable mb-4">
@@ -133,7 +133,7 @@ export default function TestimonialSection() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="cyber-border px-8 py-3 rounded-lg font-mono hover-glow transition-all duration-300 bg-gradient-to-r from-green-500/10 to-blue-500/10"
+                className="btn-professional btn-primary"
                 onClick={() => {
                   const subject = encodeURIComponent("Project Inquiry - Let's Work Together");
                   const body = encodeURIComponent(
@@ -142,7 +142,7 @@ export default function TestimonialSection() {
                   window.location.href = `mailto:developerrajir@gmail.com?subject=${subject}&body=${body}`;
                 }}
               >
-                <span className="text-neon-green">Get Your Quote Today</span>
+                Get Your Quote Today
               </motion.button>
             </div>
           </motion.div>

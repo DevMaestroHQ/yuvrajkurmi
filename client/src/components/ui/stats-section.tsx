@@ -18,11 +18,11 @@ function StatItem({ icon: Icon, value, label, color, delay }: StatItemProps) {
       transition={{ duration: 0.6, delay }}
       className="text-center group"
     >
-      <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-green-500/20 to-blue-500/20 rounded-full flex items-center justify-center border border-white/30 group-hover:border-white/50 transition-all duration-300">
-        <Icon className="w-8 h-8 text-white" />
+      <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20 rounded-full flex items-center justify-center border border-border group-hover:border-brand-primary transition-all duration-300">
+        <Icon className="w-8 h-8 text-brand-primary" />
       </div>
       <motion.div
-        className="text-3xl font-orbitron font-bold text-white mb-2"
+        className="text-3xl font-bold text-contrast mb-2"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -30,7 +30,7 @@ function StatItem({ icon: Icon, value, label, color, delay }: StatItemProps) {
       >
         {value}
       </motion.div>
-      <div className="text-readable font-mono text-base">{label}</div>
+      <div className="text-readable text-base">{label}</div>
     </motion.div>
   );
 }
@@ -68,7 +68,7 @@ export default function StatsSection() {
   ];
 
   return (
-    <section className="py-16 bg-dark-surface/50">
+    <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -76,8 +76,8 @@ export default function StatsSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h3 className="font-orbitron text-2xl text-white mb-4">Professional Metrics</h3>
-          <div className="w-16 h-1 bg-gradient-to-r from-neon-green to-cyber-blue mx-auto"></div>
+          <h3 className="heading-md text-contrast mb-4">Professional Metrics</h3>
+          <div className="w-16 h-1 bg-gradient-to-r from-brand-primary to-brand-secondary mx-auto"></div>
         </motion.div>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
