@@ -163,8 +163,8 @@ export default function Projects() {
               <div className="absolute top-4 right-4 z-10">
                 <span className={`px-3 py-1 rounded-full text-xs font-medium ${
                   project.status === 'Completed' 
-                    ? 'bg-green-500/20 text-green-300 border border-green-500/30' 
-                    : 'bg-orange-500/20 text-orange-300 border border-orange-500/30'
+                    ? 'bg-green-500/30 text-green-700 dark:text-green-300 border border-green-500/50' 
+                    : 'bg-orange-500/30 text-orange-700 dark:text-orange-300 border border-orange-500/50'
                 }`}>
                   {project.status}
                 </span>
@@ -217,7 +217,7 @@ export default function Projects() {
                       {project.technologies.slice(0, 4).map((tech) => (
                         <span
                           key={tech}
-                          className="text-xs bg-muted text-readable-secondary px-2 py-1 rounded-md"
+                          className="text-xs bg-muted text-contrast px-2 py-1 rounded-md font-medium"
                         >
                           {tech}
                         </span>

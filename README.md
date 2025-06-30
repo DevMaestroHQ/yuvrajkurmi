@@ -1,236 +1,292 @@
-# 🚀 Yubraj Kurmi - Senior Full Stack Developer Portfolio
+# 🚀 Yubraj Kurmi - Creative Full Stack Developer Portfolio
 
-[![Portfolio Status](https://img.shields.io/badge/Status-Live-brightgreen.svg)](https://portfolio.yubrajkurmi.dev)
-[![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20TypeScript%20%7C%20Node.js-blue.svg)](https://github.com/DevMaestroHQ)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+<div align="center">
 
-> A modern, responsive portfolio showcasing full-stack development expertise with enterprise-grade applications and cutting-edge technologies.
+![YK Logo](https://img.shields.io/badge/YK-Portfolio-3B82F6?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDggNDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGNpcmNsZSBjeD0iMjQiIGN5PSIyNCIgcj0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzNCODJGNiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjQsIDI0KSI+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOCwgMCkiPgogICAgICA8cGF0aCBkPSJNLTYgLTggTDAgLTIgTDYgLTggTTAgLTIgTDAgOCIgc3Ryb2tlPSIjM0I4MkY2IiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIvPgogICAgPC9nPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOCwgMCkiPgogICAgICA8cGF0aCBkPSJNLTQgLTggTC00IDggTS00IC0xIEw0IC04IE0tNCAtMSBMNCA4IiBzdHJva2U9IiMzQjgyRjYiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4=)
 
-## 🎯 Overview
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)](https://expressjs.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-This portfolio demonstrates **2+ years of professional development experience** with a focus on:
+**Modern • Responsive • Professional**
 
-- **Enterprise-scale web applications** serving 10,000+ users
-- **Modern full-stack development** with React, Node.js, and TypeScript
-- **Cloud-native solutions** using AWS, Docker, and microservices
-- **High-performance applications** with 99.9% uptime and optimized loading
-- **Client success stories** with measurable business impact
+[🌐 Live Demo](https://your-portfolio-url.com) • [📧 Contact](mailto:developerrajir@gmail.com) • [💼 LinkedIn](https://linkedin.com/in/yuvrajkurmi03) • [🐙 GitHub](https://github.com/DevMaestroHQ)
 
-## ✨ Key Features
+</div>
 
-### 🎨 Modern Design System
-- **Professional UI/UX** with clean, contemporary aesthetics
-- **Responsive design** optimized for all devices and screen sizes
-- **Accessibility-first** approach with WCAG 2.1 compliance
-- **Performance optimized** with Core Web Vitals scoring 95+
+---
 
-### 🛠️ Technical Excellence
-- **TypeScript** for type-safe development
-- **React 18** with modern hooks and concurrent features
-- **Framer Motion** for smooth, professional animations
-- **Tailwind CSS** with custom design system
-- **Express.js** backend with PostgreSQL database
-- **Comprehensive testing** with unit and integration tests
+## ✨ About This Portfolio
 
-### 📊 Professional Showcase
-- **25+ completed projects** across various industries
-- **Real client testimonials** with verified business results
-- **Interactive project demos** with live deployment links
-- **Detailed case studies** showing problem-solving approach
-- **Skills assessment** with proficiency levels and certifications
+A cutting-edge developer portfolio showcasing modern web development skills through an innovative, interactive experience. Built with performance, accessibility, and user experience in mind, this portfolio demonstrates proficiency in full-stack development with a beautiful, responsive design.
 
-## 🏗️ Architecture
+### 🎯 Key Features
 
-```
-portfolio/
-├── client/                 # React frontend application
-│   ├── src/
-│   │   ├── components/     # Reusable UI components
-│   │   ├── pages/          # Route-based page components
-│   │   ├── hooks/          # Custom React hooks
-│   │   └── lib/           # Utility functions and configs
-├── server/                 # Express.js backend
-│   ├── routes/            # API route handlers
-│   ├── storage/           # Database interface layer
-│   └── middleware/        # Custom middleware functions
-├── shared/                # Shared types and schemas
-└── docs/                  # Documentation and guides
-```
+- **🎨 Modern Design System** - Clean, professional interface with adaptive themes
+- **⚡ Performance Optimized** - Fast loading times and smooth animations
+- **📱 Fully Responsive** - Perfect experience across all devices
+- **♿ Accessibility First** - WCAG compliant with proper contrast and navigation
+- **🔧 Interactive Components** - Engaging animations and user interactions
+- **📊 Real Project Showcase** - Comprehensive portfolio with detailed project information
+- **🚀 Professional Branding** - Consistent visual identity and modern aesthetics
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React 18** - Modern UI library with hooks and concurrent features
+- **TypeScript** - Type-safe development with enhanced developer experience
+- **Tailwind CSS** - Utility-first CSS framework for rapid styling
+- **Framer Motion** - Smooth animations and interactive transitions
+- **Wouter** - Lightweight client-side routing
+- **Radix UI** - Accessible component primitives
+- **TanStack Query** - Powerful data synchronization
+
+### Backend
+- **Node.js** - JavaScript runtime for server-side development
+- **Express.js** - Fast, unopinionated web framework
+- **TypeScript** - Full-stack type safety
+- **PostgreSQL** - Robust relational database
+- **Drizzle ORM** - Type-safe database toolkit
+
+### Development & Deployment
+- **Vite** - Next-generation frontend tooling
+- **ESBuild** - Fast JavaScript bundler
+- **Replit** - Cloud-based development environment
+
+---
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- **Node.js** 18+ and npm/yarn
-- **PostgreSQL** 14+ (or Docker)
-- **Git** for version control
+
+- **Node.js** (v18 or higher)
+- **npm** or **yarn**
+- **PostgreSQL** (optional, for contact form)
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/DevMaestroHQ/portfolio.git
-   cd portfolio
-   ```
+```bash
+# Clone the repository
+git clone https://github.com/DevMaestroHQ/portfolio.git
+cd portfolio
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+# Install dependencies
+npm install
 
-3. **Environment setup**
-   ```bash
-   cp .env.example .env
-   # Configure your environment variables
-   ```
+# Set up environment variables (optional)
+cp .env.example .env
 
-4. **Database setup**
-   ```bash
-   npm run db:push
-   npm run db:seed
-   ```
+# Start development server
+npm run dev
+```
 
-5. **Start development server**
-   ```bash
-   npm run dev
-   ```
+The application will be available at `http://localhost:5173`
 
-The application will be available at `http://localhost:5000`
+---
 
 ## 📁 Project Structure
 
-### Frontend Components
-- **Layout Components**: Navbar, Footer, Sidebar navigation
-- **UI Components**: Buttons, Cards, Forms, Modals with consistent design
-- **Page Components**: Home, About, Projects, Experience, Contact, Resume
-- **Utility Components**: SEO Head, Loading states, Error boundaries
+```
+├── client/                    # Frontend application
+│   ├── src/
+│   │   ├── components/       # Reusable UI components
+│   │   │   ├── ui/          # Base UI components
+│   │   │   └── layout/      # Layout components
+│   │   ├── pages/           # Application pages
+│   │   ├── hooks/           # Custom React hooks
+│   │   ├── lib/             # Utility functions
+│   │   └── index.css        # Global styles
+│   └── index.html           # HTML template
+├── server/                   # Backend application
+│   ├── index.ts            # Server entry point
+│   ├── routes.ts           # API routes
+│   ├── storage.ts          # Data storage layer
+│   └── vite.ts             # Vite integration
+├── shared/                  # Shared types and schemas
+│   └── schema.ts           # Database schema
+└── README.md               # Project documentation
+```
 
-### Backend Services
-- **API Routes**: RESTful endpoints for contact forms and dynamic content
-- **Database Layer**: PostgreSQL with Drizzle ORM for type-safe queries
-- **Authentication**: Session-based auth with secure middleware
-- **Security**: Rate limiting, CORS, input validation, and sanitization
+---
 
 ## 🎨 Design System
 
 ### Color Palette
-- **Primary**: Professional blue (#3B82F6) for actions and emphasis
-- **Secondary**: Sophisticated purple (#8B5CF6) for accents
-- **Success**: Modern green (#10B981) for positive states
-- **Neutral**: Carefully selected grays for optimal readability
+```css
+/* Brand Colors */
+--brand-primary: #3B82F6    /* Professional Blue */
+--brand-secondary: #8B5CF6  /* Purple */
+--brand-accent: #06B6D4     /* Cyan */
+
+/* Neutral Colors */
+--background: #FFFFFF       /* Light Mode */
+--background-dark: #0F172A  /* Dark Mode */
+--contrast: #1E293B         /* Text Primary */
+--readable: #64748B         /* Text Secondary */
+```
 
 ### Typography
-- **Headers**: System fonts with optimized line-height and spacing
-- **Body**: High-contrast text with proper hierarchy
-- **Code**: Monospace font for technical content
-
-### Components
-- **Professional Cards**: Subtle shadows and hover effects
-- **Interactive Buttons**: Multiple variants with consistent behavior
-- **Form Elements**: Accessible inputs with proper validation states
-- **Navigation**: Smooth transitions with active state indicators
-
-## 🚀 Deployment
-
-### Production Build
-```bash
-npm run build
-npm run start
-```
-
-### Docker Deployment
-```bash
-docker build -t portfolio .
-docker run -p 5000:5000 portfolio
-```
-
-### Platform Deployments
-- **Vercel**: One-click deployment with automatic previews
-- **Netlify**: Continuous deployment from Git
-- **AWS**: EC2, ECS, or Lambda deployment options
-- **DigitalOcean**: App Platform with database integration
-
-## 📊 Performance Metrics
-
-### Core Web Vitals
-- **First Contentful Paint**: < 1.2s
-- **Largest Contentful Paint**: < 2.5s
-- **Cumulative Layout Shift**: < 0.1
-- **Time to Interactive**: < 3.0s
-
-### Lighthouse Scores
-- **Performance**: 95+
-- **Accessibility**: 100
-- **Best Practices**: 100
-- **SEO**: 100
-
-## 🔧 Development Scripts
-
-```bash
-npm run dev          # Start development server
-npm run build        # Build for production
-npm run preview      # Preview production build
-npm run test         # Run test suite
-npm run test:watch   # Run tests in watch mode
-npm run lint         # Run ESLint
-npm run type-check   # TypeScript type checking
-npm run db:push      # Push database schema
-npm run db:studio    # Open database studio
-npm run db:generate  # Generate database migrations
-```
-
-## 🏆 Professional Highlights
-
-### Client Success Stories
-- **E-commerce Platform**: Increased conversion rates by 35% with optimized checkout flow
-- **Healthcare Dashboard**: Improved patient data processing efficiency by 60%
-- **Educational Platform**: Scaled to serve 50,000+ students with 99.9% uptime
-- **Financial Analytics**: Reduced report generation time from hours to minutes
-
-### Technical Achievements
-- **Performance Optimization**: Achieved 95+ Lighthouse scores across all metrics
-- **Scalability**: Designed systems handling 1M+ requests per day
-- **Security**: Implemented enterprise-grade security measures
-- **Team Leadership**: Mentored junior developers and led technical decisions
-
-## 🤝 Collaboration & Hiring
-
-### Why Choose Me
-- **Proven Track Record**: 25+ successful projects with measurable business impact
-- **Technical Excellence**: Modern full-stack expertise with enterprise experience
-- **Communication Skills**: Clear technical documentation and stakeholder updates
-- **Continuous Learning**: Stay current with latest technologies and best practices
-- **Client-Focused**: Always prioritize user experience and business objectives
-
-### Available Services
-- **Full-Stack Development**: End-to-end web application development
-- **System Architecture**: Scalable, maintainable system design
-- **Performance Optimization**: Speed and efficiency improvements
-- **Technical Consulting**: Architecture reviews and technology selection
-- **Team Mentoring**: Knowledge transfer and skill development
-
-### Contact Information
-- **Email**: [yubrajkurmi2081@gmail.com](mailto:yubrajkurmi2081@gmail.com)
-- **LinkedIn**: [linkedin.com/in/yubraj-kurmi](https://linkedin.com/in/yubraj-kurmi)
-- **GitHub**: [github.com/DevMaestroHQ](https://github.com/DevMaestroHQ)
-- **Portfolio**: [portfolio.yubrajkurmi.dev](https://portfolio.yubrajkurmi.dev)
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-Built with modern technologies and best practices:
-- **React** for component-based UI development
-- **TypeScript** for type-safe development
-- **Tailwind CSS** for utility-first styling
-- **Framer Motion** for smooth animations
-- **Radix UI** for accessible components
-- **Express.js** for robust backend services
-- **PostgreSQL** for reliable data storage
+- **Display Font**: System fonts (SF Pro Display, Segoe UI Variable)
+- **Body Font**: Inter, system-ui
+- **Code Font**: JetBrains Mono, Menlo, Monaco
 
 ---
 
-**Ready to discuss your next project?** Let's build something amazing together! 🚀
+## 🔧 Development
 
-[![Contact Me](https://img.shields.io/badge/Contact-Let's%20Talk-brightgreen.svg?style=for-the-badge)](mailto:yubrajkurmi2081@gmail.com)
+### Available Scripts
+
+```bash
+# Development
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+
+# Database
+npm run db:generate  # Generate database migrations
+npm run db:push      # Push schema changes
+npm run db:studio    # Open database studio
+
+# Code Quality
+npm run lint         # Lint code
+npm run type-check   # TypeScript checking
+```
+
+### Environment Variables
+
+```env
+# Database (Optional)
+DATABASE_URL=postgresql://user:password@localhost:5432/portfolio
+
+# Development
+NODE_ENV=development
+VITE_API_URL=http://localhost:3000
+```
+
+---
+
+## 📱 Features
+
+### 🏠 Home Page
+- **Hero Section** - Engaging introduction with animated elements
+- **Quick Navigation** - Easy access to all portfolio sections
+- **Professional Branding** - Consistent visual identity
+
+### 👨‍💻 About Section
+- **Professional Bio** - Comprehensive background information
+- **Skills Showcase** - Technical expertise with proficiency levels
+- **Personal Touch** - Authentic and engaging content
+
+### 💼 Projects Portfolio
+- **Real Projects** - Comprehensive showcase of actual development work
+- **Detailed Information** - Technology stacks, features, and achievements
+- **Interactive Cards** - Engaging hover effects and animations
+- **Live Demos** - Direct links to working applications
+
+### 🎯 Experience Timeline
+- **Career Progression** - Detailed professional journey
+- **Achievements** - Quantified results and accomplishments
+- **Technology Focus** - Relevant tech stacks for each role
+- **Professional Growth** - Clear career development path
+
+### 📞 Contact
+- **Professional Form** - Secure contact with validation
+- **Pricing Calculator** - Dynamic project cost estimation
+- **Availability Status** - Real-time hiring availability
+- **Multiple Channels** - Various ways to connect
+
+---
+
+## 🌟 Performance
+
+- **Lighthouse Score**: 95+ (Performance, Accessibility, Best Practices, SEO)
+- **Core Web Vitals**: Excellent ratings across all metrics
+- **Loading Speed**: < 2 seconds initial load
+- **Bundle Size**: Optimized with code splitting
+
+---
+
+## 📈 SEO & Analytics
+
+### Search Engine Optimization
+- **Meta Tags** - Comprehensive Open Graph and Twitter Cards
+- **Structured Data** - JSON-LD for better search visibility
+- **Semantic HTML** - Proper heading hierarchy and landmarks
+- **Mobile-First** - Responsive design for all devices
+
+### Performance Monitoring
+- **Real User Monitoring** - Core Web Vitals tracking
+- **Error Tracking** - Comprehensive error monitoring
+- **Analytics** - User behavior and engagement metrics
+
+---
+
+## 🚀 Deployment
+
+### Replit Deployment
+```bash
+# The application is configured for Replit Deployments
+# Simply click the "Deploy" button in your Replit workspace
+```
+
+### Manual Deployment
+```bash
+# Build the application
+npm run build
+
+# Deploy to your preferred platform
+# (Vercel, Netlify, Heroku, etc.)
+```
+
+---
+
+## 🤝 Contributing
+
+While this is a personal portfolio, suggestions and feedback are welcome!
+
+1. **Fork the repository**
+2. **Create a feature branch** (`git checkout -b feature/improvement`)
+3. **Commit changes** (`git commit -am 'Add improvement'`)
+4. **Push to branch** (`git push origin feature/improvement`)
+5. **Open a Pull Request**
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📞 Contact & Hire
+
+<div align="center">
+
+### Ready to work together?
+
+**Yubraj Kurmi** - Full Stack Developer  
+📧 **Email**: [developerrajir@gmail.com](mailto:developerrajir@gmail.com)  
+💼 **LinkedIn**: [linkedin.com/in/yuvrajkurmi03](https://linkedin.com/in/yuvrajkurmi03)  
+🐙 **GitHub**: [github.com/DevMaestroHQ](https://github.com/DevMaestroHQ)  
+📍 **Location**: Devdaha, Rupandehi, Nepal  
+
+**Specializing in**: React • Node.js • TypeScript • Full-Stack Development  
+**Available for**: Freelance Projects • Contract Work • Consultations  
+
+</div>
+
+---
+
+<div align="center">
+
+**Built with ❤️ and modern web technologies**  
+*© 2024 Yubraj Kurmi. All rights reserved.*
+
+**⭐ Star this repository if you found it helpful!**
+
+</div>

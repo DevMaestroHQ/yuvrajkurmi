@@ -178,8 +178,8 @@ export default function Experience() {
                     <div className="absolute top-6 right-6">
                       <span className={`px-3 py-1 rounded-full text-xs font-medium ${
                         experience.status === 'Current' 
-                          ? 'bg-green-500/20 text-green-400 border border-green-500/30' 
-                          : 'bg-blue-500/20 text-blue-400 border border-blue-500/30'
+                          ? 'bg-green-500/30 text-green-700 dark:text-green-300 border border-green-500/50' 
+                          : 'bg-blue-500/30 text-blue-700 dark:text-blue-300 border border-blue-500/50'
                       }`}>
                         {experience.status}
                       </span>
@@ -255,7 +255,7 @@ export default function Experience() {
                           {experience.technologies.map((tech) => (
                             <span
                               key={tech}
-                              className="text-xs bg-brand-primary/10 text-brand-primary px-3 py-1 rounded-full border border-brand-primary/20"
+                              className="text-xs bg-brand-primary/20 text-brand-primary dark:text-brand-primary px-3 py-1 rounded-full border border-brand-primary/30 font-medium"
                             >
                               {tech}
                             </span>
