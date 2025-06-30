@@ -28,7 +28,6 @@ export default function Home() {
         description="Experienced full-stack developer specializing in React, Node.js, and modern web technologies. Building scalable applications for startups and enterprises."
         keywords="full stack developer, React developer, Node.js, TypeScript, web development, software engineer"
       />
-      
       <div className="min-h-screen bg-background">
         {/* Hero Section */}
         <section className="section-container min-h-screen flex items-center">
@@ -47,7 +46,7 @@ export default function Home() {
                 
                 <h1 className="heading-xl font-display heading-adaptive">
                   Senior Full Stack
-                  <span className="block gradient-primary bg-clip-text text-transparent">Developer</span>
+                  <span className="block gradient-primary bg-clip-text text-[#000000] bg-[#5c0a0a]">Developer</span>
                 </h1>
                 
                 <p className="text-xl text-adaptive-secondary font-body leading-relaxed max-w-xl">
