@@ -33,7 +33,7 @@ export default function ProjectCard({
     >
       <div className="p-6">
         <div className="flex items-center justify-between mb-4">
-          <h3 className="font-orbitron text-xl text-cyber-blue">{title}</h3>
+          <h3 className="font-display text-xl font-bold text-contrast">{title}</h3>
           <div className="flex space-x-2">
             {demoUrl && (
               <motion.a
@@ -42,9 +42,9 @@ export default function ProjectCard({
                 href={demoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-dark-surface rounded-lg border border-cyber hover:border-neon-green transition-colors"
+                className="p-2 bg-card rounded-lg border border-border hover:border-brand-primary transition-colors"
               >
-                <ExternalLink className="w-4 h-4 text-neon-green" />
+                <ExternalLink className="w-4 h-4 text-brand-primary" />
               </motion.a>
             )}
             {githubUrl && (
@@ -54,16 +54,16 @@ export default function ProjectCard({
                 href={githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-dark-surface rounded-lg border border-cyber hover:border-neon-green transition-colors"
+                className="p-2 bg-card rounded-lg border border-border hover:border-brand-primary transition-colors"
               >
-                <Github className="w-4 h-4 text-neon-green" />
+                <Github className="w-4 h-4 text-brand-primary" />
               </motion.a>
             )}
           </div>
         </div>
         
-        <div className={`h-48 ${gradient} rounded-lg mb-4 flex items-center justify-center border border-cyber/20 group-hover:border-neon-green/30 transition-colors`}>
-          <Icon className="w-16 h-16 text-neon-green opacity-50 group-hover:opacity-75 transition-opacity" />
+        <div className={`h-48 ${gradient} rounded-lg mb-4 flex items-center justify-center border border-border/20 group-hover:border-brand-primary/30 transition-colors`}>
+          <Icon className="w-16 h-16 text-brand-primary opacity-60 group-hover:opacity-90 transition-opacity" />
         </div>
         
         <p className="text-readable text-base mb-4 leading-relaxed">
@@ -74,7 +74,7 @@ export default function ProjectCard({
           {technologies.map((tech) => (
             <span
               key={tech.name}
-              className={`px-3 py-1 ${tech.color} rounded-full text-sm font-mono border`}
+              className={`px-3 py-1 ${tech.color} rounded-full text-sm font-mono font-medium border text-visible`}
             >
               {tech.name}
             </span>

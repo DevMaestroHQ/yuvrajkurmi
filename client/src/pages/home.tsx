@@ -44,12 +44,12 @@ export default function Home() {
                 <span className="text-adaptive-primary font-medium">Available for new opportunities</span>
               </div>
               
-              <h1 className="heading-xl font-display heading-adaptive">
+              <h1 className="heading-xl font-display text-contrast">
                 Senior Full Stack
-                <span className="block gradient-primary bg-clip-text text-transparent">Developer</span>
+                <span className="block text-brand-primary font-bold">Developer</span>
               </h1>
               
-              <p className="text-xl text-adaptive-secondary font-body leading-relaxed max-w-xl">
+              <p className="text-xl text-readable font-body max-w-xl">
                 I build exceptional digital experiences with modern technologies. 
                 Specialized in React, Node.js, and cloud-native solutions that scale.
               </p>
@@ -57,11 +57,11 @@ export default function Home() {
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-2">
                   <Star className="w-5 h-5 text-yellow-500 fill-current" />
-                  <span className="font-medium text-adaptive">4.9/5 Client Rating</span>
+                  <span className="font-medium text-contrast">4.9/5 Client Rating</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-brand-accent" />
-                  <span className="font-medium text-adaptive">Top Rated Developer</span>
+                  <span className="font-medium text-contrast">Top Rated Developer</span>
                 </div>
               </div>
             </motion.div>
@@ -120,8 +120,8 @@ export default function Home() {
             className="space-y-8"
           >
             <motion.div variants={fadeInUp} className="text-center">
-              <h2 className="heading-lg font-display heading-adaptive mb-4">Technical Expertise</h2>
-              <p className="text-adaptive-secondary max-w-2xl mx-auto">
+              <h2 className="heading-lg font-display text-contrast mb-4">Technical Expertise</h2>
+              <p className="text-readable max-w-2xl mx-auto">
                 Proficient in modern technologies and frameworks with hands-on experience in full-stack development
               </p>
             </motion.div>
@@ -138,9 +138,9 @@ export default function Home() {
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-2xl">{skill.icon}</span>
-                    <h3 className="font-semibold text-adaptive">{skill.name}</h3>
+                    <h3 className="font-semibold text-contrast">{skill.name}</h3>
                   </div>
-                  <span className="text-sm text-brand-primary font-medium">{skill.level}</span>
+                  <span className="text-sm text-brand-primary font-semibold">{skill.level}</span>
                 </motion.div>
               ))}
             </motion.div>
@@ -156,8 +156,8 @@ export default function Home() {
             className="space-y-8"
           >
             <motion.div variants={fadeInUp} className="text-center">
-              <h2 className="heading-lg font-display heading-adaptive mb-4">Achievements</h2>
-              <p className="text-adaptive-secondary max-w-2xl mx-auto">
+              <h2 className="heading-lg font-display text-contrast mb-4">Achievements</h2>
+              <p className="text-readable max-w-2xl mx-auto">
                 Delivering results that matter to clients and businesses
               </p>
             </motion.div>
@@ -173,8 +173,8 @@ export default function Home() {
                   className="text-center p-6 bg-card rounded-lg hover:shadow-lg transition-shadow"
                 >
                   <div className="text-3xl font-bold text-brand-primary mb-2">{achievement.metric}</div>
-                  <div className="font-semibold text-adaptive mb-1">{achievement.label}</div>
-                  <div className="text-sm text-adaptive-secondary">{achievement.description}</div>
+                  <div className="font-semibold text-contrast mb-1">{achievement.label}</div>
+                  <div className="text-sm text-readable">{achievement.description}</div>
                 </motion.div>
               ))}
             </motion.div>
@@ -190,8 +190,8 @@ export default function Home() {
             className="text-center space-y-6"
           >
             <motion.div variants={fadeInUp}>
-              <h2 className="heading-lg font-display heading-adaptive mb-4">Ready to Start Your Project?</h2>
-              <p className="text-xl text-adaptive-secondary max-w-2xl mx-auto mb-8">
+              <h2 className="heading-lg font-display text-contrast mb-4">Ready to Start Your Project?</h2>
+              <p className="text-xl text-readable max-w-2xl mx-auto mb-8">
                 Let's collaborate to bring your ideas to life with modern, scalable solutions
               </p>
             </motion.div>

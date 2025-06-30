@@ -164,37 +164,63 @@ body {
     background: linear-gradient(135deg, hsl(var(--brand-accent)), hsl(var(--brand-primary)));
   }
 
-  /* Adaptive text colors that automatically adjust to theme */
+  /* Enhanced adaptive text colors for maximum readability */
   .text-adaptive {
     color: hsl(var(--foreground));
     transition: color 0.3s ease;
+    font-weight: 500;
   }
   
   .text-adaptive-muted {
-    color: hsl(var(--muted-foreground));
+    color: hsl(var(--foreground) / 0.75);
     transition: color 0.3s ease;
+    font-weight: 400;
   }
   
   .text-adaptive-primary {
     color: hsl(var(--brand-primary));
     transition: color 0.3s ease;
+    font-weight: 600;
   }
   
   .text-adaptive-secondary {
-    color: hsl(var(--foreground) / 0.8);
+    color: hsl(var(--foreground) / 0.85);
     transition: color 0.3s ease;
+    font-weight: 400;
+    line-height: 1.6;
   }
   
   .heading-adaptive {
     color: hsl(var(--foreground));
     font-weight: 700;
     transition: color 0.3s ease;
+    line-height: 1.2;
   }
   
   .subheading-adaptive {
-    color: hsl(var(--muted-foreground));
-    font-weight: 500;
+    color: hsl(var(--foreground) / 0.9);
+    font-weight: 600;
     transition: color 0.3s ease;
+    line-height: 1.4;
+  }
+
+  /* Enhanced text visibility classes */
+  .text-visible {
+    color: hsl(var(--foreground));
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  .text-contrast {
+    color: hsl(var(--foreground));
+    font-weight: 600;
+  }
+
+  .text-readable {
+    color: hsl(var(--foreground) / 0.9);
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 1.05rem;
   }
 
   /* Modern system font classes */
