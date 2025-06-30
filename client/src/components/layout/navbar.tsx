@@ -44,7 +44,7 @@ export default function Navbar() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              <Logo size="sm" showText={true} className="cursor-pointer" />
+              <Logo size="sm" className="cursor-pointer" />
             </motion.div>
           </Link>
 

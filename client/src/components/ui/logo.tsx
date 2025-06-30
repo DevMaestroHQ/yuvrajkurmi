@@ -22,7 +22,7 @@ export default function Logo({ size = "md", showText = true, className = "" }: L
   return (
     <motion.div
       whileHover={{ scale: 1.02 }}
-      className={`flex items-center gap-3 ${className}`}
+      className={`${className}`}
     >
       {/* Illustrated Logo SVG */}
       <motion.div
@@ -165,22 +165,6 @@ export default function Logo({ size = "md", showText = true, className = "" }: L
           </g>
         </svg>
       </motion.div>
-      
-      {showText && (
-        <motion.div
-          initial={{ opacity: 0, x: -10 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          className="flex flex-col"
-        >
-          <span className={`font-display font-bold heading-adaptive ${textSizeClasses[size]}`}>
-            Yubraj Kurmi
-          </span>
-          <span className="text-sm text-adaptive-muted font-medium">
-            Full Stack Developer
-          </span>
-        </motion.div>
-      )}
     </motion.div>
   );
 }
