@@ -49,7 +49,7 @@ export default function Preloader() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, scale: 0.95 }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
-          className="fixed inset-0 bg-dark-bg flex items-center justify-center z-50"
+          className="fixed inset-0 bg-background flex items-center justify-center z-50"
         >
           <div className="text-center max-w-md mx-auto p-8">
             {/* Modern Logo Animation */}
@@ -65,20 +65,20 @@ export default function Preloader() {
                 transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
                 className="absolute inset-0"
               >
-                <div className="w-full h-full rounded-full border-2 border-neon-green/30 border-t-neon-green"></div>
+                <div className="w-full h-full rounded-full border-2 border-brand-primary/30 border-t-brand-primary"></div>
               </motion.div>
               <motion.div
                 animate={{ rotate: -360 }}
                 transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
                 className="absolute inset-2"
               >
-                <div className="w-full h-full rounded-full border-2 border-cyber-blue/30 border-r-cyber-blue"></div>
+                <div className="w-full h-full rounded-full border-2 border-brand-secondary/30 border-r-brand-secondary"></div>
               </motion.div>
               
               {/* Center logo */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-8 h-8 bg-gradient-to-br from-neon-green to-cyber-blue rounded-lg flex items-center justify-center">
-                  <span className="text-dark-bg font-bold text-sm">YK</span>
+                <div className="w-8 h-8 bg-gradient-to-br from-brand-primary to-brand-secondary rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">YK</span>
                 </div>
               </div>
             </motion.div>
@@ -90,11 +90,11 @@ export default function Preloader() {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="mb-8"
             >
-              <h1 className="text-2xl font-semibold text-white mb-2">
+              <h1 className="text-2xl font-semibold text-foreground mb-2">
                 Yubraj Kurmi
               </h1>
-              <div className="text-sm text-slate-400">
-                Full Stack Developer
+              <div className="text-sm text-muted-foreground">
+                Senior Full Stack Developer
               </div>
             </motion.div>
 
@@ -105,13 +105,13 @@ export default function Preloader() {
               transition={{ delay: 0.5, duration: 0.5 }}
               className="mb-6"
             >
-              <div className="flex justify-between text-xs text-slate-400 mb-3">
+              <div className="flex justify-between text-xs text-muted-foreground mb-3">
                 <span>Loading</span>
                 <span>{Math.round(progress)}%</span>
               </div>
-              <div className="w-full h-2 bg-dark-surface rounded-full overflow-hidden">
+              <div className="w-full h-2 bg-muted rounded-full overflow-hidden">
                 <motion.div
-                  className="h-full bg-gradient-to-r from-neon-green to-cyber-blue rounded-full"
+                  className="h-full bg-gradient-to-r from-brand-primary to-brand-secondary rounded-full"
                   initial={{ width: "0%" }}
                   animate={{ width: `${progress}%` }}
                   transition={{ duration: 0.3, ease: "easeOut" }}
@@ -126,7 +126,7 @@ export default function Preloader() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.4 }}
-              className="text-slate-300 text-sm mb-6"
+              className="text-muted-foreground text-sm mb-6"
             >
               {phases[loadingPhase].text}
             </motion.div>
@@ -145,7 +145,7 @@ export default function Preloader() {
                     repeat: Infinity, 
                     delay: i * 0.15 
                   }}
-                  className="w-1.5 h-1.5 bg-neon-green rounded-full"
+                  className="w-1.5 h-1.5 bg-brand-primary rounded-full"
                 />
               ))}
             </div>

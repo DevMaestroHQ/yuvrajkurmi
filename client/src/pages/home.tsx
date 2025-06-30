@@ -47,7 +47,7 @@ export default function Home() {
                 
                 <h1 className="heading-xl">
                   Senior Full Stack
-                  <span className="block text-brand-primary">Developer</span>
+                  <span className="block gradient-primary bg-clip-text text-transparent">Developer</span>
                 </h1>
                 
                 <p className="text-xl text-muted leading-relaxed max-w-xl">

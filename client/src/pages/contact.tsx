@@ -66,23 +66,23 @@ export default function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "developerrajir@gmail.com",
-      color: "text-neon-green",
-      bgColor: "bg-green-500/20"
+      value: "yubrajkurmi2081@gmail.com",
+      color: "text-brand-primary",
+      bgColor: "bg-brand-primary/10"
     },
     {
       icon: Phone,
       label: "Phone",
       value: "+977-98XXXXXXXX",
-      color: "text-cyber-blue",
-      bgColor: "bg-blue-500/20"
+      color: "text-brand-secondary",
+      bgColor: "bg-brand-secondary/10"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Devdaha, Rupandehi",
-      color: "text-neon-purple",
-      bgColor: "bg-purple-500/20"
+      value: "Devdaha, Rupandehi, Nepal",
+      color: "text-brand-accent",
+      bgColor: "bg-brand-accent/10"
     }
   ];
 
@@ -90,26 +90,26 @@ export default function Contact() {
     {
       icon: Github,
       href: "https://github.com/DevMaestroHQ",
-      color: "hover:text-neon-green hover:bg-green-500/10",
-      borderColor: "hover:border-neon-green"
+      color: "hover:text-brand-primary hover:bg-brand-primary/10",
+      borderColor: "hover:border-brand-primary"
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/yuvrajkurmi03",
-      color: "hover:text-cyber-blue hover:bg-blue-500/10",
-      borderColor: "hover:border-cyber-blue"
+      href: "https://linkedin.com/in/yubraj-kurmi",
+      color: "hover:text-brand-secondary hover:bg-brand-secondary/10",
+      borderColor: "hover:border-brand-secondary"
     },
     {
       icon: Globe,
-      href: "https://www.yuvrajkurmi.github.com",
-      color: "hover:text-neon-purple hover:bg-purple-500/10",
-      borderColor: "hover:border-neon-purple"
+      href: "https://portfolio.yubrajkurmi.dev",
+      color: "hover:text-brand-accent hover:bg-brand-accent/10",
+      borderColor: "hover:border-brand-accent"
     }
   ];
 
   return (
     <>
-      <section className="py-20 bg-dark-bg pt-32">
+      <section className="py-20 bg-background pt-32">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <motion.div

@@ -33,8 +33,8 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 w-full z-40 transition-all duration-500 ease-in-out ${
-        scrolled ? "bg-dark-bg/95 backdrop-blur-md shadow-lg" : "bg-dark-bg/80 backdrop-blur-sm"
-      } border-b border-cyber/30`}
+        scrolled ? "bg-background/95 backdrop-blur-md shadow-lg" : "bg-background/80 backdrop-blur-sm"
+      } border-b border-border`}
     >
       <div className="container mx-auto px-6 py-3">
         <div className="flex justify-between items-center">
@@ -58,17 +58,17 @@ export default function Navbar() {
                   }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ duration: 0.2, ease: "easeInOut" }}
-                  className={`relative px-4 py-2 rounded-md font-semibold text-sm transition-all duration-300 cursor-pointer ${
+                  className={`relative px-4 py-2 rounded-md font-medium text-sm transition-all duration-300 cursor-pointer ${
                     location === item.href 
-                      ? "text-neon-green bg-neon-green/10" 
-                      : "text-slate-300 hover:text-neon-green hover:bg-cyber/10"
+                      ? "text-brand-primary bg-brand-primary/10" 
+                      : "text-foreground/70 hover:text-foreground hover:bg-muted"
                   }`}
                 >
                   {item.label}
                   {location === item.href && (
                     <motion.div
                       layoutId="activeTab"
-                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-neon-green"
+                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-primary"
                       transition={{ duration: 0.3 }}
                     />
                   )}
@@ -81,7 +81,7 @@ export default function Navbar() {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="md:hidden text-neon-green p-2 rounded-md hover:bg-cyber/20 transition-colors"
+            className="md:hidden text-brand-primary p-2 rounded-md hover:bg-muted transition-colors"
             onClick={() => setIsOpen(!isOpen)}
           >
             <motion.div
@@ -102,7 +102,7 @@ export default function Navbar() {
           height: isOpen ? "auto" : 0,
         }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
-        className="md:hidden bg-dark-bg/95 backdrop-blur-md border-t border-cyber/30 overflow-hidden"
+        className="md:hidden bg-background/95 backdrop-blur-md border-t border-border overflow-hidden"
       >
         <div className="flex flex-col items-center py-6 space-y-4">
           {navItems.map((item, index) => (
@@ -113,10 +113,10 @@ export default function Navbar() {
                 transition={{ delay: index * 0.1, duration: 0.3 }}
                 whileHover={{ scale: 1.05, x: 5 }}
                 whileTap={{ scale: 0.95 }}
-                className={`text-lg font-semibold transition-all duration-300 cursor-pointer px-4 py-2 rounded-md ${
+                className={`text-lg font-medium transition-all duration-300 cursor-pointer px-4 py-2 rounded-md ${
                   location === item.href 
-                    ? "text-neon-green bg-neon-green/10" 
-                    : "text-slate-300 hover:text-neon-green hover:bg-cyber/10"
+                    ? "text-brand-primary bg-brand-primary/10" 
+                    : "text-foreground/70 hover:text-foreground hover:bg-muted"
                 }`}
                 onClick={() => setIsOpen(false)}
               >

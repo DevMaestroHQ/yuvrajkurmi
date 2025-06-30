@@ -48,10 +48,10 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <div className="min-h-screen bg-dark-bg text-slate-200">
+        <div className="min-h-screen bg-background text-foreground antialiased">
           <Preloader />
           <Navbar />
-          <main>
+          <main className="relative">
             <Router />
           </main>
           <Footer />
