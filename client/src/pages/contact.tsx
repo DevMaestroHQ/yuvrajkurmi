@@ -121,19 +121,19 @@ export default function Contact() {
             >
               <motion.h2
                 variants={fadeInUp}
-                className="font-orbitron text-4xl font-bold text-white mb-4"
+                className="heading-lg text-contrast mb-4"
               >
                 Get In Touch
               </motion.h2>
               <motion.p
                 variants={fadeInUp}
-                className="text-readable-lg max-w-2xl mx-auto"
+                className="text-readable max-w-2xl mx-auto"
               >
                 Ready to discuss your project or explore opportunities? Let's connect and build something amazing together.
               </motion.p>
               <motion.div
                 variants={fadeInUp}
-                className="w-24 h-1 bg-gradient-to-r from-neon-green to-cyber-blue mx-auto"
+                className="w-24 h-1 bg-gradient-to-r from-brand-primary to-brand-secondary mx-auto"
               />
             </motion.div>
             
@@ -148,14 +148,14 @@ export default function Contact() {
               >
                 {/* Simple Header */}
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold text-white mb-2">Send Message</h3>
-                  <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
+                  <h3 className="heading-md text-contrast mb-2">Send Message</h3>
+                  <div className="w-16 h-0.5 bg-gradient-to-r from-brand-primary to-brand-secondary mx-auto"></div>
                 </div>
 
                 {/* Clean Form Card */}
                 <motion.div 
-                  className="bg-slate-900/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 hover:border-blue-500/30 transition-all duration-300"
-                  whileHover={{ y: -2, boxShadow: "0 10px 40px rgba(59, 130, 246, 0.1)" }}
+                  className="card-professional p-8"
+                  whileHover={{ y: -2 }}
                 >
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">
@@ -164,14 +164,14 @@ export default function Contact() {
                         whileHover={{ scale: 1.02 }}
                         transition={{ duration: 0.2 }}
                       >
-                        <label className="block text-sm font-medium text-slate-300">Full Name</label>
+                        <label className="block text-sm font-medium text-readable">Full Name</label>
                         <Input
                           type="text"
                           name="name"
                           value={formData.name}
                           onChange={handleChange}
                           placeholder="John Doe"
-                          className="bg-slate-800/50 border-slate-600 focus:border-blue-500 text-white placeholder:text-slate-400 rounded-lg h-12 px-4 transition-all duration-200 hover:bg-slate-800/70"
+                          className="bg-input border-border focus:border-brand-primary text-contrast placeholder:text-muted-foreground rounded-lg h-12 px-4 transition-all duration-200"
                           required
                         />
                       </motion.div>
@@ -181,14 +181,14 @@ export default function Contact() {
                         whileHover={{ scale: 1.02 }}
                         transition={{ duration: 0.2 }}
                       >
-                        <label className="block text-sm font-medium text-slate-300">Email Address</label>
+                        <label className="block text-sm font-medium text-readable">Email Address</label>
                         <Input
                           type="email"
                           name="email"
                           value={formData.email}
                           onChange={handleChange}
                           placeholder="john@example.com"
-                          className="bg-slate-800/50 border-slate-600 focus:border-blue-500 text-white placeholder:text-slate-400 rounded-lg h-12 px-4 transition-all duration-200 hover:bg-slate-800/70"
+                          className="bg-input border-border focus:border-brand-primary text-contrast placeholder:text-muted-foreground rounded-lg h-12 px-4 transition-all duration-200"
                           required
                         />
                       </motion.div>
@@ -199,14 +199,14 @@ export default function Contact() {
                       whileHover={{ scale: 1.01 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <label className="block text-sm font-medium text-slate-300">Subject</label>
+                      <label className="block text-sm font-medium text-readable">Subject</label>
                       <Input
                         type="text"
                         name="subject"
                         value={formData.subject}
                         onChange={handleChange}
                         placeholder="Project Discussion"
-                        className="bg-slate-800/50 border-slate-600 focus:border-blue-500 text-white placeholder:text-slate-400 rounded-lg h-12 px-4 transition-all duration-200 hover:bg-slate-800/70"
+                        className="bg-input border-border focus:border-brand-primary text-contrast placeholder:text-muted-foreground rounded-lg h-12 px-4 transition-all duration-200"
                         required
                       />
                     </motion.div>
@@ -216,20 +216,20 @@ export default function Contact() {
                       whileHover={{ scale: 1.01 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <label className="block text-sm font-medium text-slate-300">Project Type</label>
+                      <label className="block text-sm font-medium text-readable">Project Type</label>
                       <select
                         name="projectType"
                         value={formData.projectType}
                         onChange={handleChange}
-                        className="w-full bg-slate-800/50 border border-slate-600 focus:border-blue-500 text-white rounded-lg h-12 px-4 transition-all duration-200 hover:bg-slate-800/70 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
+                        className="w-full bg-input border-border focus:border-brand-primary text-contrast rounded-lg h-12 px-4 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-primary/20"
                         required
                       >
-                        <option value="" className="bg-slate-800">Choose project type</option>
-                        <option value="web-development" className="bg-slate-800">Web Development</option>
-                        <option value="mobile-app" className="bg-slate-800">Mobile Application</option>
-                        <option value="api-development" className="bg-slate-800">API Development</option>
-                        <option value="consulting" className="bg-slate-800">Technical Consulting</option>
-                        <option value="other" className="bg-slate-800">Other</option>
+                        <option value="">Choose project type</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="mobile-app">Mobile Application</option>
+                        <option value="api-development">API Development</option>
+                        <option value="consulting">Technical Consulting</option>
+                        <option value="other">Other</option>
                       </select>
                     </motion.div>
 
@@ -238,13 +238,13 @@ export default function Contact() {
                       whileHover={{ scale: 1.01 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <label className="block text-sm font-medium text-slate-300">Message</label>
+                      <label className="block text-sm font-medium text-readable">Message</label>
                       <Textarea
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
                         rows={5}
-                        className="bg-slate-800/50 border-slate-600 focus:border-blue-500 text-white placeholder:text-slate-400 rounded-lg p-4 resize-none transition-all duration-200 hover:bg-slate-800/70"
+                        className="bg-input border-border focus:border-brand-primary text-contrast placeholder:text-muted-foreground rounded-lg p-4 resize-none transition-all duration-200"
                         placeholder="Tell me about your project requirements..."
                         required
                       />
@@ -258,7 +258,7 @@ export default function Contact() {
                       <Button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 border-0 shadow-lg hover:shadow-blue-500/25 disabled:opacity-50 disabled:cursor-not-allowed h-12"
+                        className="w-full btn-professional btn-primary h-12"
                       >
                         {isSubmitting ? (
                           <motion.div className="flex items-center justify-center">
@@ -290,21 +290,21 @@ export default function Contact() {
                 className="space-y-8"
               >
                 {/* Contact Info */}
-                <div className="professional-card p-8">
-                  <h3 className="font-orbitron text-xl text-cyber-blue mb-6">Get in Touch</h3>
+                <div className="card-professional p-8">
+                  <h3 className="heading-md text-contrast mb-6">Get in Touch</h3>
                   <div className="space-y-4">
                     {contactInfo.map((info, index) => (
                       <motion.div
                         key={index}
                         variants={fadeInUp}
-                        className="flex items-center space-x-4 p-4 rounded-lg cyber-border"
+                        className="flex items-center space-x-4 p-4 rounded-lg border border-border"
                       >
                         <div className={`p-3 rounded-full ${info.bgColor}`}>
                           <info.icon className={`w-5 h-5 ${info.color}`} />
                         </div>
                         <div>
-                          <div className="text-sm text-slate-400">{info.label}</div>
-                          <div className="text-white font-mono">{info.value}</div>
+                          <div className="text-sm text-readable">{info.label}</div>
+                          <div className="text-contrast font-medium">{info.value}</div>
                         </div>
                       </motion.div>
                     ))}
@@ -312,8 +312,8 @@ export default function Contact() {
                 </div>
 
                 {/* Social Links */}
-                <div className="professional-card p-8">
-                  <h3 className="font-orbitron text-xl text-cyber-blue mb-6">Connect</h3>
+                <div className="card-professional p-8">
+                  <h3 className="heading-md text-contrast mb-6">Connect</h3>
                   <div className="flex space-x-4">
                     {socialLinks.map((social, index) => (
                       <motion.a
@@ -322,9 +322,9 @@ export default function Contact() {
                         target="_blank"
                         rel="noopener noreferrer"
                         variants={fadeInUp}
-                        className={`p-4 rounded-lg cyber-border transition-all duration-300 ${social.color} ${social.borderColor}`}
+                        className={`p-4 rounded-lg border border-border transition-all duration-300 ${social.color} ${social.borderColor}`}
                       >
-                        <social.icon className="w-6 h-6" />
+                        <social.icon className="w-6 h-6 text-contrast" />
                       </motion.a>
                     ))}
                   </div>

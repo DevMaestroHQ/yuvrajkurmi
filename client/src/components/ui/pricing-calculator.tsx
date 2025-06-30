@@ -23,7 +23,7 @@ export default function PricingCalculator() {
       id: "webapp",
       name: "Web Application",
       description: "Full-stack web app with modern UI",
-      baseRate: 333, // NPR 333k (333,000)
+      baseRate: 75, // NPR 75k (75,000)
       complexity: 1,
       icon: DollarSign
     },
@@ -31,7 +31,7 @@ export default function PricingCalculator() {
       id: "mobile",
       name: "Mobile App",
       description: "React Native mobile application",
-      baseRate: 466, // NPR 466k (466,000)
+      baseRate: 85, // NPR 85k (85,000)
       complexity: 1.3,
       icon: Users
     },
@@ -39,7 +39,7 @@ export default function PricingCalculator() {
       id: "ecommerce",
       name: "E-commerce Platform",
       description: "Complete online store solution",
-      baseRate: 599, // NPR 599k (599,000)
+      baseRate: 95, // NPR 95k (95,000)
       complexity: 1.5,
       icon: Zap
     },
@@ -47,21 +47,21 @@ export default function PricingCalculator() {
       id: "api",
       name: "API Development",
       description: "Backend API with documentation",
-      baseRate: 266, // NPR 266k (266,000)
+      baseRate: 60, // NPR 60k (60,000)
       complexity: 0.8,
       icon: Clock
     }
   ];
 
   const additionalFeatures = [
-    { id: "auth", name: "User Authentication", price: 67 }, // NPR 67k
-    { id: "payments", name: "Payment Integration", price: 106 }, // NPR 106k
-    { id: "analytics", name: "Analytics Dashboard", price: 159 }, // NPR 159k
-    { id: "admin", name: "Admin Panel", price: 199 }, // NPR 199k
-    { id: "api-integration", name: "3rd Party API Integration", price: 80 }, // NPR 80k
-    { id: "real-time", name: "Real-time Features", price: 133 }, // NPR 133k
-    { id: "mobile-responsive", name: "Mobile Optimization", price: 53 }, // NPR 53k
-    { id: "seo", name: "SEO Optimization", price: 40 } // NPR 40k
+    { id: "auth", name: "User Authentication", price: 15 }, // NPR 15k
+    { id: "payments", name: "Payment Integration", price: 25 }, // NPR 25k
+    { id: "analytics", name: "Analytics Dashboard", price: 35 }, // NPR 35k
+    { id: "admin", name: "Admin Panel", price: 40 }, // NPR 40k
+    { id: "api-integration", name: "3rd Party API Integration", price: 20 }, // NPR 20k
+    { id: "real-time", name: "Real-time Features", price: 30 }, // NPR 30k
+    { id: "mobile-responsive", name: "Mobile Optimization", price: 12 }, // NPR 12k
+    { id: "seo", name: "SEO Optimization", price: 10 } // NPR 10k
   ];
 
   const selectedProject = projectTypes.find(p => p.id === selectedType);

@@ -235,6 +235,13 @@ Changelog:
   * CONSISTENT BRAND COLORS: Professional blue (#3B82F6) and purple (#8B5CF6) throughout
   * IMPROVED ACCESSIBILITY: Better contrast ratios and keyboard navigation support
   * MODERN ANIMATIONS: Subtle, professional animations that enhance UX without distraction
+- June 30, 2025 - Currency & Text Color Fixes with Professional About Section Redesign:
+  * NPR CURRENCY CONVERSION: Updated pricing calculator to use Nepali Rupees (NPR) in thousands format with all prices under 100K (15K-95K range)
+  * ADAPTIVE TEXT COLORS: Fixed black text for light mode and white text for dark mode across all sections (testimonials, stats, contact)
+  * LUXURY FONT SYSTEM: Implemented professional typography with Inter for body text, Playfair Display for headings, and JetBrains Mono for code
+  * ABOUT SECTION REDESIGN: Complete professional luxury redesign with hero section, stats grid, expertise cards, and skills showcase
+  * PROFESSIONAL STYLING: Enhanced card components with luxury design elements, proper spacing, and modern visual hierarchy
+  * RESPONSIVE DESIGN: Mobile-first approach ensuring perfect display across all device sizes with new layout structure
 - June 30, 2025 - Complete Professional Redesign & Hiring Optimization:
   * PROFESSIONAL THEME: Completely redesigned from sci-fi to clean, modern professional interface
   * LIGHT MODE INTERFACE: Switched to light background with professional blue/purple brand colors
