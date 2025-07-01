@@ -31,7 +31,7 @@ A cutting-edge developer portfolio showcasing modern web development skills thro
 - **Authentic Projects** - Updated with real projects: HealthAssistant App, Edubridge, CodePulse
 - **Current Education** - BSc Computer Science and Information Technology at Bhairahawa Multiple Campus, TU
 - **Skill Set Update** - Authentic technology stack including React Native, Python, Next.js, and development tools
-- **Logo Update** - Integrated provided logo image and removed text labels for cleaner branding
+- **Logo Update** - Integrated provided logo image and updated branding to display developer name "Yubraj Kurmi" and "Full Stack Developer" title
 
 **📋 Professional Experience Section Redesign**
 - **Authentic Career Timeline** - Redesigned experience section with realistic job titles and achievements

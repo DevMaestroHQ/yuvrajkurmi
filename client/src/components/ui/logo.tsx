@@ -39,10 +39,10 @@ export default function Logo({ size = "md", showText = false, className = "" }: 
       {showText && (
         <div className="flex flex-col">
           <span className={`font-display font-bold text-contrast ${textSizeClasses[size]} leading-tight`}>
-            Verified Developer
+            Yubraj Kurmi
           </span>
           <span className="text-xs text-readable-secondary font-medium">
-            Professional Portfolio
+            Full Stack Developer
           </span>
         </div>
       )}
