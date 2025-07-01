@@ -8,53 +8,65 @@ import { fadeInUp, staggerChildren } from "@/lib/animations";
 export default function Resume() {
   const contactInfo = {
     name: "Yubraj Kurmi",
-    title: "Senior Full Stack Developer",
+    title: "Verified Full Stack Developer",
     location: "Devdaha, Rupandehi, Nepal",
-    email: "yuvrajkurmi03@gmail.com",
-    phone: "+977-98XXXXXXXX",
-    website: "https://yubrajkurmi.portfolio.dev",
-    github: "https://github.com/yubrajkurmi",
+    email: "developerrajir@gmail.com",
+    phone: "+977-98*******",
+    website: "https://www.yuvrajkurmi.github.com",
+    github: "https://github.com/DevMaestroHQ",
     linkedin: "https://linkedin.com/in/yuvrajkurmi03"
   };
 
   const experience = [
     {
-      title: "Full Stack Developer",
-      company: "Freelance Projects",
-      duration: "2022 - Present",
-      location: "Nepal",
+      title: "Mobile and Web Development",
+      company: "Current Projects",
+      duration: "2023 - Present",
+      location: "Remote, Nepal",
       achievements: [
-        "Built 12+ web applications using React, Node.js, and MongoDB",
-        "Created e-commerce platform for local businesses with payment integration",
-        "Developed student management system for educational institutions",
-        "Implemented responsive designs optimized for mobile and desktop",
-        "Collaborated with small business owners to digitize their operations"
+        "Build and maintain front-end features for web applications, such as an air ticketing platform, using React and Next.js",
+        "Contribute to the development of the E-Grow - Easy Farming mobile app using React Native",
+        "Work under senior developers to adopt modern development workflows and best practices",
+        "Ensure responsive and user-friendly interfaces for various web applications",
+        "Collaborate with team members to deliver core functionalities"
       ]
     },
     {
-      title: "Web Development Intern",
-      company: "Local IT Company",
-      duration: "2021 - 2022",
-      location: "Rupandehi, Nepal",
+      title: "Python Development",
+      company: "Previous Experience",
+      duration: "2022 - 2023",
+      location: "Nepal",
       achievements: [
-        "Learned modern web development technologies and frameworks",
-        "Assisted in building company website using HTML, CSS, and JavaScript",
-        "Gained experience with Git version control and team collaboration",
-        "Participated in code reviews and learned best practices"
+        "Developed and maintained front-end components for web applications using Next.js, React, and related technologies",
+        "Collaborated with senior developers to implement new features and improve existing codebase",
+        "Gained hands-on experience with modern web development workflows and best practices",
+        "Worked with Python frameworks for web development projects"
+      ]
+    },
+    {
+      title: "React Development",
+      company: "AI/ML Projects",
+      duration: "2021 - 2022",
+      location: "Remote",
+      achievements: [
+        "Annotated diverse datasets to support AI and machine learning projects",
+        "Ensured high-quality data labeling in a remote setting",
+        "Contributed to React-based data annotation tools and interfaces",
+        "Gained experience with data visualization and processing workflows"
       ]
     }
   ];
 
   const education = [
     {
-      degree: "Bachelor of Computer Science",
-      institution: "Tribhuvan University",
-      duration: "2021 - Present",
-      location: "Nepal",
+      degree: "BSc. Computer Science and Information Technology, IOST, TU",
+      institution: "Bhairahawa Multiple Campus",
+      duration: "Jun. 2024 - Present",
+      location: "Bhairahawa, Rupandehi",
       details: [
-        "Relevant Coursework: Data Structures, Algorithms, Database Systems, Software Engineering",
-        "Current GPA: 3.8/4.0",
-        "Active member of Computer Science Society"
+        "Currently pursuing Bachelor's degree in Computer Science and Information Technology",
+        "Tribhuvan University affiliated program",
+        "Focus on modern software development and information systems"
       ]
     }
   ];
@@ -69,60 +81,66 @@ export default function Resume() {
 
   const projects = [
     {
-      name: "Online Store for Local Business",
-      description: "E-commerce website with product catalog and shopping cart",
-      technologies: ["React", "Node.js", "MongoDB", "CSS"],
-      impact: "Helped local shop increase online sales by 30%"
+      name: "HealthAssistant App",
+      description: "Full Stack Health App using modern web technologies",
+      technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+      impact: "Complete health management platform - Health-HA.com"
     },
     {
-      name: "Student Grade Management",
-      description: "Web app for teachers to manage student grades and attendance",
-      technologies: ["React", "Express", "MySQL", "Bootstrap"],
-      impact: "Used by 3 local schools to track 500+ students"
+      name: "Edubridge",
+      description: "Educational platform with automated web scraping to integrate syllabus materials and examination resources",
+      technologies: ["React", "Next.js", "Web Scraping", "MongoDB"],
+      impact: "Educational resource platform - Edubridge.com"
     },
     {
-      name: "Personal Portfolio Website",
-      description: "Responsive portfolio showcasing development skills",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      impact: "Professional online presence for client acquisition"
-    },
-    {
-      name: "Weather Dashboard",
-      description: "Real-time weather app with location-based forecasts",
-      technologies: ["JavaScript", "API Integration", "HTML/CSS"],
-      impact: "Learning project demonstrating API usage skills"
+      name: "CodePulse",
+      description: "Full-featured code coverage platform that helps developers visualize, track, and improve test coverage across their projects",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Authentication"],
+      impact: "Developer productivity tool - Codepulse.com"
     }
   ];
 
   const skills = {
-    technical: [
-      "JavaScript (ES6+), TypeScript",
-      "React, HTML5, CSS3",
-      "Node.js, Express.js",
-      "MongoDB, MySQL",
+    frontend: [
+      "HTML5, CSS3, JavaScript",
+      "React, Next.js",
+      "Python (Tkinter, Streamlit)",
+      "Tailwind CSS",
+      "Figma/UI Design",
+      "Framer Motion"
+    ],
+    backend: [
+      "Next.js API Routes",
+      "Python",
+      "MongoDB",
+      "PostgreSQL",
+      "Firebase Auth",
+      "Auth0"
+    ],
+    tools: [
       "Git, GitHub",
-      "Responsive Web Design",
-      "REST APIs",
-      "Tailwind CSS, Bootstrap"
+      "Visual Studio Code",
+      "Cursor, PyCharm",
+      "Figma",
+      "Google Analytics",
+      "React Native"
     ],
     soft: [
-      "Technical Leadership",
-      "System Architecture",
-      "Code Review & Mentoring",
-      "Agile/Scrum Methodologies",
-      "Cross-functional Collaboration",
-      "Problem Solving & Analysis",
-      "Project Management",
-      "Client Communication"
+      "Team Collaboration",
+      "Problem Solving",
+      "Code Quality Focus",
+      "User-Centered Design",
+      "Continuous Learning",
+      "Project Delivery"
     ]
   };
 
   return (
     <>
       <SEOHead 
-        title="Yubraj Kurmi Resume - Full Stack Developer CV & Experience"
-        description="Download Yubraj Kurmi's professional resume. 2+ years experience as Senior Full Stack Developer. React, Node.js, AWS expertise. Available for hire."
-        keywords="yubraj kurmi resume, full stack developer cv, react developer resume, node.js developer, download resume, hire developer"
+        title="Yubraj Kurmi Resume - Verified Full Stack Developer CV Nepal"
+        description="Download Yubraj Kurmi's professional resume. Junior developer skilled in React, Next.js, React Native, and Python. Currently pursuing BSc Computer Science at Tribhuvan University."
+        keywords="yubraj kurmi resume, full stack developer cv nepal, react developer resume, next.js developer, python developer, computer science student, download resume, hire developer nepal"
       />
       
       <div className="min-h-screen bg-background">
@@ -197,6 +215,24 @@ export default function Resume() {
             </motion.div>
 
             {/* Professional Summary */}
+            <motion.div variants={fadeInUp}>
+              <Card className="card-professional">
+                <CardContent className="p-8">
+                  <h3 className="heading-md text-brand-primary mb-6 flex items-center gap-3">
+                    <Star className="w-6 h-6" />
+                    Professional Summary
+                  </h3>
+                  <p className="text-adaptive-secondary leading-relaxed text-lg">
+                    A motivated junior developer skilled in React, Next.js, and React Native, Python, JavaScript actively building 
+                    responsive web and mobile applications, including air ticketing platforms and farming solutions. Eager to grow 
+                    and deliver user-focused, high-quality code in collaborative environments. Currently pursuing BSc Computer Science 
+                    and Information Technology at Tribhuvan University while gaining hands-on experience in modern web development.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Additional Professional Summary Section */}
             <motion.div variants={fadeInUp}>
               <Card className="card-professional">
                 <CardContent className="p-8">
@@ -357,7 +393,7 @@ export default function Resume() {
                     <div>
                       <h4 className="font-semibold text-adaptive mb-4">Technical Skills</h4>
                       <div className="space-y-2">
-                        {skills.technical.map((skill, index) => (
+                        {skills.frontend.map((skill: string, index: number) => (
                           <div key={index} className="flex items-center gap-2">
                             <div className="w-2 h-2 bg-brand-primary rounded-full"></div>
                             <span className="text-adaptive-secondary">{skill}</span>
@@ -368,7 +404,7 @@ export default function Resume() {
                     <div>
                       <h4 className="font-semibold text-adaptive mb-4">Professional Skills</h4>
                       <div className="space-y-2">
-                        {skills.soft.map((skill, index) => (
+                        {skills.soft.map((skill: string, index: number) => (
                           <div key={index} className="flex items-center gap-2">
                             <div className="w-2 h-2 bg-brand-secondary rounded-full"></div>
                             <span className="text-adaptive-secondary">{skill}</span>

@@ -25,6 +25,13 @@ A cutting-edge developer portfolio showcasing modern web development skills thro
 
 ### 🆕 Latest Updates (July 1, 2025)
 
+**📄 Authentic Resume Integration & Privacy Enhancement**
+- **Real Resume Details** - Integrated authentic information from official resume including projects, education, and experience
+- **Contact Privacy** - Replaced contact number with asterisks (+977-98*******) for privacy protection
+- **Authentic Projects** - Updated with real projects: HealthAssistant App, Edubridge, CodePulse
+- **Current Education** - BSc Computer Science and Information Technology at Bhairahawa Multiple Campus, TU
+- **Skill Set Update** - Authentic technology stack including React Native, Python, Next.js, and development tools
+
 **📋 Professional Experience Section Redesign**
 - **Authentic Career Timeline** - Redesigned experience section with realistic job titles and achievements
 - **Updated Job Titles** - Replaced "Senior Full Stack Developer" with "Verified Full Stack Developer" and appropriate role progression
