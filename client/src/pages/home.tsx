@@ -1,7 +1,5 @@
-import { motion } from "framer-motion";
 import { ArrowRight, Code2, Mail, Github, Linkedin, Download, Star, CheckCircle } from "lucide-react";
 import { Link } from "wouter";
-import { fadeInUp, staggerChildren } from "@/lib/animations";
 import SEOHead from "@/components/ui/seo-head";
 
 export default function Home() {
@@ -32,13 +30,8 @@ export default function Home() {
       <div className="min-h-screen bg-background">
         {/* Hero Section */}
         <section className="section-container pt-24 pb-16">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={staggerChildren}
-            className="space-y-8"
-          >
-            <motion.div variants={fadeInUp} className="space-y-6">
+          <div className="space-y-8 animate-fadeInUp">
+            <div className="space-y-6">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-2 h-2 bg-brand-accent rounded-full animate-pulse"></div>
                 <span className="text-adaptive-primary font-medium">Available for new opportunities</span>
@@ -64,12 +57,9 @@ export default function Home() {
                   <span className="font-medium text-contrast">Top Rated Developer</span>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div 
-              variants={fadeInUp}
-              className="flex flex-wrap gap-4"
-            >
+            <div className="flex flex-wrap gap-4">
               <Link href="/projects">
                 <button className="btn-professional btn-primary">
                   <Code2 className="w-5 h-5" />
@@ -84,13 +74,10 @@ export default function Home() {
                   Let's Talk
                 </button>
               </Link>
-            </motion.div>
+            </div>
 
             {/* Social Links */}
-            <motion.div 
-              variants={fadeInUp}
-              className="flex items-center gap-4 pt-4"
-            >
+            <div className="flex items-center gap-4 pt-4">
               <a
                 href="https://github.com/yubrajkurmi"
                 target="_blank"
@@ -107,112 +94,90 @@ export default function Home() {
               >
                 <Linkedin className="w-5 h-5 text-adaptive" />
               </a>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </section>
 
         {/* Skills Section */}
         <section className="section-container py-16">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={staggerChildren}
-            className="space-y-8"
-          >
-            <motion.div variants={fadeInUp} className="text-center">
+          <div className="space-y-8">
+            <div className="text-center">
               <h2 className="heading-lg font-display text-contrast mb-4">Technical Expertise</h2>
               <p className="text-readable max-w-2xl mx-auto">
                 Proficient in modern technologies and frameworks with hands-on experience in full-stack development
               </p>
-            </motion.div>
+            </div>
 
-            <motion.div 
-              variants={fadeInUp}
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-            >
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {skills.map((skill, index) => (
-                <motion.div
+                <div
                   key={skill.name}
-                  variants={fadeInUp}
-                  className="bg-card rounded-lg p-6 hover:shadow-lg transition-shadow"
+                  className="card-professional p-4 text-center hover:scale-105 transition-transform"
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className="text-2xl">{skill.icon}</span>
-                    <h3 className="font-semibold text-contrast">{skill.name}</h3>
-                  </div>
-                  <span className="text-sm text-brand-primary font-semibold">{skill.level}</span>
-                </motion.div>
+                  <div className="text-2xl mb-2">{skill.icon}</div>
+                  <h3 className="font-semibold text-contrast text-sm mb-1">{skill.name}</h3>
+                  <span className="text-xs text-brand-primary font-medium">{skill.level}</span>
+                </div>
               ))}
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </section>
 
         {/* Achievements Section */}
-        <section className="section-container py-16">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={staggerChildren}
-            className="space-y-8"
-          >
-            <motion.div variants={fadeInUp} className="text-center">
-              <h2 className="heading-lg font-display text-contrast mb-4">Achievements</h2>
+        <section className="section-container py-16 bg-muted/30">
+          <div className="space-y-8">
+            <div className="text-center">
+              <h2 className="heading-lg font-display text-contrast mb-4">Professional Achievements</h2>
               <p className="text-readable max-w-2xl mx-auto">
-                Delivering results that matter to clients and businesses
+                Track record of delivering high-quality solutions and exceeding client expectations
               </p>
-            </motion.div>
+            </div>
 
-            <motion.div 
-              variants={fadeInUp}
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
-            >
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {achievements.map((achievement, index) => (
-                <motion.div
+                <div
                   key={achievement.label}
-                  variants={fadeInUp}
-                  className="text-center p-6 bg-card rounded-lg hover:shadow-lg transition-shadow"
+                  className="text-center space-y-2"
+                  style={{ animationDelay: `${index * 0.2}s` }}
                 >
-                  <div className="text-3xl font-bold text-brand-primary mb-2">{achievement.metric}</div>
-                  <div className="font-semibold text-contrast mb-1">{achievement.label}</div>
-                  <div className="text-sm text-readable">{achievement.description}</div>
-                </motion.div>
+                  <div className="text-3xl md:text-4xl font-bold text-brand-primary font-display">
+                    {achievement.metric}
+                  </div>
+                  <div className="text-sm font-semibold text-contrast">
+                    {achievement.label}
+                  </div>
+                  <div className="text-xs text-readable-secondary">
+                    {achievement.description}
+                  </div>
+                </div>
               ))}
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </section>
 
         {/* Call to Action */}
         <section className="section-container py-16">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={staggerChildren}
-            className="text-center space-y-6"
-          >
-            <motion.div variants={fadeInUp}>
-              <h2 className="heading-lg font-display text-contrast mb-4">Ready to Start Your Project?</h2>
-              <p className="text-xl text-readable max-w-2xl mx-auto mb-8">
-                Let's collaborate to bring your ideas to life with modern, scalable solutions
-              </p>
-            </motion.div>
-
-            <motion.div variants={fadeInUp} className="flex flex-wrap justify-center gap-4">
+          <div className="text-center space-y-6">
+            <h2 className="heading-lg font-display text-contrast">Ready to Start Your Project?</h2>
+            <p className="text-readable max-w-2xl mx-auto">
+              Let's discuss how I can help bring your ideas to life with modern, scalable solutions.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
                 <button className="btn-professional btn-primary">
-                  <Mail className="w-5 h-5" />
-                  Get In Touch
+                  Start a Conversation
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </Link>
               
-              <Link href="/resume">
-                <button className="btn-professional btn-outline">
-                  <Download className="w-5 h-5" />
-                  Download Resume
-                </button>
-              </Link>
-            </motion.div>
-          </motion.div>
+              <a href="/resume.pdf" download className="btn-professional btn-outline">
+                <Download className="w-4 h-4" />
+                Download Resume
+              </a>
+            </div>
+          </div>
         </section>
       </div>
     </>
