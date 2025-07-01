@@ -19,28 +19,28 @@ export default function Resume() {
 
   const experience = [
     {
-      title: "Senior Full Stack Developer",
-      company: "Freelance",
-      duration: "2023 - Present",
-      location: "Remote",
+      title: "Full Stack Developer",
+      company: "Freelance Projects",
+      duration: "2022 - Present",
+      location: "Nepal",
       achievements: [
-        "Delivered 25+ successful projects for clients across various industries",
-        "Specialized in React/Next.js and Node.js full-stack applications",
-        "Maintained 99% client satisfaction rate with on-time project delivery",
-        "Architected scalable solutions handling 10,000+ concurrent users",
-        "Implemented modern CI/CD pipelines reducing deployment time by 60%"
+        "Built 12+ web applications using React, Node.js, and MongoDB",
+        "Created e-commerce platform for local businesses with payment integration",
+        "Developed student management system for educational institutions",
+        "Implemented responsive designs optimized for mobile and desktop",
+        "Collaborated with small business owners to digitize their operations"
       ]
     },
     {
-      title: "Frontend Developer",
-      company: "Local Tech Startup",
-      duration: "2022 - 2023",
-      location: "Nepal",
+      title: "Web Development Intern",
+      company: "Local IT Company",
+      duration: "2021 - 2022",
+      location: "Rupandehi, Nepal",
       achievements: [
-        "Developed responsive web applications using React and TypeScript",
-        "Collaborated with design teams to implement pixel-perfect UIs",
-        "Optimized application performance resulting in 40% faster load times",
-        "Mentored junior developers and conducted code reviews"
+        "Learned modern web development technologies and frameworks",
+        "Assisted in building company website using HTML, CSS, and JavaScript",
+        "Gained experience with Git version control and team collaboration",
+        "Participated in code reviews and learned best practices"
       ]
     }
   ];
@@ -60,44 +60,50 @@ export default function Resume() {
   ];
 
   const certifications = [
-    "AWS Certified Cloud Practitioner",
-    "React Developer Certification - Meta",
-    "Node.js Application Development - IBM",
-    "MongoDB Certified Developer",
-    "Google Analytics Certified"
+    "FreeCodeCamp Full Stack Developer",
+    "Udemy React Development Course",
+    "Coursera JavaScript Algorithms",
+    "MongoDB University Basics",
+    "Google Developer Student Club Member"
   ];
 
   const projects = [
     {
-      name: "E-Commerce Platform",
-      description: "Full-stack marketplace with payment integration",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      impact: "Processed $50,000+ in transactions"
+      name: "Online Store for Local Business",
+      description: "E-commerce website with product catalog and shopping cart",
+      technologies: ["React", "Node.js", "MongoDB", "CSS"],
+      impact: "Helped local shop increase online sales by 30%"
     },
     {
-      name: "Learning Management System",
-      description: "Educational platform with video streaming",
-      technologies: ["Next.js", "PostgreSQL", "AWS"],
-      impact: "Served 1,000+ students"
+      name: "Student Grade Management",
+      description: "Web app for teachers to manage student grades and attendance",
+      technologies: ["React", "Express", "MySQL", "Bootstrap"],
+      impact: "Used by 3 local schools to track 500+ students"
     },
     {
-      name: "Healthcare Management",
-      description: "Patient management system with telemedicine",
-      technologies: ["React", "Express", "MySQL"],
-      impact: "Improved patient workflow by 50%"
+      name: "Personal Portfolio Website",
+      description: "Responsive portfolio showcasing development skills",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      impact: "Professional online presence for client acquisition"
+    },
+    {
+      name: "Weather Dashboard",
+      description: "Real-time weather app with location-based forecasts",
+      technologies: ["JavaScript", "API Integration", "HTML/CSS"],
+      impact: "Learning project demonstrating API usage skills"
     }
   ];
 
   const skills = {
     technical: [
-      "React, TypeScript, JavaScript",
+      "JavaScript (ES6+), TypeScript",
+      "React, HTML5, CSS3",
       "Node.js, Express.js",
-      "AWS, Docker, Kubernetes",
-      "PostgreSQL, MongoDB, Redis",
-      "GraphQL, REST APIs",
-      "CI/CD, DevOps, Git",
-      "Next.js, Tailwind CSS",
-      "Performance Optimization"
+      "MongoDB, MySQL",
+      "Git, GitHub",
+      "Responsive Web Design",
+      "REST APIs",
+      "Tailwind CSS, Bootstrap"
     ],
     soft: [
       "Technical Leadership",
