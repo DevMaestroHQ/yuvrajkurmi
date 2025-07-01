@@ -22,9 +22,9 @@ export default function Home() {
   return (
     <>
       <SEOHead 
-        title="Yubraj Kurmi - Senior Full Stack Developer | Modern Web Solutions"
-        description="Senior Full Stack Developer with 2+ years experience in React, Node.js, and modern web technologies. Available for freelance projects and collaborations."
-        keywords="full stack developer, react developer, node.js, typescript, web development, freelance developer, portfolio"
+        title="✓ Verified Developer | Professional Portfolio | Quality Web Solutions"
+        description="Verified Full Stack Developer from Nepal with 3+ years experience in React, Node.js, and modern web technologies. Specialized in quality web solutions and responsive design."
+        keywords="verified developer nepal, full stack developer, react developer nepal, node.js developer, typescript, web development nepal, freelance developer kathmandu, portfolio"
       />
       
       <div className="min-h-screen bg-background">
@@ -38,7 +38,7 @@ export default function Home() {
               </div>
               
               <h1 className="heading-xl font-display text-contrast">
-                Senior Full Stack
+                Verified Full Stack
                 <span className="block text-brand-primary font-bold">Developer</span>
               </h1>
               
