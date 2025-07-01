@@ -24,68 +24,45 @@ export default function Logo({ size = "md", showText = true, className = "" }: L
       {/* Ultra Modern Geometric Logo */}
       <div className={`${sizeClasses[size]} relative flex-shrink-0`}>
         <svg
-          viewBox="0 0 48 48"
+          viewBox="0 0 32 32"
           className="w-full h-full"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <defs>
-            {/* Simple Clean Gradient */}
-            <linearGradient id="simpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#3B82F6" />
+            <linearGradient id="modernLogo" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#2563EB" />
               <stop offset="100%" stopColor="#1E40AF" />
             </linearGradient>
           </defs>
           
-          {/* Simple Clean Container */}
-          <g transform="translate(24, 24)">
-            {/* Clean Background Circle */}
-            <circle 
-              cx="0" 
-              cy="0" 
-              r="20" 
-              fill="url(#simpleGradient)" 
-              opacity="0.1"
+          {/* Professional Circle */}
+          <circle 
+            cx="16" 
+            cy="16" 
+            r="15" 
+            fill="url(#modernLogo)" 
+            opacity="0.1"
+            stroke="url(#modernLogo)"
+            strokeWidth="1"
+          />
+          
+          {/* Modern Y Letter */}
+          <g transform="translate(16, 16)">
+            <path
+              d="M-5 -7 L0 -1 L5 -7"
+              stroke="url(#modernLogo)"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              fill="none"
             />
-            
-            {/* Simple Y Letter */}
-            <g>
-              {/* Y Main Structure - Clean Lines */}
-              <path
-                d="M-8 -10 L0 -2 L8 -10"
-                stroke="url(#simpleGradient)"
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                fill="none"
-              />
-              <path
-                d="M0 -2 L0 10"
-                stroke="url(#simpleGradient)"
-                strokeWidth="3"
-                strokeLinecap="round"
-                fill="none"
-              />
-              
-              {/* Simple Accent Dot */}
-              <circle 
-                cx="0" 
-                cy="6" 
-                r="1.5" 
-                fill="url(#simpleGradient)" 
-                opacity="0.8"
-              />
-            </g>
-            
-            {/* Minimal Border */}
-            <circle 
-              cx="0" 
-              cy="0" 
-              r="18" 
-              fill="none" 
-              stroke="url(#simpleGradient)" 
-              strokeWidth="1.5" 
-              opacity="0.4"
+            <path
+              d="M0 -1 L0 7"
+              stroke="url(#modernLogo)"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              fill="none"
             />
           </g>
         </svg>

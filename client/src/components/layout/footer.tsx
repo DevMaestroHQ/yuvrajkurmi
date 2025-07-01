@@ -100,10 +100,14 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-border">
-          <div className="flex items-center space-x-2 text-muted-foreground text-sm mb-4 md:mb-0">
-            <span>© {currentYear} Yubraj Kurmi. Made with</span>
-            <Heart className="w-4 h-4 text-red-500 fill-current" />
-            <span>and lots of ☕</span>
+          <div className="text-center md:text-left text-muted-foreground text-sm mb-4 md:mb-0">
+            <p className="mb-1">
+              © {currentYear} Yubraj Kurmi. All rights reserved.
+            </p>
+            <p className="text-xs opacity-75">
+              Professional web development services based in Nepal. 
+              Crafted with precision and passion for digital excellence.
+            </p>
           </div>
 
           <motion.button

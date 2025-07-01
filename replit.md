@@ -175,6 +175,17 @@ Preferred communication style: Simple, everyday language.
 - **Domain Configuration**: Professional domain and DNS setup guide
 
 Changelog:
+- July 1, 2025 - Perfect Pricing Calculator & Professional Branding Update:
+  * COMPLETELY REDESIGNED PRICING CALCULATOR: Professional 3-column layout with detailed project types, urgency options, and feature categories
+  * ACCURATE PRICING SYSTEM: Realistic NPR pricing (35K-95K base rates) with proper timeline calculations and maintenance options
+  * MODERN UI/UX: Interactive cards with hover effects, checkboxes, and real-time price breakdown calculations
+  * PROFESSIONAL COPYRIGHT: Updated footer with comprehensive copyright text and business description
+  * SIMPLIFIED MODERN LOGO: Clean, minimal "Y" design with professional blue gradient and updated favicon
+  * SITE TITLE ENHANCEMENT: Updated to "YK | Yubraj Kurmi - Professional Full Stack Developer | Nepal"
+  * FEATURE CATEGORIZATION: Organized additional features into Essential, Advanced, and Marketing categories
+  * URGENT PRICING OPTIONS: Flexible, Standard, Priority, and Express delivery with proper multipliers
+  * MAINTENANCE PACKAGES: 3-month support options with transparent pricing
+  * RESPONSIVE DESIGN: Mobile-optimized calculator with sticky price summary panel
 - July 1, 2025 - Comprehensive Portfolio Enhancement & Genuine Content Update:
   * PRICING REDUCTION: Reduced all pricing by 15% across all project categories and additional features
   * SIMPLIFIED LOGO: Redesigned logo with clean, simple "Y" design using minimal blue gradient

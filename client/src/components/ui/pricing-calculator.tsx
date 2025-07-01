@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Calculator, DollarSign, Clock, Users, Zap } from "lucide-react";
+import { Calculator, Globe, Smartphone, ShoppingCart, Database, Clock, Star, CheckCircle2 } from "lucide-react";
 import { Button } from "./button";
 import { Card, CardContent } from "./card";
 
@@ -8,74 +8,111 @@ interface ProjectType {
   id: string;
   name: string;
   description: string;
+  features: string[];
   baseRate: number;
-  complexity: number;
+  timeRange: string;
   icon: React.ComponentType<{ className?: string }>;
+  popular?: boolean;
+}
+
+interface Feature {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  timeWeeks: number;
+  category: string;
 }
 
 export default function PricingCalculator() {
   const [selectedType, setSelectedType] = useState<string>("webapp");
-  const [timeline, setTimeline] = useState<number>(4);
+  const [urgency, setUrgency] = useState<string>("standard");
   const [features, setFeatures] = useState<string[]>([]);
+  const [maintenance, setMaintenance] = useState<boolean>(false);
 
   const projectTypes: ProjectType[] = [
     {
       id: "webapp",
       name: "Web Application",
-      description: "Full-stack web app with modern UI",
-      baseRate: 64, // NPR 64k (64,000) - 15% reduced from 75k
-      complexity: 1,
-      icon: DollarSign
+      description: "Professional business website with modern design",
+      features: ["Responsive Design", "Contact Forms", "Basic SEO", "Fast Loading"],
+      baseRate: 35,
+      timeRange: "2-4 weeks",
+      icon: Globe
+    },
+    {
+      id: "ecommerce",
+      name: "E-commerce Store",
+      description: "Complete online shopping platform",
+      features: ["Product Catalog", "Shopping Cart", "Order Management", "Payment Ready"],
+      baseRate: 65,
+      timeRange: "4-6 weeks",
+      icon: ShoppingCart,
+      popular: true
+    },
+    {
+      id: "webapp-advanced",
+      name: "Advanced Web App",
+      description: "Custom web application with database",
+      features: ["User Dashboard", "Database Integration", "Admin Panel", "Custom Features"],
+      baseRate: 85,
+      timeRange: "6-8 weeks",
+      icon: Database
     },
     {
       id: "mobile",
       name: "Mobile App",
-      description: "React Native mobile application",
-      baseRate: 72, // NPR 72k (72,000) - 15% reduced from 85k
-      complexity: 1.3,
-      icon: Users
-    },
-    {
-      id: "ecommerce",
-      name: "E-commerce Platform",
-      description: "Complete online store solution",
-      baseRate: 81, // NPR 81k (81,000) - 15% reduced from 95k
-      complexity: 1.5,
-      icon: Zap
-    },
-    {
-      id: "api",
-      name: "API Development",
-      description: "Backend API with documentation",
-      baseRate: 51, // NPR 51k (51,000) - 15% reduced from 60k
-      complexity: 0.8,
-      icon: Clock
+      description: "Cross-platform mobile application",
+      features: ["iOS & Android", "Native Performance", "App Store Ready", "Push Notifications"],
+      baseRate: 95,
+      timeRange: "8-12 weeks",
+      icon: Smartphone
     }
   ];
 
-  const additionalFeatures = [
-    { id: "auth", name: "User Authentication", price: 13 }, // NPR 13k - 15% reduced from 15k
-    { id: "payments", name: "Payment Integration", price: 21 }, // NPR 21k - 15% reduced from 25k
-    { id: "analytics", name: "Analytics Dashboard", price: 30 }, // NPR 30k - 15% reduced from 35k
-    { id: "admin", name: "Admin Panel", price: 34 }, // NPR 34k - 15% reduced from 40k
-    { id: "api-integration", name: "3rd Party API Integration", price: 17 }, // NPR 17k - 15% reduced from 20k
-    { id: "real-time", name: "Real-time Features", price: 26 }, // NPR 26k - 15% reduced from 30k
-    { id: "mobile-responsive", name: "Mobile Optimization", price: 10 }, // NPR 10k - 15% reduced from 12k
-    { id: "seo", name: "SEO Optimization", price: 9 } // NPR 9k - 15% reduced from 10k
+  const additionalFeatures: Feature[] = [
+    // Essential Features
+    { id: "auth", name: "User Login System", description: "Secure user registration and authentication", price: 15, timeWeeks: 1, category: "Essential" },
+    { id: "payments", name: "Payment Integration", description: "Secure payment processing with local gateways", price: 25, timeWeeks: 2, category: "Essential" },
+    { id: "admin", name: "Admin Dashboard", description: "Complete admin control panel", price: 20, timeWeeks: 1.5, category: "Essential" },
+    
+    // Advanced Features
+    { id: "analytics", name: "Analytics & Reports", description: "Detailed business analytics and reports", price: 18, timeWeeks: 1, category: "Advanced" },
+    { id: "api", name: "API Integration", description: "Connect with third-party services", price: 12, timeWeeks: 1, category: "Advanced" },
+    { id: "real-time", name: "Real-time Features", description: "Live chat, notifications, updates", price: 22, timeWeeks: 2, category: "Advanced" },
+    
+    // Performance & SEO
+    { id: "seo", name: "Advanced SEO", description: "Complete SEO optimization package", price: 8, timeWeeks: 0.5, category: "Marketing" },
+    { id: "performance", name: "Performance Optimization", description: "Speed optimization and caching", price: 10, timeWeeks: 0.5, category: "Marketing" },
+    { id: "social", name: "Social Media Integration", description: "Social login and sharing features", price: 6, timeWeeks: 0.5, category: "Marketing" }
+  ];
+
+  const urgencyOptions = [
+    { id: "relaxed", name: "Flexible Timeline", multiplier: 0.85, description: "No rush, standard delivery" },
+    { id: "standard", name: "Standard Delivery", multiplier: 1, description: "Normal project timeline" },
+    { id: "urgent", name: "Priority Delivery", multiplier: 1.3, description: "Faster delivery, priority support" },
+    { id: "express", name: "Express Delivery", multiplier: 1.6, description: "Rush delivery in half time" }
   ];
 
   const selectedProject = projectTypes.find(p => p.id === selectedType);
-  const featuresCost = features.reduce((total, featureId) => {
-    const feature = additionalFeatures.find(f => f.id === featureId);
-    return total + (feature?.price || 0);
-  }, 0);
+  const selectedUrgency = urgencyOptions.find(u => u.id === urgency);
+  
+  const selectedFeatures = features.map(fId => additionalFeatures.find(f => f.id === fId)).filter(Boolean) as Feature[];
+  const featuresCost = selectedFeatures.reduce((total, feature) => total + feature.price, 0);
+  const maintenanceCost = maintenance ? Math.round((selectedProject?.baseRate || 0) * 0.15) : 0;
+  
+  const basePrice = selectedProject?.baseRate || 0;
+  const urgencyMultiplier = selectedUrgency?.multiplier || 1;
+  const subtotal = basePrice + featuresCost;
+  const totalPrice = Math.round(subtotal * urgencyMultiplier) + maintenanceCost;
+  
+  const estimatedWeeks = Math.max(2, Math.round(
+    (parseInt(selectedProject?.timeRange.split('-')[0] || '2') + 
+    selectedFeatures.reduce((total, feature) => total + feature.timeWeeks, 0))
+    / urgencyMultiplier
+  ));
 
-  const basePrice = selectedProject ? selectedProject.baseRate * selectedProject.complexity : 0;
-  const timelineMultiplier = timeline <= 2 ? 1.5 : timeline <= 4 ? 1 : 0.8;
-  const totalPrice = Math.round((basePrice + featuresCost) * timelineMultiplier);
-
-  // Format currency in NPR thousands
-  const formatNPR = (amount: number) => `NPR ${amount}K`;
+  const formatNPR = (amount: number) => `NPR ${amount.toLocaleString()}`;
 
   const toggleFeature = (featureId: string) => {
     setFeatures(prev => 
@@ -85,168 +122,306 @@ export default function PricingCalculator() {
     );
   };
 
+  const groupedFeatures = additionalFeatures.reduce((groups, feature) => {
+    const category = feature.category;
+    if (!groups[category]) groups[category] = [];
+    groups[category].push(feature);
+    return groups;
+  }, {} as Record<string, Feature[]>);
+
   return (
-    <div className="card-professional p-8">
-      <div className="text-center mb-8">
-        <Calculator className="w-12 h-12 text-brand-primary mx-auto mb-4" />
-        <h3 className="heading-md text-contrast mb-2">
+    <div className="max-w-6xl mx-auto p-6">
+      <div className="text-center mb-10">
+        <Calculator className="w-16 h-16 text-blue-600 mx-auto mb-4" />
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
           Project Cost Calculator
-        </h3>
-        <p className="text-readable">Get an instant estimate for your project</p>
+        </h2>
+        <p className="text-gray-600 dark:text-gray-300 text-lg">
+          Get an accurate estimate for your project with detailed breakdown
+        </p>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-8">
-        {/* Configuration */}
-        <div className="space-y-6">
-          {/* Project Type */}
-          <div>
-            <h4 className="heading-sm text-contrast mb-4">Project Type</h4>
-            <div className="grid grid-cols-2 gap-3">
+      <div className="grid lg:grid-cols-3 gap-8">
+        {/* Configuration Panel */}
+        <div className="lg:col-span-2 space-y-8">
+          
+          {/* Project Type Selection */}
+          <Card className="p-6">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+              Select Project Type
+            </h3>
+            <div className="grid md:grid-cols-2 gap-4">
               {projectTypes.map((type) => {
                 const Icon = type.icon;
                 return (
                   <motion.div
                     key={type.id}
-                    className={`p-4 rounded-lg border cursor-pointer transition-all duration-300 ${
-                      selectedType === type.id
-                        ? 'border-brand-primary bg-brand-primary/10'
-                        : 'border-border bg-card hover:border-brand-primary hover:shadow-md'
-                    }`}
-                    onClick={() => setSelectedType(type.id)}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    <Icon className="w-6 h-6 text-brand-primary mb-2" />
-                    <h5 className="text-sm font-semibold mb-1 text-contrast">{type.name}</h5>
-                    <p className="text-xs text-readable">{type.description}</p>
-                    <p className="text-xs text-brand-primary mt-2 font-semibold">From {formatNPR(type.baseRate)}</p>
+                    <div
+                      className={`relative p-4 rounded-lg border-2 cursor-pointer transition-all ${
+                        selectedType === type.id
+                          ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20'
+                          : 'border-gray-200 dark:border-gray-700 hover:border-gray-300'
+                      }`}
+                      onClick={() => setSelectedType(type.id)}
+                    >
+                      {type.popular && (
+                        <div className="absolute -top-2 -right-2 bg-orange-500 text-white text-xs px-2 py-1 rounded-full">
+                          <Star className="w-3 h-3 inline mr-1" />
+                          Popular
+                        </div>
+                      )}
+                      
+                      <div className="flex items-start space-x-3">
+                        <Icon className={`w-8 h-8 ${selectedType === type.id ? 'text-blue-600' : 'text-gray-500'}`} />
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-gray-900 dark:text-white">
+                            {type.name}
+                          </h4>
+                          <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
+                            {type.description}
+                          </p>
+                          <div className="space-y-1">
+                            {type.features.map((feature, index) => (
+                              <div key={index} className="flex items-center text-xs text-gray-500">
+                                <CheckCircle2 className="w-3 h-3 mr-1 text-green-500" />
+                                {feature}
+                              </div>
+                            ))}
+                          </div>
+                          <div className="mt-3 flex justify-between items-center">
+                            <span className="text-lg font-bold text-blue-600">
+                              {formatNPR(type.baseRate * 1000)}
+                            </span>
+                            <span className="text-xs text-gray-500">
+                              <Clock className="w-3 h-3 inline mr-1" />
+                              {type.timeRange}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </motion.div>
                 );
               })}
             </div>
-          </div>
-
-          {/* Timeline */}
-          <div>
-            <h4 className="heading-sm text-contrast mb-4">Timeline (weeks)</h4>
-            <div className="space-y-2">
-              <input
-                type="range"
-                min="2"
-                max="12"
-                value={timeline}
-                onChange={(e) => setTimeline(Number(e.target.value))}
-                className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer"
-                style={{
-                  background: `linear-gradient(to right, hsl(var(--brand-primary)) 0%, hsl(var(--brand-primary)) ${(timeline - 2) / 10 * 100}%, hsl(var(--muted)) ${(timeline - 2) / 10 * 100}%, hsl(var(--muted)) 100%)`
-                }}
-              />
-              <div className="flex justify-between text-sm text-readable">
-                <span>2 weeks</span>
-                <span className="text-brand-primary font-bold">{timeline} weeks</span>
-                <span>12 weeks</span>
-              </div>
-              <p className="text-xs text-readable">
-                {timeline <= 2 && "Rush delivery (+50% cost)"}
-                {timeline > 2 && timeline <= 4 && "Standard timeline"}
-                {timeline > 4 && "Extended timeline (-20% cost)"}
-              </p>
-            </div>
-          </div>
-
-          {/* Additional Features */}
-          <div>
-            <h4 className="heading-sm text-contrast mb-4">Additional Features</h4>
-            <div className="grid grid-cols-2 gap-2">
-              {additionalFeatures.map((feature) => (
-                <motion.div
-                  key={feature.id}
-                  className={`p-3 rounded-lg border cursor-pointer transition-all duration-300 ${
-                    features.includes(feature.id)
-                      ? 'border-brand-primary bg-brand-primary/10'
-                      : 'border-border bg-card hover:border-brand-primary hover:shadow-md'
-                  }`}
-                  onClick={() => toggleFeature(feature.id)}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  <h6 className="text-xs font-semibold mb-1 text-contrast">{feature.name}</h6>
-                  <p className="text-xs text-brand-primary font-semibold">+{formatNPR(feature.price)}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Price Breakdown */}
-        <div className="space-y-6">
-          <Card className="bg-card border-border">
-            <CardContent className="p-6">
-              <h4 className="heading-sm text-contrast mb-4">Price Breakdown</h4>
-              
-              <div className="space-y-3 mb-6">
-                <div className="flex justify-between">
-                  <span className="text-readable">Base Project</span>
-                  <span className="text-brand-primary font-semibold">{formatNPR(basePrice)}</span>
-                </div>
-                
-                {features.length > 0 && (
-                  <div className="flex justify-between">
-                    <span className="text-readable">Additional Features</span>
-                    <span className="text-brand-primary font-semibold">+{formatNPR(featuresCost)}</span>
-                  </div>
-                )}
-                
-                {timelineMultiplier !== 1 && (
-                  <div className="flex justify-between">
-                    <span className="text-readable">Timeline Adjustment</span>
-                    <span className={timelineMultiplier > 1 ? "text-destructive" : "text-brand-accent"}>
-                      {timelineMultiplier > 1 ? '+' : ''}{((timelineMultiplier - 1) * 100).toFixed(0)}%
-                    </span>
-                  </div>
-                )}
-                
-                <div className="border-t border-border pt-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-lg text-contrast font-semibold">Total Estimate</span>
-                    <span className="text-2xl text-brand-primary font-bold">
-                      {formatNPR(totalPrice)}
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <Button 
-                className="w-full btn-professional btn-primary"
-                onClick={() => {
-                  const subject = encodeURIComponent(`Project Inquiry - ${selectedProject?.name}`);
-                  const body = encodeURIComponent(
-                    `Hi Yubraj,\n\nI'm interested in discussing a ${selectedProject?.name} project.\n\nProject Details:\n- Timeline: ${timeline} weeks\n- Features: ${features.map(f => additionalFeatures.find(af => af.id === f)?.name).join(', ')}\n- Estimated Budget: ${formatNPR(totalPrice)}\n\nLet's discuss the details!\n\nBest regards`
-                  );
-                  window.location.href = `mailto:developerrajir@gmail.com?subject=${subject}&body=${body}`;
-                }}
-              >
-                Get Started - Contact Me
-              </Button>
-              
-              <p className="text-xs text-readable text-center mt-3">
-                * This is an estimate. Final pricing may vary based on specific requirements.
-              </p>
-            </CardContent>
           </Card>
 
-          {/* Value Proposition */}
-          <div className="bg-gradient-to-r from-brand-primary/10 to-brand-secondary/10 p-6 rounded-lg border border-brand-primary/30">
-            <h5 className="text-contrast font-semibold mb-3">What You Get:</h5>
-            <ul className="space-y-2 text-sm text-readable">
-              <li>✓ Enterprise-grade architecture</li>
-              <li>✓ Scalable & maintainable codebase</li>
-              <li>✓ 99.9% uptime guarantee</li>
-              <li>✓ Full documentation & handover</li>
-              <li>✓ 60 days post-launch support</li>
-              <li>✓ Performance optimization included</li>
-            </ul>
-          </div>
+          {/* Timeline & Urgency */}
+          <Card className="p-6">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+              Timeline & Urgency
+            </h3>
+            <div className="grid md:grid-cols-2 gap-4">
+              {urgencyOptions.map((option) => (
+                <div
+                  key={option.id}
+                  className={`p-4 rounded-lg border-2 cursor-pointer transition-all ${
+                    urgency === option.id
+                      ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20'
+                      : 'border-gray-200 dark:border-gray-700 hover:border-gray-300'
+                  }`}
+                  onClick={() => setUrgency(option.id)}
+                >
+                  <div className="flex justify-between items-start mb-2">
+                    <h4 className="font-semibold text-gray-900 dark:text-white">
+                      {option.name}
+                    </h4>
+                    <span className={`text-sm font-medium ${
+                      option.multiplier > 1 ? 'text-orange-600' : 
+                      option.multiplier < 1 ? 'text-green-600' : 'text-gray-600'
+                    }`}>
+                      {option.multiplier > 1 ? '+' : option.multiplier < 1 ? '-' : ''}
+                      {Math.round((Math.abs(option.multiplier - 1)) * 100)}%
+                    </span>
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">
+                    {option.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </Card>
+
+          {/* Additional Features */}
+          <Card className="p-6">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+              Additional Features
+            </h3>
+            
+            {Object.entries(groupedFeatures).map(([category, categoryFeatures]) => (
+              <div key={category} className="mb-6">
+                <h4 className="text-lg font-medium text-gray-800 dark:text-gray-200 mb-3">
+                  {category}
+                </h4>
+                <div className="space-y-3">
+                  {categoryFeatures.map((feature) => (
+                    <div
+                      key={feature.id}
+                      className={`p-4 rounded-lg border transition-all cursor-pointer ${
+                        features.includes(feature.id)
+                          ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20'
+                          : 'border-gray-200 dark:border-gray-700 hover:border-gray-300'
+                      }`}
+                      onClick={() => toggleFeature(feature.id)}
+                    >
+                      <div className="flex justify-between items-start">
+                        <div className="flex-1">
+                          <div className="flex items-center mb-1">
+                            <h5 className="font-medium text-gray-900 dark:text-white">
+                              {feature.name}
+                            </h5>
+                            <span className="ml-2 text-sm text-gray-500">
+                              (+{feature.timeWeeks}w)
+                            </span>
+                          </div>
+                          <p className="text-sm text-gray-600 dark:text-gray-300">
+                            {feature.description}
+                          </p>
+                        </div>
+                        <div className="ml-4 text-right">
+                          <div className="text-lg font-semibold text-blue-600">
+                            +{formatNPR(feature.price * 1000)}
+                          </div>
+                          <div className={`w-6 h-6 rounded border-2 flex items-center justify-center ${
+                            features.includes(feature.id)
+                              ? 'bg-blue-500 border-blue-500'
+                              : 'border-gray-300'
+                          }`}>
+                            {features.includes(feature.id) && (
+                              <CheckCircle2 className="w-4 h-4 text-white" />
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+
+            {/* Maintenance Option */}
+            <div className="border-t pt-6">
+              <div
+                className={`p-4 rounded-lg border transition-all cursor-pointer ${
+                  maintenance
+                    ? 'border-green-500 bg-green-50 dark:bg-green-900/20'
+                    : 'border-gray-200 dark:border-gray-700 hover:border-gray-300'
+                }`}
+                onClick={() => setMaintenance(!maintenance)}
+              >
+                <div className="flex justify-between items-center">
+                  <div>
+                    <h5 className="font-medium text-gray-900 dark:text-white">
+                      3-Month Maintenance & Support
+                    </h5>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">
+                      Bug fixes, minor updates, and technical support
+                    </p>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-lg font-semibold text-green-600">
+                      +{formatNPR(maintenanceCost * 1000)}
+                    </div>
+                    <div className={`w-6 h-6 rounded border-2 flex items-center justify-center ${
+                      maintenance
+                        ? 'bg-green-500 border-green-500'
+                        : 'border-gray-300'
+                    }`}>
+                      {maintenance && (
+                        <CheckCircle2 className="w-4 h-4 text-white" />
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        {/* Price Summary */}
+        <div className="lg:col-span-1">
+          <Card className="p-6 sticky top-6">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
+              Price Breakdown
+            </h3>
+            
+            <div className="space-y-4">
+              {/* Base Project */}
+              <div className="flex justify-between py-2 border-b border-gray-200 dark:border-gray-700">
+                <span className="text-gray-600 dark:text-gray-300">
+                  {selectedProject?.name}
+                </span>
+                <span className="font-medium">
+                  {formatNPR(basePrice * 1000)}
+                </span>
+              </div>
+
+              {/* Selected Features */}
+              {selectedFeatures.map((feature) => (
+                <div key={feature.id} className="flex justify-between py-1 text-sm">
+                  <span className="text-gray-600 dark:text-gray-300">
+                    + {feature.name}
+                  </span>
+                  <span>+{formatNPR(feature.price * 1000)}</span>
+                </div>
+              ))}
+
+              {/* Maintenance */}
+              {maintenance && (
+                <div className="flex justify-between py-1 text-sm">
+                  <span className="text-gray-600 dark:text-gray-300">
+                    + 3-Month Support
+                  </span>
+                  <span>+{formatNPR(maintenanceCost * 1000)}</span>
+                </div>
+              )}
+
+              {/* Urgency Multiplier */}
+              {selectedUrgency && selectedUrgency.multiplier !== 1 && (
+                <div className="flex justify-between py-2 text-sm">
+                  <span className="text-gray-600 dark:text-gray-300">
+                    {selectedUrgency.name} ({selectedUrgency.multiplier > 1 ? '+' : ''}{Math.round((selectedUrgency.multiplier - 1) * 100)}%)
+                  </span>
+                  <span className={selectedUrgency.multiplier > 1 ? 'text-orange-600' : 'text-green-600'}>
+                    {selectedUrgency.multiplier > 1 ? '+' : ''}
+                    {formatNPR((subtotal * selectedUrgency.multiplier - subtotal) * 1000)}
+                  </span>
+                </div>
+              )}
+
+              {/* Total */}
+              <div className="border-t border-gray-200 dark:border-gray-700 pt-4">
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-semibold text-gray-900 dark:text-white">
+                    Total Cost
+                  </span>
+                  <span className="text-2xl font-bold text-blue-600">
+                    {formatNPR(totalPrice * 1000)}
+                  </span>
+                </div>
+                
+                <div className="mt-2 text-sm text-gray-500">
+                  <Clock className="w-4 h-4 inline mr-1" />
+                  Estimated: {estimatedWeeks} weeks
+                </div>
+              </div>
+
+              {/* Action Button */}
+              <Button 
+                className="w-full mt-6 bg-blue-600 hover:bg-blue-700"
+                size="lg"
+              >
+                Get Quote
+              </Button>
+              
+              <p className="text-xs text-gray-500 text-center mt-3">
+                * Final price may vary based on specific requirements
+              </p>
+            </div>
+          </Card>
         </div>
       </div>
     </div>
