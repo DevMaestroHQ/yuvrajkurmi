@@ -1,8 +1,8 @@
-# 🚀 Yubraj Kurmi - Creative Full Stack Developer Portfolio
+# ⚡ Y | Modern Full Stack Developer Portfolio
 
 <div align="center">
 
-![YK Logo](https://img.shields.io/badge/YK-Portfolio-3B82F6?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDggNDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGNpcmNsZSBjeD0iMjQiIGN5PSIyNCIgcj0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzNCODJGNiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjQsIDI0KSI+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOCwgMCkiPgogICAgICA8cGF0aCBkPSJNLTYgLTggTDAgLTIgTDYgLTggTTAgLTIgTDAgOCIgc3Ryb2tlPSIjM0I4MkY2IiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIvPgogICAgPC9nPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOCwgMCkiPgogICAgICA8cGF0aCBkPSJNLTQgLTggTC00IDggTS00IC0xIEw0IC04IE0tNCAtMSBMNCA4IiBzdHJva2U9IiMzQjgyRjYiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4=)
+![Y Logo](https://img.shields.io/badge/Y-Portfolio-3B82F6?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9InlMb2dvIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjM0I4MkY2Ii8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiM4QjVDRjYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwNkI2RDQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MCwgNTApIj48cGF0aCBkPSJNLTIwIC0yNSBMMCAwIEwyMCAtMjUiIHN0cm9rZT0idXJsKCN5TG9nbykiIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTAgMCBMMCAyNSIgc3Ryb2tlPSJ1cmwoI3lMb2dvKSIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz48Y2lyY2xlIGN4PSIwIiBjeT0iLTMwIiByPSIzIiBmaWxsPSJ1cmwoI3lMb2dvKSIvPjwvZz48L3N2Zz4=)
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -23,6 +23,21 @@
 
 A cutting-edge developer portfolio showcasing modern web development skills through an innovative, interactive experience. Built with performance, accessibility, and user experience in mind, this portfolio demonstrates proficiency in full-stack development with a beautiful, responsive design.
 
+### 🆕 Latest Updates (July 1, 2025)
+
+**🎨 Brand New Y Logo Design**
+- **Modern Minimalist Y Logo** - Completely redesigned with modern gradient colors (Blue → Purple → Cyan)
+- **Interactive Animations** - Hover effects with smooth scaling and shadow transitions
+- **Updated Site Title** - Changed to "Y | Modern Full Stack Developer Portfolio | Creative Web Solutions"
+- **New Favicon** - SVG-based favicon with the new Y logo design for better browser display
+- **Professional Branding** - Clean, minimalist approach with decorative dot accent
+
+**🔧 Technical Improvements**
+- **Enhanced Logo Component** - Added Framer Motion animations and improved gradient effects
+- **Updated Typography** - Changed brand text to "Y Portfolio" for simplicity
+- **Performance Optimizations** - Streamlined SVG code for faster loading
+- **Responsive Design** - Logo scales perfectly across all device sizes
+
 ### 🎯 Key Features
 
 - **🎨 Modern Design System** - Clean, professional interface with adaptive themes
@@ -31,7 +46,7 @@ A cutting-edge developer portfolio showcasing modern web development skills thro
 - **♿ Accessibility First** - WCAG compliant with proper contrast and navigation
 - **🔧 Interactive Components** - Engaging animations and user interactions
 - **📊 Real Project Showcase** - Comprehensive portfolio with detailed project information
-- **🚀 Professional Branding** - Consistent visual identity and modern aesthetics
+- **🚀 Professional Branding** - Consistent visual identity with new Y logo design
 
 ---
 
