@@ -11,6 +11,8 @@ import { useState, useEffect } from "react";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import Preloader from "@/components/ui/preloader";
+import ErrorBoundary from "@/components/ui/error-boundary";
+import PerformanceMonitor from "@/components/ui/performance-monitor";
 
 import Home from "@/pages/home";
 import About from "@/pages/about";
@@ -60,26 +62,29 @@ function App() {
   }, []);
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <ThemeProvider defaultTheme="light" storageKey="portfolio-theme">
-        <TooltipProvider>
-          <div className="min-h-screen bg-background text-foreground antialiased">
-            {isLoading ? (
-              <Preloader />
-            ) : (
-              <>
-                <Navbar />
-                <main className="relative">
-                  <Router />
-                </main>
-                <Footer />
-              </>
-            )}
-            <Toaster />
-          </div>
-        </TooltipProvider>
-      </ThemeProvider>
-    </QueryClientProvider>
+    <ErrorBoundary>
+      <QueryClientProvider client={queryClient}>
+        <ThemeProvider defaultTheme="light" storageKey="portfolio-theme">
+          <TooltipProvider>
+            <div className="min-h-screen bg-background text-foreground antialiased">
+              {isLoading ? (
+                <Preloader />
+              ) : (
+                <>
+                  <Navbar />
+                  <main className="relative">
+                    <Router />
+                  </main>
+                  <Footer />
+                </>
+              )}
+              <Toaster />
+              <PerformanceMonitor />
+            </div>
+          </TooltipProvider>
+        </ThemeProvider>
+      </QueryClientProvider>
+    </ErrorBoundary>
   );
 }
 

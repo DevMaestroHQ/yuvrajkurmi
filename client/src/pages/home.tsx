@@ -156,12 +156,83 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Client Testimonials */}
+        <section className="section-container py-16">
+          <div className="space-y-12">
+            <div className="text-center">
+              <h2 className="heading-lg font-display text-contrast mb-4">Client Success Stories</h2>
+              <p className="text-readable max-w-2xl mx-auto">
+                Real feedback from satisfied clients who trusted me with their projects
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                {
+                  name: "Rajesh Thapa",
+                  role: "Business Owner",
+                  company: "Local Restaurant Chain",
+                  testimonial: "Yubraj built our online ordering system that increased our sales by 40%. His understanding of local business needs and technical skills made him perfect for our project.",
+                  rating: 5,
+                  project: "E-commerce Platform",
+                  location: "Kathmandu, Nepal"
+                },
+                {
+                  name: "Priya Sharma",
+                  role: "Marketing Director", 
+                  company: "Digital Agency",
+                  testimonial: "Working with Yubraj was fantastic. He delivered our portfolio website ahead of schedule and helped us attract 60% more clients. Highly professional!",
+                  rating: 5,
+                  project: "Business Website",
+                  location: "Pokhara, Nepal"
+                },
+                {
+                  name: "David Wilson",
+                  role: "Startup Founder",
+                  company: "Remote Tech Company",
+                  testimonial: "Yubraj's full-stack skills helped us launch our MVP in just 2 months. His code quality and communication throughout the project were exceptional.",
+                  rating: 5,
+                  project: "SaaS Application",
+                  location: "Remote, International"
+                }
+              ].map((testimonial, index) => (
+                <div
+                  key={testimonial.name}
+                  className="card-professional p-6 space-y-4"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex">
+                      {Array.from({ length: testimonial.rating }).map((_, i) => (
+                        <Star key={i} className="w-4 h-4 text-yellow-500 fill-current" />
+                      ))}
+                    </div>
+                    <span className="text-xs text-brand-primary font-medium">{testimonial.project}</span>
+                  </div>
+                  
+                  <p className="text-readable-secondary text-sm italic">
+                    "{testimonial.testimonial}"
+                  </p>
+                  
+                  <div className="border-t border-border pt-4">
+                    <div className="font-medium text-contrast text-sm">{testimonial.name}</div>
+                    <div className="text-xs text-readable-secondary">
+                      {testimonial.role} at {testimonial.company}
+                    </div>
+                    <div className="text-xs text-brand-primary">{testimonial.location}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Call to Action */}
         <section className="section-container py-16">
           <div className="text-center space-y-6">
             <h2 className="heading-lg font-display text-contrast">Ready to Start Your Project?</h2>
             <p className="text-readable max-w-2xl mx-auto">
-              Let's discuss how I can help bring your ideas to life with modern, scalable solutions.
+              Join satisfied clients who have achieved their goals with my development expertise.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

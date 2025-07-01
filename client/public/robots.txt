@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Important pages for crawlers
+Allow: /about
+Allow: /projects
+Allow: /experience
+Allow: /contact
+Allow: /resume
+
+# Sitemap location
+Sitemap: https://yuvrajkurmi.github.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Block any admin or private areas (if any)
+Disallow: /api/
+Disallow: /_*
+Disallow: /node_modules/

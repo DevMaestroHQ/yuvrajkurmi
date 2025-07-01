@@ -11,7 +11,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Add logging middleware
   app.use(morgan('combined'));
 
-  // Input validation middleware for contact form
+  // Enhanced input validation middleware for contact form
   const contactValidation = [
     body('name')
       .trim()
@@ -26,6 +26,22 @@ export async function registerRoutes(app: Express): Promise<Server> {
       .withMessage('Please provide a valid email address')
       .isLength({ max: 254 })
       .withMessage('Email address is too long'),
+    body('subject')
+      .optional()
+      .trim()
+      .isLength({ min: 3, max: 200 })
+      .withMessage('Subject must be between 3 and 200 characters')
+      .escape(),
+    body('projectType')
+      .optional()
+      .trim()
+      .isIn(['web-development', 'mobile-app', 'ecommerce', 'custom-software', 'consultation', 'other'])
+      .withMessage('Please select a valid project type'),
+    body('budget')
+      .optional()
+      .trim()
+      .isIn(['under-50k', '50k-100k', '100k-200k', '200k-500k', 'above-500k', 'discuss'])
+      .withMessage('Please select a valid budget range'),
     body('message')
       .trim()
       .isLength({ min: 10, max: 2000 })
@@ -45,7 +61,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         });
       }
 
-      const { name, email, message } = req.body;
+      const { name, email, subject, projectType, budget, message } = req.body;
       
       // Additional security: Check for spam patterns
       const spamPatterns = [
@@ -67,6 +83,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const submissionData = {
         name,
         email,
+        subject: subject || 'No subject',
+        projectType: projectType || 'Not specified',
+        budget: budget || 'Not specified',
         message,
         timestamp: new Date().toISOString(),
         ip: req.ip || req.connection.remoteAddress,
