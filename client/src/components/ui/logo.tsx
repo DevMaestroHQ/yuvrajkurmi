@@ -30,109 +30,132 @@ export default function Logo({ size = "md", showText = true, className = "" }: L
           xmlns="http://www.w3.org/2000/svg"
         >
           <defs>
-            {/* Primary Brand Gradient */}
-            <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#1E40AF" />
-              <stop offset="30%" stopColor="#3B82F6" />
-              <stop offset="70%" stopColor="#8B5CF6" />
-              <stop offset="100%" stopColor="#1D4ED8" />
+            {/* Creative Gradient */}
+            <linearGradient id="creativeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#3B82F6" />
+              <stop offset="25%" stopColor="#8B5CF6" />
+              <stop offset="50%" stopColor="#EC4899" />
+              <stop offset="75%" stopColor="#F59E0B" />
+              <stop offset="100%" stopColor="#10B981" />
             </linearGradient>
             
-            {/* Secondary Accent Gradient */}
-            <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#06B6D4" />
+            {/* Code Gradient */}
+            <linearGradient id="codeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#10B981" />
               <stop offset="50%" stopColor="#3B82F6" />
               <stop offset="100%" stopColor="#8B5CF6" />
             </linearGradient>
             
-            {/* Professional Shadow */}
-            <filter id="professionalShadow">
-              <feDropShadow dx="0" dy="2" stdDeviation="4" floodColor="rgba(30, 64, 175, 0.2)"/>
+            {/* Glow Effect */}
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+              <feMerge> 
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
             </filter>
           </defs>
           
-          {/* Main Logo Container - Hexagonal Base */}
+          {/* Creative Container */}
           <g transform="translate(32, 32)">
-            {/* Background Hexagon */}
-            <polygon
-              points="-24,-14 -12,-26 12,-26 24,-14 24,14 12,26 -12,26 -24,14"
-              fill="url(#brandGradient)"
+            {/* Creative Background Shape */}
+            <path
+              d="M-28 -8 Q-28 -20 -16 -20 L16 -20 Q28 -20 28 -8 L28 8 Q28 20 16 20 L-16 20 Q-28 20 -28 8 Z"
+              fill="url(#creativeGradient)"
               opacity="0.08"
-              filter="url(#professionalShadow)"
             />
             
-            {/* Primary Hexagon Border */}
-            <polygon
-              points="-20,-12 -10,-22 10,-22 20,-12 20,12 10,22 -10,22 -20,12"
-              fill="none"
-              stroke="url(#brandGradient)"
-              strokeWidth="2"
-              opacity="0.6"
-            />
-            
-            {/* Inner Design Elements */}
+            {/* Main Y Letter - Illustrated Style */}
             <g>
-              {/* Y Letter - Professional Geometric */}
-              <g transform="translate(-10, 0)">
-                {/* Y Main Structure */}
-                <path
-                  d="M-8 -12 L0 -4 L8 -12 M0 -4 L0 12"
-                  stroke="url(#brandGradient)"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  fill="none"
-                />
-                {/* Y Accent */}
-                <circle cx="0" cy="8" r="2" fill="url(#accentGradient)" opacity="0.8"/>
+              {/* Y Base Structure */}
+              <path
+                d="M-12 -16 L0 -6 L12 -16"
+                stroke="url(#creativeGradient)"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                fill="none"
+                filter="url(#glow)"
+              />
+              <path
+                d="M0 -6 L0 16"
+                stroke="url(#creativeGradient)"
+                strokeWidth="4"
+                strokeLinecap="round"
+                fill="none"
+                filter="url(#glow)"
+              />
+              
+              {/* Creative Code Brackets */}
+              <g opacity="0.8">
+                <path d="M-20 -10 L-22 -8 L-22 8 L-20 10" stroke="url(#codeGradient)" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
+                <path d="M20 -10 L22 -8 L22 8 L20 10" stroke="url(#codeGradient)" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
               </g>
               
-              {/* K Letter - Professional Geometric */}
-              <g transform="translate(10, 0)">
-                {/* K Main Structure */}
-                <path
-                  d="M-6 -12 L-6 12 M-6 -2 L6 -12 M-6 -2 L6 12"
-                  stroke="url(#brandGradient)"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  fill="none"
-                />
-                {/* K Accents */}
-                <circle cx="3" cy="-6" r="1.5" fill="url(#accentGradient)" opacity="0.7"/>
-                <circle cx="3" cy="6" r="1.5" fill="url(#accentGradient)" opacity="0.7"/>
+              {/* Developer Icons */}
+              <g opacity="0.7">
+                {/* Terminal Window */}
+                <rect x="-26" y="-12" width="8" height="6" rx="1" fill="none" stroke="url(#codeGradient)" strokeWidth="1"/>
+                <circle cx="-24" cy="-10" r="0.5" fill="url(#codeGradient)"/>
+                <circle cx="-22" cy="-10" r="0.5" fill="url(#codeGradient)"/>
+                <circle cx="-20" cy="-10" r="0.5" fill="url(#codeGradient)"/>
+                
+                {/* Code Symbol */}
+                <text x="20" y="-8" fontSize="8" fill="url(#codeGradient)" fontFamily="monospace" opacity="0.8">&lt;/&gt;</text>
               </g>
+              
+              {/* Creative Floating Elements */}
+              <g opacity="0.6">
+                {/* Pixel-style dots */}
+                <rect x="-14" y="-22" width="2" height="2" fill="url(#creativeGradient)"/>
+                <rect x="12" y="-22" width="2" height="2" fill="url(#creativeGradient)"/>
+                <rect x="-26" y="0" width="2" height="2" fill="url(#creativeGradient)"/>
+                <rect x="24" y="0" width="2" height="2" fill="url(#creativeGradient)"/>
+                
+                {/* Design Elements */}
+                <circle cx="-16" cy="14" r="1.5" fill="url(#codeGradient)" opacity="0.8"/>
+                <circle cx="16" cy="14" r="1.5" fill="url(#codeGradient)" opacity="0.8"/>
+              </g>
+              
+              {/* Central Creative Hub */}
+              <circle cx="0" cy="0" r="3" fill="url(#creativeGradient)" opacity="0.3"/>
+              <circle cx="0" cy="4" r="2" fill="url(#codeGradient)" opacity="0.9"/>
+              
+              {/* Lightning Bolt for Creativity */}
+              <path
+                d="M-2 -2 L2 -8 L0 -8 L2 -12 L-2 -6 L0 -6 Z"
+                fill="url(#creativeGradient)"
+                opacity="0.8"
+              />
             </g>
             
-            {/* Decorative Corner Elements */}
+            {/* Orbiting Creative Elements */}
+            <g>
+              <circle cx="-24" cy="0" r="1" fill="url(#codeGradient)" opacity="0.7">
+                <animateTransform 
+                  attributeName="transform" 
+                  type="rotate" 
+                  values="0 0 0;360 0 0" 
+                  dur="15s" 
+                  repeatCount="indefinite"/>
+              </circle>
+              <circle cx="24" cy="0" r="1" fill="url(#codeGradient)" opacity="0.7">
+                <animateTransform 
+                  attributeName="transform" 
+                  type="rotate" 
+                  values="180 0 0;540 0 0" 
+                  dur="15s" 
+                  repeatCount="indefinite"/>
+              </circle>
+            </g>
+            
+            {/* Corner Creative Accents */}
             <g opacity="0.5">
-              <rect x="-18" y="-8" width="3" height="3" rx="1.5" fill="url(#accentGradient)"/>
-              <rect x="15" y="-8" width="3" height="3" rx="1.5" fill="url(#accentGradient)"/>
-              <rect x="-18" y="5" width="3" height="3" rx="1.5" fill="url(#accentGradient)"/>
-              <rect x="15" y="5" width="3" height="3" rx="1.5" fill="url(#accentGradient)"/>
+              <path d="M-24 -16 L-26 -14 L-22 -14 Z" fill="url(#creativeGradient)"/>
+              <path d="M24 -16 L22 -14 L26 -14 Z" fill="url(#creativeGradient)"/>
+              <path d="M-24 16 L-26 14 L-22 14 Z" fill="url(#creativeGradient)"/>
+              <path d="M24 16 L22 14 L26 14 Z" fill="url(#creativeGradient)"/>
             </g>
-            
-            {/* Central Connection Dot */}
-            <circle cx="0" cy="0" r="3" fill="url(#brandGradient)" opacity="0.3"/>
-            <circle cx="0" cy="0" r="1.5" fill="url(#brandGradient)" opacity="0.8"/>
-            
-            {/* Outer Ring with Subtle Animation */}
-            <polygon
-              points="-22,-13 -11,-24 11,-24 22,-13 22,13 11,24 -11,24 -22,13"
-              fill="none"
-              stroke="url(#accentGradient)"
-              strokeWidth="1"
-              strokeDasharray="3,5"
-              opacity="0.3"
-            />
-          </g>
-          
-          {/* Professional Tech Dots */}
-          <g opacity="0.4">
-            <circle cx="8" cy="8" r="1" fill="url(#brandGradient)"/>
-            <circle cx="56" cy="8" r="1" fill="url(#brandGradient)"/>
-            <circle cx="8" cy="56" r="1" fill="url(#brandGradient)"/>
-            <circle cx="56" cy="56" r="1" fill="url(#brandGradient)"/>
           </g>
         </svg>
       </div>
