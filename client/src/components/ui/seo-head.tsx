@@ -24,11 +24,12 @@ export default function SEOHead({
   modifiedTime
 }: SEOHeadProps) {
   useEffect(() => {
-    // Update document title
-    document.title = title;
+    try {
+      // Update document title
+      document.title = title;
 
-    // Update meta tags
-    const updateMeta = (name: string, content: string) => {
+      // Update meta tags
+      const updateMeta = (name: string, content: string) => {
       let meta = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement;
       if (!meta) {
         meta = document.createElement('meta');
@@ -259,6 +260,9 @@ export default function SEOHead({
     }
     faqScript.textContent = JSON.stringify(faqSchema);
 
+    } catch (error) {
+      console.error('SEO Head error:', error);
+    }
   }, [title, description, keywords, ogImage, canonicalUrl, pageType, author, publishedTime, modifiedTime]);
 
   return null;
