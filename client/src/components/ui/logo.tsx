@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import logoImage from "@assets/logo_1751382562428.jpg";
 
 interface LogoProps {
   size?: "sm" | "md" | "lg";
@@ -6,7 +7,7 @@ interface LogoProps {
   className?: string;
 }
 
-export default function Logo({ size = "md", showText = true, className = "" }: LogoProps) {
+export default function Logo({ size = "md", showText = false, className = "" }: LogoProps) {
   const sizeClasses = {
     sm: "w-8 h-8",
     md: "w-12 h-12", 
@@ -28,7 +29,7 @@ export default function Logo({ size = "md", showText = true, className = "" }: L
       {/* Blue Checkmark Logo */}
       <div className={`${sizeClasses[size]} relative flex-shrink-0`}>
         <img
-          src="@assets/logo_1751382562428.jpg"
+          src={logoImage}
           alt="Logo"
           className="w-full h-full object-contain rounded-lg"
         />
