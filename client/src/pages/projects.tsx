@@ -240,7 +240,7 @@ export default function Projects() {
                     }`}>
                       {project.status}
                     </span>
-                    <span className={`px-3 py-1 rounded-full text-xs font-medium border ${complexityColors[project.complexity]}`}>
+                    <span className={`px-3 py-1 rounded-full text-xs font-medium border ${complexityColors[project.complexity as keyof typeof complexityColors]}`}>
                       {project.complexity}
                     </span>
                   </div>
@@ -254,7 +254,7 @@ export default function Projects() {
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-2">
                           <span className="text-xs font-medium text-brand-primary bg-brand-primary/10 px-2 py-1 rounded flex items-center gap-1">
-                            {categoryIcons[project.category]}
+                            {categoryIcons[project.category as keyof typeof categoryIcons]}
                             {project.category}
                           </span>
                           <span className="text-xs text-foreground font-medium">

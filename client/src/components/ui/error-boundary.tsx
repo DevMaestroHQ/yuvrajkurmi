@@ -40,11 +40,29 @@ class ErrorBoundary extends Component<Props, State> {
   }
 
   handleReload = () => {
+    // Clear any cached state and reload
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(registrations => {
+        registrations.forEach(registration => {
+          registration.update();
+        });
+      });
+    }
+    // Clear localStorage and sessionStorage to ensure clean state
+    localStorage.clear();
+    sessionStorage.clear();
     window.location.reload();
   };
 
   handleGoHome = () => {
+    // Reset state and navigate to home
+    this.setState({ hasError: false, error: undefined, errorInfo: undefined });
     window.location.href = '/';
+  };
+
+  handleRetry = () => {
+    // Reset error state and try to recover
+    this.setState({ hasError: false, error: undefined, errorInfo: undefined });
   };
 
   render() {
@@ -64,10 +82,10 @@ class ErrorBoundary extends Component<Props, State> {
             </div>
             
             <div className="space-y-2">
-              <h1 className="text-2xl font-bold text-contrast">
+              <h1 className="text-2xl font-bold text-foreground">
                 Something went wrong
               </h1>
-              <p className="text-readable-secondary">
+              <p className="text-foreground">
                 We apologize for the inconvenience. An unexpected error has occurred.
               </p>
             </div>
@@ -75,15 +93,23 @@ class ErrorBoundary extends Component<Props, State> {
             <div className="space-y-3">
               <button
                 onClick={this.handleReload}
-                className="btn-professional btn-primary w-full"
+                className="inline-flex items-center gap-2 bg-brand-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-primary/90 transition-colors w-full justify-center"
               >
                 <RefreshCw className="w-4 h-4" />
                 Reload Page
               </button>
               
               <button
+                onClick={this.handleRetry}
+                className="inline-flex items-center gap-2 border border-border text-foreground px-6 py-3 rounded-lg font-medium hover:bg-muted/50 transition-colors w-full justify-center"
+              >
+                <RefreshCw className="w-4 h-4" />
+                Try Again
+              </button>
+              
+              <button
                 onClick={this.handleGoHome}
-                className="btn-professional btn-outline w-full"
+                className="inline-flex items-center gap-2 text-foreground px-6 py-3 rounded-lg font-medium hover:bg-muted/20 transition-colors w-full justify-center"
               >
                 <Home className="w-4 h-4" />
                 Go to Homepage
