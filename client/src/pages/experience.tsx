@@ -256,7 +256,7 @@ export default function Experience() {
               className="text-4xl lg:text-6xl font-display font-bold text-foreground mb-6"
             >
               Career
-              <span className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent bg-clip-text text-transparent">
+              <span className="text-brand-primary">
                 {" "}
                 Experience
               </span>

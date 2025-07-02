@@ -176,7 +176,7 @@ export default function Projects() {
               className="text-4xl lg:text-6xl font-display font-bold text-foreground mb-6"
             >
               Project
-              <span className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent bg-clip-text text-transparent"> Portfolio</span>
+              <span className="text-brand-primary"> Portfolio</span>
             </motion.h1>
             
             <motion.p

@@ -175,6 +175,11 @@ Preferred communication style: Simple, everyday language.
 - **Domain Configuration**: Professional domain and DNS setup guide
 
 Changelog:
+- July 2, 2025 - Text Transparency Fix for Headings:
+  * HEADING TRANSPARENCY REMOVAL: Removed text-transparent classes from main headings in projects and experience sections - replaced gradient text with solid brand-primary color for maximum visibility
+  * PROJECTS HEADING FIX: Changed "Project Portfolio" heading from gradient transparent text to solid brand-primary color
+  * EXPERIENCE HEADING FIX: Changed "Career Experience" heading from gradient transparent text to solid brand-primary color
+  * IMPROVED READABILITY: All main section headings now have high contrast and are fully visible in both light and dark modes
 - July 2, 2025 - Complete Portfolio Redesign & Comprehensive README Overhaul:
   * PROJECTS SECTION COMPLETE REDESIGN: Completely rebuilt projects section with modern card-based layout featuring 6 authentic projects (HealthAssistant Pro, Edubridge Platform, CodePulse Analytics, EcoMart Marketplace, TaskFlow Manager, WeatherScope AI)
   * EXPERIENCE SECTION COMPLETE REDESIGN: Completely rebuilt experience timeline with professional 4-position career progression including skills evolution journey, detailed achievements, and impact metrics
