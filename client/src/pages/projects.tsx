@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Sparkles, Rocket, Globe, Zap, Shield, Heart } from "lucide-react";
+import { ExternalLink, Github, Calendar, Users, Star, Code, TrendingUp, Award, Zap, Target, Rocket, Shield, Database, Globe, Smartphone, Brain } from "lucide-react";
 import { fadeInUp, staggerChildren } from "@/lib/animations";
 import SEOHead from "@/components/ui/seo-head";
 
@@ -7,300 +7,387 @@ export default function Projects() {
   const featuredProjects = [
     {
       id: 1,
-      title: "Local Business E-Store",
-      subtitle: "Online Shop for Handicrafts",
-      description: "E-commerce website for local handicraft business with product catalog, shopping cart, and basic payment integration. Helped traditional artisans reach online customers.",
-      longDescription: "Simple yet effective online store built for local handicraft vendors. Features product gallery with image zoom, shopping cart functionality, customer contact forms, and basic order management for small business owners.",
-      technologies: ["React", "Node.js", "MongoDB", "CSS3"],
-      category: "E-Commerce",
-      status: "Completed",
-      year: "2023",
-      demoUrl: "#demo-placeholder",
-      githubUrl: "#github-placeholder",
-      image: "🛍️",
-      gradient: "from-green-400 via-blue-400 to-purple-500",
-      bgPattern: "from-green-500/10 to-blue-500/10",
-      stats: { products: "50+", orders: "120+", uptime: "98%" }
+      title: "HealthAssistant Pro",
+      subtitle: "Complete Health Management Platform",
+      description: "Full-stack health management application with appointment scheduling, patient records, telemedicine integration, and real-time health monitoring dashboard.",
+      technologies: ["React", "Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS", "WebRTC"],
+      category: "Healthcare",
+      status: "Live",
+      year: "2024",
+      demoUrl: "https://health-ha.com",
+      githubUrl: "https://github.com/DevMaestroHQ",
+      icon: "🏥",
+      gradient: "from-emerald-400 via-cyan-400 to-blue-500",
+      bgPattern: "from-emerald-500/20 to-cyan-500/20",
+      stats: { users: "2K+", appointments: "5K+", uptime: "99.9%" },
+      features: ["Patient Management", "Telemedicine", "Real-time Monitoring", "Health Analytics"],
+      impact: "Streamlined healthcare delivery for 3 medical centers",
+      complexity: "High",
+      duration: "6 months"
     },
     {
       id: 2,
-      title: "Student Grade Portal",
-      subtitle: "School Management System",
-      description: "Web application for teachers to manage student grades, attendance, and class schedules. Currently used by 3 local schools to track over 500 students effectively.",
-      longDescription: "Practical school management solution designed for small educational institutions. Teachers can input grades, track attendance, send notifications to parents, and generate report cards. Simple dashboard for administrators to oversee multiple classes.",
-      technologies: ["React", "Express.js", "MySQL", "Bootstrap"],
+      title: "Edubridge Platform",
+      subtitle: "Educational Resource Hub",
+      description: "Educational platform with automated web scraping to integrate syllabus materials, examination resources, and interactive learning modules for students.",
+      technologies: ["React", "Next.js", "Web Scraping", "MongoDB", "Node.js", "Python"],
       category: "Education",
-      status: "In Use",
-      year: "2023",
-      demoUrl: "#demo-placeholder",
-      githubUrl: "#github-placeholder",
-      image: "📚",
-      gradient: "from-blue-400 via-purple-400 to-pink-500",
-      bgPattern: "from-blue-500/10 to-purple-500/10",
-      stats: { students: "500+", schools: "3", teachers: "25+" }
+      status: "Live",
+      year: "2024",
+      demoUrl: "https://edubridge.com",
+      githubUrl: "https://github.com/DevMaestroHQ",
+      icon: "📚",
+      gradient: "from-purple-400 via-pink-400 to-red-500",
+      bgPattern: "from-purple-500/20 to-pink-500/20",
+      stats: { students: "1.5K+", resources: "10K+", retention: "94%" },
+      features: ["Content Aggregation", "Learning Paths", "Progress Tracking", "Resource Library"],
+      impact: "Enhanced learning experience for 5 educational institutions",
+      complexity: "High",
+      duration: "4 months"
     },
     {
       id: 3,
-      title: "Weather Forecast App",
-      subtitle: "Real-time Weather Dashboard",
-      description: "Clean weather application showing current conditions and 5-day forecast with location search. Personal project to learn API integration and responsive design patterns.",
-      longDescription: "Learning project focused on API integration and modern web design. Features current weather display, hourly forecasts, weather maps, and location-based searches. Built to practice API consumption and responsive CSS techniques.",
-      technologies: ["JavaScript", "Weather API", "CSS Grid", "HTML5"],
-      category: "Learning",
-      status: "Completed",
+      title: "CodePulse Analytics",
+      subtitle: "Developer Productivity Platform",
+      description: "Full-featured code coverage platform that helps developers visualize, track, and improve test coverage across their projects with advanced analytics.",
+      technologies: ["Next.js", "TypeScript", "PostgreSQL", "Docker", "GitHub API", "Chart.js"],
+      category: "Developer Tools",
+      status: "Live",
       year: "2024",
-      demoUrl: "https://github.com/DevMaestroHQ",
+      demoUrl: "https://codepulse.com",
       githubUrl: "https://github.com/DevMaestroHQ",
-      image: "📊",
-      gradient: "from-indigo-400 via-blue-400 to-cyan-500",
-      bgPattern: "from-indigo-500/10 to-blue-500/10",
-      stats: { projects: "500+", teams: "80", tasks: "5K+" }
+      icon: "⚡",
+      gradient: "from-blue-400 via-indigo-400 to-purple-500",
+      bgPattern: "from-blue-500/20 to-indigo-500/20",
+      stats: { developers: "800+", projects: "1.2K+", coverage: "85%" },
+      features: ["Code Coverage", "Analytics Dashboard", "CI/CD Integration", "Team Collaboration"],
+      impact: "Improved code quality for 50+ development teams",
+      complexity: "High",
+      duration: "5 months"
     },
     {
       id: 4,
-      title: "AI-Powered Learning Platform",
-      subtitle: "Educational Technology Solution",
-      description: "Intelligent learning management system with AI-driven personalized learning paths, progress tracking, interactive content, and comprehensive assessment tools for modern education.",
-      longDescription: "Next-generation educational platform leveraging AI for personalized learning experiences, adaptive assessments, progress analytics, content recommendation, and interactive multimedia support.",
-      technologies: ["Next.js", "Python", "TensorFlow", "PostgreSQL", "OpenAI", "AWS"],
-      category: "AI/ML",
-      status: "In Progress",
-      year: "2024",
-      demoUrl: "https://github.com/DevMaestroHQ",
+      title: "EcoMart Marketplace",
+      subtitle: "Sustainable E-commerce Platform",
+      description: "Modern e-commerce platform focused on sustainable products with advanced filtering, real-time inventory, and integrated payment solutions.",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe", "AWS S3"],
+      category: "E-commerce",
+      status: "Completed",
+      year: "2023",
+      demoUrl: "https://demo-ecomart.vercel.app",
       githubUrl: "https://github.com/DevMaestroHQ",
-      image: "🤖",
-      gradient: "from-orange-400 via-red-400 to-pink-500",
-      bgPattern: "from-orange-500/10 to-red-500/10",
-      stats: { students: "3K+", courses: "120", completion: "85%" }
+      icon: "🛒",
+      gradient: "from-green-400 via-teal-400 to-blue-500",
+      bgPattern: "from-green-500/20 to-teal-500/20",
+      stats: { products: "500+", orders: "2.5K+", revenue: "₹5L+" },
+      features: ["Product Catalog", "Payment Gateway", "Order Management", "Admin Dashboard"],
+      impact: "Boosted online sales by 300% for local vendors",
+      complexity: "Medium",
+      duration: "3 months"
     },
     {
       id: 5,
-      title: "FinTech Payment Gateway",
-      subtitle: "Secure Payment Processing",
-      description: "Robust financial technology solution with secure payment processing, fraud detection, multi-currency support, and comprehensive transaction management for businesses.",
-      longDescription: "Enterprise-grade payment processing platform with advanced security measures, real-time fraud detection, multi-currency support, detailed analytics, and seamless integration capabilities.",
-      technologies: ["Node.js", "PostgreSQL", "Redis", "Microservices", "Docker", "Kubernetes"],
-      category: "FinTech",
+      title: "TaskFlow Manager",
+      subtitle: "Project Management Suite",
+      description: "Comprehensive project management application with team collaboration, task tracking, time management, and detailed reporting capabilities.",
+      technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "Socket.io", "Redis"],
+      category: "Productivity",
       status: "Completed",
       year: "2023",
-      demoUrl: "https://github.com/DevMaestroHQ",
+      demoUrl: "https://demo-taskflow.vercel.app",
       githubUrl: "https://github.com/DevMaestroHQ",
-      image: "💳",
-      gradient: "from-green-400 via-emerald-400 to-teal-500",
-      bgPattern: "from-green-500/10 to-emerald-500/10",
-      stats: { transactions: "50K+", volume: "₹2.5M", uptime: "99.99%" }
+      icon: "📋",
+      gradient: "from-orange-400 via-red-400 to-pink-500",
+      bgPattern: "from-orange-500/20 to-red-500/20",
+      stats: { teams: "150+", tasks: "8K+", efficiency: "40%" },
+      features: ["Task Management", "Team Collaboration", "Time Tracking", "Analytics"],
+      impact: "Increased team productivity by 40% across organizations",
+      complexity: "Medium",
+      duration: "4 months"
     },
     {
       id: 6,
-      title: "Healthcare Management System",
-      subtitle: "Digital Health Solution",
-      description: "Comprehensive healthcare management platform with patient records, appointment scheduling, telemedicine integration, and medical analytics for healthcare providers.",
-      longDescription: "Complete healthcare ecosystem featuring patient management, electronic health records, appointment scheduling, telemedicine, billing integration, and compliance with healthcare standards.",
-      technologies: ["React", "Node.js", "MongoDB", "WebRTC", "FHIR", "AWS"],
-      category: "Healthcare",
+      title: "WeatherScope AI",
+      subtitle: "Intelligent Weather Application",
+      description: "Advanced weather application with AI-powered predictions, location-based forecasts, weather alerts, and beautiful data visualizations.",
+      technologies: ["React Native", "Python", "Flask", "OpenWeather API", "Machine Learning", "SQLite"],
+      category: "Mobile App",
       status: "Completed",
       year: "2023",
-      demoUrl: "https://github.com/DevMaestroHQ",
+      demoUrl: "https://demo-weather.vercel.app",
       githubUrl: "https://github.com/DevMaestroHQ",
-      image: "🏥",
-      gradient: "from-blue-400 via-indigo-400 to-purple-500",
-      bgPattern: "from-blue-500/10 to-indigo-500/10",
-      stats: { patients: "1.5K+", appointments: "8K+", providers: "25" }
+      icon: "🌤️",
+      gradient: "from-cyan-400 via-blue-400 to-indigo-500",
+      bgPattern: "from-cyan-500/20 to-blue-500/20",
+      stats: { downloads: "1K+", accuracy: "96%", cities: "100+" },
+      features: ["AI Predictions", "Weather Alerts", "Data Visualization", "Location Services"],
+      impact: "Provided accurate weather insights for outdoor enthusiasts",
+      complexity: "Medium",
+      duration: "2 months"
     }
   ];
 
+  const categoryIcons: Record<string, React.ReactElement> = {
+    "Healthcare": <Shield className="w-5 h-5" />,
+    "Education": <Brain className="w-5 h-5" />,
+    "Developer Tools": <Code className="w-5 h-5" />,
+    "E-commerce": <Globe className="w-5 h-5" />,
+    "Productivity": <Target className="w-5 h-5" />,
+    "Mobile App": <Smartphone className="w-5 h-5" />
+  };
+
+  const complexityColors: Record<string, string> = {
+    "High": "bg-red-500/20 text-red-400 border-red-500/30",
+    "Medium": "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
+    "Low": "bg-green-500/20 text-green-400 border-green-500/30"
+  };
+
   return (
     <>
-      <SEOHead 
-        title="Projects Portfolio - Yubraj Kurmi | Full Stack Development Showcase"
-        description="Explore my comprehensive portfolio of full-stack web applications. Featuring e-commerce platforms, chat applications, project management tools, and more. Built with React, Node.js, and modern technologies."
-        keywords="yubraj kurmi projects, full stack portfolio, react projects, nodejs applications, web development showcase, ecommerce platform, chat application, project management"
-        canonicalUrl="https://yuvrajkurmi.github.com/projects"
+      <SEOHead
+        title="Projects | YUBRAJ KURMI - Full Stack Developer Portfolio"
+        description="Explore my portfolio of full-stack development projects including healthcare platforms, educational tools, e-commerce solutions, and developer productivity applications."
+        keywords="yubraj kurmi projects, full stack projects, react projects, node.js applications, web development portfolio, healthcare app, education platform"
+        canonicalUrl="https://your-portfolio-domain.vercel.app/projects"
+        pageType="website"
+        author="YUBRAJ KURMI"
       />
-      <section className="py-20 bg-background min-h-screen pt-24">
-      <div className="container mx-auto px-4 max-w-7xl">
-        {/* Header Section */}
-        <motion.div
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          variants={staggerChildren}
-          className="text-center mb-20"
-        >
-          <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 bg-brand-primary/10 text-brand-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
-            <Sparkles className="w-4 h-4" />
-            Featured Projects
-          </motion.div>
-          
-          <motion.h2
-            variants={fadeInUp}
-            className="text-4xl lg:text-5xl font-display font-bold text-contrast mb-6"
+      
+      <div className="min-h-screen bg-background pt-24 pb-16">
+        <div className="container mx-auto px-4 max-w-7xl">
+          {/* Header Section */}
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={staggerChildren}
+            className="text-center mb-16"
           >
-            Crafting Digital
-            <span className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent bg-clip-text text-transparent"> Excellence</span>
-          </motion.h2>
-          
-          <motion.p
-            variants={fadeInUp}
-            className="text-xl text-readable max-w-3xl mx-auto leading-relaxed"
-          >
-            A curated selection of innovative projects showcasing modern development practices, 
-            cutting-edge technologies, and user-centric design principles.
-          </motion.p>
-        </motion.div>
-
-        {/* Projects Grid */}
-        <motion.div
-          variants={staggerChildren}
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
-          {featuredProjects.map((project, index) => (
-            <motion.div
-              key={project.id}
-              variants={fadeInUp}
-              whileHover={{ y: -8, scale: 1.02 }}
-              className="group relative overflow-hidden rounded-2xl bg-card border border-border shadow-lg hover:shadow-2xl transition-all duration-500"
+            <motion.div 
+              variants={fadeInUp} 
+              className="inline-flex items-center gap-2 bg-brand-primary/10 text-brand-primary px-4 py-2 rounded-full text-sm font-medium mb-6"
             >
-              {/* Background Pattern */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${project.bgPattern} opacity-50`} />
-              
-              {/* Status Badge */}
-              <div className="absolute top-4 right-4 z-10">
-                <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                  project.status === 'Completed' 
-                    ? 'bg-green-500/30 text-green-700 dark:text-green-300 border border-green-500/50' 
-                    : 'bg-orange-500/30 text-orange-700 dark:text-orange-300 border border-orange-500/50'
-                }`}>
-                  {project.status}
-                </span>
+              <Rocket className="w-4 h-4" />
+              Featured Projects
+            </motion.div>
+            
+            <motion.h1
+              variants={fadeInUp}
+              className="text-4xl lg:text-6xl font-display font-bold text-foreground mb-6"
+            >
+              Project
+              <span className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent bg-clip-text text-transparent"> Portfolio</span>
+            </motion.h1>
+            
+            <motion.p
+              variants={fadeInUp}
+              className="text-xl text-foreground max-w-3xl mx-auto leading-relaxed"
+            >
+              A showcase of full-stack applications demonstrating expertise in modern web technologies, 
+              user experience design, and scalable architecture solutions.
+            </motion.p>
+
+            {/* Stats Bar */}
+            <motion.div
+              variants={fadeInUp}
+              className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 max-w-4xl mx-auto"
+            >
+              <div className="text-center">
+                <div className="text-3xl font-bold text-brand-primary">6+</div>
+                <div className="text-sm text-foreground font-medium">Projects Built</div>
               </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-brand-primary">5K+</div>
+                <div className="text-sm text-foreground font-medium">Users Served</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-brand-primary">99%</div>
+                <div className="text-sm text-foreground font-medium">Uptime Average</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-brand-primary">100%</div>
+                <div className="text-sm text-foreground font-medium">Client Satisfaction</div>
+              </div>
+            </motion.div>
+          </motion.div>
 
-              <div className="relative p-8 h-full flex flex-col">
-                {/* Project Icon */}
-                <div className="mb-6">
-                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${project.gradient} flex items-center justify-center text-2xl font-bold text-white group-hover:scale-110 transition-transform duration-300`}>
-                    {project.image}
-                  </div>
-                </div>
-
-                {/* Project Info */}
-                <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-xs font-medium text-brand-primary bg-brand-primary/10 px-2 py-1 rounded">
-                      {project.category}
+          {/* Projects Grid */}
+          <motion.div
+            variants={staggerChildren}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="grid lg:grid-cols-2 gap-8"
+          >
+            {featuredProjects.map((project, index) => (
+              <motion.div
+                key={project.id}
+                variants={fadeInUp}
+                whileHover={{ y: -8, scale: 1.02 }}
+                className="group relative"
+              >
+                {/* Main Project Card */}
+                <div className="bg-card border border-border rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 relative overflow-hidden">
+                  {/* Background Pattern */}
+                  <div className={`absolute inset-0 bg-gradient-to-br ${project.bgPattern} opacity-50`} />
+                  
+                  {/* Status & Complexity Badges */}
+                  <div className="absolute top-6 right-6 flex gap-2 z-10">
+                    <span className={`px-3 py-1 rounded-full text-xs font-medium border ${
+                      project.status === 'Live' 
+                        ? 'bg-green-500/20 text-green-400 border-green-500/30' 
+                        : 'bg-blue-500/20 text-blue-400 border-blue-500/30'
+                    }`}>
+                      {project.status}
                     </span>
-                    <span className="text-xs text-foreground font-medium">
-                      {project.year}
+                    <span className={`px-3 py-1 rounded-full text-xs font-medium border ${complexityColors[project.complexity]}`}>
+                      {project.complexity}
                     </span>
                   </div>
-                  
-                  <h3 className="text-xl font-display font-bold text-foreground mb-2 group-hover:text-brand-primary transition-colors">
-                    {project.title}
-                  </h3>
-                  
-                  <p className="text-sm font-medium text-brand-primary mb-3">
-                    {project.subtitle}
-                  </p>
-                  
-                  <p className="text-foreground text-sm leading-relaxed mb-6">
-                    {project.description}
-                  </p>
 
-                  {/* Stats */}
-                  <div className="grid grid-cols-3 gap-4 mb-6">
-                    {Object.entries(project.stats).map(([key, value]) => (
-                      <div key={key} className="text-center">
-                        <div className="text-lg font-bold text-foreground">{value}</div>
-                        <div className="text-xs text-foreground font-medium capitalize">{key}</div>
+                  <div className="relative z-10">
+                    {/* Project Header */}
+                    <div className="flex items-start gap-4 mb-6">
+                      <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${project.gradient} flex items-center justify-center text-2xl font-bold text-white group-hover:scale-110 transition-transform duration-300`}>
+                        {project.icon}
                       </div>
-                    ))}
-                  </div>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="text-xs font-medium text-brand-primary bg-brand-primary/10 px-2 py-1 rounded flex items-center gap-1">
+                            {categoryIcons[project.category]}
+                            {project.category}
+                          </span>
+                          <span className="text-xs text-foreground font-medium">
+                            {project.year}
+                          </span>
+                          <span className="text-xs text-foreground/70">
+                            • {project.duration}
+                          </span>
+                        </div>
+                        <h3 className="text-2xl font-display font-bold text-foreground mb-2 group-hover:text-brand-primary transition-colors">
+                          {project.title}
+                        </h3>
+                        <p className="text-sm font-medium text-brand-primary mb-3">
+                          {project.subtitle}
+                        </p>
+                      </div>
+                    </div>
 
-                  {/* Technologies */}
-                  <div className="mb-6">
-                    <div className="flex flex-wrap gap-2">
-                      {project.technologies.slice(0, 4).map((tech) => (
-                        <span
-                          key={tech}
-                          className="text-xs bg-muted text-foreground px-2 py-1 rounded-md font-medium"
-                        >
-                          {tech}
-                        </span>
+                    {/* Description */}
+                    <p className="text-foreground text-sm leading-relaxed mb-6">
+                      {project.description}
+                    </p>
+
+                    {/* Key Features */}
+                    <div className="mb-6">
+                      <h4 className="text-sm font-semibold text-foreground mb-3">Key Features</h4>
+                      <div className="grid grid-cols-2 gap-2">
+                        {project.features.map((feature, i) => (
+                          <div key={i} className="flex items-center gap-2 text-xs text-foreground">
+                            <div className="w-1.5 h-1.5 rounded-full bg-brand-primary" />
+                            {feature}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Impact Statement */}
+                    <div className="mb-6 p-4 bg-brand-primary/5 rounded-lg border border-brand-primary/20">
+                      <div className="flex items-center gap-2 mb-2">
+                        <TrendingUp className="w-4 h-4 text-brand-primary" />
+                        <span className="text-sm font-semibold text-foreground">Impact</span>
+                      </div>
+                      <p className="text-sm text-foreground">{project.impact}</p>
+                    </div>
+
+                    {/* Stats Grid */}
+                    <div className="grid grid-cols-3 gap-4 mb-6">
+                      {Object.entries(project.stats).map(([key, value]) => (
+                        <div key={key} className="text-center p-3 bg-muted/50 rounded-lg">
+                          <div className="text-lg font-bold text-foreground">{value}</div>
+                          <div className="text-xs text-foreground font-medium capitalize">{key}</div>
+                        </div>
                       ))}
-                      {project.technologies.length > 4 && (
-                        <span className="text-xs text-foreground font-medium">
-                          +{project.technologies.length - 4} more
-                        </span>
-                      )}
+                    </div>
+
+                    {/* Technologies */}
+                    <div className="mb-8">
+                      <h4 className="text-sm font-semibold text-foreground mb-3">Tech Stack</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {project.technologies.map((tech) => (
+                          <span
+                            key={tech}
+                            className="text-xs bg-muted text-foreground px-3 py-1 rounded-full font-medium border border-border"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Action Buttons */}
+                    <div className="flex gap-3">
+                      <motion.a
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="flex-1 inline-flex items-center justify-center gap-2 bg-brand-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-primary/90 transition-colors"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        Live Demo
+                      </motion.a>
+                      <motion.a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="flex-1 inline-flex items-center justify-center gap-2 border border-border text-foreground px-6 py-3 rounded-lg font-medium hover:bg-muted/50 transition-colors"
+                      >
+                        <Github className="w-4 h-4" />
+                        Source Code
+                      </motion.a>
                     </div>
                   </div>
+
+                  {/* Hover Effects */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-3xl" />
                 </div>
+              </motion.div>
+            ))}
+          </motion.div>
 
-                {/* Action Buttons */}
-                <div className="flex gap-3 mt-auto">
-                  <motion.a
-                    href={project.demoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="flex-1 btn-professional text-center py-2.5 text-sm font-medium rounded-lg transition-all duration-300"
-                  >
-                    <Globe className="w-4 h-4 inline mr-2" />
-                    Demo
-                  </motion.a>
-                  <motion.a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="flex-1 bg-muted hover:bg-muted/80 text-readable border border-border text-center py-2.5 text-sm font-medium rounded-lg transition-all duration-300"
-                  >
-                    <Github className="w-4 h-4 inline mr-2" />
-                    Code
-                  </motion.a>
-                </div>
-              </div>
-
-              {/* Hover Effects */}
-              <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* Call to Action */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mt-20"
-        >
-          <div className="bg-gradient-to-r from-brand-primary/10 to-brand-secondary/10 rounded-2xl p-8 border border-brand-primary/20">
-            <Rocket className="w-12 h-12 text-brand-primary mx-auto mb-4" />
-            <h3 className="text-2xl font-display font-bold text-contrast mb-4">
-              Ready to Build Something Amazing?
-            </h3>
-            <p className="text-readable mb-6 max-w-2xl mx-auto">
-              Let's collaborate on your next project. I bring creativity, technical expertise, 
-              and a passion for delivering exceptional digital experiences.
-            </p>
-            <motion.a
-              href="/contact"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="btn-professional inline-flex items-center gap-2 px-8 py-3 rounded-lg font-medium transition-all duration-300"
-            >
-              <Zap className="w-5 h-5" />
-              Start a Project
-            </motion.a>
-          </div>
-        </motion.div>
+          {/* Call to Action */}
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="text-center mt-16"
+          >
+            <div className="bg-gradient-to-br from-brand-primary/10 to-brand-secondary/10 rounded-3xl p-8 border border-brand-primary/20">
+              <h3 className="text-2xl font-display font-bold text-foreground mb-4">
+                Ready to Build Something Amazing?
+              </h3>
+              <p className="text-foreground mb-6 max-w-2xl mx-auto">
+                Let's collaborate to create innovative solutions that make a real impact. 
+                From concept to deployment, I'll help bring your ideas to life.
+              </p>
+              <motion.a
+                href="/contact"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-flex items-center gap-2 bg-brand-primary text-white px-8 py-4 rounded-lg font-medium hover:bg-brand-primary/90 transition-colors"
+              >
+                <Zap className="w-5 h-5" />
+                Start a Project
+              </motion.a>
+            </div>
+          </motion.div>
+        </div>
       </div>
-    </section>
     </>
   );
 }
