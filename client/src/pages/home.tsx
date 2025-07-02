@@ -22,9 +22,9 @@ export default function Home() {
   return (
     <>
       <SEOHead 
-        title="✓ Verified Developer | Professional Portfolio | Quality Web Solutions"
-        description="Verified Full Stack Developer from Nepal with 3+ years experience in React, Node.js, and modern web technologies. Specialized in quality web solutions and responsive design."
-        keywords="verified developer nepal, full stack developer, react developer nepal, node.js developer, typescript, web development nepal, freelance developer kathmandu, portfolio"
+        title="YUBRAJ KURMI | Full Stack Developer | Professional Portfolio Nepal"
+        description="YUBRAJ KURMI - Professional Full Stack Developer from Nepal with 2+ years experience in React, Node.js, and modern web technologies. Specialized in quality web solutions and responsive design."
+        keywords="yubraj kurmi, full stack developer nepal, react developer nepal, node.js developer, typescript, web development nepal, freelance developer rupandehi, portfolio"
       />
       
       <div className="min-h-screen bg-background">
@@ -37,12 +37,12 @@ export default function Home() {
                 <span className="text-adaptive-primary font-medium">Available for new opportunities</span>
               </div>
               
-              <h1 className="heading-xl font-display text-contrast">
-                Verified Full Stack
-                <span className="block text-brand-primary font-bold">Developer</span>
+              <h1 className="heading-xl font-display text-foreground">
+                YUBRAJ KURMI
+                <span className="block text-brand-primary font-bold">Full Stack Developer</span>
               </h1>
               
-              <p className="text-xl text-readable font-body max-w-xl">
+              <p className="text-xl text-foreground font-body max-w-xl">
                 I build exceptional digital experiences with modern technologies. 
                 Specialized in React, Node.js, and cloud-native solutions that scale.
               </p>
@@ -102,8 +102,8 @@ export default function Home() {
         <section className="section-container py-16">
           <div className="space-y-8">
             <div className="text-center">
-              <h2 className="heading-lg font-display text-contrast mb-4">Technical Expertise</h2>
-              <p className="text-readable max-w-2xl mx-auto">
+              <h2 className="heading-lg font-display text-foreground mb-4">Technical Expertise</h2>
+              <p className="text-foreground max-w-2xl mx-auto">
                 Proficient in modern technologies and frameworks with hands-on experience in full-stack development
               </p>
             </div>
@@ -116,7 +116,7 @@ export default function Home() {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="text-2xl mb-2">{skill.icon}</div>
-                  <h3 className="font-semibold text-contrast text-sm mb-1">{skill.name}</h3>
+                  <h3 className="font-semibold text-foreground text-sm mb-1">{skill.name}</h3>
                   <span className="text-xs text-brand-primary font-medium">{skill.level}</span>
                 </div>
               ))}
@@ -128,8 +128,8 @@ export default function Home() {
         <section className="section-container py-16 bg-muted/30">
           <div className="space-y-8">
             <div className="text-center">
-              <h2 className="heading-lg font-display text-contrast mb-4">Professional Achievements</h2>
-              <p className="text-readable max-w-2xl mx-auto">
+              <h2 className="heading-lg font-display text-foreground mb-4">Professional Achievements</h2>
+              <p className="text-foreground max-w-2xl mx-auto">
                 Track record of delivering high-quality solutions and exceeding client expectations
               </p>
             </div>
@@ -144,10 +144,10 @@ export default function Home() {
                   <div className="text-3xl md:text-4xl font-bold text-brand-primary font-display">
                     {achievement.metric}
                   </div>
-                  <div className="text-sm font-semibold text-contrast">
+                  <div className="text-sm font-semibold text-foreground">
                     {achievement.label}
                   </div>
-                  <div className="text-xs text-readable-secondary">
+                  <div className="text-xs text-foreground">
                     {achievement.description}
                   </div>
                 </div>

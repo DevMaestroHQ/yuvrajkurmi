@@ -38,10 +38,10 @@ export default function Logo({ size = "md", showText = false, className = "" }: 
       {/* Logo Text */}
       {showText && (
         <div className="flex flex-col">
-          <span className={`font-display font-bold text-contrast ${textSizeClasses[size]} leading-tight`}>
-            Yubraj Kurmi
+          <span className={`font-display font-bold text-foreground ${textSizeClasses[size]} leading-tight`}>
+            YUBRAJ KURMI
           </span>
-          <span className="text-xs text-readable-secondary font-medium">
+          <span className="text-xs text-foreground font-medium">
             Full Stack Developer
           </span>
         </div>

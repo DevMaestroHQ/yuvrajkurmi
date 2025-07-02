@@ -192,12 +192,12 @@ export default function Projects() {
                     <span className="text-xs font-medium text-brand-primary bg-brand-primary/10 px-2 py-1 rounded">
                       {project.category}
                     </span>
-                    <span className="text-xs text-readable-secondary">
+                    <span className="text-xs text-foreground font-medium">
                       {project.year}
                     </span>
                   </div>
                   
-                  <h3 className="text-xl font-display font-bold text-contrast mb-2 group-hover:text-brand-primary transition-colors">
+                  <h3 className="text-xl font-display font-bold text-foreground mb-2 group-hover:text-brand-primary transition-colors">
                     {project.title}
                   </h3>
                   
@@ -205,7 +205,7 @@ export default function Projects() {
                     {project.subtitle}
                   </p>
                   
-                  <p className="text-readable-secondary text-sm leading-relaxed mb-6">
+                  <p className="text-foreground text-sm leading-relaxed mb-6">
                     {project.description}
                   </p>
 
@@ -213,8 +213,8 @@ export default function Projects() {
                   <div className="grid grid-cols-3 gap-4 mb-6">
                     {Object.entries(project.stats).map(([key, value]) => (
                       <div key={key} className="text-center">
-                        <div className="text-lg font-bold text-contrast">{value}</div>
-                        <div className="text-xs text-readable-secondary capitalize">{key}</div>
+                        <div className="text-lg font-bold text-foreground">{value}</div>
+                        <div className="text-xs text-foreground font-medium capitalize">{key}</div>
                       </div>
                     ))}
                   </div>
@@ -225,13 +225,13 @@ export default function Projects() {
                       {project.technologies.slice(0, 4).map((tech) => (
                         <span
                           key={tech}
-                          className="text-xs bg-muted text-contrast px-2 py-1 rounded-md font-medium"
+                          className="text-xs bg-muted text-foreground px-2 py-1 rounded-md font-medium"
                         >
                           {tech}
                         </span>
                       ))}
                       {project.technologies.length > 4 && (
-                        <span className="text-xs text-readable-secondary">
+                        <span className="text-xs text-foreground font-medium">
                           +{project.technologies.length - 4} more
                         </span>
                       )}

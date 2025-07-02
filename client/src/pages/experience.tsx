@@ -140,7 +140,7 @@ export default function Experience() {
           
           <motion.h2
             variants={fadeInUp}
-            className="text-4xl lg:text-5xl font-display font-bold text-contrast mb-6"
+            className="text-4xl lg:text-5xl font-display font-bold text-foreground mb-6"
           >
             Experience &
             <span className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent bg-clip-text text-transparent"> Growth</span>
@@ -148,7 +148,7 @@ export default function Experience() {
           
           <motion.p
             variants={fadeInUp}
-            className="text-xl text-readable max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-foreground max-w-3xl mx-auto leading-relaxed"
           >
             A journey of continuous learning, professional growth, and impactful contributions 
             to innovative technology solutions.
@@ -204,16 +204,16 @@ export default function Experience() {
                           <span className="text-sm font-medium text-brand-primary bg-brand-primary/10 px-2 py-1 rounded">
                             {experience.type}
                           </span>
-                          <span className="text-sm text-readable-secondary">
+                          <span className="text-sm text-foreground font-medium">
                             {experience.duration}
                           </span>
                         </div>
                         
-                        <h3 className="text-2xl font-display font-bold text-contrast mb-2 group-hover:text-brand-primary transition-colors">
+                        <h3 className="text-2xl font-display font-bold text-foreground mb-2 group-hover:text-brand-primary transition-colors">
                           {experience.title}
                         </h3>
                         
-                        <div className="flex flex-wrap items-center gap-4 text-readable-secondary mb-3">
+                        <div className="flex flex-wrap items-center gap-4 text-foreground mb-3">
                           <div className="flex items-center gap-1">
                             <Code className="w-4 h-4" />
                             <span className="font-medium">{experience.company}</span>
@@ -230,7 +230,7 @@ export default function Experience() {
                       </div>
 
                       {/* Description */}
-                      <p className="text-readable-secondary mb-6 leading-relaxed">
+                      <p className="text-foreground mb-6 leading-relaxed">
                         {experience.description}
                       </p>
 
@@ -238,21 +238,21 @@ export default function Experience() {
                       <div className="grid grid-cols-3 gap-4 mb-8">
                         {experience.achievements.map((achievement, i) => (
                           <div key={i} className="text-center p-4 bg-muted/50 rounded-lg">
-                            <div className="text-2xl font-bold text-contrast mb-1">{achievement.metric}</div>
-                            <div className="text-xs text-readable-secondary">{achievement.label}</div>
+                            <div className="text-2xl font-bold text-foreground mb-1">{achievement.metric}</div>
+                            <div className="text-xs text-foreground font-medium">{achievement.label}</div>
                           </div>
                         ))}
                       </div>
 
                       {/* Key Responsibilities */}
                       <div className="mb-8">
-                        <h4 className="text-lg font-display font-semibold text-contrast mb-4 flex items-center gap-2">
+                        <h4 className="text-lg font-display font-semibold text-foreground mb-4 flex items-center gap-2">
                           <CheckCircle className="w-5 h-5 text-brand-primary" />
                           Key Responsibilities
                         </h4>
                         <ul className="space-y-3">
                           {experience.responsibilities.map((responsibility, i) => (
-                            <li key={i} className="flex items-start gap-3 text-readable-secondary">
+                            <li key={i} className="flex items-start gap-3 text-foreground">
                               <div className="w-2 h-2 rounded-full bg-brand-primary mt-2 flex-shrink-0" />
                               <span className="leading-relaxed">{responsibility}</span>
                             </li>
@@ -262,7 +262,7 @@ export default function Experience() {
 
                       {/* Technologies */}
                       <div>
-                        <h4 className="text-sm font-medium text-contrast mb-3">Technologies Used</h4>
+                        <h4 className="text-sm font-medium text-foreground mb-3">Technologies Used</h4>
                         <div className="flex flex-wrap gap-2">
                           {experience.technologies.map((tech) => (
                             <span

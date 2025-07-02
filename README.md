@@ -1,8 +1,8 @@
-# ✓ Verified Developer | Professional Portfolio
+# YUBRAJ KURMI - Full Stack Developer Portfolio
 
 <div align="center">
 
-![Verified Logo](https://img.shields.io/badge/✓-Verified%20Developer-1976D2?style=for-the-badge&logo=checkmark&logoColor=white)
+![Portfolio Logo](https://img.shields.io/badge/YUBRAJ%20KURMI-Full%20Stack%20Developer-blue?style=for-the-badge&logo=react&logoColor=white)
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -11,9 +11,9 @@
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-**Modern • Responsive • Professional**
+**Professional • Modern • Responsive • SEO Optimized**
 
-[🌐 Live Demo](https://your-portfolio-url.com) • [📧 Contact](mailto:developerrajir@gmail.com) • [💼 LinkedIn](https://linkedin.com/in/yuvrajkurmi03) • [🐙 GitHub](https://github.com/DevMaestroHQ)
+[🌐 Live Demo](https://your-portfolio-url.vercel.app) • [📧 Contact](mailto:developerrajir@gmail.com) • [💼 LinkedIn](https://linkedin.com/in/yuvrajkurmi03) • [🐙 GitHub](https://github.com/DevMaestroHQ)
 
 </div>
 
@@ -21,159 +21,189 @@
 
 ## ✨ About This Portfolio
 
-A cutting-edge developer portfolio showcasing modern web development skills through an innovative, interactive experience. Built with performance, accessibility, and user experience in mind, this portfolio demonstrates proficiency in full-stack development with a beautiful, responsive design.
+A professional full-stack developer portfolio showcasing expertise in React, Node.js, TypeScript, and modern web technologies. Built with performance, accessibility, and user experience in mind, featuring authentic projects, comprehensive resume integration, and optimized for hiring managers and recruiters.
 
-### 🆕 Latest Updates (July 1, 2025)
+### 🚀 Key Features
 
-**📄 Authentic Resume Integration & Privacy Enhancement**
-- **Real Resume Details** - Integrated authentic information from official resume including projects, education, and experience
-- **Contact Privacy** - Replaced contact number with asterisks (+977-98*******) for privacy protection
-- **Authentic Projects** - Updated with real projects: HealthAssistant App, Edubridge, CodePulse
-- **Current Education** - BSc Computer Science and Information Technology at Bhairahawa Multiple Campus, TU
-- **Skill Set Update** - Authentic technology stack including React Native, Python, Next.js, and development tools
-- **Logo Update** - Integrated provided logo image and updated branding to display developer name "Yubraj Kurmi" and "Full Stack Developer" title
-
-**📋 Professional Experience Section Redesign**
-- **Authentic Career Timeline** - Redesigned experience section with realistic job titles and achievements
-- **Updated Job Titles** - Replaced "Senior Full Stack Developer" with "Verified Full Stack Developer" and appropriate role progression
-- **Enhanced SEO Content** - Optimized experience page with Nepal-specific keywords and structured data
-- **Realistic Achievements** - Updated metrics to reflect authentic professional growth and accomplishments
-- **Local Market Focus** - Emphasized Nepal market experience with local payment integrations (eSewa, Khalti)
-
-**🔍 Complete SEO Optimization**
-- **Advanced Meta Tags** - Enhanced title, description, and keyword optimization for search engines
-- **Rich Open Graph Tags** - Comprehensive Facebook and social media sharing optimization
-- **Enhanced Twitter Cards** - Detailed Twitter sharing with large image cards and creator tags
-- **Geographic SEO** - Location-based meta tags for Nepal market targeting
-- **Structured Data** - Advanced JSON-LD schema markup for Person, ProfessionalService, and Website
-- **Search Engine Directives** - Optimized crawling instructions for Google, Bing, and all major search engines
-
-**✓ Blue Checkmark Logo Implementation**
-- **Professional Checkmark Logo** - Integrated user-provided blue checkmark logo image
-- **Verified Developer Branding** - Updated to "Verified Developer" theme with quality assurance messaging
-- **Updated Site Title** - Changed to "✓ Verified Developer | Professional Portfolio | Quality Web Solutions"
-- **New Favicon** - Custom SVG checkmark favicon with blue gradient design
-- **Trust-Based Branding** - Emphasizes verified status and professional credibility
-
-**🚀 Vercel Deployment Ready**
-- **Vercel Configuration** - Complete vercel.json with optimized builds, routes, and security headers
-- **Production Scripts** - Build commands optimized for Vercel deployment
-- **Security Headers** - Advanced security configuration with CSP and performance optimization
-- **Cache Strategies** - Optimized caching for static assets and service workers
-
-### 🎯 Key Features
-
-- **🎨 Modern Design System** - Clean, professional interface with adaptive themes
-- **⚡ Performance Optimized** - Fast loading times and smooth animations
-- **📱 Fully Responsive** - Perfect experience across all devices
-- **♿ Accessibility First** - WCAG compliant with proper contrast and navigation
-- **🔧 Interactive Components** - Engaging animations and user interactions
-- **📊 Real Project Showcase** - Comprehensive portfolio with detailed project information
-- **🚀 Professional Branding** - Consistent visual identity with new Y logo design
+- **🎨 Modern UI/UX** - Clean, professional design with smooth animations
+- **📱 Fully Responsive** - Optimized for all devices and screen sizes
+- **⚡ High Performance** - Fast loading with optimized assets and caching
+- **🔍 SEO Optimized** - Complete meta tags, structured data, and sitemap
+- **🌙 Dark/Light Mode** - Adaptive theming with system preference detection
+- **📊 Interactive Components** - Skills radar, pricing calculator, testimonials
+- **🔒 Privacy Focused** - Contact information protected with appropriate masking
+- **♿ Accessible** - WCAG compliant with keyboard navigation support
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-- **React 18** - Modern UI library with hooks and concurrent features
-- **TypeScript** - Type-safe development with enhanced developer experience
-- **Tailwind CSS** - Utility-first CSS framework for rapid styling
-- **Framer Motion** - Smooth animations and interactive transitions
-- **Wouter** - Lightweight client-side routing
-- **Radix UI** - Accessible component primitives
-- **TanStack Query** - Powerful data synchronization
+- **React 18** with TypeScript for type-safe development
+- **Vite** for fast development and optimized builds
+- **Tailwind CSS** for utility-first styling
+- **Framer Motion** for smooth animations and transitions
+- **Radix UI** for accessible component primitives
+- **TanStack Query** for efficient server state management
+- **Wouter** for lightweight client-side routing
 
 ### Backend
-- **Node.js** - JavaScript runtime for server-side development
-- **Express.js** - Fast, unopinionated web framework
-- **TypeScript** - Full-stack type safety
-- **PostgreSQL** - Robust relational database
-- **Drizzle ORM** - Type-safe database toolkit
+- **Express.js** with TypeScript for robust API development
+- **PostgreSQL** with Drizzle ORM for type-safe database operations
+- **Session Management** with connect-pg-simple
+- **Security** with Helmet.js, CORS, and rate limiting
+- **Validation** with Zod and express-validator
 
-### Development & Deployment
-- **Vite** - Next-generation frontend tooling
-- **ESBuild** - Fast JavaScript bundler
-- **Replit** - Cloud-based development environment
+### Development Tools
+- **ESLint & Prettier** for code quality and formatting
+- **Drizzle Kit** for database migrations
+- **TSX** for running TypeScript in development
+- **Hot Module Replacement** for instant development feedback
 
 ---
 
-## 🚀 Quick Start
+## 📋 Prerequisites
 
-### Prerequisites
+Before running this project locally, ensure you have the following installed:
 
-- **Node.js** (v18 or higher) - [Download here](https://nodejs.org/)
-- **npm** (comes with Node.js) or **yarn**
+- **Node.js** (version 18.0.0 or higher)
+- **npm** (version 8.0.0 or higher) or **yarn** (version 1.22.0 or higher)
+- **PostgreSQL** (version 13.0 or higher) - for production database
 - **Git** for version control
-- **PostgreSQL** (optional, for contact form functionality)
 
-### Local Installation & Setup
+### System Requirements
 
-#### 1. Clone the Repository
+- **Operating System**: Windows 10+, macOS 10.15+, or Linux (Ubuntu 20.04+)
+- **RAM**: Minimum 4GB, recommended 8GB
+- **Storage**: At least 1GB free space
+- **Internet Connection**: Required for package installation and external services
+
+---
+
+## 🚀 Installation & Local Setup
+
+### Step 1: Clone the Repository
+
 ```bash
-# Using HTTPS
+# Clone the repository
 git clone https://github.com/DevMaestroHQ/portfolio.git
-
-# Or using SSH
-git clone git@github.com:DevMaestroHQ/portfolio.git
 
 # Navigate to project directory
 cd portfolio
 ```
 
-#### 2. Install Dependencies
+### Step 2: Install Dependencies
+
+Choose your preferred package manager:
+
+#### Using npm (Recommended)
 ```bash
-# Using npm (recommended)
 npm install
+```
 
-# Or using yarn
+#### Using Yarn
+```bash
 yarn install
+```
 
-# Or using pnpm
+#### Using pnpm
+```bash
 pnpm install
 ```
 
-#### 3. Environment Setup (Optional)
-```bash
-# Create environment file
-cp .env.example .env
+### Step 3: Environment Configuration
 
-# Edit environment variables
-nano .env  # or use your preferred editor
-```
+1. **Copy the environment file**:
+   ```bash
+   cp .env .env.local
+   ```
 
-#### 4. Database Setup (Optional)
-If you want to use the contact form with database storage:
-```bash
-# Install PostgreSQL locally or use a cloud service
-# Update DATABASE_URL in .env file
+2. **Configure your environment variables** in `.env.local`:
 
-# Generate database schema
-npm run db:generate
+   ```bash
+   # Database Configuration
+   DATABASE_URL="postgresql://username:password@localhost:5432/portfolio_db"
+   
+   # Server Configuration
+   PORT=5000
+   NODE_ENV=development
+   
+   # Session Security
+   SESSION_SECRET="your-super-secure-session-secret-change-this"
+   
+   # CORS Configuration
+   CORS_ORIGIN="http://localhost:3000,http://localhost:5173"
+   
+   # Optional: Email Configuration (for contact form)
+   SMTP_HOST="smtp.gmail.com"
+   SMTP_PORT=587
+   SMTP_USER="your-email@gmail.com"
+   SMTP_PASS="your-app-password"
+   ```
 
-# Push schema to database
-npm run db:push
-```
+### Step 4: Database Setup
 
-#### 5. Start Development Server
+#### Option A: PostgreSQL (Recommended for Production)
+
+1. **Install PostgreSQL**:
+   - **Windows**: Download from [postgresql.org](https://www.postgresql.org/download/windows/)
+   - **macOS**: `brew install postgresql`
+   - **Linux**: `sudo apt-get install postgresql postgresql-contrib`
+
+2. **Create database**:
+   ```bash
+   # Connect to PostgreSQL
+   psql -U postgres
+   
+   # Create database
+   CREATE DATABASE portfolio_db;
+   
+   # Create user (optional)
+   CREATE USER portfolio_user WITH PASSWORD 'your_password';
+   GRANT ALL PRIVILEGES ON DATABASE portfolio_db TO portfolio_user;
+   
+   # Exit PostgreSQL
+   \q
+   ```
+
+3. **Run database migrations**:
+   ```bash
+   npm run db:generate
+   npm run db:migrate
+   ```
+
+#### Option B: SQLite (For Development Only)
+
+If you prefer to use SQLite for development:
+
+1. **Update `.env.local`**:
+   ```bash
+   DATABASE_URL="file:./dev.db"
+   ```
+
+2. **Run migrations**:
+   ```bash
+   npm run db:generate
+   npm run db:migrate
+   ```
+
+### Step 5: Start Development Server
+
 ```bash
 # Start the development server
 npm run dev
-
-# The application will be available at:
-# Frontend: http://localhost:5173
-# Backend API: http://localhost:3000
 ```
 
-### Alternative Quick Setup
-```bash
-# One-command setup (after cloning)
-npm install && npm run dev
-```
+The application will be available at:
+- **Frontend**: http://localhost:3000
+- **Backend API**: http://localhost:5000
 
-### Development Commands
+---
 
-#### **Essential Commands**
+## 📜 Available Scripts
+
+### Essential Commands
+
 ```bash
 # Start development server
 npm run dev
@@ -181,985 +211,435 @@ npm run dev
 # Build for production
 npm run build
 
-# Preview production build
-npm run preview
+# Start production server
+npm start
 
-# Run type checking
+# Type checking
 npm run type-check
 
-# Format code
-npm run format
-
-# Lint code
+# Linting
 npm run lint
-
-# Fix linting issues
 npm run lint:fix
 ```
 
-#### **Database Commands** (Optional)
+### Database Commands
+
 ```bash
-# Generate database schema
+# Generate new migration
 npm run db:generate
 
-# Push schema to database
-npm run db:push
-
-# View database in browser
-npm run db:studio
+# Apply migrations
+npm run db:migrate
 
 # Reset database
 npm run db:reset
+
+# View database in Drizzle Studio
+npm run db:studio
 ```
 
-#### **Testing Commands**
+### Testing Commands
+
 ```bash
-# Run unit tests
-npm run test
+# Run tests
+npm test
 
 # Run tests in watch mode
 npm run test:watch
 
-# Run e2e tests
-npm run test:e2e
-
-# Generate test coverage
+# Run tests with coverage
 npm run test:coverage
-```
-
-### Local Development Setup
-
-#### **Environment Variables**
-Create a `.env` file in the project root:
-```env
-# Database (Optional)
-DATABASE_URL="postgresql://username:password@localhost:5432/portfolio"
-
-# Contact Form (Optional)
-SMTP_HOST="smtp.gmail.com"
-SMTP_PORT="587"
-SMTP_USER="your-email@gmail.com"
-SMTP_PASS="your-app-password"
-
-# Analytics (Optional)
-GOOGLE_ANALYTICS_ID="GA_MEASUREMENT_ID"
-
-# Development
-NODE_ENV="development"
-```
-
-#### **IDE Setup**
-**VS Code Extensions (Recommended):**
-- ES7+ React/Redux/React-Native snippets
-- Prettier - Code formatter
-- ESLint
-- Tailwind CSS IntelliSense
-- TypeScript Importer
-- Auto Rename Tag
-- Bracket Pair Colorizer
-
-**Settings Configuration:**
-```json
-{
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact"
-  }
-}
-```
-
-### Troubleshooting
-
-#### **Common Issues**
-
-**Port Already in Use**
-```bash
-# Find and kill process using port 3000
-lsof -ti:3000 | xargs kill -9
-
-# Or use different port
-npm run dev -- --port 3001
-```
-
-**Node Modules Issues**
-```bash
-# Clear npm cache
-npm cache clean --force
-
-# Delete node_modules and reinstall
-rm -rf node_modules package-lock.json
-npm install
-```
-
-**Build Errors**
-```bash
-# Clear build cache
-rm -rf dist/
-rm -rf .vite/
-
-# Rebuild project
-npm run build
-```
-
-**TypeScript Errors**
-```bash
-# Restart TypeScript server in VS Code
-# Ctrl+Shift+P -> "TypeScript: Restart TS Server"
-
-# Check TypeScript configuration
-npx tsc --noEmit
-```
-
-**Database Connection Issues**
-```bash
-# Check database URL format
-echo $DATABASE_URL
-
-# Test database connection
-npm run db:studio
-
-# Reset database schema
-npm run db:reset
-```
-
-#### **Performance Issues**
-
-**Slow Development Server**
-```bash
-# Disable source maps in development
-export GENERATE_SOURCEMAP=false
-
-# Increase Node.js memory limit
-export NODE_OPTIONS="--max-old-space-size=4096"
-
-# Use faster package manager
-npm install -g pnpm
-pnpm install
-pnpm dev
-```
-
-**Large Bundle Size**
-```bash
-# Analyze bundle size
-npm run build
-npm run analyze
-
-# Check for unused dependencies
-npx depcheck
-
-# Optimize images
-npm install -g imagemin-cli
-imagemin src/assets/* --out-dir=optimized/
 ```
 
 ---
 
-## 🚀 Vercel Deployment Guide
+## 🌐 Deployment
 
-### Prerequisites for Deployment
+### Deploy to Vercel (Recommended)
 
-Before deploying to Vercel, ensure you have:
-- A Vercel account (free at [vercel.com](https://vercel.com))
-- Git repository (GitHub, GitLab, or Bitbucket)
-- Node.js 18+ locally (for testing)
-
-### Step 1: Prepare Your Repository
-
-#### 1.1 Update Domain References
-Replace placeholder URLs in your code:
-```bash
-# Update these files with your actual domain:
-# - client/index.html (all https://your-portfolio-domain.vercel.app references)
-# - vercel.json (alias field)
-```
-
-#### 1.2 Environment Variables Setup
-Create production environment variables in Vercel dashboard:
-```env
-# Required for contact form (optional)
-DATABASE_URL="your-postgresql-connection-string"
-
-# Optional analytics
-GOOGLE_ANALYTICS_ID="your-ga-id"
-
-# Email configuration (optional)
-SMTP_HOST="smtp.gmail.com"
-SMTP_PORT="587" 
-SMTP_USER="your-email@gmail.com"
-SMTP_PASS="your-app-password"
-```
-
-### Step 2: Deploy to Vercel
-
-#### 2.1 Automatic Deployment (Recommended)
-
-1. **Connect Repository**
-   ```bash
-   # Push your code to GitHub
-   git add .
-   git commit -m "Prepare for Vercel deployment"
-   git push origin main
-   ```
-
-2. **Import to Vercel**
-   - Visit [vercel.com/new](https://vercel.com/new)
-   - Click "Import Git Repository"
-   - Select your repository
-   - Choose "Other" framework preset
-   - Configure build settings:
-     ```
-     Build Command: npm run vercel-build
-     Output Directory: client/dist
-     Install Command: npm install
-     ```
-
-3. **Environment Variables**
-   - Go to Project Settings → Environment Variables
-   - Add your production environment variables
-   - Deploy again to apply changes
-
-#### 2.2 Manual Deployment with Vercel CLI
-
-1. **Install Vercel CLI**
+1. **Install Vercel CLI**:
    ```bash
    npm install -g vercel
    ```
 
-2. **Login to Vercel**
+2. **Login to Vercel**:
    ```bash
    vercel login
    ```
 
-3. **Deploy Project**
-   ```bash
-   # From project root directory
-   vercel --prod
-   
-   # Follow the prompts:
-   # - Set up and deploy? [Y/n] Y
-   # - Which scope? Select your account
-   # - Link to existing project? [y/N] N
-   # - Project name: verified-developer-portfolio
-   # - Directory: ./
-   # - Override settings? [y/N] N
+3. **Configure `vercel.json`** (already included):
+   ```json
+   {
+     "version": 2,
+     "builds": [
+       {
+         "src": "server/index.ts",
+         "use": "@vercel/node"
+       },
+       {
+         "src": "client/dist/**",
+         "use": "@vercel/static"
+       }
+     ],
+     "routes": [
+       {
+         "src": "/api/(.*)",
+         "dest": "/server/index.ts"
+       },
+       {
+         "src": "/(.*)",
+         "dest": "/client/dist/$1"
+       }
+     ]
+   }
    ```
 
-### Step 3: Custom Domain Setup (Optional)
+4. **Deploy**:
+   ```bash
+   # Build the project
+   npm run build
+   
+   # Deploy to Vercel
+   vercel --prod
+   ```
 
-#### 3.1 Add Custom Domain
-```bash
-# Using Vercel CLI
-vercel domains add yourdomain.com
+5. **Configure Environment Variables** in Vercel Dashboard:
+   - Go to your project settings in Vercel
+   - Add all environment variables from your `.env.local`
+   - Set `NODE_ENV=production`
 
-# Or in Vercel Dashboard:
-# Project Settings → Domains → Add Domain
-```
+### Deploy to Railway
 
-#### 3.2 DNS Configuration
-Update your domain's DNS settings:
-```
-Type: CNAME
-Name: @ (or www)
-Value: your-project.vercel.app
-```
+1. **Install Railway CLI**:
+   ```bash
+   npm install -g @railway/cli
+   ```
 
-### Step 4: Advanced Configuration
+2. **Login and deploy**:
+   ```bash
+   railway login
+   railway init
+   railway up
+   ```
 
-#### 4.1 Vercel Configuration (vercel.json)
-The project includes a pre-configured `vercel.json` with:
-- **Security Headers**: CSP, XSS protection, frame options
-- **Cache Optimization**: Long-term caching for static assets
-- **Route Handling**: API routes and SPA routing
-- **Performance**: Compression and optimization
+### Deploy to Heroku
 
-#### 4.2 Build Optimization
-```json
-{
-  "builds": [
-    {
-      "src": "client/dist/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "server/index.ts", 
-      "use": "@vercel/node"
-    }
-  ]
-}
-```
+1. **Install Heroku CLI** and login:
+   ```bash
+   heroku login
+   ```
 
-#### 4.3 Environment-Specific Settings
-```bash
-# Development
-vercel env add NODE_ENV development
+2. **Create Heroku app**:
+   ```bash
+   heroku create your-portfolio-name
+   ```
 
-# Production
-vercel env add NODE_ENV production
+3. **Add PostgreSQL addon**:
+   ```bash
+   heroku addons:create heroku-postgresql:hobby-dev
+   ```
 
-# Preview
-vercel env add NODE_ENV preview
-```
+4. **Configure environment variables**:
+   ```bash
+   heroku config:set NODE_ENV=production
+   heroku config:set SESSION_SECRET=your-secure-secret
+   ```
 
-### Step 5: SEO & Performance Optimization
+5. **Deploy**:
+   ```bash
+   git push heroku main
+   ```
 
-#### 5.1 Domain Verification
-After deployment, verify your domain:
-- Google Search Console
-- Bing Webmaster Tools
-- Social media platform verification
+### Deploy to Digital Ocean
 
-#### 5.2 Performance Monitoring
-Monitor your deployment:
-```bash
-# Check build logs
-vercel logs
-
-# Performance insights
-vercel inspect [deployment-url]
-```
-
-#### 5.3 SEO Checklist Post-Deployment
-- [ ] Update sitemap.xml with actual domain
-- [ ] Submit sitemap to search engines
-- [ ] Verify Open Graph tags work correctly
-- [ ] Test Twitter Card validation
-- [ ] Check Google PageSpeed Insights
-- [ ] Verify mobile responsiveness
-- [ ] Test all social sharing links
-
-### Step 6: Continuous Deployment
-
-#### 6.1 Automatic Deployments
-Vercel automatically deploys when you push to main branch:
-```bash
-git add .
-git commit -m "Update portfolio content"
-git push origin main
-# Vercel will automatically deploy
-```
-
-#### 6.2 Preview Deployments
-Every pull request gets a preview deployment:
-```bash
-git checkout -b new-feature
-# Make changes
-git push origin new-feature
-# Create PR - gets preview URL automatically
-```
-
-### Step 7: Database Setup (If Using Contact Form)
-
-#### 7.1 PostgreSQL Setup
-For contact form functionality, set up a database:
-
-**Option 1: Vercel Postgres**
-```bash
-vercel postgres create
-```
-
-**Option 2: External Provider (Recommended)**
-- Neon (neon.tech) - Free tier
-- PlanetScale (planetscale.com) - Free tier  
-- Supabase (supabase.com) - Free tier
-
-#### 7.2 Database Migration
-```bash
-# After setting DATABASE_URL in Vercel
-vercel env pull .env.local
-npm run db:push
-```
-
-### Troubleshooting Deployment
-
-#### Common Issues & Solutions
-
-**Build Failures**
-```bash
-# Check build logs
-vercel logs [deployment-url]
-
-# Common fixes:
-# 1. Ensure all dependencies in package.json
-# 2. Check TypeScript errors
-# 3. Verify environment variables
-```
-
-**404 Errors**
-```bash
-# Ensure vercel.json routes are correct
-# Check file paths are case-sensitive
-# Verify build output directory
-```
-
-**Environment Variables Not Working**
-```bash
-# Redeploy after adding env vars
-vercel --prod
-
-# Check variable names (case-sensitive)
-# Ensure no typos in variable names
-```
-
-**Performance Issues**
-```bash
-# Check bundle size
-npm run build
-npm run analyze
-
-# Optimize images and assets
-# Enable compression in vercel.json
-```
-
-### Cost Optimization
-
-#### Free Tier Limits
-Vercel Free Tier includes:
-- Unlimited personal projects
-- 100GB bandwidth/month
-- 6,000 minutes serverless execution/month
-- 1GB source code size
-
-#### Upgrade Considerations
-Consider Pro plan ($20/month) for:
-- Commercial projects
-- Advanced analytics
-- More serverless execution time
-- Priority support
-
-### Production Checklist
-
-Before going live:
-- [ ] Replace all placeholder URLs with actual domain
-- [ ] Set up proper environment variables
-- [ ] Configure custom domain (optional)
-- [ ] Test all functionality in production
-- [ ] Set up monitoring and analytics
-- [ ] Submit sitemap to search engines
-- [ ] Verify social media sharing
-- [ ] Test contact form functionality
-- [ ] Check mobile responsiveness
-- [ ] Verify SSL certificate works
-- [ ] Test performance with PageSpeed Insights
+1. **Create a Droplet** with Node.js pre-installed
+2. **Connect via SSH** and clone your repository
+3. **Install dependencies** and configure environment
+4. **Use PM2** for process management:
+   ```bash
+   npm install -g pm2
+   pm2 start ecosystem.config.js
+   pm2 startup
+   pm2 save
+   ```
 
 ---
 
-## 📁 Project Structure
-
-```
-├── client/                    # Frontend application
-│   ├── src/
-│   │   ├── components/       # Reusable UI components
-│   │   │   ├── ui/          # Base UI components
-│   │   │   └── layout/      # Layout components
-│   │   ├── pages/           # Application pages
-│   │   ├── hooks/           # Custom React hooks
-│   │   ├── lib/             # Utility functions
-│   │   └── index.css        # Global styles
-│   └── index.html           # HTML template
-├── server/                   # Backend application
-│   ├── index.ts            # Server entry point
-│   ├── routes.ts           # API routes
-│   ├── storage.ts          # Data storage layer
-│   └── vite.ts             # Vite integration
-├── shared/                  # Shared types and schemas
-│   └── schema.ts           # Database schema
-└── README.md               # Project documentation
-```
-
----
-
-## 🎨 Design System
-
-### Color Palette
-```css
-/* Brand Colors */
---brand-primary: #3B82F6    /* Professional Blue */
---brand-secondary: #8B5CF6  /* Purple */
---brand-accent: #06B6D4     /* Cyan */
-
-/* Neutral Colors */
---background: #FFFFFF       /* Light Mode */
---background-dark: #0F172A  /* Dark Mode */
---contrast: #1E293B         /* Text Primary */
---readable: #64748B         /* Text Secondary */
-```
-
-### Typography
-- **Display Font**: System fonts (SF Pro Display, Segoe UI Variable)
-- **Body Font**: Inter, system-ui
-- **Code Font**: JetBrains Mono, Menlo, Monaco
-
----
-
-## 🔧 Development
-
-### Available Scripts
-
-```bash
-# Development
-npm run dev          # Start development server
-npm run build        # Build for production
-npm run preview      # Preview production build
-
-# Database
-npm run db:generate  # Generate database migrations
-npm run db:push      # Push schema changes
-npm run db:studio    # Open database studio
-
-# Code Quality
-npm run lint         # Lint code
-npm run type-check   # TypeScript checking
-```
+## 🔧 Configuration
 
 ### Environment Variables
 
-```env
-# Database (Optional)
-DATABASE_URL=postgresql://user:password@localhost:5432/portfolio
+| Variable | Description | Required | Example |
+|----------|-------------|----------|---------|
+| `DATABASE_URL` | PostgreSQL connection string | Yes | `postgresql://user:pass@localhost:5432/db` |
+| `SESSION_SECRET` | Session encryption key | Yes | `your-super-secure-secret` |
+| `PORT` | Server port | No | `5000` |
+| `NODE_ENV` | Environment mode | No | `development` |
+| `CORS_ORIGIN` | Allowed CORS origins | No | `http://localhost:3000` |
+| `SMTP_HOST` | Email server host | No | `smtp.gmail.com` |
+| `SMTP_USER` | Email username | No | `your-email@gmail.com` |
 
-# Development
-NODE_ENV=development
-VITE_API_URL=http://localhost:3000
+### Custom Configuration
+
+#### 1. Update Personal Information
+
+Edit these files to customize with your information:
+
+- `client/src/components/ui/logo.tsx` - Logo and name
+- `client/src/pages/home.tsx` - Hero section and skills
+- `client/src/pages/about.tsx` - Personal information
+- `client/src/pages/projects.tsx` - Project portfolio
+- `client/src/pages/experience.tsx` - Work experience
+- `client/src/pages/resume.tsx` - Resume details
+
+#### 2. Customize Styling
+
+- `client/src/index.css` - Global styles and CSS variables
+- `tailwind.config.ts` - Tailwind CSS configuration
+- `client/src/lib/animations.ts` - Animation variants
+
+#### 3. Add New Pages
+
+1. Create new page component in `client/src/pages/`
+2. Add route in `client/src/App.tsx`
+3. Update navigation in `client/src/components/layout/navbar.tsx`
+
+---
+
+## 🚨 Troubleshooting
+
+### Common Issues
+
+#### 1. Port Already in Use
+```bash
+# Find process using port 5000
+lsof -i :5000
+
+# Kill the process
+kill -9 <PID>
+
+# Or use different port
+PORT=5001 npm run dev
 ```
 
----
+#### 2. Database Connection Failed
+- Verify PostgreSQL is running: `pg_ctl status`
+- Check connection string in `.env.local`
+- Ensure database exists and user has permissions
 
-## 📱 Features
-
-### 🏠 Home Page
-- **Hero Section** - Engaging introduction with animated elements
-- **Quick Navigation** - Easy access to all portfolio sections
-- **Professional Branding** - Consistent visual identity
-
-### 👨‍💻 About Section
-- **Professional Bio** - Comprehensive background information
-- **Skills Showcase** - Technical expertise with proficiency levels
-- **Personal Touch** - Authentic and engaging content
-
-### 💼 Projects Portfolio
-- **Real Projects** - Comprehensive showcase of actual development work
-- **Detailed Information** - Technology stacks, features, and achievements
-- **Interactive Cards** - Engaging hover effects and animations
-- **Live Demos** - Direct links to working applications
-
-### 🎯 Experience Timeline
-- **Career Progression** - Detailed professional journey
-- **Achievements** - Quantified results and accomplishments
-- **Technology Focus** - Relevant tech stacks for each role
-- **Professional Growth** - Clear career development path
-
-### 📞 Contact
-- **Professional Form** - Secure contact with validation
-- **Pricing Calculator** - Dynamic project cost estimation
-- **Availability Status** - Real-time hiring availability
-- **Multiple Channels** - Various ways to connect
-
----
-
-## 🌟 Performance
-
-- **Lighthouse Score**: 95+ (Performance, Accessibility, Best Practices, SEO)
-- **Core Web Vitals**: Excellent ratings across all metrics
-- **Loading Speed**: < 2 seconds initial load
-- **Bundle Size**: Optimized with code splitting
-
----
-
-## 📈 SEO & Analytics
-
-### Search Engine Optimization
-- **Meta Tags** - Comprehensive Open Graph and Twitter Cards
-- **Structured Data** - JSON-LD for better search visibility
-- **Semantic HTML** - Proper heading hierarchy and landmarks
-- **Mobile-First** - Responsive design for all devices
-
-### Performance Monitoring
-- **Real User Monitoring** - Core Web Vitals tracking
-- **Error Tracking** - Comprehensive error monitoring
-- **Analytics** - User behavior and engagement metrics
-
----
-
-## 🚀 Deployment Guide
-
-### Replit Deployment (Recommended)
+#### 3. Build Errors
 ```bash
-# 1. Fork or import this repository in Replit
-# 2. Install dependencies automatically or run:
+# Clear node_modules and reinstall
+rm -rf node_modules package-lock.json
 npm install
 
-# 3. Click the "Deploy" button in your Replit workspace
-# 4. Choose deployment settings:
-#    - Static deployment for frontend-only
-#    - Autoscale deployment for full-stack
-
-# 5. Configure environment variables in Replit Secrets:
-#    - DATABASE_URL (if using database)
-#    - Any other custom environment variables
-```
-
-### Vercel Deployment
-```bash
-# 1. Install Vercel CLI
-npm i -g vercel
-
-# 2. Build the project
+# Clear build cache
+rm -rf dist
 npm run build
-
-# 3. Deploy to Vercel
-vercel
-
-# Or use GitHub integration:
-# 1. Push to GitHub repository
-# 2. Connect repository to Vercel
-# 3. Configure build settings:
-#    - Build Command: npm run build
-#    - Output Directory: dist/public
-#    - Install Command: npm install
 ```
 
-### Netlify Deployment
+#### 4. TypeScript Errors
 ```bash
-# 1. Build the project
-npm run build
+# Check TypeScript configuration
+npm run type-check
 
-# 2. Install Netlify CLI
-npm install -g netlify-cli
-
-# 3. Deploy to Netlify
-netlify deploy --prod --dir=dist/public
-
-# Or use drag & drop:
-# 1. Build project locally
-# 2. Drag dist/public folder to Netlify deploy
+# Update TypeScript definitions
+npm install --save-dev @types/node @types/react @types/react-dom
 ```
 
-### Heroku Deployment
+#### 5. Styling Issues
 ```bash
-# 1. Install Heroku CLI
-# 2. Create Heroku app
-heroku create your-portfolio-name
+# Rebuild Tailwind CSS
+npm run build:css
 
-# 3. Set buildpacks
-heroku buildpacks:set heroku/nodejs
-
-# 4. Configure environment variables
-heroku config:set NODE_ENV=production
-heroku config:set DATABASE_URL=your_database_url
-
-# 5. Deploy
-git push heroku main
+# Clear browser cache and hard reload
+# Chrome: Ctrl+Shift+R (Windows) or Cmd+Shift+R (Mac)
 ```
 
-### Docker Deployment
+### Performance Issues
+
+#### 1. Slow Loading
+- Enable gzip compression in production
+- Optimize images and assets
+- Use CDN for static assets
+- Enable browser caching
+
+#### 2. Large Bundle Size
 ```bash
-# 1. Create Dockerfile (included in project)
-# 2. Build Docker image
-docker build -t portfolio .
+# Analyze bundle size
+npm run build -- --analyze
 
-# 3. Run container
-docker run -p 3000:3000 portfolio
-
-# 4. Deploy to cloud platforms (AWS, GCP, Azure)
+# Remove unused dependencies
+npm run depcheck
 ```
-
-### Custom Server Deployment
-```bash
-# 1. Build the project
-npm run build
-
-# 2. Copy files to server
-scp -r dist/ user@your-server:/var/www/portfolio/
-
-# 3. Install dependencies on server
-npm install --production
-
-# 4. Start with process manager
-pm2 start dist/index.js --name portfolio
-
-# 5. Configure nginx (optional)
-# Add nginx configuration for reverse proxy
-```
-
----
-
-## 📖 User Manual & Navigation Guide
-
-### Getting Started
-When you first visit the portfolio, you'll see a beautiful loading animation followed by the main interface. The portfolio is designed for intuitive navigation with smooth animations and responsive design.
-
-### Navigation Structure
-
-#### 🏠 **Home Page** (`/`)
-- **Hero Section**: Introduction with animated elements
-- **Skills Overview**: Quick glimpse of technical expertise
-- **Call-to-Action**: Direct links to projects and contact
-- **Navigation**: Access all sections via the top navigation bar
-
-#### 👨‍💻 **About Section** (`/about`)
-- **Professional Bio**: Comprehensive background and journey
-- **Skills Visualization**: Interactive tech stack with proficiency levels
-- **Experience Overview**: Quick summary of career highlights
-- **Personal Interests**: Insights into personality and motivations
-
-#### 💼 **Projects Portfolio** (`/projects`)
-- **Project Cards**: Interactive cards with hover effects
-- **Project Details**: Technology stacks, features, and metrics
-- **Live Demos**: Click "Demo" to view working applications
-- **Source Code**: Click "Code" to view GitHub repositories
-- **Filtering**: Browse by category or status
-
-#### 🎯 **Experience Timeline** (`/experience`)
-- **Career Progression**: Chronological work history
-- **Company Details**: Role descriptions and achievements
-- **Technologies Used**: Relevant tech stacks for each position
-- **Metrics**: Quantified accomplishments and impact
-- **Interactive Timeline**: Hover for additional details
-
-#### 📄 **Resume** (`/resume`)
-- **Professional Summary**: Complete career overview
-- **Education**: Academic background and certifications
-- **Skills Matrix**: Comprehensive technical proficiencies
-- **Key Projects**: Highlighted development work
-- **Download**: Printable PDF version available
-
-#### 📞 **Contact** (`/contact`)
-- **Contact Form**: Professional inquiry submission
-- **Pricing Calculator**: Dynamic project cost estimation
-- **Availability Status**: Current hiring availability
-- **Multiple Channels**: Email, LinkedIn, GitHub links
-
-### Interactive Features
-
-#### 🎨 **Theme Switching**
-- **Light/Dark Mode**: Toggle between themes using the theme switcher in the top navigation
-- **Automatic Detection**: Respects your system preferences
-- **Smooth Transitions**: Seamless color scheme changes
-
-#### 📱 **Responsive Design**
-- **Mobile First**: Optimized for all device sizes
-- **Touch Friendly**: Large tap targets for mobile devices
-- **Adaptive Layout**: Content adjusts to screen dimensions
-- **Performance**: Fast loading on all devices
-
-#### ⚡ **Performance Features**
-- **Lazy Loading**: Images and components load as needed
-- **Smooth Scrolling**: Natural page navigation
-- **Preloader**: Beautiful loading animation
-- **Optimized Assets**: Compressed and efficient resources
-
-### How to Use Each Section
-
-#### **Browsing Projects**
-1. Navigate to the Projects section
-2. Scroll through project cards
-3. Hover over cards for interactive effects
-4. Click "Demo" to see live applications
-5. Click "Code" to view source code
-6. Check project stats and technologies used
-
-#### **Exploring Experience**
-1. Visit the Experience section
-2. Follow the timeline from bottom to top
-3. Click on experience cards for detailed information
-4. Review achievements and technologies
-5. Understand career progression and growth
-
-#### **Using the Contact Form**
-1. Go to the Contact section
-2. Fill out the professional inquiry form
-3. Use the pricing calculator for project estimates
-4. Submit your message
-5. Expect a response within 24-48 hours
-
-#### **Customizing Your View**
-1. Use the theme toggle for preferred appearance
-2. Navigate using keyboard (Tab, Enter, Escape)
-3. Use browser zoom for text size adjustment
-4. Bookmark specific sections for quick access
-
-### Accessibility Features
-- **Keyboard Navigation**: Full keyboard support
-- **Screen Reader Friendly**: Proper ARIA labels and structure
-- **High Contrast**: Excellent color contrast ratios
-- **Focus Indicators**: Clear visual focus states
-- **Semantic HTML**: Proper heading hierarchy
-
-### Browser Compatibility
-- **Modern Browsers**: Chrome, Firefox, Safari, Edge (latest versions)
-- **Mobile Browsers**: iOS Safari, Chrome Mobile, Samsung Internet
-- **Performance**: Optimized for all supported browsers
-- **Fallbacks**: Graceful degradation for older browsers
-
-### Troubleshooting
-- **Slow Loading**: Check internet connection, try refreshing
-- **Animation Issues**: Ensure JavaScript is enabled
-- **Display Problems**: Try different browser or clear cache
-- **Contact Form**: Verify all required fields are filled
-- **Mobile Issues**: Try landscape orientation or different browser
-
----
-
-## 🔮 Future Updates & Roadmap
-
-### Planned Features
-
-#### **Phase 1: Enhanced Interactivity** (Q1 2025)
-- **3D Animations**: Advanced Three.js integration for immersive experience
-- **Voice Interface**: Voice-activated navigation and interaction
-- **Advanced Filtering**: Project filtering by technology, complexity, and industry
-- **Interactive Timeline**: Clickable career milestones with detailed modals
-- **Live Chat**: Real-time communication widget for instant inquiries
-
-#### **Phase 2: Performance & Analytics** (Q2 2025)
-- **Advanced Analytics**: Detailed visitor insights and interaction tracking
-- **Performance Dashboard**: Real-time performance metrics and optimization
-- **A/B Testing**: Multiple layout variants for conversion optimization
-- **SEO Enhancement**: Advanced schema markup and search optimization
-- **Progressive Web App**: Offline functionality and app-like experience
-
-#### **Phase 3: Content Management** (Q3 2025)
-- **CMS Integration**: Easy content updates without code changes
-- **Blog Platform**: Technical articles and tutorial publishing
-- **Project Gallery**: Expanded portfolio with detailed case studies
-- **Client Portal**: Private section for client project updates
-- **Multi-language**: Support for multiple languages and localization
-
-#### **Phase 4: Advanced Features** (Q4 2025)
-- **AI Integration**: Intelligent project recommendations and chatbot
-- **Virtual Reality**: VR portfolio experience for immersive browsing
-- **API Ecosystem**: Public API for portfolio data integration
-- **Mobile App**: Native mobile application for iOS and Android
-- **E-commerce**: Direct project commissioning and payment processing
-
-### Technical Improvements
-
-#### **Performance Optimization**
-- **Code Splitting**: Advanced lazy loading and bundle optimization
-- **Edge Computing**: CDN integration for global performance
-- **Database Optimization**: Advanced caching and query optimization
-- **Image Optimization**: Next-gen image formats and responsive images
-- **Bundle Analysis**: Continuous monitoring and optimization
-
-#### **Security Enhancements**
-- **Advanced Authentication**: Multi-factor authentication for admin areas
-- **Rate Limiting**: Enhanced DDoS protection and abuse prevention
-- **Data Encryption**: End-to-end encryption for sensitive communications
-- **Security Monitoring**: Real-time threat detection and response
-- **Compliance**: GDPR, CCPA, and other privacy regulation compliance
-
-#### **Development Experience**
-- **Testing Suite**: Comprehensive unit, integration, and e2e testing
-- **CI/CD Pipeline**: Automated testing, building, and deployment
-- **Monitoring**: Application performance monitoring and error tracking
-- **Documentation**: Interactive API documentation and guides
-- **Contributing**: Enhanced contribution guidelines and tools
-
-### Contributing to Future Development
-
-#### **Feature Requests**
-- Open an issue on GitHub with detailed feature description
-- Include use cases and expected benefits
-- Provide mockups or examples if applicable
-- Engage in community discussion
-
-#### **Bug Reports**
-- Use the GitHub issue template
-- Include reproduction steps and environment details
-- Provide screenshots or screen recordings
-- Test across multiple browsers if possible
-
-#### **Code Contributions**
-- Fork the repository and create feature branch
-- Follow existing code style and patterns
-- Add tests for new functionality
-- Update documentation as needed
-- Submit pull request with detailed description
-
-### Version History & Changelog
-
-#### **v2.0.0** (Current) - Complete Portfolio Redesign
-- Modern professional interface with enhanced UX
-- Comprehensive project showcase with real applications
-- Interactive experience timeline with detailed metrics
-- Advanced contact form with pricing calculator
-- Responsive design with light/dark theme support
-
-#### **v1.5.0** - Security & Performance Update
-- Enhanced security with validation and rate limiting
-- Performance optimization with code splitting
-- SEO improvements with structured data
-- Accessibility enhancements for better compliance
-
-#### **v1.0.0** - Initial Release
-- Basic portfolio structure with essential sections
-- Responsive design with mobile support
-- Contact form with backend integration
-- Professional styling and branding
-
-### Support & Maintenance
-
-#### **Regular Updates**
-- **Security Patches**: Monthly security updates
-- **Performance Improvements**: Quarterly optimization reviews
-- **Feature Updates**: Bi-annual major feature releases
-- **Content Updates**: Ongoing project and experience additions
-
-#### **Long-term Support**
-- **Browser Compatibility**: Support for latest 2 major versions
-- **Framework Updates**: Regular dependency updates and migrations
-- **Technology Evolution**: Adoption of new web standards and best practices
-- **Community Feedback**: Continuous improvement based on user feedback
 
 ---
 
 ## 🤝 Contributing
 
-While this is a personal portfolio, suggestions and feedback are welcome!
+### Development Workflow
 
 1. **Fork the repository**
-2. **Create a feature branch** (`git checkout -b feature/improvement`)
-3. **Commit changes** (`git commit -am 'Add improvement'`)
-4. **Push to branch** (`git push origin feature/improvement`)
-5. **Open a Pull Request**
+2. **Create feature branch**: `git checkout -b feature/amazing-feature`
+3. **Make changes** and test thoroughly
+4. **Commit changes**: `git commit -m 'Add amazing feature'`
+5. **Push to branch**: `git push origin feature/amazing-feature`
+6. **Open Pull Request**
+
+### Code Standards
+
+- **ESLint** for code quality
+- **Prettier** for code formatting
+- **TypeScript** for type safety
+- **Conventional Commits** for commit messages
+
+### Testing
+
+```bash
+# Run tests before committing
+npm run test
+npm run type-check
+npm run lint
+```
+
+---
+
+## 📚 Documentation
+
+### API Documentation
+
+#### Contact Form Endpoint
+
+```typescript
+POST /api/contact
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "subject": "Project Inquiry",
+  "message": "Hello, I'd like to discuss a project...",
+  "projectType": "web-application",
+  "budget": "10000-25000"
+}
+```
+
+#### Health Check
+
+```typescript
+GET /health
+Response: { "status": "ok", "timestamp": "2025-07-02T14:30:00Z" }
+```
+
+### Component Documentation
+
+#### Logo Component
+```typescript
+import Logo from '@/components/ui/logo';
+
+<Logo size="md" showText={true} />
+```
+
+#### Theme Toggle
+```typescript
+import { ThemeToggle } from '@/components/ui/theme-toggle';
+
+<ThemeToggle />
+```
+
+---
+
+## 📈 Performance Optimization
+
+### Frontend Optimizations
+
+- **Code Splitting** with React.lazy()
+- **Image Optimization** with lazy loading
+- **Bundle Analysis** with webpack-bundle-analyzer
+- **Caching Strategy** with service workers
+- **CSS Optimization** with PurgeCSS
+
+### Backend Optimizations
+
+- **Database Connection Pooling**
+- **Response Compression** with gzip
+- **API Rate Limiting**
+- **Request Validation** and sanitization
+- **Error Handling** and logging
+
+### SEO Optimizations
+
+- **Meta Tags** for all pages
+- **Open Graph** and Twitter Card support
+- **Structured Data** with JSON-LD
+- **Sitemap.xml** generation
+- **Robots.txt** configuration
+
+---
+
+## 🔒 Security
+
+### Security Features
+
+- **Helmet.js** for security headers
+- **CORS** configuration
+- **Rate Limiting** on API endpoints
+- **Input Validation** and sanitization
+- **Session Security** with secure cookies
+- **SQL Injection** prevention with parameterized queries
+
+### Security Checklist
+
+- [ ] Environment variables are not committed to git
+- [ ] Session secret is cryptographically strong
+- [ ] HTTPS is enabled in production
+- [ ] Database credentials are secure
+- [ ] API endpoints are rate limited
+- [ ] User input is validated and sanitized
+
+---
+
+## 📞 Support & Contact
+
+### Get Help
+
+- **📧 Email**: [developerrajir@gmail.com](mailto:developerrajir@gmail.com)
+- **💼 LinkedIn**: [linkedin.com/in/yuvrajkurmi03](https://linkedin.com/in/yuvrajkurmi03)
+- **🐙 GitHub**: [github.com/DevMaestroHQ](https://github.com/DevMaestroHQ)
+
+### Issue Reporting
+
+When reporting issues, please include:
+
+1. **Environment details** (OS, Node.js version, npm version)
+2. **Steps to reproduce** the issue
+3. **Expected behavior** vs actual behavior
+4. **Error messages** or logs
+5. **Screenshots** if applicable
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 📞 Contact & Hire
+## 🙏 Acknowledgments
 
-<div align="center">
-
-### Ready to work together?
-
-**Yubraj Kurmi** - Full Stack Developer  
-📧 **Email**: [developerrajir@gmail.com](mailto:developerrajir@gmail.com)  
-💼 **LinkedIn**: [linkedin.com/in/yuvrajkurmi03](https://linkedin.com/in/yuvrajkurmi03)  
-🐙 **GitHub**: [github.com/DevMaestroHQ](https://github.com/DevMaestroHQ)  
-📍 **Location**: Devdaha, Rupandehi, Nepal  
-
-**Specializing in**: React • Node.js • TypeScript • Full-Stack Development  
-**Available for**: Freelance Projects • Contract Work • Consultations  
-
-</div>
+- **React Team** for the amazing framework
+- **Vercel** for hosting and deployment platform
+- **Tailwind CSS** for the utility-first CSS framework
+- **Radix UI** for accessible component primitives
+- **Framer Motion** for smooth animations
+- **All contributors** who helped improve this project
 
 ---
 
 <div align="center">
 
-**Built with ❤️ and modern web technologies**  
-*© 2024 Yubraj Kurmi. All rights reserved.*
+**Built with ❤️ by YUBRAJ KURMI**
 
-**⭐ Star this repository if you found it helpful!**
+[🌐 Portfolio](https://your-portfolio-url.vercel.app) • [📧 Email](mailto:developerrajir@gmail.com) • [💼 LinkedIn](https://linkedin.com/in/yuvrajkurmi03) • [🐙 GitHub](https://github.com/DevMaestroHQ)
 
 </div>
