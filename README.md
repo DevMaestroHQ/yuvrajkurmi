@@ -1,218 +1,174 @@
-# 🚀 YUBRAJ KURMI - Full Stack Developer Portfolio
+# 🚀 Professional Portfolio - Yubraj Kurmi
 
-<div align="center">
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YourUsername/portfolio)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/YourUsername/portfolio)
+[![Deploy to Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/YourUsername/portfolio)
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen?style=for-the-badge&logo=vercel)](https://your-portfolio-url.vercel.app)
-[![React](https://img.shields.io/badge/React-18.0-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-20.0-339933?style=for-the-badge&logo=node.js)](https://nodejs.org/)
-[![Express](https://img.shields.io/badge/Express-4.18-000000?style=for-the-badge&logo=express)](https://expressjs.com/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15.0-336791?style=for-the-badge&logo=postgresql)](https://www.postgresql.org/)
+A modern, responsive full-stack portfolio application built with React, TypeScript, and Node.js. Features a professional design with comprehensive SEO optimization, performance monitoring, and multi-platform deployment support.
 
-**Modern • Professional • Scalable • SEO Optimized**
+## ✨ Key Features
 
-[🌐 Live Demo](https://your-portfolio-url.vercel.app) | [📧 Contact](mailto:developerrajir@gmail.com) | [💼 LinkedIn](https://linkedin.com/in/yuvrajkurmi03) | [🐙 GitHub](https://github.com/DevMaestroHQ)
+- **🎨 Modern Design**: Clean, professional interface with dark/light mode support
+- **📱 Fully Responsive**: Optimized for desktop, tablet, and mobile devices
+- **⚡ Performance Optimized**: Fast loading with lazy loading and code splitting
+- **🔍 SEO Optimized**: Comprehensive SEO with structured data and meta tags
+- **🛡️ Security Focused**: Helmet.js security headers and rate limiting
+- **📊 Analytics Ready**: Google Analytics and performance monitoring
+- **🚀 Multi-Platform Deployment**: Deploy to Vercel, Netlify, Heroku, or Railway
+- **💼 Professional Features**: Contact form, pricing calculator, testimonials
+- **🔄 Progressive Web App**: PWA features with service worker
 
-</div>
-
----
-
-## ✨ Overview
-
-A cutting-edge full-stack developer portfolio showcasing expertise in React, Node.js, TypeScript, and modern web technologies. Built with performance, accessibility, and user experience at the forefront, featuring authentic projects, comprehensive resume integration, and optimized for hiring managers.
-
-### 🏆 What Makes This Portfolio Special
-
-- **Authentic Projects**: Real-world applications with genuine impact metrics
-- **Professional Design**: Clean, modern interface optimized for hiring managers
-- **High Performance**: Fast loading with 90+ Lighthouse scores
-- **SEO Optimized**: Complete meta tags, structured data, and sitemap
-- **Fully Responsive**: Perfect experience across all devices
-- **Accessible**: WCAG 2.1 AA compliant with keyboard navigation
-
----
-
-## 🛠 Tech Stack
+## 🏗️ Tech Stack
 
 ### Frontend
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| **React** | 18.0+ | UI Library with modern hooks |
-| **TypeScript** | 5.0+ | Type-safe development |
-| **Vite** | 4.0+ | Fast development & build tool |
-| **Tailwind CSS** | 3.0+ | Utility-first styling |
-| **Framer Motion** | 10.0+ | Smooth animations |
-| **Radix UI** | Latest | Accessible components |
-| **TanStack Query** | 4.0+ | Server state management |
-| **Wouter** | 2.0+ | Lightweight routing |
+- **Framework**: React 18 with TypeScript
+- **Styling**: Tailwind CSS with custom design system
+- **Components**: Radix UI primitives + shadcn/ui
+- **Animations**: Framer Motion for smooth interactions
+- **Routing**: Wouter for client-side routing
+- **State Management**: TanStack Query for server state
 
 ### Backend
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| **Express.js** | 4.18+ | Web application framework |
-| **PostgreSQL** | 15.0+ | Primary database |
-| **Drizzle ORM** | Latest | Type-safe database operations |
-| **Zod** | 3.0+ | Schema validation |
-| **Helmet.js** | 7.0+ | Security middleware |
-| **Rate Limiting** | Latest | API protection |
+- **Runtime**: Node.js with Express.js
+- **Database**: PostgreSQL with Drizzle ORM
+- **Validation**: Zod schemas with express-validator
+- **Security**: Helmet.js, CORS, rate limiting
+- **Session**: Connect-pg-simple for session storage
 
-### DevOps & Tools
-| Technology | Purpose |
-|------------|---------|
-| **Docker** | Containerization |
-| **GitHub Actions** | CI/CD pipeline |
-| **ESLint** | Code linting |
-| **Prettier** | Code formatting |
-| **Drizzle Kit** | Database migrations |
-
----
+### DevOps & Deployment
+- **Build Tool**: Vite for fast development and optimized builds
+- **Type Checking**: TypeScript with strict mode
+- **Code Quality**: ESLint and Prettier
+- **Deployment**: Multi-platform support (Vercel, Netlify, Heroku, Railway)
+- **Containerization**: Docker and Docker Compose ready
 
 ## 🚀 Quick Start
 
 ### Prerequisites
+- Node.js 20+ and npm 10+
+- PostgreSQL 14+ (for production)
+- Git for version control
 
-Ensure you have the following installed:
-- **Node.js** 18.0+ ([Download](https://nodejs.org/))
-- **npm** 8.0+ or **yarn** 1.22+
-- **Git** ([Download](https://git-scm.com/))
-- **PostgreSQL** 15.0+ ([Download](https://www.postgresql.org/))
-
-### Installation
+### Local Development
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/DevMaestroHQ/portfolio.git
+   git clone https://github.com/YourUsername/portfolio.git
    cd portfolio
    ```
 
 2. **Install dependencies**
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
-3. **Environment setup**
+3. **Set up environment variables**
    ```bash
-   cp .env .env.local
-   ```
-   
-   Configure your `.env.local`:
-   ```env
-   # Database
-   DATABASE_URL="postgresql://username:password@localhost:5432/portfolio_db"
-   
-   # Server
-   PORT=5000
-   NODE_ENV=development
-   
-   # Security
-   SESSION_SECRET="your-super-secure-session-secret"
-   
-   # CORS
-   CORS_ORIGIN="http://localhost:3000,http://localhost:5173"
+   cp .env.example .env
+   # Edit .env with your configuration
    ```
 
-4. **Database setup**
-   ```bash
-   # Create database
-   createdb portfolio_db
-   
-   # Run migrations
-   npm run db:generate
-   npm run db:migrate
-   ```
-
-5. **Start development server**
+4. **Start development server**
    ```bash
    npm run dev
    ```
 
-   🎉 **Application running at:**
-   - Frontend: http://localhost:3000
-   - Backend: http://localhost:5000
+5. **Open in browser**
+   ```
+   http://localhost:5000
+   ```
 
----
+### Production Build
 
-## 📋 Available Scripts
-
-### Development
 ```bash
-npm run dev          # Start development server
-npm run build        # Build for production
-npm run start        # Start production server
-npm run type-check   # TypeScript checking
-npm run lint         # ESLint checking
-npm run lint:fix     # Fix ESLint issues
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-### Database
-```bash
-npm run db:generate  # Generate migrations
-npm run db:migrate   # Apply migrations
-npm run db:studio    # Open Drizzle Studio
-npm run db:reset     # Reset database
-```
+## 🌐 Deployment Options
 
-### Testing & Quality
-```bash
-npm test             # Run tests
-npm run test:watch   # Run tests in watch mode
-npm run test:coverage # Test coverage report
-```
-
----
-
-## 🌐 Deployment Guide
-
-### Deploy to Vercel (Recommended)
+### 🔷 Vercel (Recommended)
 
 1. **Install Vercel CLI**
    ```bash
-   npm i -g vercel
+   npm install -g vercel
    ```
 
-2. **Login and deploy**
+2. **Deploy to Vercel**
    ```bash
-   vercel login
    vercel --prod
    ```
 
-3. **Environment variables**
-   Add these in Vercel dashboard:
-   ```env
-   DATABASE_URL=your_production_db_url
-   SESSION_SECRET=your_production_secret
+3. **Environment Variables**
+   Set in Vercel dashboard:
+   ```
+   DATABASE_URL=your-postgres-url
+   SESSION_SECRET=your-secret-key
    NODE_ENV=production
    ```
 
-### Deploy to Railway
+### 🔷 Netlify
 
-1. **Connect GitHub repository**
-   - Visit [Railway](https://railway.app)
-   - Connect your GitHub repo
-   - Add environment variables
-
-2. **Automatic deployment**
-   - Railway automatically deploys on git push
-   - PostgreSQL addon available
-
-### Deploy to Heroku
-
-1. **Setup Heroku**
+1. **Install Netlify CLI**
    ```bash
-   heroku create your-portfolio-name
-   heroku addons:create heroku-postgresql:hobby-dev
+   npm install -g netlify-cli
    ```
 
-2. **Configure and deploy**
+2. **Deploy to Netlify**
    ```bash
-   heroku config:set NODE_ENV=production
-   heroku config:set SESSION_SECRET=your-secret
+   netlify deploy --prod
+   ```
+
+3. **Environment Variables**
+   Set in Netlify dashboard or `netlify.toml`
+
+### 🔷 Railway
+
+1. **Install Railway CLI**
+   ```bash
+   npm install -g @railway/cli
+   ```
+
+2. **Deploy to Railway**
+   ```bash
+   railway login
+   railway link
+   railway up
+   ```
+
+3. **Database Setup**
+   ```bash
+   railway add postgresql
+   ```
+
+### 🔷 Heroku
+
+1. **Install Heroku CLI**
+   ```bash
+   # macOS
+   brew install heroku/brew/heroku
+   
+   # Ubuntu
+   sudo snap install --classic heroku
+   ```
+
+2. **Deploy to Heroku**
+   ```bash
+   heroku create your-app-name
+   heroku addons:create heroku-postgresql:hobby-dev
    git push heroku main
    ```
 
-### Self-Hosted with Docker
+3. **Configure Environment**
+   ```bash
+   heroku config:set SESSION_SECRET=your-secret-key
+   heroku config:set NODE_ENV=production
+   ```
+
+### 🔷 Docker Deployment
 
 1. **Build Docker image**
    ```bash
@@ -224,271 +180,220 @@ npm run test:coverage # Test coverage report
    docker-compose up -d
    ```
 
----
-
-## 🎨 Features & Sections
-
-### 🏠 Home Page
-- **Hero Section**: Professional introduction with call-to-action
-- **Skills Overview**: Technical expertise visualization
-- **Achievement Stats**: Key metrics and accomplishments
-- **Social Links**: Professional networking profiles
-
-### 👨‍💻 About Page
-- **Personal Story**: Professional journey and background
-- **Technical Skills**: Comprehensive technology stack
-- **Education**: Academic achievements and certifications
-- **Interests**: Personal hobbies and activities
-
-### 💼 Projects Showcase
-- **Featured Projects**: 6 comprehensive full-stack applications
-- **Project Details**: Technology stack, features, and impact
-- **Live Demos**: Working application demonstrations
-- **Source Code**: GitHub repository links
-- **Case Studies**: Detailed project breakdowns
-
-### 🚀 Experience Timeline
-- **Career Journey**: Professional growth progression
-- **Company Details**: Role responsibilities and achievements
-- **Skills Evolution**: Technology advancement over time
-- **Impact Metrics**: Quantified contributions and results
-
-### 📄 Resume Section
-- **Downloadable PDF**: Professional resume download
-- **Skills Matrix**: Interactive technical proficiency display
-- **Certifications**: Professional credentials and achievements
-- **Contact Information**: Professional contact details
-
-### 📧 Contact Form
-- **Professional Inquiry**: Direct message functionality
-- **Project Estimates**: Pricing calculator integration
-- **Response Guarantee**: 24-48 hour response commitment
-- **Multiple Channels**: Various communication options
-
----
-
-## 🔧 Customization Guide
-
-### Personal Information
-
-Update these files with your details:
-
-1. **Basic Information**
-   ```typescript
-   // client/src/components/ui/logo.tsx
-   // Update name and title
-   
-   // .env
-   VITE_DEVELOPER_NAME="Your Name"
-   VITE_DEVELOPER_EMAIL="your@email.com"
+3. **Environment Configuration**
+   ```bash
+   # Create .env file with production values
+   cp .env.example .env
    ```
 
-2. **Home Page Content**
-   ```typescript
-   // client/src/pages/home.tsx
-   // Update hero section, skills, and achievements
+### 🔷 VPS/Self-Hosted
+
+1. **Server Setup**
+   ```bash
+   # Install Node.js, PostgreSQL, and PM2
+   curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+   sudo apt-get install -y nodejs postgresql pm2
    ```
 
-3. **Projects Portfolio**
-   ```typescript
-   // client/src/pages/projects.tsx
-   // Replace with your actual projects
+2. **Application Setup**
+   ```bash
+   # Clone and build
+   git clone https://github.com/YourUsername/portfolio.git
+   cd portfolio
+   npm install
+   npm run build
    ```
 
-4. **Experience Timeline**
-   ```typescript
-   // client/src/pages/experience.tsx
-   // Update with your work experience
+3. **Process Management**
+   ```bash
+   # Start with PM2
+   pm2 start dist/index.js --name portfolio
+   pm2 startup
+   pm2 save
    ```
 
-### Styling & Branding
+## 🔧 Configuration
 
-1. **Color Scheme**
-   ```css
-   /* client/src/index.css */
-   :root {
-     --brand-primary: your-primary-color;
-     --brand-secondary: your-secondary-color;
-   }
+### Environment Variables
+
+| Variable | Description | Required | Default |
+|----------|-------------|----------|---------|
+| `DATABASE_URL` | PostgreSQL connection string | ✅ | - |
+| `SESSION_SECRET` | Session encryption key | ✅ | - |
+| `NODE_ENV` | Environment mode | ✅ | development |
+| `PORT` | Server port | ❌ | 5000 |
+| `CORS_ORIGIN` | Allowed origins | ❌ | localhost |
+
+### Database Setup
+
+1. **PostgreSQL Setup**
+   ```sql
+   CREATE DATABASE portfolio_db;
+   CREATE USER portfolio_user WITH PASSWORD 'your_password';
+   GRANT ALL PRIVILEGES ON DATABASE portfolio_db TO portfolio_user;
    ```
 
-2. **Typography**
-   ```css
-   /* Update font families in index.css */
-   --font-display: your-heading-font;
-   --font-body: your-body-font;
+2. **Run Migrations**
+   ```bash
+   npm run db:push
    ```
 
-3. **Logo**
-   ```typescript
-   // Replace logo image in client/src/components/ui/logo.tsx
-   ```
+### SEO Configuration
 
-### SEO Optimization
+Update SEO settings in `client/src/components/ui/seo-head.tsx`:
+- Site title and description
+- Social media handles
+- Contact information
+- Geographic location
+- Structured data
 
-1. **Meta Tags**
-   ```typescript
-   // Update SEOHead component in each page
-   // client/src/components/ui/seo-head.tsx
-   ```
+## 📊 Performance Optimization
 
-2. **Structured Data**
-   ```json
-   // Update JSON-LD in SEOHead component
-   ```
+### Frontend Optimizations
+- **Code Splitting**: Automatic route-based splitting
+- **Lazy Loading**: Images and components load on demand
+- **Asset Optimization**: Compressed images and fonts
+- **Caching**: Service worker with caching strategies
 
-3. **Sitemap & Robots**
-   ```xml
-   <!-- Update public/sitemap.xml -->
-   <!-- Update public/robots.txt -->
-   ```
+### Backend Optimizations
+- **Compression**: Gzip compression for all responses
+- **Rate Limiting**: Prevent abuse and improve stability
+- **Security Headers**: Comprehensive security configuration
+- **Database Indexing**: Optimized database queries
 
----
+### Monitoring
+- **Performance Metrics**: Core Web Vitals tracking
+- **Error Monitoring**: Comprehensive error logging
+- **Health Checks**: Application health monitoring
+- **Analytics**: User behavior tracking
+
+## 🛡️ Security Features
+
+### Security Headers
+- Content Security Policy (CSP)
+- X-Frame-Options
+- X-Content-Type-Options
+- Strict-Transport-Security
+- Referrer-Policy
+
+### Input Validation
+- Server-side validation with Zod
+- Client-side validation with React Hook Form
+- SQL injection prevention
+- XSS protection
+
+### Rate Limiting
+- Global rate limiting: 100 requests per 15 minutes
+- Contact form: 5 submissions per 15 minutes
+- API endpoints: Custom limits per endpoint
+
+## 📱 Progressive Web App (PWA)
+
+### Features
+- **Offline Support**: Service worker with caching
+- **App-like Experience**: Native app feel
+- **Push Notifications**: Contact form notifications
+- **Background Sync**: Offline form submissions
+
+### Installation
+The app can be installed on mobile devices and desktop browsers as a PWA.
+
+## 🔍 SEO Optimization
+
+### Technical SEO
+- **Structured Data**: JSON-LD for rich snippets
+- **Meta Tags**: Comprehensive meta tag implementation
+- **Open Graph**: Social media sharing optimization
+- **Sitemap**: XML sitemap for search engines
+- **Robots.txt**: Search engine crawling directives
+
+### Content SEO
+- **Semantic HTML**: Proper HTML structure
+- **Alt Text**: Image accessibility and SEO
+- **Schema Markup**: Person, Organization, and FAQ schemas
+- **Local SEO**: Geographic targeting for Nepal market
+
+## 📈 Analytics & Monitoring
+
+### Google Analytics
+```javascript
+// Add to environment variables
+VITE_GOOGLE_ANALYTICS_ID=GA_MEASUREMENT_ID
+```
+
+### Performance Monitoring
+- Core Web Vitals tracking
+- Load time measurements
+- Error rate monitoring
+- User interaction tracking
+
+## 🧪 Testing
+
+### Manual Testing
+```bash
+# Type checking
+npm run check
+
+# Build verification
+npm run build
+```
+
+### Automated Testing
+```bash
+# Run tests (when implemented)
+npm test
+
+# Coverage report
+npm run test:coverage
+```
 
 ## 🚨 Troubleshooting
 
 ### Common Issues
 
-#### Port Already in Use
-```bash
-# Find and kill process
-lsof -i :5000
-kill -9 <PID>
-
-# Or use different port
-PORT=5001 npm run dev
-```
-
-#### Database Connection Failed
-```bash
-# Check PostgreSQL status
-pg_ctl status
-
-# Restart PostgreSQL
-brew services restart postgresql
-# or
-sudo service postgresql restart
-```
-
-#### Build Errors
+#### Build Failures
 ```bash
 # Clear cache and reinstall
 rm -rf node_modules package-lock.json
 npm install
-
-# Clear build directory
-rm -rf dist
 npm run build
 ```
 
-#### TypeScript Errors
+#### Database Connection Issues
 ```bash
-# Check configuration
-npm run type-check
+# Check connection string
+echo $DATABASE_URL
 
-# Update type definitions
-npm install -D @types/node @types/react @types/react-dom
+# Test connection
+npm run db:push
 ```
 
-### Performance Issues
-
-#### Slow Loading
-- Enable gzip compression
-- Optimize images with next/image
-- Implement code splitting
-- Use CDN for static assets
-
-#### Large Bundle Size
+#### Port Conflicts
 ```bash
-# Analyze bundle
-npm run build:analyze
+# Kill process on port 5000
+lsof -ti:5000 | xargs kill -9
 
-# Check for unused dependencies
-npx depcheck
+# Or use different port
+PORT=3000 npm run dev
 ```
 
----
-
-## 🔒 Security
-
-### Security Features
-- **Helmet.js**: Security headers
-- **CORS**: Cross-origin protection
-- **Rate Limiting**: API protection
-- **Input Validation**: Zod schema validation
-- **Session Security**: Secure cookie configuration
-- **SQL Injection Prevention**: Parameterized queries
-
-### Security Checklist
-- [ ] Environment variables secured
-- [ ] Session secret is cryptographically strong
-- [ ] HTTPS enabled in production
-- [ ] Database credentials are secure
-- [ ] API endpoints rate limited
-- [ ] Input validation implemented
-
----
-
-## 📊 Performance
-
-### Optimization Features
-- **Code Splitting**: React.lazy() implementation
-- **Image Optimization**: Lazy loading and compression
-- **Caching Strategy**: Service worker implementation
-- **Bundle Analysis**: Webpack bundle analyzer
-- **CSS Optimization**: PurgeCSS integration
-
-### Performance Metrics
-- **Lighthouse Score**: 90+ across all categories
-- **First Contentful Paint**: < 1.5s
-- **Largest Contentful Paint**: < 2.5s
-- **Time to Interactive**: < 3.0s
-- **Cumulative Layout Shift**: < 0.1
-
----
-
-## 🤝 Contributing
-
-### Development Workflow
-
-1. **Fork & Clone**
-   ```bash
-   git clone https://github.com/your-username/portfolio.git
-   ```
-
-2. **Create Feature Branch**
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-
-3. **Make Changes**
-   - Follow code style guidelines
-   - Add tests for new features
-   - Update documentation
-
-4. **Commit & Push**
-   ```bash
-   git commit -m "feat: add amazing feature"
-   git push origin feature/amazing-feature
-   ```
-
-5. **Open Pull Request**
-   - Describe changes clearly
-   - Include screenshots if applicable
-   - Ensure all checks pass
-
-### Code Standards
-- **ESLint**: Code quality enforcement
-- **Prettier**: Consistent formatting
-- **TypeScript**: Type safety requirements
-- **Conventional Commits**: Standardized commit messages
-
----
+#### Performance Issues
+- Check network tab in browser DevTools
+- Verify image optimization
+- Monitor Core Web Vitals
+- Check for memory leaks
 
 ## 📚 API Documentation
 
-### Contact Form Endpoint
+### Endpoints
 
+#### Health Check
+```http
+GET /health
+```
+Returns application health status and metrics.
+
+#### Contact Form
 ```http
 POST /api/contact
 Content-Type: application/json
@@ -496,140 +401,64 @@ Content-Type: application/json
 {
   "name": "John Doe",
   "email": "john@example.com",
-  "subject": "Project Inquiry",
-  "message": "Hello, I'd like to discuss...",
-  "projectType": "web-application",
-  "budget": "25000-50000"
+  "message": "Hello, I'd like to discuss a project..."
 }
 ```
 
-**Response:**
-```json
-{
-  "success": true,
-  "message": "Message sent successfully"
-}
-```
-
-### Health Check
-
+#### Portfolio Stats
 ```http
-GET /health
+GET /api/stats
 ```
+Returns dynamic portfolio statistics.
 
-**Response:**
-```json
-{
-  "status": "ok",
-  "timestamp": "2025-07-02T15:00:00Z",
-  "uptime": 86400
-}
-```
+## 🤝 Contributing
 
----
+### Development Workflow
 
-## 📈 Analytics & Monitoring
+1. **Fork the repository**
+2. **Create a feature branch**
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. **Make your changes**
+4. **Test thoroughly**
+5. **Submit a pull request**
 
-### Integrated Analytics
-- **Google Analytics**: User behavior tracking
-- **Hotjar**: User experience insights
-- **Sentry**: Error monitoring and reporting
-- **Performance Monitor**: Core web vitals tracking
-
-### Monitoring Setup
-```env
-# .env
-VITE_GOOGLE_ANALYTICS_ID=GA_MEASUREMENT_ID
-VITE_HOTJAR_ID=HOTJAR_SITE_ID
-VITE_SENTRY_DSN=SENTRY_PROJECT_DSN
-```
-
----
-
-## 🏗 Project Structure
-
-```
-portfolio/
-├── client/                 # Frontend application
-│   ├── public/            # Static assets
-│   ├── src/
-│   │   ├── components/    # Reusable components
-│   │   │   ├── ui/       # UI components
-│   │   │   └── layout/   # Layout components
-│   │   ├── pages/        # Route components
-│   │   ├── hooks/        # Custom React hooks
-│   │   ├── lib/          # Utility functions
-│   │   └── main.tsx      # App entry point
-│   └── package.json
-├── server/                # Backend application
-│   ├── routes.ts         # API routes
-│   ├── storage.ts        # Database layer
-│   ├── vite.ts          # Vite integration
-│   └── index.ts         # Server entry point
-├── shared/               # Shared types & schemas
-│   └── schema.ts        # Database schema
-├── .env                 # Environment variables
-├── package.json         # Project dependencies
-├── tailwind.config.ts   # Tailwind configuration
-├── tsconfig.json        # TypeScript configuration
-└── README.md           # This file
-```
-
----
-
-## 📞 Support & Contact
-
-### Get Help
-- **📧 Email**: [developerrajir@gmail.com](mailto:developerrajir@gmail.com)
-- **💼 LinkedIn**: [linkedin.com/in/yuvrajkurmi03](https://linkedin.com/in/yuvrajkurmi03)
-- **🐙 GitHub**: [github.com/DevMaestroHQ](https://github.com/DevMaestroHQ)
-- **🌐 Portfolio**: [your-portfolio-url.vercel.app](https://your-portfolio-url.vercel.app)
-
-### Issue Reporting
-
-When reporting issues, please include:
-1. **Environment**: OS, Node.js version, npm version
-2. **Steps to reproduce**
-3. **Expected vs actual behavior**
-4. **Error messages or logs**
-5. **Screenshots** (if applicable)
-
----
+### Code Standards
+- Follow TypeScript best practices
+- Use meaningful variable names
+- Add comments for complex logic
+- Update documentation for new features
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
 ## 🙏 Acknowledgments
 
-### Technologies & Libraries
-- **React Team** - Amazing frontend library
-- **Vercel** - Hosting and deployment platform
-- **Tailwind CSS** - Utility-first CSS framework
-- **Radix UI** - Accessible component primitives
-- **Framer Motion** - Smooth animation library
-- **PostgreSQL** - Powerful relational database
+- **Radix UI** for accessible component primitives
+- **Tailwind CSS** for utility-first styling
+- **Framer Motion** for smooth animations
+- **Replit** for development environment
+- **Vercel** for deployment platform
 
-### Special Thanks
-- **Open Source Community** - For amazing tools and libraries
-- **Design Inspiration** - Modern portfolio designs and trends
-- **Feedback Providers** - Beta testers and reviewers
-- **All Contributors** - Everyone who helped improve this project
+## 📞 Support
 
----
+### Get Help
+- **Documentation**: Check this README and code comments
+- **Issues**: Create a GitHub issue for bugs
+- **Email**: Contact developerrajir@gmail.com for support
 
-<div align="center">
-
-**Built with ❤️ by YUBRAJ KURMI**
-
-*Turning ideas into reality, one line of code at a time*
-
-[🚀 View Live Portfolio](https://your-portfolio-url.vercel.app) | [📧 Get In Touch](mailto:developerrajir@gmail.com)
+### Professional Services
+Available for freelance projects and consultations:
+- Web application development
+- API development and integration
+- Performance optimization
+- SEO and analytics setup
+- Deployment and DevOps
 
 ---
 
-⭐ **Star this repo if you found it helpful!** ⭐
+**Built with ❤️ by [Yubraj Kurmi](https://github.com/DevMaestroHQ)**
 
-</div>
+*Professional Full Stack Developer | Building the future, one line at a time*

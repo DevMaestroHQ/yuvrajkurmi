@@ -25,11 +25,14 @@ app.use(helmet({
 }));
 
 // CORS configuration
+const corsOrigins = process.env.NODE_ENV === 'production' 
+  ? (process.env.CORS_ORIGIN?.split(',') || [])
+  : ['http://localhost:5000', 'http://localhost:3000', 'http://localhost:5173'];
+
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
-    ? ['https://your-domain.com', 'https://your-domain.replit.app']
-    : ['http://localhost:5000', 'http://localhost:3000'],
-  credentials: true
+  origin: corsOrigins,
+  credentials: true,
+  optionsSuccessStatus: 200
 }));
 
 // Rate limiting
